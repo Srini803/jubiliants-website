@@ -90,3 +90,5 @@ In Vercel dashboard → Settings → Domains → Add `jubiliants.com`
 - **Google Fonts** (Syne + Inter)
 - SEO: meta tags, Open Graph, sitemap, robots.txt
 - Mobile responsive, keyboard accessible, reduced-motion respected
+
+Last updated: redeploy trigger
