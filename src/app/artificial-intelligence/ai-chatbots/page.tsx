@@ -33,7 +33,7 @@ export default function AIChatbots() {
     <>
       <section className="hero-section hero-section-inner">
         <div className="wrap" style={{width:"100%"}}>
-          <div style={{ display: "grid", gridTemplateColumns: "45% 55%", gap: "3rem", alignItems: "center" }} className="grid grid-cols-1 lg:grid-cols-2">
+          <div className="hero-grid">
             <div>
               <div style={{ display: "inline-flex", alignItems: "center", gap: "0.5rem", background: "var(--blue-dim)", border: "1px solid rgba(37,99,235,0.25)", borderRadius: "999px", padding: "0.3125rem 0.875rem", marginBottom: "1.25rem" }}>
                 <span style={{ width: "6px", height: "6px", borderRadius: "50%", background: "#22C55E", display: "block" }}></span>
@@ -47,14 +47,14 @@ export default function AIChatbots() {
                 <Link href="/case-studies" className="btn btn-secondary">View Case Studies</Link>
               </div>
             </div>
-            <div className="hidden lg:flex hero-visual-col"><ChatbotVisual /></div>
+            <div className="flex hero-visual-col"><ChatbotVisual /></div>
           </div>
         </div>
       </section>
 
       <section style={{ background: "var(--bg-raised)", borderBottom: "1px solid var(--border)" }}>
         <div className="wrap" style={{ padding: "3rem 1.5rem" }}>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(4,1fr)", gap: "2rem", textAlign: "center" }} className="grid grid-cols-2 lg:grid-cols-4">
+          <div style={{ display: "grid", gap: "2rem", textAlign: "center" }} className="grid grid-cols-2 lg:grid-cols-4">
             {[["73%", "Avg containment rate"], ["96.4%", "Intent accuracy"], ["4.7/5", "Customer CSAT"], ["12+", "Languages supported"]].map(([n, l], i) => (
               <RevealOnScroll key={l} delay={i * 80}>
                 <div><div className="stat-num">{n}</div><div className="stat-label">{l}</div></div>
@@ -72,7 +72,7 @@ export default function AIChatbots() {
               <h2 className="t-h2">Purpose-built for your industry and use case</h2>
             </div>
           </RevealOnScroll>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: "1.25rem" }} className="grid grid-cols-1 md:grid-cols-3">
+          <div style={{ display: "grid", gap: "1.25rem" }} className="grid grid-cols-1 md:grid-cols-3">
             {chatbotTypes.map((ct, i) => (
               <RevealOnScroll key={ct.title} delay={i * 70}>
                 <div className="card" style={{ padding: "1.5rem", height: "100%" }}>
@@ -88,12 +88,12 @@ export default function AIChatbots() {
       <section className="section" style={{ background: "var(--bg-raised)", borderTop: "1px solid var(--border)" }}>
         <div className="wrap">
           <RevealOnScroll>
-            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "5rem", alignItems: "center" }} className="grid grid-cols-1 lg:grid-cols-2">
+            <div style={{ display: "grid", gap: "5rem", alignItems: "center" }} className="grid grid-cols-1 lg:grid-cols-2">
               <div>
                 <div className="section-label">Omnichannel deployment</div>
                 <h2 className="t-h2" style={{ marginBottom: "1rem" }}>Deploy once, available everywhere</h2>
                 <p className="t-body" style={{ marginBottom: "1.5rem" }}>Your customers and employees shouldn't need to learn a new tool. We deploy your AI chatbot across every channel they already use — with a unified conversation history and consistent personality.</p>
-                <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "0.75rem" }}>
+                <div style={{ display: "grid", gap: "0.75rem" }}>
                   {channels.map((ch, i) => (
                     <div key={ch.name} style={{ display: "flex", alignItems: "center", gap: "0.625rem", padding: "0.75rem", background: "var(--bg-surface)", borderRadius: "8px", border: "1px solid var(--border)" }}>
                       <span style={{ fontSize: "1.125rem" }}>{ch.icon}</span>

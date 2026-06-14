@@ -27,7 +27,7 @@ export default function DigitalTransformation() {
       {/* ── HERO with Transformation Journey Visual ── */}
       <section className="hero-section hero-section-inner">
         <div className="wrap">
-          <div style={{display:"grid",gridTemplateColumns:"45% 55%",gap:"3rem",alignItems:"center"}} className="grid grid-cols-1 lg:grid-cols-2">
+          <div className="hero-grid">
             {/* Left copy */}
             <div>
               <div className="section-label">Software Solutions</div>
@@ -38,7 +38,7 @@ export default function DigitalTransformation() {
                 <Link href="/case-studies" className="btn btn-secondary">See Case Studies</Link>
               </div>
               {/* Quick proof points */}
-              <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:"0.75rem",marginTop:"2rem"}}>
+              <div style={{display:"grid",gap:"0.75rem",marginTop:"2rem"}}>
                 {[["300+","Projects delivered"],["10+","Years experience"],["60%","Avg efficiency gain"],["95%","Client retention"]].map(([n,l])=>(
                   <div key={l} style={{padding:"0.875rem",background:"var(--bg-raised)",borderRadius:"8px",border:"1px solid var(--border)"}}>
                     <div style={{fontFamily:"var(--font-heading)",fontWeight:600,fontSize:"1.25rem",color:"var(--text-1)",lineHeight:1}}>{n}</div>
@@ -48,7 +48,7 @@ export default function DigitalTransformation() {
               </div>
             </div>
             {/* Right — transformation journey diagram */}
-            <div className="hidden lg:flex hero-visual-col"><TransformationJourneyV2/></div>
+            <div className="flex hero-visual-col"><TransformationJourneyV2/></div>
           </div>
         </div>
       </section>
@@ -62,7 +62,7 @@ export default function DigitalTransformation() {
               <h2 className="t-h2">How we support your transformation</h2>
             </div>
           </RevealOnScroll>
-          <div style={{display:"grid",gridTemplateColumns:"repeat(3,1fr)",gap:"1.25rem"}} className="grid grid-cols-1 md:grid-cols-3">
+          <div style={{display:"grid",gap:"1.25rem"}} className="grid grid-cols-1 md:grid-cols-3">
             {services.map((s,i)=>(
               <RevealOnScroll key={s.t} delay={i*70}>
                 <div className="card" style={{padding:"1.5rem",height:"100%"}}>
@@ -84,7 +84,7 @@ export default function DigitalTransformation() {
               <h2 className="t-h2">A structured approach that minimises risk</h2>
             </div>
           </RevealOnScroll>
-          <div style={{display:"grid",gridTemplateColumns:"repeat(4,1fr)",gap:"1rem"}} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
+          <div style={{display:"grid",gap:"1rem"}} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
             {[
               {step:"01",t:"Assess",d:"Map your current state — systems, processes, data flows, and pain points."},
               {step:"02",t:"Roadmap",d:"Define a phased transformation plan aligned to business priorities and budget."},

@@ -32,7 +32,7 @@ export default function DigitalTransformationWithAI() {
       {/* Hero with AI Platform Visual */}
       <section className="hero-section hero-section-inner">
         <div className="wrap" style={{width:"100%"}}>
-          <div style={{ display: "grid", gridTemplateColumns: "45% 55%", gap: "3rem", alignItems: "center" }} className="grid grid-cols-1 lg:grid-cols-2">
+          <div className="hero-grid">
             <div>
               <div className="section-label">AI Solutions</div>
               <h1 className="t-h1" style={{ marginBottom: "1rem" }}>Reimagine Your Business with AI-Powered Digital Transformation</h1>
@@ -42,7 +42,7 @@ export default function DigitalTransformationWithAI() {
                 <Link href="/contact" className="btn btn-secondary">Schedule a Strategy Call</Link>
               </div>
             </div>
-            <div className="hidden lg:flex hero-visual-col"><AITransformVisual /></div>
+            <div className="flex hero-visual-col"><AITransformVisual /></div>
           </div>
         </div>
       </section>
@@ -70,7 +70,7 @@ export default function DigitalTransformationWithAI() {
               <h2 className="t-h2">AI transformation across every layer of your business</h2>
             </div>
           </RevealOnScroll>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: "1.25rem" }} className="grid grid-cols-1 md:grid-cols-3">
+          <div style={{ display: "grid", gap: "1.25rem" }} className="grid grid-cols-1 md:grid-cols-3">
             {solutions.map((s, i) => (
               <RevealOnScroll key={s.title} delay={i * 70}>
                 <div className="card" style={{ padding: "1.5rem", height: "100%" }}>

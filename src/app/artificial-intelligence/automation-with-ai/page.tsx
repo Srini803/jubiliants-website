@@ -23,7 +23,7 @@ export default function AutomationWithAI() {
       {/* Hero with Before/After Visual */}
       <section className="hero-section hero-section-inner">
         <div className="wrap" style={{width:"100%"}}>
-          <div style={{ display: "grid", gridTemplateColumns: "45% 55%", gap: "3rem", alignItems: "center" }} className="grid grid-cols-1 lg:grid-cols-2">
+          <div className="hero-grid">
             <div>
               <div style={{ display: "inline-flex", alignItems: "center", gap: "0.5rem", background: "var(--blue-dim)", border: "1px solid rgba(37,99,235,.25)", borderRadius: "999px", padding: "0.3125rem 0.875rem", marginBottom: "1.25rem" }}>
                 <span style={{ width: "6px", height: "6px", borderRadius: "50%", background: "#22C55E", display: "block" }} />
@@ -37,7 +37,7 @@ export default function AutomationWithAI() {
                 <Link href="/contact" className="btn btn-secondary">Explore Opportunities</Link>
               </div>
             </div>
-            <div className="hidden lg:flex hero-visual-col"><AIAutomationVisual /></div>
+            <div className="flex hero-visual-col"><AIAutomationVisual /></div>
           </div>
         </div>
       </section>
@@ -65,7 +65,7 @@ export default function AutomationWithAI() {
               <h2 className="t-h2">Transforming business processes through intelligent automation</h2>
             </div>
           </RevealOnScroll>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: "1.25rem" }} className="grid grid-cols-1 md:grid-cols-3">
+          <div style={{ display: "grid", gap: "1.25rem" }} className="grid grid-cols-1 md:grid-cols-3">
             {automationAreas.map((area, i) => (
               <RevealOnScroll key={area.title} delay={i * 70}>
                 <div className="card" style={{ padding: "1.5rem", height: "100%" }}>
@@ -111,7 +111,7 @@ export default function AutomationWithAI() {
       <section className="section" style={{ background: "var(--bg-raised)", borderTop: "1px solid var(--border)" }}>
         <div className="wrap">
           <RevealOnScroll>
-            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "5rem", alignItems: "center" }} className="grid grid-cols-1 lg:grid-cols-2">
+            <div style={{ display: "grid", gap: "5rem", alignItems: "center" }} className="grid grid-cols-1 lg:grid-cols-2">
               <div>
                 <div className="section-label">Our approach</div>
                 <h2 className="t-h2" style={{ marginBottom: "1rem" }}>We start with ROI, not technology</h2>

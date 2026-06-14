@@ -376,6 +376,11 @@ select.field-input option { background: var(--bg-raised); }
   align-items: center;
   justify-content: center;
 }
+@media (max-width: 1023px) {
+  .hero-vis-wrap {
+    min-height: 0;
+  }
+}
 /* Hero section baseline height */
 .hero-section {
   min-height: 760px;
@@ -439,11 +444,27 @@ select.field-input option { background: var(--bg-raised); }
 .b3 { animation-delay:.75s; } .b4 { animation-delay:.85s; }
 .b5 { animation-delay:.95s; } .b6 { animation-delay:1.05s; }
 
-/* Hero visual wrapper — positioning only; visibility controlled by Tailwind hidden/lg:flex */
+/* Hero visual wrapper — full visual on desktop, smaller stacked version on mobile */
 .hero-visual-col {
   position: relative;
   min-height: 560px;
   align-items: center;
+  justify-content: center;
+}
+@media (max-width: 1023px) {
+  .hero-visual-col {
+    min-height: 0;
+    margin-top: 0.5rem;
+  }
+  .hero-visual-col .hero-svg {
+    max-width: 440px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 480px) {
+  .hero-visual-col .hero-svg {
+    max-width: 100%;
+  }
 }
 
 /* Hero "trusted by" badge — prevent awkward 3-line pill wrapping on mobile */
@@ -462,5 +483,33 @@ select.field-input option { background: var(--bg-raised); }
     white-space: normal;
     font-size: 0.6875rem !important;
     line-height: 1.4;
+  }
+}
+
+/* Hero content/visual grid — single column on mobile, 45/55 split on desktop */
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+@media (min-width: 1024px) {
+  .hero-grid {
+    grid-template-columns: 45% 55%;
+    gap: 3rem;
+  }
+}
+
+/* Contact page form layout — stacked on mobile, 2:1 ratio on desktop */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+  align-items: start;
+}
+@media (min-width: 1024px) {
+  .contact-grid {
+    grid-template-columns: 2fr 1fr;
+    gap: 4rem;
   }
 }

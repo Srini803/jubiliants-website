@@ -30,7 +30,7 @@ export default function CustomSoftwareDevelopment() {
       {/* Hero with Architecture Visual */}
       <section className="hero-section hero-section-inner">
         <div className="wrap" style={{width:"100%"}}>
-          <div style={{ display: "grid", gridTemplateColumns: "45% 55%", gap: "3rem", alignItems: "center" }} className="grid grid-cols-1 lg:grid-cols-2">
+          <div className="hero-grid">
             <div>
               <div className="section-label">Software Solutions</div>
               <h1 className="t-h1" style={{ marginBottom: "1rem" }}>Custom Software Built Around Your Business</h1>
@@ -43,7 +43,7 @@ export default function CustomSoftwareDevelopment() {
                 ✓ 300+ enterprise applications delivered since 2015
               </div>
             </div>
-            <div className="hidden lg:flex hero-visual-col"><CustomSWArchVisual /></div>
+            <div className="flex hero-visual-col"><CustomSWArchVisual /></div>
           </div>
         </div>
       </section>
@@ -57,7 +57,7 @@ export default function CustomSoftwareDevelopment() {
               <h2 className="t-h2">Application types we specialise in</h2>
             </div>
           </RevealOnScroll>
-          <div style={{display:"grid",gridTemplateColumns:"repeat(3,1fr)",gap:"1.25rem"}} className="grid grid-cols-1 md:grid-cols-3">
+          <div style={{display:"grid",gap:"1.25rem"}} className="grid grid-cols-1 md:grid-cols-3">
             {solutions.map((s, i) => (
               <RevealOnScroll key={s.title} delay={i * 70}>
                 <div className="card" style={{padding:"1.5rem",height:"100%"}}>
@@ -82,7 +82,7 @@ export default function CustomSoftwareDevelopment() {
               <h2 className="t-h2">How we deliver custom software</h2>
             </div>
           </RevealOnScroll>
-          <div style={{display:"grid",gridTemplateColumns:"repeat(2,1fr)",gap:"1.25rem",maxWidth:"800px",margin:"0 auto"}} className="grid grid-cols-1 md:grid-cols-2">
+          <div style={{display:"grid",gap:"1.25rem",maxWidth:"800px",margin:"0 auto"}} className="grid grid-cols-1 md:grid-cols-2">
             {[
               { n:"1", t:"Requirements & Discovery", d:"We interview stakeholders, map workflows, identify integration points, and document functional and non-functional requirements before scoping the project." },
               { n:"2", t:"Architecture & Design", d:"System design, data modelling, API contracts, UI/UX wireframes, and security architecture are agreed before development begins." },
@@ -113,7 +113,7 @@ export default function CustomSoftwareDevelopment() {
               <p className="t-body" style={{maxWidth:"500px",margin:"0.75rem auto 0"}}>We recommend the best tool for your specific requirements — not the one we're most comfortable with.</p>
             </div>
           </RevealOnScroll>
-          <div style={{display:"grid",gridTemplateColumns:"repeat(4,1fr)",gap:"1.25rem"}} className="grid grid-cols-2 lg:grid-cols-4">
+          <div style={{display:"grid",gap:"1.25rem"}} className="grid grid-cols-2 lg:grid-cols-4">
             {techStack.map((t, i) => (
               <RevealOnScroll key={t.cat} delay={i * 80}>
                 <div className="card-flat" style={{padding:"1.25rem"}}>
@@ -131,7 +131,7 @@ export default function CustomSoftwareDevelopment() {
       {/* Reasons */}
       <section className="section" style={{background:"var(--bg-raised)",borderTop:"1px solid var(--border)"}}>
         <div className="wrap">
-          <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:"5rem",alignItems:"center"}} className="grid grid-cols-1 lg:grid-cols-2">
+          <div style={{display:"grid",gap:"5rem",alignItems:"center"}} className="grid grid-cols-1 lg:grid-cols-2">
             <RevealOnScroll>
               <div>
                 <div className="section-label">Why choose us</div>

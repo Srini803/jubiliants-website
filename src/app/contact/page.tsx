@@ -53,7 +53,7 @@ export default function Contact() {
 
       <section className="section" style={{background:"var(--bg-base)"}}>
         <div className="wrap">
-          <div style={{display:"grid",gridTemplateColumns:"2fr 1fr",gap:"4rem",alignItems:"start"}} className="grid grid-cols-1 lg:grid-cols-3">
+          <div className="contact-grid">
 
             {/* Form - spans 2 */}
             <div style={{gridColumn:"span 2"} as React.CSSProperties}>
@@ -72,7 +72,7 @@ export default function Contact() {
                     <h2 className="t-h3" style={{marginBottom:"0.5rem"}}>Send us a message</h2>
                     <p className="t-small" style={{marginBottom:"2rem"}}>All fields marked * are required.</p>
                     <div style={{display:"flex",flexDirection:"column",gap:"1.25rem"}}>
-                      <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:"1.25rem"}} className="grid grid-cols-1 sm:grid-cols-2">
+                      <div style={{display:"grid",gap:"1.25rem"}} className="grid grid-cols-1 sm:grid-cols-2">
                         <div>
                           <label className="field-label">Full Name *</label>
                           <input type="text" value={form.name} onChange={set("name")} placeholder="Your full name" className="field-input" required />
@@ -82,7 +82,7 @@ export default function Contact() {
                           <input type="text" value={form.company} onChange={set("company")} placeholder="Your organisation" className="field-input" />
                         </div>
                       </div>
-                      <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:"1.25rem"}} className="grid grid-cols-1 sm:grid-cols-2">
+                      <div style={{display:"grid",gap:"1.25rem"}} className="grid grid-cols-1 sm:grid-cols-2">
                         <div>
                           <label className="field-label">Email Address *</label>
                           <input type="email" value={form.email} onChange={set("email")} placeholder="work@company.com" className="field-input" required />
@@ -92,7 +92,7 @@ export default function Contact() {
                           <input type="tel" value={form.phone} onChange={set("phone")} placeholder="+91 XXXXX XXXXX" className="field-input" />
                         </div>
                       </div>
-                      <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:"1.25rem"}} className="grid grid-cols-1 sm:grid-cols-2">
+                      <div style={{display:"grid",gap:"1.25rem"}} className="grid grid-cols-1 sm:grid-cols-2">
                         <div>
                           <label className="field-label">Service Required</label>
                           <select value={form.service} onChange={set("service")} className="field-input">

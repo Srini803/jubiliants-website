@@ -264,7 +264,7 @@ export default function Home() {
       {/* ── HERO ── */}
       <section className="hero-section">
         <div className="wrap" style={{width:"100%"}}>
-          <div style={{display:"grid",gridTemplateColumns:"45% 55%",gap:"3rem",alignItems:"center"}} className="grid grid-cols-1 lg:grid-cols-2">
+          <div className="hero-grid">
             {/* Left copy */}
             <div>
               <div className="hero-badge" style={{display:"inline-flex",alignItems:"center",gap:"0.5rem",background:"var(--blue-dim)",border:"1px solid rgba(37,99,235,0.25)",borderRadius:"999px",padding:"0.3125rem 0.875rem",marginBottom:"1.5rem"}}>
@@ -292,7 +292,7 @@ export default function Home() {
               </div>
             </div>
             {/* Right — enterprise dashboard composition */}
-            <div className="hidden lg:flex hero-visual-col">
+            <div className="flex hero-visual-col">
               <HeroDashboard/>
             </div>
           </div>
@@ -325,7 +325,7 @@ export default function Home() {
               <p className="t-body-lg">We cover the full technology stack — custom software, mobile, AI, and cloud — so you can work with one trusted partner instead of four.</p>
             </div>
           </RevealOnScroll>
-          <div style={{display:"grid",gridTemplateColumns:"repeat(2,1fr)",gap:"1.25rem"}} className="grid grid-cols-1 md:grid-cols-2">
+          <div style={{display:"grid",gap:"1.25rem"}} className="grid grid-cols-1 md:grid-cols-2">
             {services.map((s,i)=>(
               <RevealOnScroll key={s.title} delay={i*80}>
                 <Link href={s.href} style={{display:"block",height:"100%"}}>
@@ -355,7 +355,7 @@ export default function Home() {
       {/* ── STATS ── */}
       <section style={{background:"var(--bg-raised)",borderTop:"1px solid var(--border)",borderBottom:"1px solid var(--border)"}}>
         <div className="wrap" style={{padding:"3.5rem 1.5rem"}}>
-          <div style={{display:"grid",gridTemplateColumns:"repeat(4,1fr)",gap:"2rem",textAlign:"center"}} className="grid grid-cols-2 lg:grid-cols-4">
+          <div style={{display:"grid",gap:"2rem",textAlign:"center"}} className="grid grid-cols-2 lg:grid-cols-4">
             {stats.map((s,i)=>(
               <RevealOnScroll key={s.label} delay={i*80}>
                 <div>
@@ -381,7 +381,7 @@ export default function Home() {
               <Link href="/case-studies" className="btn btn-secondary btn-sm">All case studies →</Link>
             </div>
           </RevealOnScroll>
-          <div style={{display:"grid",gridTemplateColumns:"repeat(3,1fr)",gap:"1.25rem"}} className="grid grid-cols-1 md:grid-cols-3">
+          <div style={{display:"grid",gap:"1.25rem"}} className="grid grid-cols-1 md:grid-cols-3">
             {caseHighlights.map((c,i)=>(
               <RevealOnScroll key={c.title} delay={i*100}>
                 <div className="card-flat" style={{padding:"1.75rem",height:"100%",display:"flex",flexDirection:"column"}}>
@@ -411,7 +411,7 @@ export default function Home() {
               <h2 className="t-h2">A process built for predictable delivery</h2>
             </div>
           </RevealOnScroll>
-          <div style={{display:"grid",gridTemplateColumns:"repeat(4,1fr)",gap:"1.5rem"}} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
+          <div style={{display:"grid",gap:"1.5rem"}} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
             {process.map((p,i)=>(
               <RevealOnScroll key={p.step} delay={i*80}>
                 <div>
@@ -431,7 +431,7 @@ export default function Home() {
       {/* ── WHY JUBILIANTS ── */}
       <section className="section" style={{background:"var(--bg-base)"}}>
         <div className="wrap">
-          <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:"5rem",alignItems:"center"}} className="grid grid-cols-1 lg:grid-cols-2">
+          <div style={{display:"grid",gap:"5rem",alignItems:"center"}} className="grid grid-cols-1 lg:grid-cols-2">
             <RevealOnScroll>
               <div>
                 <div className="section-label">Why Jubiliants</div>
@@ -446,7 +446,7 @@ export default function Home() {
               </div>
             </RevealOnScroll>
             <RevealOnScroll delay={150}>
-              <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:"1rem"}}>
+              <div style={{display:"grid",gap:"1rem"}}>
                 {whyUs.map(w=>(
                   <div key={w.title} className="card-flat" style={{padding:"1.25rem"}}>
                     <div style={{width:"28px",height:"28px",borderRadius:"6px",background:"var(--blue-dim)",border:"1px solid rgba(37,99,235,0.2)",display:"flex",alignItems:"center",justifyContent:"center",marginBottom:"0.75rem"}}>
@@ -471,7 +471,7 @@ export default function Home() {
               <h2 className="t-h2">What our customers say</h2>
             </div>
           </RevealOnScroll>
-          <div style={{display:"grid",gridTemplateColumns:"repeat(2,1fr)",gap:"1.25rem"}} className="grid grid-cols-1 md:grid-cols-2">
+          <div style={{display:"grid",gap:"1.25rem"}} className="grid grid-cols-1 md:grid-cols-2">
             {testimonials.map((t,i)=>(
               <RevealOnScroll key={t.name} delay={i*80}>
                 <div className="testimonial-card">
@@ -503,7 +503,7 @@ export default function Home() {
               <p className="t-body" style={{marginTop:"0.75rem"}}>Our developers and consultants bring industry-specific knowledge — so we speak your language from day one.</p>
             </div>
           </RevealOnScroll>
-          <div style={{display:"grid",gridTemplateColumns:"repeat(4,1fr)",gap:"0.875rem"}} className="grid grid-cols-2 md:grid-cols-4">
+          <div style={{display:"grid",gap:"0.875rem"}} className="grid grid-cols-2 md:grid-cols-4">
             {industries.map((ind,i)=>(
               <RevealOnScroll key={ind.name} delay={i*60}>
                 <div className="industry-pill">

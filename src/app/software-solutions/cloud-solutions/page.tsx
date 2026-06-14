@@ -28,7 +28,7 @@ export default function CloudSolutions() {
     <>
       <section className="hero-section hero-section-inner">
         <div className="wrap" style={{width:"100%"}}>
-          <div style={{ display: "grid", gridTemplateColumns: "45% 55%", gap: "3rem", alignItems: "center" }} className="grid grid-cols-1 lg:grid-cols-2">
+          <div className="hero-grid">
             <div>
               <div className="section-label">Software Solutions</div>
               <h1 className="t-h1" style={{ marginBottom: "1rem" }}>Cloud Migration and Architecture That Reduces Cost and Risk</h1>
@@ -46,7 +46,7 @@ export default function CloudSolutions() {
                 ))}
               </div>
             </div>
-            <div className="hidden lg:flex hero-visual-col"><CloudArchVisual /></div>
+            <div className="flex hero-visual-col"><CloudArchVisual /></div>
           </div>
         </div>
       </section>
@@ -59,7 +59,7 @@ export default function CloudSolutions() {
               <h2 className="t-h2">From assessment to optimisation</h2>
             </div>
           </RevealOnScroll>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: "1.25rem" }} className="grid grid-cols-1 md:grid-cols-3">
+          <div style={{ display: "grid", gap: "1.25rem" }} className="grid grid-cols-1 md:grid-cols-3">
             {cloudServices.map((s, i) => (
               <RevealOnScroll key={s.title} delay={i * 70}>
                 <div className="card" style={{ padding: "1.5rem", height: "100%" }}>
@@ -80,7 +80,7 @@ export default function CloudSolutions() {
               <h2 className="t-h2">Certified expertise on all three major clouds</h2>
             </div>
           </RevealOnScroll>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: "1.5rem" }} className="grid grid-cols-1 md:grid-cols-3">
+          <div style={{ display: "grid", gap: "1.5rem" }} className="grid grid-cols-1 md:grid-cols-3">
             {cloudPlatforms.map((p, i) => (
               <RevealOnScroll key={p.name} delay={i * 80}>
                 <div className="card-flat" style={{ padding: "1.75rem" }}>

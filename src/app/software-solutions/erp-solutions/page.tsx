@@ -31,7 +31,7 @@ export default function ERPSolutions() {
       {/* Hero with ERP Dashboard Visual */}
       <section className="hero-section hero-section-inner">
         <div className="wrap" style={{width:"100%"}}>
-          <div style={{ display: "grid", gridTemplateColumns: "45% 55%", gap: "3rem", alignItems: "center" }} className="grid grid-cols-1 lg:grid-cols-2">
+          <div className="hero-grid">
             <div>
               <div className="section-label">Software Solutions</div>
               <h1 className="t-h1" style={{ marginBottom: "1rem" }}>ERP Systems That Unify Every Aspect of Your Business</h1>
@@ -49,7 +49,7 @@ export default function ERPSolutions() {
                 ))}
               </div>
             </div>
-            <div className="hidden lg:flex hero-visual-col"><ERPDashVisual /></div>
+            <div className="flex hero-visual-col"><ERPDashVisual /></div>
           </div>
         </div>
       </section>
@@ -57,7 +57,7 @@ export default function ERPSolutions() {
       {/* The problem with off-the-shelf ERP */}
       <section className="section" style={{ background: "var(--bg-base)" }}>
         <div className="wrap" style={{width:"100%"}}>
-          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "5rem", alignItems: "center" }} className="grid grid-cols-1 lg:grid-cols-2">
+          <div style={{ display: "grid", gap: "5rem", alignItems: "center" }} className="grid grid-cols-1 lg:grid-cols-2">
             <RevealOnScroll>
               <div>
                 <div className="section-label">Why custom ERP?</div>
@@ -98,7 +98,7 @@ export default function ERPSolutions() {
               <p className="t-body" style={{ marginTop: "0.75rem" }}>Implement the modules you need today, and add more as your business grows. Every module integrates natively — no middleware required.</p>
             </div>
           </RevealOnScroll>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(4,1fr)", gap: "1rem" }} className="grid grid-cols-2 lg:grid-cols-4">
+          <div style={{ display: "grid", gap: "1rem" }} className="grid grid-cols-2 lg:grid-cols-4">
             {modules.map((m, i) => (
               <RevealOnScroll key={m.t} delay={i * 60}>
                 <div className="card" style={{ padding: "1.25rem" }}>
@@ -120,7 +120,7 @@ export default function ERPSolutions() {
               <h2 className="t-h2">ERP built for your sector — not a generic template</h2>
             </div>
           </RevealOnScroll>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: "1.5rem" }} className="grid grid-cols-1 md:grid-cols-3">
+          <div style={{ display: "grid", gap: "1.5rem" }} className="grid grid-cols-1 md:grid-cols-3">
             {industries.map((ind, i) => (
               <RevealOnScroll key={ind.name} delay={i * 80}>
                 <div className="card-flat" style={{ padding: "1.75rem" }}>

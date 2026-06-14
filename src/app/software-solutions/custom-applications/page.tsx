@@ -34,7 +34,7 @@ export default function CustomApplications() {
       {/* Hero with App Portfolio Visual */}
       <section className="hero-section hero-section-inner">
         <div className="wrap" style={{width:"100%"}}>
-          <div style={{ display: "grid", gridTemplateColumns: "45% 55%", gap: "3rem", alignItems: "center" }} className="grid grid-cols-1 lg:grid-cols-2">
+          <div className="hero-grid">
             <div>
               <div className="section-label">Software Solutions</div>
               <h1 className="t-h1" style={{ marginBottom: "1rem" }}>Applications Built for Your Business — Not a Generic Template</h1>
@@ -47,7 +47,7 @@ export default function CustomApplications() {
                 ✓ 300+ custom applications delivered across 8 industries since 2015
               </div>
             </div>
-            <div className="hidden lg:flex hero-visual-col"><CustomAppsVisual /></div>
+            <div className="flex hero-visual-col"><CustomAppsVisual /></div>
           </div>
         </div>
       </section>
@@ -75,7 +75,7 @@ export default function CustomApplications() {
               <h2 className="t-h2">Custom software across every industry vertical</h2>
             </div>
           </RevealOnScroll>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: "1.25rem" }} className="grid grid-cols-1 md:grid-cols-3">
+          <div style={{ display: "grid", gap: "1.25rem" }} className="grid grid-cols-1 md:grid-cols-3">
             {appCategories.map((cat, i) => (
               <RevealOnScroll key={cat.title} delay={i * 70}>
                 <div className="card" style={{ padding: "1.5rem", height: "100%" }}>
@@ -111,7 +111,7 @@ export default function CustomApplications() {
       {/* Tech stack */}
       <section className="section" style={{ background: "var(--bg-raised)", borderTop: "1px solid var(--border)" }}>
         <div className="wrap" style={{width:"100%"}}>
-          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "5rem", alignItems: "start" }} className="grid grid-cols-1 lg:grid-cols-2">
+          <div style={{ display: "grid", gap: "5rem", alignItems: "start" }} className="grid grid-cols-1 lg:grid-cols-2">
             <RevealOnScroll>
               <div>
                 <div className="section-label">What's included in every project</div>

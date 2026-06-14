@@ -31,7 +31,7 @@ export default function GenerativeAI() {
     <>
       <section className="hero-section hero-section-inner">
         <div className="wrap" style={{width:"100%"}}>
-          <div style={{ display: "grid", gridTemplateColumns: "45% 55%", gap: "3rem", alignItems: "center" }} className="grid grid-cols-1 lg:grid-cols-2">
+          <div className="hero-grid">
             <div>
               <div className="section-label">AI Solutions</div>
               <h1 className="t-h1" style={{ marginBottom: "1rem" }}>Generative AI Applications That Deliver Business Value</h1>
@@ -41,7 +41,7 @@ export default function GenerativeAI() {
                 <Link href="/case-studies" className="btn btn-secondary">View AI Case Studies</Link>
               </div>
             </div>
-            <div className="hidden lg:flex hero-visual-col"><GenAIVisual /></div>
+            <div className="flex hero-visual-col"><GenAIVisual /></div>
           </div>
         </div>
       </section>
@@ -54,7 +54,7 @@ export default function GenerativeAI() {
               <h2 className="t-h2">How businesses are applying Generative AI today</h2>
             </div>
           </RevealOnScroll>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: "1.25rem" }} className="grid grid-cols-1 md:grid-cols-3">
+          <div style={{ display: "grid", gap: "1.25rem" }} className="grid grid-cols-1 md:grid-cols-3">
             {useCases.map((uc, i) => (
               <RevealOnScroll key={uc.title} delay={i * 70}>
                 <div className="card" style={{ padding: "1.5rem", height: "100%" }}>
@@ -70,7 +70,7 @@ export default function GenerativeAI() {
       <section className="section" style={{ background: "var(--bg-raised)", borderTop: "1px solid var(--border)" }}>
         <div className="wrap">
           <RevealOnScroll>
-            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "5rem", alignItems: "center" }} className="grid grid-cols-1 lg:grid-cols-2">
+            <div style={{ display: "grid", gap: "5rem", alignItems: "center" }} className="grid grid-cols-1 lg:grid-cols-2">
               <div>
                 <div className="section-label">Enterprise-grade delivery</div>
                 <h2 className="t-h2" style={{ marginBottom: "1rem" }}>AI that's accurate, safe, and auditable</h2>
@@ -79,7 +79,7 @@ export default function GenerativeAI() {
                   {["Retrieval-Augmented Generation (RAG) for factual accuracy", "Source citations — every answer is traceable", "Role-based data access within AI responses", "Full audit log of every query and response", "Prompt injection and jailbreak protection", "PII redaction and data residency controls"].map(l => <li key={l}>{l}</li>)}
                 </ul>
               </div>
-              <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "1rem" }}>
+              <div style={{ display: "grid", gap: "1rem" }}>
                 {models.map((m, i) => (
                   <RevealOnScroll key={m.name} delay={i * 60}>
                     <div className="card-flat" style={{ padding: "1.25rem" }}>

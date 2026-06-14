@@ -37,7 +37,7 @@ export default function MobileApplications() {
       {/* Hero with Mobile Screens Visual */}
       <section className="hero-section hero-section-inner">
         <div className="wrap" style={{width:"100%"}}>
-          <div style={{ display: "grid", gridTemplateColumns: "45% 55%", gap: "3rem", alignItems: "center" }} className="grid grid-cols-1 lg:grid-cols-2">
+          <div className="hero-grid">
             <div>
               <div className="section-label">Software Solutions</div>
               <h1 className="t-h1" style={{ marginBottom: "1rem" }}>Mobile Applications That Drive Engagement and Efficiency</h1>
@@ -55,7 +55,7 @@ export default function MobileApplications() {
                 ))}
               </div>
             </div>
-            <div className="hidden lg:flex hero-visual-col"><MobileScreensVisual /></div>
+            <div className="flex hero-visual-col"><MobileScreensVisual /></div>
           </div>
         </div>
       </section>
@@ -69,7 +69,7 @@ export default function MobileApplications() {
               <h2 className="t-h2">Mobile solutions across every use case</h2>
             </div>
           </RevealOnScroll>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: "1.25rem" }} className="grid grid-cols-1 md:grid-cols-3">
+          <div style={{ display: "grid", gap: "1.25rem" }} className="grid grid-cols-1 md:grid-cols-3">
             {appTypes.map((a, i) => (
               <RevealOnScroll key={a.title} delay={i * 70}>
                 <div className="card" style={{ padding: "1.5rem", height: "100%" }}>
@@ -85,12 +85,12 @@ export default function MobileApplications() {
       {/* Platforms + Process */}
       <section className="section" style={{ background: "var(--bg-raised)", borderTop: "1px solid var(--border)" }}>
         <div className="wrap" style={{width:"100%"}}>
-          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "5rem", alignItems: "start" }} className="grid grid-cols-1 lg:grid-cols-2">
+          <div style={{ display: "grid", gap: "5rem", alignItems: "start" }} className="grid grid-cols-1 lg:grid-cols-2">
             <RevealOnScroll>
               <div>
                 <div className="section-label">Platform expertise</div>
                 <h2 className="t-h2" style={{ marginBottom: "1.5rem" }}>Native or cross-platform — we advise based on your needs</h2>
-                <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "1rem" }}>
+                <div style={{ display: "grid", gap: "1rem" }}>
                   {platforms.map((p, i) => (
                     <div key={p.p} className="card-flat" style={{ padding: "1.25rem" }}>
                       <div style={{ fontSize: "0.75rem", fontWeight: 600, letterSpacing: "0.07em", textTransform: "uppercase", color: "var(--blue-light)", marginBottom: "0.75rem" }}>{p.p}</div>

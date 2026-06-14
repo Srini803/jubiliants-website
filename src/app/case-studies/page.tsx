@@ -65,7 +65,7 @@ export default function CaseStudies() {
       {/* Hero with dashboard visual */}
       <section className="hero-section hero-section-inner">
         <div className="wrap" style={{width:"100%"}}>
-          <div style={{ display: "grid", gridTemplateColumns: "45% 55%", gap: "3rem", alignItems: "center" }} className="grid grid-cols-1 lg:grid-cols-2">
+          <div className="hero-grid">
             <div>
               <div className="section-label">Case Studies</div>
               <h1 className="t-h1" style={{ marginBottom: "1rem" }}>Real Projects. Measurable Outcomes.</h1>
@@ -75,7 +75,7 @@ export default function CaseStudies() {
                 <Link href="/about" className="btn btn-secondary">About Jubiliants</Link>
               </div>
             </div>
-            <div className="hidden lg:flex hero-visual-col"><CaseStudiesDashVisual /></div>
+            <div className="flex hero-visual-col"><CaseStudiesDashVisual /></div>
           </div>
         </div>
       </section>
@@ -107,7 +107,7 @@ export default function CaseStudies() {
             {cases.map((c, i) => (
               <RevealOnScroll key={c.title} delay={i * 60}>
                 <div className="card-flat" style={{ padding: "2rem" }}>
-                  <div style={{ display: "grid", gridTemplateColumns: "1fr auto", gap: "1rem", marginBottom: "1.25rem", alignItems: "flex-start" }}>
+                  <div style={{ display: "grid", gap: "1rem", marginBottom: "1.25rem", alignItems: "flex-start" }}>
                     <div style={{ display: "flex", flexWrap: "wrap", gap: "0.5rem", alignItems: "center" }}>
                       <span className="chip chip-blue">{c.industry}</span>
                       {c.tags.map(t => <span key={t} className="chip">{t}</span>)}
@@ -116,7 +116,7 @@ export default function CaseStudies() {
                   </div>
                   <div style={{ fontSize: "0.8125rem", color: "var(--text-4)", fontWeight: 500, marginBottom: "0.375rem" }}>{c.client}</div>
                   <h3 className="t-h3" style={{ marginBottom: "1.25rem" }}>{c.title}</h3>
-                  <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "2rem", marginBottom: "1.5rem" }} className="grid grid-cols-1 md:grid-cols-2">
+                  <div style={{ display: "grid", gap: "2rem", marginBottom: "1.5rem" }} className="grid grid-cols-1 md:grid-cols-2">
                     <div>
                       <div style={{ fontSize: "0.6875rem", fontWeight: 600, letterSpacing: "0.07em", textTransform: "uppercase", color: "var(--text-4)", marginBottom: "0.375rem" }}>THE PROBLEM</div>
                       <p className="t-body">{c.challenge}</p>
@@ -128,7 +128,7 @@ export default function CaseStudies() {
                   </div>
                   <div style={{ borderTop: "1px solid var(--border)", paddingTop: "1.25rem" }}>
                     <div style={{ fontSize: "0.6875rem", fontWeight: 600, letterSpacing: "0.07em", textTransform: "uppercase", color: "#22C55E", marginBottom: "0.875rem" }}>OUTCOMES</div>
-                    <div style={{ display: "grid", gridTemplateColumns: "repeat(4,1fr)", gap: "1rem" }} className="grid grid-cols-2 lg:grid-cols-4">
+                    <div style={{ display: "grid", gap: "1rem" }} className="grid grid-cols-2 lg:grid-cols-4">
                       {c.results.map(r => (
                         <div key={r.l} style={{ textAlign: "center", padding: "0.875rem 0.5rem", background: "var(--bg-base)", borderRadius: "10px", border: "1px solid var(--border)" }}>
                           <div style={{ fontFamily: "var(--font-heading)", fontWeight: 700, fontSize: "1.5rem", color: "var(--text-1)", letterSpacing: "-0.01em", lineHeight: 1 }}>{r.n}</div>

@@ -41,7 +41,7 @@ export default function WebApplications() {
       {/* Hero with Web App Visual */}
       <section className="hero-section hero-section-inner">
         <div className="wrap" style={{width:"100%"}}>
-          <div style={{ display: "grid", gridTemplateColumns: "45% 55%", gap: "3rem", alignItems: "center" }} className="grid grid-cols-1 lg:grid-cols-2">
+          <div className="hero-grid">
             <div>
               <div className="section-label">Software Solutions</div>
               <h1 className="t-h1" style={{ marginBottom: "1rem" }}>Enterprise Web Applications That Scale With Your Business</h1>
@@ -59,7 +59,7 @@ export default function WebApplications() {
                 ))}
               </div>
             </div>
-            <div className="hidden lg:flex hero-visual-col"><WebAppVisual /></div>
+            <div className="flex hero-visual-col"><WebAppVisual /></div>
           </div>
         </div>
       </section>
@@ -73,7 +73,7 @@ export default function WebApplications() {
               <h2 className="t-h2">Web application types we specialise in</h2>
             </div>
           </RevealOnScroll>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: "1.25rem" }} className="grid grid-cols-1 md:grid-cols-3">
+          <div style={{ display: "grid", gap: "1.25rem" }} className="grid grid-cols-1 md:grid-cols-3">
             {capabilities.map((c, i) => (
               <RevealOnScroll key={c.title} delay={i * 70}>
                 <div className="card" style={{ padding: "1.5rem", height: "100%" }}>
@@ -89,7 +89,7 @@ export default function WebApplications() {
       {/* Features + Tech Stack two-col */}
       <section className="section" style={{ background: "var(--bg-raised)", borderTop: "1px solid var(--border)" }}>
         <div className="wrap" style={{width:"100%"}}>
-          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "5rem", alignItems: "start" }} className="grid grid-cols-1 lg:grid-cols-2">
+          <div style={{ display: "grid", gap: "5rem", alignItems: "start" }} className="grid grid-cols-1 lg:grid-cols-2">
             <RevealOnScroll>
               <div>
                 <div className="section-label">Included as standard</div>
@@ -104,7 +104,7 @@ export default function WebApplications() {
               <div>
                 <div className="section-label">Technology stack</div>
                 <h2 className="t-h2" style={{ marginBottom: "1.25rem" }}>Modern, proven, and maintainable</h2>
-                <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "1rem" }}>
+                <div style={{ display: "grid", gap: "1rem" }}>
                   {techStack.map(t => (
                     <div key={t.cat} className="card-flat" style={{ padding: "1.25rem" }}>
                       <div style={{ fontSize: "0.75rem", fontWeight: 600, letterSpacing: "0.07em", textTransform: "uppercase", color: "var(--blue-light)", marginBottom: "0.75rem" }}>{t.cat}</div>
@@ -129,7 +129,7 @@ export default function WebApplications() {
               <h2 className="t-h2">From brief to live — a structured approach</h2>
             </div>
           </RevealOnScroll>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(4,1fr)", gap: "1.25rem" }} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
+          <div style={{ display: "grid", gap: "1.25rem" }} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
             {[
               { n: "01", t: "Requirements", d: "Stakeholder interviews, UX discovery, data modelling, and technical specification." },
               { n: "02", t: "Architecture", d: "System design, API contracts, security model, infrastructure plan, and tech stack selection." },

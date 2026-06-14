@@ -131,7 +131,7 @@ export default function AgenticAI() {
       {/* ── HERO with AI Workflow Visual ── */}
       <section className="hero-section hero-section-inner">
         <div className="wrap">
-          <div style={{display:"grid",gridTemplateColumns:"45% 55%",gap:"3rem",alignItems:"center"}} className="grid grid-cols-1 lg:grid-cols-2">
+          <div className="hero-grid">
             {/* Left copy */}
             <div>
               <div className="hero-badge" style={{display:"inline-flex",alignItems:"center",gap:"0.5rem",background:"var(--blue-dim)",border:"1px solid rgba(37,99,235,0.25)",borderRadius:"999px",padding:"0.3125rem 0.875rem",marginBottom:"1.25rem"}}>
@@ -147,7 +147,7 @@ export default function AgenticAI() {
               </div>
             </div>
             {/* Right — AI workflow diagram */}
-            <div className="hidden lg:flex hero-visual-col"><AIWorkflowDiagram/></div>
+            <div className="flex hero-visual-col"><AIWorkflowDiagram/></div>
           </div>
         </div>
       </section>
@@ -170,7 +170,7 @@ export default function AgenticAI() {
       <section className="section" style={{background:"var(--bg-base)"}}>
         <div className="wrap">
           <RevealOnScroll>
-            <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:"5rem",alignItems:"center"}} className="grid grid-cols-1 lg:grid-cols-2">
+            <div style={{display:"grid",gap:"5rem",alignItems:"center"}} className="grid grid-cols-1 lg:grid-cols-2">
               <div>
                 <div className="section-label">What is Agentic AI?</div>
                 <h2 className="t-h2" style={{marginBottom:"1rem"}}>AI that acts, not just answers</h2>
@@ -207,7 +207,7 @@ export default function AgenticAI() {
               <h2 className="t-h2">Purpose-built agents for every business function</h2>
             </div>
           </RevealOnScroll>
-          <div style={{display:"grid",gridTemplateColumns:"repeat(3,1fr)",gap:"1.25rem"}} className="grid grid-cols-1 md:grid-cols-3">
+          <div style={{display:"grid",gap:"1.25rem"}} className="grid grid-cols-1 md:grid-cols-3">
             {agentTypes.map((a,i)=>(
               <RevealOnScroll key={a.t} delay={i*70}>
                 <div className="card" style={{padding:"1.5rem",height:"100%"}}>
@@ -229,7 +229,7 @@ export default function AgenticAI() {
               <h2 className="t-h2">Enterprise-grade AI infrastructure</h2>
             </div>
           </RevealOnScroll>
-          <div style={{display:"grid",gridTemplateColumns:"repeat(4,1fr)",gap:"1rem"}} className="grid grid-cols-2 lg:grid-cols-4">
+          <div style={{display:"grid",gap:"1rem"}} className="grid grid-cols-2 lg:grid-cols-4">
             {[
               {cat:"LLM Models",items:["OpenAI GPT-4o","Anthropic Claude","Google Gemini","Open Source (Llama)"]},
               {cat:"Agent Frameworks",items:["LangGraph","CrewAI","AutoGen","LangChain"]},

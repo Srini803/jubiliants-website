@@ -43,7 +43,7 @@ export default function About() {
       {/* ── HERO with Global Delivery Visual ── */}
       <section className="hero-section hero-section-inner">
         <div className="wrap" style={{width:"100%"}}>
-          <div style={{display:"grid",gridTemplateColumns:"45% 55%",gap:"3rem",alignItems:"center"}} className="grid grid-cols-1 lg:grid-cols-2">
+          <div className="hero-grid">
             {/* Left copy */}
             <div>
               <div className="section-label">About Jubiliants</div>
@@ -61,7 +61,7 @@ export default function About() {
               </div>
             </div>
             {/* Right — global delivery visual */}
-            <div className="hidden lg:flex hero-visual-col"><GlobalDeliveryVisual/></div>
+            <div className="flex hero-visual-col"><GlobalDeliveryVisual/></div>
           </div>
         </div>
       </section>
@@ -69,7 +69,7 @@ export default function About() {
       {/* ── WHO WE ARE ── */}
       <section className="section" style={{background:"var(--bg-base)"}}>
         <div className="wrap">
-          <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:"5rem",alignItems:"start"}} className="grid grid-cols-1 lg:grid-cols-2">
+          <div style={{display:"grid",gap:"5rem",alignItems:"start"}} className="grid grid-cols-1 lg:grid-cols-2">
             <RevealOnScroll>
               <div>
                 <div className="section-label">Our story</div>
@@ -82,7 +82,7 @@ export default function About() {
               </div>
             </RevealOnScroll>
             <RevealOnScroll delay={150}>
-              <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:"1rem"}}>
+              <div style={{display:"grid",gap:"1rem"}}>
                 {[["80+","Engineers & specialists"],["300+","Projects delivered"],["200+","Active customers"],["10","Years of experience"],["8","Industries served"],["95%","Client retention rate"]].map(([n,l])=>(
                   <div key={l} className="card-flat" style={{padding:"1.25rem",textAlign:"center"}}>
                     <div style={{fontFamily:"var(--font-heading)",fontWeight:700,fontSize:"1.75rem",color:"var(--text-1)",letterSpacing:"-0.01em",lineHeight:1}}>{n}</div>
@@ -98,7 +98,7 @@ export default function About() {
       {/* ── MISSION & VISION ── */}
       <section className="section" style={{background:"var(--bg-raised)",borderTop:"1px solid var(--border)"}}>
         <div className="wrap">
-          <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:"2rem"}} className="grid grid-cols-1 md:grid-cols-2">
+          <div style={{display:"grid",gap:"2rem"}} className="grid grid-cols-1 md:grid-cols-2">
             <RevealOnScroll>
               <div className="card-flat" style={{padding:"2rem",height:"100%",borderLeft:"3px solid var(--blue)"}}>
                 <div style={{fontSize:"0.6875rem",fontWeight:600,letterSpacing:"0.08em",textTransform:"uppercase",color:"var(--blue-light)",marginBottom:"0.875rem"}}>Our Mission</div>
@@ -153,7 +153,7 @@ export default function About() {
               <h2 className="t-h2">How we think and how we work</h2>
             </div>
           </RevealOnScroll>
-          <div style={{display:"grid",gridTemplateColumns:"repeat(3,1fr)",gap:"1.25rem"}} className="grid grid-cols-1 md:grid-cols-3">
+          <div style={{display:"grid",gap:"1.25rem"}} className="grid grid-cols-1 md:grid-cols-3">
             {values.map((v,i)=>(
               <RevealOnScroll key={v.t} delay={i*70}>
                 <div className="card" style={{padding:"1.5rem"}}>
@@ -175,7 +175,7 @@ export default function About() {
               <h2 className="t-h2">The people responsible for your project</h2>
             </div>
           </RevealOnScroll>
-          <div style={{display:"grid",gridTemplateColumns:"repeat(4,1fr)",gap:"1.25rem"}} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
+          <div style={{display:"grid",gap:"1.25rem"}} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
             {leadership.map((l,i)=>(
               <RevealOnScroll key={l.name} delay={i*80}>
                 <div className="card-flat" style={{padding:"1.5rem",textAlign:"center"}}>
@@ -200,7 +200,7 @@ export default function About() {
               <p className="t-body" style={{maxWidth:"500px",margin:"0.75rem auto 0"}}>We hire developers who understand your industry — not just your technology stack.</p>
             </div>
           </RevealOnScroll>
-          <div style={{display:"grid",gridTemplateColumns:"repeat(4,1fr)",gap:"0.875rem"}} className="grid grid-cols-2 lg:grid-cols-4">
+          <div style={{display:"grid",gap:"0.875rem"}} className="grid grid-cols-2 lg:grid-cols-4">
             {[
               {n:"Healthcare",i:"🏥"},{n:"Manufacturing",i:"🏭"},{n:"Education",i:"🎓"},
               {n:"Retail & E-Commerce",i:"🛒"},{n:"Logistics",i:"🚚"},{n:"Financial Services",i:"🏦"},

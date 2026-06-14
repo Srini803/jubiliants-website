@@ -22,7 +22,7 @@ export default function ComputerVision() {
     <>
       <section className="hero-section hero-section-inner">
         <div className="wrap" style={{width:"100%"}}>
-          <div style={{ display: "grid", gridTemplateColumns: "45% 55%", gap: "3rem", alignItems: "center" }} className="grid grid-cols-1 lg:grid-cols-2">
+          <div className="hero-grid">
             <div>
               <div className="section-label">AI Solutions</div>
               <h1 className="t-h1" style={{ marginBottom: "1rem" }}>Computer Vision That Sees What Your Team Can't</h1>
@@ -40,7 +40,7 @@ export default function ComputerVision() {
                 ))}
               </div>
             </div>
-            <div className="hidden lg:flex hero-visual-col"><ComputerVisionVisual /></div>
+            <div className="flex hero-visual-col"><ComputerVisionVisual /></div>
           </div>
         </div>
       </section>
@@ -53,7 +53,7 @@ export default function ComputerVision() {
               <h2 className="t-h2">Computer Vision across key sectors</h2>
             </div>
           </RevealOnScroll>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: "1.25rem" }} className="grid grid-cols-1 md:grid-cols-3">
+          <div style={{ display: "grid", gap: "1.25rem" }} className="grid grid-cols-1 md:grid-cols-3">
             {applications.map((app, i) => (
               <RevealOnScroll key={app.title} delay={i * 70}>
                 <div className="card" style={{ padding: "1.5rem", height: "100%" }}>
@@ -78,7 +78,7 @@ export default function ComputerVision() {
               <h2 className="t-h2">Models and infrastructure we deploy</h2>
             </div>
           </RevealOnScroll>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(4,1fr)", gap: "1rem" }} className="grid grid-cols-2 lg:grid-cols-4">
+          <div style={{ display: "grid", gap: "1rem" }} className="grid grid-cols-2 lg:grid-cols-4">
             {[
               { cat: "Detection Models", items: ["YOLOv8 / YOLOv9", "EfficientDet", "Faster R-CNN", "DETR (Transformer)"] },
               { cat: "Classification", items: ["EfficientNet", "ResNet / ViT", "ConvNeXt", "Custom fine-tuned"] },
