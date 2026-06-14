@@ -46,7 +46,7 @@ export default function CloudSolutions() {
                 ))}
               </div>
             </div>
-            <div className="hidden lg:block" style={{minHeight:"520px",display:"flex",alignItems:"center"}}><CloudArchVisual /></div>
+            <div className="hidden lg:flex hero-visual-col"><CloudArchVisual /></div>
           </div>
         </div>
       </section>

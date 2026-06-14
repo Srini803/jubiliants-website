@@ -267,7 +267,7 @@ export default function Home() {
           <div style={{display:"grid",gridTemplateColumns:"45% 55%",gap:"3rem",alignItems:"center"}} className="grid grid-cols-1 lg:grid-cols-2">
             {/* Left copy */}
             <div>
-              <div style={{display:"inline-flex",alignItems:"center",gap:"0.5rem",background:"var(--blue-dim)",border:"1px solid rgba(37,99,235,0.25)",borderRadius:"999px",padding:"0.3125rem 0.875rem",marginBottom:"1.5rem"}}>
+              <div className="hero-badge" style={{display:"inline-flex",alignItems:"center",gap:"0.5rem",background:"var(--blue-dim)",border:"1px solid rgba(37,99,235,0.25)",borderRadius:"999px",padding:"0.3125rem 0.875rem",marginBottom:"1.5rem"}}>
                 <span style={{width:"6px",height:"6px",borderRadius:"50%",background:"var(--blue-light)",display:"block"}}></span>
                 <span style={{fontSize:"0.75rem",fontWeight:600,color:"#93C5FD"}}>Trusted by 200+ businesses since 2015</span>
               </div>
@@ -292,7 +292,7 @@ export default function Home() {
               </div>
             </div>
             {/* Right — enterprise dashboard composition */}
-            <div className="hidden lg:block" style={{position:"relative",minHeight:"560px",display:"flex",alignItems:"center"}}>
+            <div className="hidden lg:flex hero-visual-col">
               <HeroDashboard/>
             </div>
           </div>

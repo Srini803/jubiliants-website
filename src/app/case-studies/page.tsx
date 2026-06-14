@@ -75,7 +75,7 @@ export default function CaseStudies() {
                 <Link href="/about" className="btn btn-secondary">About Jubiliants</Link>
               </div>
             </div>
-            <div className="hidden lg:block" style={{minHeight:"520px",display:"flex",alignItems:"center"}}><CaseStudiesDashVisual /></div>
+            <div className="hidden lg:flex hero-visual-col"><CaseStudiesDashVisual /></div>
           </div>
         </div>
       </section>

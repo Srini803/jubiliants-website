@@ -40,7 +40,7 @@ export default function Contact() {
       <section className="hero-section hero-section-inner" style={{background:"var(--bg-base)"}}>
         <div className="wrap">
           <div style={{maxWidth:"620px"}}>
-            <div style={{display:"inline-flex",alignItems:"center",gap:"0.5rem",background:"var(--blue-dim)",border:"1px solid rgba(37,99,235,0.25)",borderRadius:"999px",padding:"0.3125rem 0.875rem",marginBottom:"1.25rem"}}>
+            <div className="hero-badge" style={{display:"inline-flex",alignItems:"center",gap:"0.5rem",background:"var(--blue-dim)",border:"1px solid rgba(37,99,235,0.25)",borderRadius:"999px",padding:"0.3125rem 0.875rem",marginBottom:"1.25rem"}}>
               <span style={{width:"6px",height:"6px",borderRadius:"50%",background:"var(--green)",display:"block"}}></span>
               <span style={{fontSize:"0.75rem",fontWeight:600,color:"#86EFAC"}}>Response within 4 business hours</span>
             </div>

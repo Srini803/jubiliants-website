@@ -39,7 +39,7 @@ export default function SaaSDevelopment() {
                 <Link href="/case-studies" className="btn btn-secondary">View Case Studies</Link>
               </div>
             </div>
-            <div className="hidden lg:block" style={{minHeight:"520px",display:"flex",alignItems:"center"}}><SaaSVisual /></div>
+            <div className="hidden lg:flex hero-visual-col"><SaaSVisual /></div>
           </div>
         </div>
       </section>

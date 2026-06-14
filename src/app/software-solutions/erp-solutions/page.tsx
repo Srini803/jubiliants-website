@@ -49,7 +49,7 @@ export default function ERPSolutions() {
                 ))}
               </div>
             </div>
-            <div className="hidden lg:block" style={{minHeight:"520px",display:"flex",alignItems:"center"}}><ERPDashVisual /></div>
+            <div className="hidden lg:flex hero-visual-col"><ERPDashVisual /></div>
           </div>
         </div>
       </section>

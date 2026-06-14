@@ -41,7 +41,7 @@ export default function GenerativeAI() {
                 <Link href="/case-studies" className="btn btn-secondary">View AI Case Studies</Link>
               </div>
             </div>
-            <div className="hidden lg:block" style={{minHeight:"520px",display:"flex",alignItems:"center"}}><GenAIVisual /></div>
+            <div className="hidden lg:flex hero-visual-col"><GenAIVisual /></div>
           </div>
         </div>
       </section>

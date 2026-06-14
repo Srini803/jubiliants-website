@@ -61,7 +61,7 @@ export default function About() {
               </div>
             </div>
             {/* Right — global delivery visual */}
-            <div className="hidden lg:block" style={{minHeight:"520px",display:"flex",alignItems:"center"}}><GlobalDeliveryVisual/></div>
+            <div className="hidden lg:flex hero-visual-col"><GlobalDeliveryVisual/></div>
           </div>
         </div>
       </section>

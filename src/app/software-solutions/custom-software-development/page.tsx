@@ -43,7 +43,7 @@ export default function CustomSoftwareDevelopment() {
                 ✓ 300+ enterprise applications delivered since 2015
               </div>
             </div>
-            <div className="hidden lg:block" style={{minHeight:"520px",display:"flex",alignItems:"center"}}><CustomSWArchVisual /></div>
+            <div className="hidden lg:flex hero-visual-col"><CustomSWArchVisual /></div>
           </div>
         </div>
       </section>

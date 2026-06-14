@@ -48,7 +48,7 @@ export default function DigitalTransformation() {
               </div>
             </div>
             {/* Right — transformation journey diagram */}
-            <div className="hidden lg:block" style={{minHeight:"520px",display:"flex",alignItems:"center"}}><TransformationJourneyV2/></div>
+            <div className="hidden lg:flex hero-visual-col"><TransformationJourneyV2/></div>
           </div>
         </div>
       </section>

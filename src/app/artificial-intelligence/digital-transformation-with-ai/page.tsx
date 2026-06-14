@@ -42,7 +42,7 @@ export default function DigitalTransformationWithAI() {
                 <Link href="/contact" className="btn btn-secondary">Schedule a Strategy Call</Link>
               </div>
             </div>
-            <div className="hidden lg:block" style={{minHeight:"520px",display:"flex",alignItems:"center"}}><AITransformVisual /></div>
+            <div className="hidden lg:flex hero-visual-col"><AITransformVisual /></div>
           </div>
         </div>
       </section>

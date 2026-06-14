@@ -134,7 +134,7 @@ export default function AgenticAI() {
           <div style={{display:"grid",gridTemplateColumns:"45% 55%",gap:"3rem",alignItems:"center"}} className="grid grid-cols-1 lg:grid-cols-2">
             {/* Left copy */}
             <div>
-              <div style={{display:"inline-flex",alignItems:"center",gap:"0.5rem",background:"var(--blue-dim)",border:"1px solid rgba(37,99,235,0.25)",borderRadius:"999px",padding:"0.3125rem 0.875rem",marginBottom:"1.25rem"}}>
+              <div className="hero-badge" style={{display:"inline-flex",alignItems:"center",gap:"0.5rem",background:"var(--blue-dim)",border:"1px solid rgba(37,99,235,0.25)",borderRadius:"999px",padding:"0.3125rem 0.875rem",marginBottom:"1.25rem"}}>
                 <span style={{width:"6px",height:"6px",borderRadius:"50%",background:"#22C55E",display:"block"}} className="hv-pulse"></span>
                 <span style={{fontSize:"0.75rem",fontWeight:600,color:"#86EFAC"}}>Up to 70% reduction in manual task volume</span>
               </div>
@@ -147,7 +147,7 @@ export default function AgenticAI() {
               </div>
             </div>
             {/* Right — AI workflow diagram */}
-            <div className="hidden lg:block" style={{minHeight:"520px",display:"flex",alignItems:"center"}}><AIWorkflowDiagram/></div>
+            <div className="hidden lg:flex hero-visual-col"><AIWorkflowDiagram/></div>
           </div>
         </div>
       </section>

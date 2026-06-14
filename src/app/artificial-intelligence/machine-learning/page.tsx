@@ -40,7 +40,7 @@ export default function MachineLearning() {
                 ))}
               </div>
             </div>
-            <div className="hidden lg:block" style={{minHeight:"520px",display:"flex",alignItems:"center"}}><MLVisual /></div>
+            <div className="hidden lg:flex hero-visual-col"><MLVisual /></div>
           </div>
         </div>
       </section>

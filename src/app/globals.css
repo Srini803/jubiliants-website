@@ -438,3 +438,29 @@ select.field-input option { background: var(--bg-raised); }
 .b1 { animation-delay:.55s; } .b2 { animation-delay:.65s; }
 .b3 { animation-delay:.75s; } .b4 { animation-delay:.85s; }
 .b5 { animation-delay:.95s; } .b6 { animation-delay:1.05s; }
+
+/* Hero visual wrapper — positioning only; visibility controlled by Tailwind hidden/lg:flex */
+.hero-visual-col {
+  position: relative;
+  min-height: 560px;
+  align-items: center;
+}
+
+/* Hero "trusted by" badge — prevent awkward 3-line pill wrapping on mobile */
+.hero-badge {
+  max-width: 100%;
+}
+.hero-badge span:last-child {
+  white-space: nowrap;
+}
+@media (max-width: 480px) {
+  .hero-badge {
+    border-radius: 8px !important;
+    padding: 0.4375rem 0.75rem !important;
+  }
+  .hero-badge span:last-child {
+    white-space: normal;
+    font-size: 0.6875rem !important;
+    line-height: 1.4;
+  }
+}

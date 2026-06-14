@@ -59,7 +59,7 @@ export default function WebApplications() {
                 ))}
               </div>
             </div>
-            <div className="hidden lg:block" style={{minHeight:"520px",display:"flex",alignItems:"center"}}><WebAppVisual /></div>
+            <div className="hidden lg:flex hero-visual-col"><WebAppVisual /></div>
           </div>
         </div>
       </section>

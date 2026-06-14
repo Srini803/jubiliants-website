@@ -37,7 +37,7 @@ export default function AutomationWithAI() {
                 <Link href="/contact" className="btn btn-secondary">Explore Opportunities</Link>
               </div>
             </div>
-            <div className="hidden lg:block" style={{minHeight:"520px",display:"flex",alignItems:"center"}}><AIAutomationVisual /></div>
+            <div className="hidden lg:flex hero-visual-col"><AIAutomationVisual /></div>
           </div>
         </div>
       </section>
