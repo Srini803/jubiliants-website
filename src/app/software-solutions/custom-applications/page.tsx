@@ -1,137 +1,152 @@
 import Link from "next/link";
-import PageHero from "@/components/PageHero";
+import CTABand from "@/components/CTABand";
 import RevealOnScroll from "@/components/RevealOnScroll";
+import { CustomAppsVisual, ComparisonTable, TechStackGrid, StatCallout } from "@/components/Visuals";
 
 export const metadata = {
-  title: "Custom Application Development | Jubiliants Software Solutions",
-  description: "Jubiliants develops custom web applications, ERP, CRM, portals and workflow automation solutions tailored to your unique business requirements. 300+ projects delivered since 2015.",
+  title: "Custom Application Development | Enterprise Software | Jubiliants",
+  description: "Custom web and mobile application development: enterprise portals, CRM, ERP, healthcare platforms, education systems, and logistics software. 300+ applications delivered since 2015.",
 };
 
-const webApps = ["Enterprise Business Applications","CRM Solutions","ERP Systems","Customer Self-Service Portals","E-commerce Platforms","Workflow Automation Systems","Healthcare & Hospital Management Systems","Education Management Platforms"];
-const mobileApps = ["Android Applications","iOS Applications","Cross-Platform Applications","Customer Engagement Apps","Employee Productivity Apps","Field Service Applications"];
-const benefits = ["Tailored to your business processes","Scalable architecture for future growth","Secure and reliable solutions","Enhanced productivity and operational efficiency","Improved customer experience"];
+const appCategories = [
+  { title: "Enterprise Web Applications", desc: "Multi-user business platforms with role-based access, real-time dashboards, audit trails, and SSO — built for thousands of concurrent users across multiple locations." },
+  { title: "CRM & Sales Platforms", desc: "Custom CRM systems with pipeline management, lead scoring, activity tracking, email integration, and executive reporting — built around your sales process, not a vendor's idea of it." },
+  { title: "Healthcare Platforms", desc: "Hospital information systems, patient portals, clinical workflow tools, and healthcare analytics — with HIPAA-aware design and compliance built in from day one." },
+  { title: "Education Management Systems", desc: "Student information systems, learning management platforms, admission portals, fee management, and parent communication tools for schools and universities." },
+  { title: "Logistics & Operations Software", desc: "Fleet management, delivery tracking, warehouse systems, route optimisation, and field service platforms that replace fragmented WhatsApp-and-spreadsheet operations." },
+  { title: "Workflow Automation Platforms", desc: "Replace email-based approvals, paper forms, and manual handoffs with digital workflows — automated routing, SLA tracking, escalation rules, and full audit trails." },
+];
+
+const compRows = [
+  { feature: "Fits your exact workflows", a: false, b: true },
+  { feature: "No per-user licensing fees", a: false, b: true },
+  { feature: "Integrates with existing tools", a: "Limited", b: "Full API integration" },
+  { feature: "Source code ownership", a: false, b: true },
+  { feature: "Vendor lock-in risk", a: "High", b: "Zero" },
+  { feature: "Time to customise", a: "Months + cost", b: "Included in build" },
+  { feature: "Industry-specific logic", a: "Generic", b: "Purpose-built" },
+  { feature: "Data portability", a: "Restricted", b: "Full ownership" },
+];
 
 export default function CustomApplications() {
   return (
     <>
-      <PageHero
-        eyebrow="Software Solutions"
-        title="Custom Software Built Around Your Business"
-        subtitle="Every organization is unique. Off-the-shelf software often creates limitations instead of solving problems. At Jubiliants, we design and develop tailor-made software applications that align perfectly with your business workflows, objectives, and growth plans."
-        cta1={{ label: "Discuss Your Project", href: "/contact" }}
-        cta2={{ label: "View Case Studies", href: "/case-studies" }}
-      />
-
-      {/* Stats band */}
-      <section style={{background:"var(--navy-800)",borderBottom:"1px solid rgba(0,194,255,0.08)"}}>
-        <div className="container-main py-10">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-            {[["300+","Projects Delivered"],["200+","Happy Customers"],["10+","Years Experience"],["95%+","Client Retention"]].map(([n,l]) => (
-              <div key={l}>
-                <div className="stat-number">{n}</div>
-                <div className="text-sm mt-1" style={{color:"var(--slate-muted)"}}>{l}</div>
+      {/* Hero with App Portfolio Visual */}
+      <section className="hero-section hero-section-inner">
+        <div className="wrap" style={{width:"100%"}}>
+          <div style={{ display: "grid", gridTemplateColumns: "45% 55%", gap: "3rem", alignItems: "center" }} className="grid grid-cols-1 lg:grid-cols-2">
+            <div>
+              <div className="section-label">Software Solutions</div>
+              <h1 className="t-h1" style={{ marginBottom: "1rem" }}>Applications Built for Your Business — Not a Generic Template</h1>
+              <p className="t-body-lg" style={{ marginBottom: "1.75rem", maxWidth: "460px" }}>Every organisation is different. Off-the-shelf software creates workarounds. We build purpose-made applications that fit your processes, your data, and your team — from healthcare platforms and education systems to logistics software and enterprise portals.</p>
+              <div style={{ display: "flex", flexWrap: "wrap", gap: "0.75rem", marginBottom: "2rem" }}>
+                <Link href="/contact" className="btn btn-primary">Discuss Your Project</Link>
+                <Link href="/case-studies" className="btn btn-secondary">View Case Studies</Link>
               </div>
-            ))}
+              <div style={{ padding: "0.875rem", background: "var(--blue-dim)", border: "1px solid rgba(37,99,235,.25)", borderRadius: "8px", fontSize: "0.8125rem", color: "#93C5FD" }}>
+                ✓ 300+ custom applications delivered across 8 industries since 2015
+              </div>
+            </div>
+            <div className="hidden lg:block" style={{minHeight:"520px",display:"flex",alignItems:"center"}}><CustomAppsVisual /></div>
           </div>
         </div>
       </section>
 
-      {/* What We Build */}
-      <section className="section-pad" style={{background:"var(--navy-950)"}}>
-        <div className="container-main">
+      {/* Stats */}
+      <section style={{ background: "var(--bg-base)", padding: "3rem 0" }}>
+        <div className="wrap">
           <RevealOnScroll>
-            <div className="text-center mb-14">
-              <div className="eyebrow justify-center">What We Build</div>
-              <h2 className="font-display text-3xl font-800 text-white mb-4" style={{fontFamily:"Syne,sans-serif",fontWeight:800}}>Comprehensive Software Development Services</h2>
-            </div>
-          </RevealOnScroll>
-          <div className="grid lg:grid-cols-2 gap-8">
-            <RevealOnScroll>
-              <div className="glass rounded-2xl p-8 glow-border">
-                <div className="flex items-center gap-3 mb-6">
-                  <div className="text-2xl">🖥</div>
-                  <h3 className="font-display text-xl font-700 text-white" style={{fontFamily:"Syne,sans-serif",fontWeight:700}}>Custom Web Applications</h3>
-                </div>
-                <div className="grid grid-cols-2 gap-3">
-                  {webApps.map(item => (
-                    <div key={item} className="flex items-start gap-2 text-sm" style={{color:"var(--slate-light)"}}>
-                      <span className="mt-1 flex-shrink-0" style={{color:"var(--cyan-accent)"}}>✓</span>{item}
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </RevealOnScroll>
-            <RevealOnScroll delay={200}>
-              <div className="glass rounded-2xl p-8 glow-border">
-                <div className="flex items-center gap-3 mb-6">
-                  <div className="text-2xl">📱</div>
-                  <h3 className="font-display text-xl font-700 text-white" style={{fontFamily:"Syne,sans-serif",fontWeight:700}}>Mobile Application Development</h3>
-                </div>
-                <div className="grid grid-cols-2 gap-3">
-                  {mobileApps.map(item => (
-                    <div key={item} className="flex items-start gap-2 text-sm" style={{color:"var(--slate-light)"}}>
-                      <span className="mt-1 flex-shrink-0" style={{color:"var(--cyan-accent)"}}>✓</span>{item}
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </RevealOnScroll>
-          </div>
-
-          {/* Benefits */}
-          <RevealOnScroll delay={100}>
-            <div className="mt-8 glass rounded-2xl p-8 glow-border">
-              <h3 className="font-display text-xl font-700 text-white mb-6" style={{fontFamily:"Syne,sans-serif",fontWeight:700}}>Why Custom-Built?</h3>
-              <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                {benefits.map(b => (
-                  <div key={b} className="flex items-start gap-3">
-                    <div className="w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0" style={{background:"rgba(0,194,255,0.1)"}}>
-                      <span style={{color:"var(--cyan-accent)"}}>✓</span>
-                    </div>
-                    <span className="text-sm" style={{color:"var(--slate-light)"}}>{b}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
+            <StatCallout stats={[
+              { val: "300+", label: "Applications Delivered", sub: "Web, mobile, and enterprise" },
+              { val: "200+", label: "Active Customers", sub: "Across India and globally" },
+              { val: "99.7%", label: "Average SLA Uptime", sub: "Production systems" },
+              { val: "95%", label: "Client Retention", sub: "Customers who return for more" },
+            ]} />
           </RevealOnScroll>
         </div>
       </section>
 
-      {/* Industries */}
-      <section className="section-pad" style={{background:"var(--navy-900)"}}>
-        <div className="container-main">
+      {/* Application categories */}
+      <section className="section" style={{ background: "var(--bg-raised)", borderTop: "1px solid var(--border)" }}>
+        <div className="wrap">
           <RevealOnScroll>
-            <div className="text-center mb-12">
-              <div className="eyebrow justify-center">Industries</div>
-              <h2 className="font-display text-3xl font-800 text-white" style={{fontFamily:"Syne,sans-serif",fontWeight:800}}>Solutions Across Sectors</h2>
+            <div style={{ maxWidth: "600px", marginBottom: "2.5rem" }}>
+              <div className="section-label">Application types</div>
+              <h2 className="t-h2">Custom software across every industry vertical</h2>
             </div>
           </RevealOnScroll>
-          <div className="flex flex-wrap justify-center gap-3">
-            {["Healthcare","Education","Manufacturing","Retail & E-Commerce","Logistics","Financial Services","Professional Services","Government"].map((ind, i) => (
-              <RevealOnScroll key={ind} delay={i * 60}>
-                <div className="glass-light px-5 py-2.5 rounded-full text-sm border" style={{borderColor:"rgba(0,194,255,0.12)",color:"var(--slate-light)"}}>{ind}</div>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: "1.25rem" }} className="grid grid-cols-1 md:grid-cols-3">
+            {appCategories.map((cat, i) => (
+              <RevealOnScroll key={cat.title} delay={i * 70}>
+                <div className="card" style={{ padding: "1.5rem", height: "100%" }}>
+                  <h3 className="t-h4" style={{ marginBottom: "0.5rem" }}>{cat.title}</h3>
+                  <p className="t-small">{cat.desc}</p>
+                </div>
               </RevealOnScroll>
             ))}
           </div>
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="section-pad" style={{background:"linear-gradient(135deg,#0D1F3C,#050D1A)"}}>
-        <div className="container-main text-center">
+      {/* Comparison table */}
+      <section className="section" style={{ background: "var(--bg-base)" }}>
+        <div className="wrap">
           <RevealOnScroll>
-            <div className="max-w-2xl mx-auto">
-              <div className="eyebrow justify-center">Ready to Build?</div>
-              <h2 className="font-display text-3xl font-800 text-white mb-4" style={{fontFamily:"Syne,sans-serif",fontWeight:800}}>Let's Build Your Custom Solution</h2>
-              <p className="mb-8" style={{color:"var(--slate-muted)"}}>From startups to enterprises, we deliver scalable software solutions that solve real business challenges.</p>
-              <div className="flex flex-wrap justify-center gap-4">
-                <Link href="/contact" className="btn-primary">Start Your Project →</Link>
-                <Link href="/case-studies" className="btn-secondary">View Success Stories</Link>
+            <div style={{ maxWidth: "720px", margin: "0 auto" }}>
+              <div style={{ textAlign: "center", marginBottom: "2.5rem" }}>
+                <div className="section-label" style={{ justifyContent: "center" }}>Custom vs off-the-shelf</div>
+                <h2 className="t-h2">Why custom-built wins every time</h2>
+                <p className="t-body" style={{ marginTop: "0.75rem" }}>Generic platforms force your team to work around the software. Custom-built applications are designed around your team.</p>
               </div>
+              <ComparisonTable
+                colA="Off-the-shelf (SAP / Salesforce)"
+                colB="Jubiliants Custom Build"
+                rows={compRows}
+              />
             </div>
           </RevealOnScroll>
         </div>
       </section>
+
+      {/* Tech stack */}
+      <section className="section" style={{ background: "var(--bg-raised)", borderTop: "1px solid var(--border)" }}>
+        <div className="wrap" style={{width:"100%"}}>
+          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "5rem", alignItems: "start" }} className="grid grid-cols-1 lg:grid-cols-2">
+            <RevealOnScroll>
+              <div>
+                <div className="section-label">What's included in every project</div>
+                <h2 className="t-h2" style={{ marginBottom: "1.25rem" }}>Enterprise-grade, out of the box</h2>
+                <ul className="check-list">
+                  {[
+                    "Full source code and IP ownership",
+                    "Role-based access control and SSO integration",
+                    "Automated testing — unit, integration, end-to-end",
+                    "Performance benchmarking (Lighthouse 90+)",
+                    "Security scanning and OWASP compliance",
+                    "Dedicated project manager, weekly demos",
+                    "Post-launch support and SLA agreement",
+                    "Documentation and user training included",
+                  ].map(l => <li key={l}>{l}</li>)}
+                </ul>
+                <div style={{ marginTop: "2rem" }}>
+                  <Link href="/contact" className="btn btn-primary">Start Your Project →</Link>
+                </div>
+              </div>
+            </RevealOnScroll>
+            <RevealOnScroll delay={150}>
+              <div className="section-label" style={{ marginBottom: "1.25rem" }}>Technology we build with</div>
+              <TechStackGrid categories={[
+                { name: "Frontend", tools: ["React / Next.js", "Angular 17", "Vue.js / Nuxt", "TypeScript", "Tailwind CSS"] },
+                { name: "Backend", tools: [".NET / C#", "Node.js", "Python / FastAPI", "Java / Spring Boot"] },
+                { name: "Mobile", tools: ["Flutter (cross-platform)", "Swift (iOS)", "Kotlin (Android)", "React Native"] },
+                { name: "Database & Cloud", tools: ["PostgreSQL", "SQL Server", "MongoDB", "Azure", "AWS"] },
+              ]} />
+            </RevealOnScroll>
+          </div>
+        </div>
+      </section>
+
+      <CTABand title="Ready to build your custom application?" sub="Tell us what you need. We'll scope it, price it, and build it — on time and on budget." primary="Start the Conversation" secondary="View Our Work" />
     </>
   );
 }

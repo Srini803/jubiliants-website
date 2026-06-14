@@ -1,142 +1,146 @@
 import Link from "next/link";
-import PageHero from "@/components/PageHero";
+import CTABand from "@/components/CTABand";
 import RevealOnScroll from "@/components/RevealOnScroll";
+import { AIAutomationVisual, StatCallout, ProcessFlowVisual } from "@/components/Visuals";
 
 export const metadata = {
-  title: "AI Automation Solutions | Intelligent Process Automation | Jubiliants",
-  description: "Jubiliants helps businesses automate workflows, document processing, customer service, HR, finance, and operations using Artificial Intelligence. Improve efficiency with AI-powered automation.",
+  title: "Automation with AI | Intelligent Business Process Automation | Jubiliants",
+  description: "Transform repetitive manual tasks into intelligent AI-powered workflows. Document processing, HR automation, finance automation, and customer service automation. 80% reduction in manual effort.",
 };
 
 const automationAreas = [
-  { icon: "📄", title: "Document Processing Automation", desc: "Automatically extract, validate, classify, and process information from invoices, contracts, KYC docs, and claims.", examples: ["Invoice Processing","Purchase Orders","Contracts","KYC Documents","Claims Processing","Application Forms"] },
-  { icon: "📧", title: "Email & Communication Automation", desc: "AI systems that read, categorize, prioritize, and respond to emails while routing requests appropriately.", examples: ["Customer Inquiry Management","Email Classification","Automated Responses","Lead Routing","Appointment Scheduling"] },
-  { icon: "👤", title: "HR Process Automation", desc: "Reduce administrative workload and improve employee experiences through intelligent HR workflows.", examples: ["Resume Screening","Candidate Shortlisting","Employee Onboarding","Leave Management","Employee Helpdesk"] },
-  { icon: "💰", title: "Finance & Accounts Automation", desc: "Automate repetitive finance processes to improve accuracy and operational efficiency.", examples: ["Invoice Verification","Expense Management","Payment Processing","Reconciliation","Financial Reporting"] },
-  { icon: "🎧", title: "Customer Service Automation", desc: "Improve service quality and response times through AI-powered customer support systems.", examples: ["Customer Query Resolution","Ticket Creation","Case Routing","Service Request Tracking","Feedback Collection"] },
-  { icon: "🔄", title: "Business Workflow Automation", desc: "Automate end-to-end business processes across departments and systems.", examples: ["Approval Workflows","Procurement Processes","Vendor Onboarding","Compliance Management","Service Delivery"] },
+  { title: "Document Processing Automation", desc: "Extract, classify, validate, and route data from invoices, contracts, purchase orders, and forms — no manual data entry, 90%+ accuracy.", examples: ["Invoice processing", "Purchase orders", "Contracts & agreements", "KYC documents", "Claims processing"] },
+  { title: "Email & Communication Automation", desc: "AI reads, categorises, prioritises, and routes inbound emails while drafting responses or sending templated replies autonomously.", examples: ["Customer inquiry management", "Email classification", "Automated responses", "Lead routing", "Appointment scheduling"] },
+  { title: "HR Process Automation", desc: "Reduce administrative workload through intelligent HR workflows — from recruitment to onboarding and ongoing employee support.", examples: ["Resume screening", "Candidate shortlisting", "Employee onboarding", "Leave management", "Employee helpdesk"] },
+  { title: "Finance & Accounts Automation", desc: "Automate repetitive finance processes to improve accuracy and operational efficiency across the entire financial lifecycle.", examples: ["Invoice verification", "Expense management", "Payment reconciliation", "Financial reporting"] },
+  { title: "Customer Service Automation", desc: "Improve service quality and response times through AI-powered customer support that resolves tier-1 and tier-2 queries automatically.", examples: ["Customer query resolution", "Ticket creation & routing", "Service request tracking", "Feedback collection"] },
+  { title: "Business Workflow Automation", desc: "Automate end-to-end business processes — approval chains, procurement cycles, vendor onboarding, and compliance workflows.", examples: ["Approval workflows", "Procurement processes", "Vendor onboarding", "Compliance management"] },
 ];
 
 export default function AutomationWithAI() {
   return (
     <>
-      <PageHero
-        eyebrow="Artificial Intelligence"
-        title="Automate Smarter. Work Faster. Grow Stronger."
-        subtitle="Businesses today face increasing pressure to do more with fewer resources. AI-powered automation enables organizations to eliminate repetitive manual tasks, streamline operations, reduce costs, and improve productivity across every department. Jubiliants helps organizations transform business processes into intelligent workflows that operate faster, more accurately, and with minimal human intervention."
-        cta1={{ label: "Schedule an Automation Consultation", href: "/contact" }}
-        cta2={{ label: "Explore Automation Opportunities", href: "/contact" }}
-      />
-
-      {/* Impact Stats */}
-      <section style={{background:"var(--navy-800)",borderBottom:"1px solid rgba(0,194,255,0.08)"}}>
-        <div className="container-main py-12">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {[
-              { stat: "80%", label: "Reduction in Manual Processing", desc: "AI automation significantly reduces the effort required to complete repetitive business tasks." },
-              { stat: "90%", label: "Improvement in Data Accuracy", desc: "Automated processing minimizes human errors and improves consistency across workflows." },
-              { stat: "60%", label: "Faster Process Execution", desc: "Organizations can accelerate approvals, service delivery, and operational workflows." },
-            ].map((item, i) => (
-              <RevealOnScroll key={item.label} delay={i * 100}>
-                <div className="text-center p-6">
-                  <div className="stat-number">{item.stat}</div>
-                  <div className="font-display font-700 text-white mt-1 mb-2" style={{fontFamily:"Syne,sans-serif",fontWeight:700}}>{item.label}</div>
-                  <p className="text-sm" style={{color:"var(--slate-muted)"}}>{item.desc}</p>
-                </div>
-              </RevealOnScroll>
-            ))}
+      {/* Hero with Before/After Visual */}
+      <section className="hero-section hero-section-inner">
+        <div className="wrap" style={{width:"100%"}}>
+          <div style={{ display: "grid", gridTemplateColumns: "45% 55%", gap: "3rem", alignItems: "center" }} className="grid grid-cols-1 lg:grid-cols-2">
+            <div>
+              <div style={{ display: "inline-flex", alignItems: "center", gap: "0.5rem", background: "var(--blue-dim)", border: "1px solid rgba(37,99,235,.25)", borderRadius: "999px", padding: "0.3125rem 0.875rem", marginBottom: "1.25rem" }}>
+                <span style={{ width: "6px", height: "6px", borderRadius: "50%", background: "#22C55E", display: "block" }} />
+                <span style={{ fontSize: "0.75rem", fontWeight: 600, color: "#86EFAC" }}>Up to 80% reduction in manual processing time</span>
+              </div>
+              <div className="section-label">AI Solutions</div>
+              <h1 className="t-h1" style={{ marginBottom: "1rem" }}>Automate the Work. Amplify the People.</h1>
+              <p className="t-body-lg" style={{ marginBottom: "1.75rem", maxWidth: "460px" }}>AI-powered automation eliminates repetitive manual tasks, streamlines operations, reduces costs, and improves productivity across every department. We identify your highest-impact automation opportunities and build production-ready solutions that integrate with your existing software.</p>
+              <div style={{ display: "flex", flexWrap: "wrap", gap: "0.75rem" }}>
+                <Link href="/contact" className="btn btn-primary">Schedule an Automation Consultation</Link>
+                <Link href="/contact" className="btn btn-secondary">Explore Opportunities</Link>
+              </div>
+            </div>
+            <div className="hidden lg:block" style={{minHeight:"520px",display:"flex",alignItems:"center"}}><AIAutomationVisual /></div>
           </div>
         </div>
       </section>
 
-      {/* Automation Areas */}
-      <section className="section-pad" style={{background:"var(--navy-950)"}}>
-        <div className="container-main">
+      {/* Stats callout */}
+      <section style={{ background: "var(--bg-base)", padding: "3rem 0" }}>
+        <div className="wrap">
           <RevealOnScroll>
-            <div className="text-center mb-14">
-              <div className="eyebrow justify-center">What We Automate</div>
-              <h2 className="font-display text-3xl font-800 text-white mb-4" style={{fontFamily:"Syne,sans-serif",fontWeight:800}}>Transforming Business Processes Through Intelligent Automation</h2>
+            <StatCallout stats={[
+              { val: "80%", label: "Reduction in manual processing time", sub: "Average across automation deployments" },
+              { val: "90%", label: "Improvement in data accuracy", sub: "vs manual entry baselines" },
+              { val: "60%", label: "Faster process execution", sub: "From submission to completion" },
+              { val: "4 wks", label: "To first live automation", sub: "Pilot to production timeline" },
+            ]} />
+          </RevealOnScroll>
+        </div>
+      </section>
+
+      {/* What we automate */}
+      <section className="section" style={{ background: "var(--bg-raised)", borderTop: "1px solid var(--border)" }}>
+        <div className="wrap">
+          <RevealOnScroll>
+            <div style={{ maxWidth: "600px", marginBottom: "2.5rem" }}>
+              <div className="section-label">What we automate</div>
+              <h2 className="t-h2">Transforming business processes through intelligent automation</h2>
             </div>
           </RevealOnScroll>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: "1.25rem" }} className="grid grid-cols-1 md:grid-cols-3">
             {automationAreas.map((area, i) => (
-              <RevealOnScroll key={area.title} delay={i * 80}>
-                <div className="service-card glass rounded-2xl p-7 glow-border h-full">
-                  <div className="text-3xl mb-4">{area.icon}</div>
-                  <h3 className="font-display font-700 text-white mb-2" style={{fontFamily:"Syne,sans-serif",fontWeight:700}}>{area.title}</h3>
-                  <p className="text-sm leading-relaxed mb-4" style={{color:"var(--slate-muted)"}}>{area.desc}</p>
-                  <div className="grid grid-cols-2 gap-1.5">
+              <RevealOnScroll key={area.title} delay={i * 70}>
+                <div className="card" style={{ padding: "1.5rem", height: "100%" }}>
+                  <h3 className="t-h4" style={{ marginBottom: "0.625rem" }}>{area.title}</h3>
+                  <p className="t-small" style={{ marginBottom: "1rem" }}>{area.desc}</p>
+                  <ul style={{ listStyle: "none", display: "flex", flexDirection: "column", gap: "0.375rem" }}>
                     {area.examples.map(ex => (
-                      <div key={ex} className="flex items-center gap-1.5 text-xs" style={{color:"var(--slate-light)"}}>
-                        <span style={{color:"var(--cyan-accent)"}}>›</span>{ex}
-                      </div>
+                      <li key={ex} style={{ display: "flex", alignItems: "center", gap: "0.5rem", fontSize: "0.8125rem", color: "var(--text-3)" }}>
+                        <span style={{ width: "4px", height: "4px", borderRadius: "50%", background: "var(--blue-light)", display: "block", flexShrink: 0 }} />
+                        {ex}
+                      </li>
                     ))}
+                  </ul>
+                </div>
+              </RevealOnScroll>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Process */}
+      <section className="section" style={{ background: "var(--bg-base)" }}>
+        <div className="wrap">
+          <RevealOnScroll>
+            <div style={{ textAlign: "center", maxWidth: "560px", margin: "0 auto 2.5rem" }}>
+              <div className="section-label" style={{ justifyContent: "center" }}>Our approach</div>
+              <h2 className="t-h2">A practical framework for successful AI automation</h2>
+            </div>
+          </RevealOnScroll>
+          <RevealOnScroll>
+            <ProcessFlowVisual steps={[
+              { n: "1", title: "Assess", desc: "Map current workflows, quantify manual effort and error rates" },
+              { n: "2", title: "Prioritise", desc: "Rank by ROI — highest impact automations built first" },
+              { n: "3", title: "Automate", desc: "Build, integrate, and test the automation solution" },
+              { n: "4", title: "Monitor", desc: "Track performance, SLA metrics, and accuracy in real time" },
+              { n: "5", title: "Optimise", desc: "Continuously improve accuracy and expand automation scope" },
+            ]} />
+          </RevealOnScroll>
+        </div>
+      </section>
+
+      {/* Why + benefits */}
+      <section className="section" style={{ background: "var(--bg-raised)", borderTop: "1px solid var(--border)" }}>
+        <div className="wrap">
+          <RevealOnScroll>
+            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "5rem", alignItems: "center" }} className="grid grid-cols-1 lg:grid-cols-2">
+              <div>
+                <div className="section-label">Our approach</div>
+                <h2 className="t-h2" style={{ marginBottom: "1rem" }}>We start with ROI, not technology</h2>
+                <p className="t-body" style={{ marginBottom: "1.25rem" }}>Most automation projects fail because they start with a technology looking for a use case. We do the opposite — quantify where your business is losing time and money, then build automation that delivers the fastest payback.</p>
+                <ul className="check-list">
+                  {["Process audit — map and quantify current manual effort", "ROI calculation before any code is written", "Working pilot in 3–4 weeks", "Integrates with your existing ERP, CRM, and tools", "Human-in-the-loop escalation for edge cases", "GDPR and compliance controls built in"].map(l => <li key={l}>{l}</li>)}
+                </ul>
+              </div>
+              <div style={{ display: "flex", flexDirection: "column", gap: "1.25rem" }}>
+                {[
+                  { label: "Reduced Operational Costs", icon: "💰" },
+                  { label: "Improved Process Accuracy", icon: "🎯" },
+                  { label: "Faster Service Delivery", icon: "⚡" },
+                  { label: "Enhanced Customer Experience", icon: "⭐" },
+                  { label: "Better Compliance & Audit Trails", icon: "🔒" },
+                  { label: "Increased Employee Satisfaction", icon: "😊" },
+                ].map((b, i) => (
+                  <div key={b.label} className="card-flat" style={{ padding: "1rem 1.25rem", display: "flex", alignItems: "center", gap: "0.875rem" }}>
+                    <span style={{ fontSize: "1.125rem" }}>{b.icon}</span>
+                    <span style={{ fontFamily: "var(--font-heading)", fontWeight: 500, fontSize: "0.9375rem", color: "var(--text-1)" }}>{b.label}</span>
                   </div>
-                </div>
-              </RevealOnScroll>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Approach */}
-      <section className="section-pad" style={{background:"var(--navy-900)"}}>
-        <div className="container-main">
-          <RevealOnScroll>
-            <div className="text-center mb-14">
-              <div className="eyebrow justify-center">Our Approach</div>
-              <h2 className="font-display text-3xl font-800 text-white" style={{fontFamily:"Syne,sans-serif",fontWeight:800}}>A Practical Framework for Successful AI Automation</h2>
-            </div>
-          </RevealOnScroll>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
-            {["Assess","Prioritize","Automate","Monitor","Optimize"].map((step, i) => (
-              <RevealOnScroll key={step} delay={i * 80}>
-                <div className="glass rounded-2xl p-5 glow-border text-center">
-                  <div className="w-8 h-8 rounded-full flex items-center justify-center text-xs font-800 mx-auto mb-3" style={{background:"rgba(0,194,255,0.15)",color:"var(--cyan-accent)",fontFamily:"Syne,sans-serif",fontWeight:800}}>{i+1}</div>
-                  <div className="font-display font-700 text-white text-sm" style={{fontFamily:"Syne,sans-serif",fontWeight:700}}>{step}</div>
-                </div>
-              </RevealOnScroll>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Business Benefits */}
-      <section className="section-pad" style={{background:"var(--navy-950)"}}>
-        <div className="container-main">
-          <RevealOnScroll>
-            <div className="text-center mb-12">
-              <div className="eyebrow justify-center">Benefits</div>
-              <h2 className="font-display text-3xl font-800 text-white" style={{fontFamily:"Syne,sans-serif",fontWeight:800}}>Business Benefits of AI Automation</h2>
-            </div>
-          </RevealOnScroll>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            {["Reduced Operational Costs","Improved Productivity","Faster Service Delivery","Enhanced Customer Experience","Greater Process Accuracy","Better Compliance & Governance","Increased Employee Satisfaction","Improved Business Agility"].map((benefit, i) => (
-              <RevealOnScroll key={benefit} delay={i * 50}>
-                <div className="glass-light rounded-xl p-4 border text-center" style={{borderColor:"rgba(0,194,255,0.1)"}}>
-                  <p className="text-sm font-500" style={{color:"var(--slate-light)"}}>{benefit}</p>
-                </div>
-              </RevealOnScroll>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* CTA */}
-      <section className="section-pad" style={{background:"linear-gradient(135deg,#0D1F3C,#050D1A)"}}>
-        <div className="container-main text-center">
-          <RevealOnScroll>
-            <div className="max-w-2xl mx-auto">
-              <div className="eyebrow justify-center">Get Started</div>
-              <h2 className="font-display text-3xl font-800 text-white mb-4" style={{fontFamily:"Syne,sans-serif",fontWeight:800}}>Ready to Eliminate Manual Work and Unlock Productivity?</h2>
-              <p className="mb-8" style={{color:"var(--slate-muted)"}}>AI-powered automation can help your organization reduce costs, improve efficiency, and accelerate business growth. Let Jubiliants identify opportunities and build intelligent workflows that deliver measurable results.</p>
-              <div className="flex flex-wrap justify-center gap-4">
-                <Link href="/contact" className="btn-primary">Book an Automation Assessment →</Link>
-                <Link href="/contact" className="btn-secondary">Talk to an AI Expert</Link>
+                ))}
               </div>
             </div>
           </RevealOnScroll>
         </div>
       </section>
+
+      <CTABand title="Let's find your biggest automation win" sub="A 30-minute call to identify which processes in your business are ripe for AI automation — and the ROI you can expect." primary="Book Free Automation Audit" secondary="View Case Studies" />
     </>
   );
 }

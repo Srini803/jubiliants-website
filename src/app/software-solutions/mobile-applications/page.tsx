@@ -1,143 +1,129 @@
 import Link from "next/link";
-import PageHero from "@/components/PageHero";
+import CTABand from "@/components/CTABand";
 import RevealOnScroll from "@/components/RevealOnScroll";
+import { MobileScreensVisual, StatCallout } from "@/components/Visuals";
 
 export const metadata = {
-  title: "Mobile App Development | Android, iOS & Cross-Platform | Jubiliants",
-  description: "Jubiliants develops Android, iOS, and cross-platform mobile applications for businesses across industries. Delivering secure, scalable mobile solutions since 2015.",
+  title: "Mobile App Development | iOS, Android & Cross-Platform | Jubiliants",
+  description: "Custom mobile application development for iOS, Android, and cross-platform (Flutter, React Native). Customer apps, enterprise mobility, field service, and healthcare apps since 2015.",
 };
 
-const appTypes = ["Customer Engagement Apps","E-Commerce Applications","Healthcare Apps","Service Booking Apps","Enterprise Productivity Apps","Field Service Apps","Consumer Applications","Business Productivity Apps","Employee Self-Service Apps","CRM Mobile Applications","Loyalty & Rewards Apps","Delivery & Logistics Apps"];
-const techStack = [
-  { category: "Native Mobile", items: ["Android (Java, Kotlin)","iOS (Swift)"] },
-  { category: "Cross-Platform", items: ["Flutter","React Native","Ionic"] },
-  { category: "Backend Integration", items: [".NET","Node.js","Java","Python"] },
-  { category: "Cloud & APIs", items: ["Microsoft Azure","AWS","Google Cloud","Third-Party APIs"] },
+const appTypes = [
+  { title: "Customer Engagement Apps", desc: "Branded iOS and Android apps for loyalty, booking, e-commerce, and self-service — native performance with a UI your customers will want to open." },
+  { title: "Enterprise Mobility Apps", desc: "Field service, sales force automation, inspection tools, and employee self-service — with offline mode for teams working in low-connectivity environments." },
+  { title: "Healthcare Mobile Apps", desc: "Patient engagement, appointment booking, teleconsultation, and clinical workflow apps — built with privacy and security at the centre." },
+  { title: "Education Apps", desc: "Student information systems, learning management, attendance, fee payments, and parent communication in a single mobile experience." },
+  { title: "Logistics & Delivery Apps", desc: "Driver apps, delivery tracking, proof-of-delivery, route optimisation, and real-time dispatch management — with live GPS and barcode scanning." },
+  { title: "E-Commerce Apps", desc: "Product browsing, cart, checkout, payment integration, order tracking, and push notification marketing — built for conversion." },
 ];
-const steps = [
-  { icon: "🔍", title: "Business & User Discovery", desc: "We begin by understanding your business goals, target audience, and user expectations." },
-  { icon: "🎨", title: "UI/UX Design", desc: "Our designers create intuitive, engaging mobile experiences focused on usability and customer satisfaction." },
-  { icon: "⚙️", title: "Agile Development", desc: "Applications are built in iterative phases with continuous collaboration and feedback." },
-  { icon: "✅", title: "Testing & QA", desc: "Every app undergoes rigorous testing across devices and operating systems." },
-  { icon: "🚀", title: "Deployment", desc: "We manage publishing on Google Play Store and Apple App Store." },
-  { icon: "🔧", title: "Ongoing Support", desc: "Continuous support, upgrades, and enhancements to keep your app competitive." },
+
+const platforms = [
+  { p: "Native iOS", items: ["Swift / SwiftUI", "Xcode", "App Store deployment", "Apple HIG compliance"] },
+  { p: "Native Android", items: ["Kotlin / Java", "Jetpack Compose", "Google Play deployment", "Material Design 3"] },
+  { p: "Flutter (Cross-platform)", items: ["Single Dart codebase", "iOS + Android", "Near-native performance", "Rapid iteration"] },
+  { p: "React Native", items: ["JavaScript / TypeScript", "iOS + Android", "Expo ecosystem", "OTA updates"] },
+];
+
+const deliveryProcess = [
+  { n: "01", t: "Discovery & UX", d: "User research, journey mapping, wireframing, and UX prototype. Validated with real users before development begins." },
+  { n: "02", t: "UI Design", d: "Pixel-perfect designs in Figma — platform-appropriate, on-brand, and accessibility-compliant." },
+  { n: "03", t: "Agile Development", d: "2-week sprints. TestFlight / Play Console builds at every milestone. You test on real devices continuously." },
+  { n: "04", t: "QA & Store Launch", d: "Device matrix testing, performance profiling, App Store / Play Store submission, and post-launch monitoring." },
 ];
 
 export default function MobileApplications() {
   return (
     <>
-      <PageHero
-        eyebrow="Software Solutions"
-        title="Mobile Applications That Connect, Engage, and Grow Your Business"
-        subtitle="In today's mobile-first world, customers and employees expect seamless digital experiences anytime, anywhere. Jubiliants designs and develops high-performance mobile applications that help organizations enhance customer engagement, streamline operations, and unlock new business opportunities."
-        cta1={{ label: "Build Your Mobile App", href: "/contact" }}
-        cta2={{ label: "Schedule a Consultation", href: "/contact" }}
-      />
-
-      {/* Highlights */}
-      <section style={{background:"var(--navy-800)",borderBottom:"1px solid rgba(0,194,255,0.08)"}}>
-        <div className="container-main py-12">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {[
-              {title:"Android & iOS Expertise", desc:"Native and cross-platform apps delivering exceptional experiences across all major platforms."},
-              {title:"Business-Focused Mobility", desc:"Applications designed to achieve measurable outcomes: increased engagement, productivity, and revenue."},
-              {title:"Secure & Scalable Apps", desc:"Every mobile application built with security, scalability, and long-term business growth in mind."},
-            ].map((item, i) => (
-              <RevealOnScroll key={item.title} delay={i * 100}>
-                <div className="text-center p-6">
-                  <h3 className="font-display font-700 text-white mb-2 text-lg" style={{fontFamily:"Syne,sans-serif",fontWeight:700}}>{item.title}</h3>
-                  <p className="text-sm" style={{color:"var(--slate-muted)"}}>{item.desc}</p>
-                </div>
-              </RevealOnScroll>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Development Process */}
-      <section className="section-pad" style={{background:"var(--navy-950)"}}>
-        <div className="container-main">
-          <RevealOnScroll>
-            <div className="text-center mb-14">
-              <div className="eyebrow justify-center">Our Process</div>
-              <h2 className="font-display text-3xl font-800 text-white mb-4" style={{fontFamily:"Syne,sans-serif",fontWeight:800}}>Delivering Mobile Applications That Users Love</h2>
-            </div>
-          </RevealOnScroll>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {steps.map((step, i) => (
-              <RevealOnScroll key={step.title} delay={i * 80}>
-                <div className="service-card glass rounded-2xl p-6 glow-border">
-                  <div className="text-3xl mb-4">{step.icon}</div>
-                  <h3 className="font-display font-700 text-white mb-2" style={{fontFamily:"Syne,sans-serif",fontWeight:700}}>{step.title}</h3>
-                  <p className="text-sm leading-relaxed" style={{color:"var(--slate-muted)"}}>{step.desc}</p>
-                </div>
-              </RevealOnScroll>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* App Types */}
-      <section className="section-pad" style={{background:"var(--navy-900)"}}>
-        <div className="container-main">
-          <RevealOnScroll>
-            <div className="text-center mb-12">
-              <div className="eyebrow justify-center">App Categories</div>
-              <h2 className="font-display text-3xl font-800 text-white" style={{fontFamily:"Syne,sans-serif",fontWeight:800}}>Types of Mobile Applications We Develop</h2>
-            </div>
-          </RevealOnScroll>
-          <div className="flex flex-wrap justify-center gap-3">
-            {appTypes.map((app, i) => (
-              <RevealOnScroll key={app} delay={i * 40}>
-                <div className="glass-light px-4 py-2.5 rounded-full text-sm border" style={{borderColor:"rgba(0,194,255,0.12)",color:"var(--slate-light)"}}>{app}</div>
-              </RevealOnScroll>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Tech Stack */}
-      <section className="section-pad" style={{background:"var(--navy-950)"}}>
-        <div className="container-main">
-          <RevealOnScroll>
-            <div className="text-center mb-12">
-              <div className="eyebrow justify-center">Technology</div>
-              <h2 className="font-display text-3xl font-800 text-white" style={{fontFamily:"Syne,sans-serif",fontWeight:800}}>Our Technology Expertise</h2>
-            </div>
-          </RevealOnScroll>
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
-            {techStack.map((tech, i) => (
-              <RevealOnScroll key={tech.category} delay={i * 100}>
-                <div className="glass rounded-2xl p-6 glow-border">
-                  <h3 className="font-display font-700 text-sm mb-4" style={{fontFamily:"Syne,sans-serif",fontWeight:700,color:"var(--cyan-accent)"}}>{tech.category}</h3>
-                  <ul className="space-y-2">
-                    {tech.items.map(item => (
-                      <li key={item} className="text-sm" style={{color:"var(--slate-light)"}}>{item}</li>
-                    ))}
-                  </ul>
-                </div>
-              </RevealOnScroll>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* CTA */}
-      <section className="section-pad" style={{background:"linear-gradient(135deg,#0D1F3C,#050D1A)"}}>
-        <div className="container-main text-center">
-          <RevealOnScroll>
-            <div className="max-w-2xl mx-auto">
-              <div className="eyebrow justify-center">Start Building</div>
-              <h2 className="font-display text-3xl font-800 text-white mb-4" style={{fontFamily:"Syne,sans-serif",fontWeight:800}}>Ready to Turn Your Mobile App Idea into Reality?</h2>
-              <p className="mb-8" style={{color:"var(--slate-muted)"}}>Whether you're launching a customer-facing app or empowering your workforce with enterprise mobility solutions, Jubiliants is your trusted technology partner.</p>
-              <div className="flex flex-wrap justify-center gap-4">
-                <Link href="/contact" className="btn-primary">Request a Free Consultation →</Link>
-                <Link href="/contact" className="btn-secondary">Discuss Your App Project</Link>
+      {/* Hero with Mobile Screens Visual */}
+      <section className="hero-section hero-section-inner">
+        <div className="wrap" style={{width:"100%"}}>
+          <div style={{ display: "grid", gridTemplateColumns: "45% 55%", gap: "3rem", alignItems: "center" }} className="grid grid-cols-1 lg:grid-cols-2">
+            <div>
+              <div className="section-label">Software Solutions</div>
+              <h1 className="t-h1" style={{ marginBottom: "1rem" }}>Mobile Applications That Drive Engagement and Efficiency</h1>
+              <p className="t-body-lg" style={{ marginBottom: "1.75rem", maxWidth: "460px" }}>We build high-performance iOS, Android, and Flutter mobile applications — customer-facing apps, enterprise mobility tools, and field service solutions — with the UX quality users expect from global products.</p>
+              <div style={{ display: "flex", flexWrap: "wrap", gap: "0.75rem", marginBottom: "2rem" }}>
+                <Link href="/contact" className="btn btn-primary">Get a Free App Estimate</Link>
+                <Link href="/case-studies" className="btn btn-secondary">View App Case Studies</Link>
+              </div>
+              <div style={{ display: "flex", gap: "2rem", paddingTop: "1.5rem", borderTop: "1px solid var(--border)" }}>
+                {[["80+", "Apps delivered"], ["4.7★", "Avg store rating"], ["iOS+Android", "Full coverage"]].map(([n, l]) => (
+                  <div key={l}>
+                    <div style={{ fontFamily: "var(--font-heading)", fontWeight: 600, fontSize: "1.125rem", color: "var(--text-1)", lineHeight: 1 }}>{n}</div>
+                    <div style={{ fontSize: "0.75rem", color: "var(--text-4)", marginTop: "0.25rem" }}>{l}</div>
+                  </div>
+                ))}
               </div>
             </div>
-          </RevealOnScroll>
+            <div className="hidden lg:block" style={{minHeight:"520px",display:"flex",alignItems:"center"}}><MobileScreensVisual /></div>
+          </div>
         </div>
       </section>
+
+      {/* App types */}
+      <section className="section" style={{ background: "var(--bg-base)" }}>
+        <div className="wrap">
+          <RevealOnScroll>
+            <div style={{ maxWidth: "600px", marginBottom: "2.5rem" }}>
+              <div className="section-label">App categories</div>
+              <h2 className="t-h2">Mobile solutions across every use case</h2>
+            </div>
+          </RevealOnScroll>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: "1.25rem" }} className="grid grid-cols-1 md:grid-cols-3">
+            {appTypes.map((a, i) => (
+              <RevealOnScroll key={a.title} delay={i * 70}>
+                <div className="card" style={{ padding: "1.5rem", height: "100%" }}>
+                  <h3 className="t-h4" style={{ marginBottom: "0.5rem" }}>{a.title}</h3>
+                  <p className="t-small">{a.desc}</p>
+                </div>
+              </RevealOnScroll>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Platforms + Process */}
+      <section className="section" style={{ background: "var(--bg-raised)", borderTop: "1px solid var(--border)" }}>
+        <div className="wrap" style={{width:"100%"}}>
+          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "5rem", alignItems: "start" }} className="grid grid-cols-1 lg:grid-cols-2">
+            <RevealOnScroll>
+              <div>
+                <div className="section-label">Platform expertise</div>
+                <h2 className="t-h2" style={{ marginBottom: "1.5rem" }}>Native or cross-platform — we advise based on your needs</h2>
+                <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "1rem" }}>
+                  {platforms.map((p, i) => (
+                    <div key={p.p} className="card-flat" style={{ padding: "1.25rem" }}>
+                      <div style={{ fontSize: "0.75rem", fontWeight: 600, letterSpacing: "0.07em", textTransform: "uppercase", color: "var(--blue-light)", marginBottom: "0.75rem" }}>{p.p}</div>
+                      <ul style={{ listStyle: "none", display: "flex", flexDirection: "column", gap: "0.375rem" }}>
+                        {p.items.map(it => <li key={it} style={{ fontSize: "0.8125rem", color: "var(--text-2)" }}>{it}</li>)}
+                      </ul>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </RevealOnScroll>
+            <RevealOnScroll delay={150}>
+              <div>
+                <div className="section-label">Delivery process</div>
+                <h2 className="t-h2" style={{ marginBottom: "1.5rem" }}>From concept to App Store in 12–16 weeks</h2>
+                <div style={{ display: "flex", flexDirection: "column", gap: "1rem" }}>
+                  {deliveryProcess.map(p => (
+                    <div key={p.n} className="card-flat" style={{ padding: "1.25rem", display: "flex", gap: "1rem", alignItems: "flex-start" }}>
+                      <div style={{ fontFamily: "var(--font-heading)", fontWeight: 600, fontSize: "1.25rem", color: "var(--blue-light)", flexShrink: 0, width: "36px" }}>{p.n}</div>
+                      <div>
+                        <div style={{ fontFamily: "var(--font-heading)", fontWeight: 600, fontSize: "0.9375rem", color: "var(--text-1)", marginBottom: "0.25rem" }}>{p.t}</div>
+                        <p className="t-small">{p.d}</p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </RevealOnScroll>
+          </div>
+        </div>
+      </section>
+
+      <CTABand title="Ready to build your mobile app?" sub="Share your idea. We'll scope it and give you a realistic timeline and cost within 48 hours." primary="Get App Estimate" secondary="View Case Studies" />
     </>
   );
 }

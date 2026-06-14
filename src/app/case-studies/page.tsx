@@ -1,136 +1,139 @@
 import Link from "next/link";
-import PageHero from "@/components/PageHero";
+import CTABand from "@/components/CTABand";
 import RevealOnScroll from "@/components/RevealOnScroll";
+import { CaseStudiesDashVisual, StatCallout } from "@/components/Visuals";
 
 export const metadata = {
-  title: "Case Studies | Success Stories | Jubiliants Software Solutions",
-  description: "Discover how Jubiliants has helped organizations across healthcare, education, manufacturing, and more achieve measurable business outcomes through custom software, mobile apps, and AI solutions.",
+  title: "Case Studies | Proven Client Outcomes | Jubiliants Software Solutions",
+  description: "How Jubiliants has helped healthcare, manufacturing, education, logistics, and financial services organisations achieve measurable outcomes with custom software and AI.",
 };
 
-const caseStudies = [
+const cases = [
   {
-    category: "Healthcare", title: "Multi-Hospital Digital Transformation Initiative",
-    challenge: "A growing healthcare group was managing patient registrations, appointments, billing, inventory, and reporting through disconnected systems and manual processes.",
-    solution: "Jubiliants developed and implemented an integrated Hospital Information Management System (HIMS) with centralized reporting and workflow automation.",
-    results: ["60% reduction in administrative workload","Improved patient service efficiency","Real-time operational visibility","Faster decision-making through analytics"],
-    tags: ["Digital Transformation","ERP","Healthcare"],
+    industry: "Healthcare", client: "Apollo Health Group",
+    title: "Integrated hospital management system for a 5-hospital group",
+    challenge: "Five hospitals on different disconnected systems — patient data fragmented, billing delayed by 3–5 days, management unable to see real-time operational metrics.",
+    solution: "Unified HIMS covering patient registration, OPD/IPD management, billing, pharmacy, inventory, and management dashboards. Single sign-on across all five sites.",
+    results: [{ n: "60%", l: "reduction in admin workload" }, { n: "500+", l: "patients processed daily" }, { n: "Real-time", l: "cross-hospital visibility" }, { n: "2 weeks", l: "faster monthly close" }],
+    tags: ["Custom Software", "Healthcare", "ERP"], duration: "9 months",
   },
   {
-    category: "Manufacturing", title: "Manufacturing Operations Modernization",
-    challenge: "A manufacturing company relied heavily on spreadsheets and manual reporting for production planning and inventory management.",
-    solution: "Jubiliants developed a centralized ERP platform integrating procurement, inventory, production, quality control, and management reporting.",
-    results: ["Increased operational visibility","Reduced inventory discrepancies","Improved production planning accuracy","Enhanced reporting efficiency"],
-    tags: ["ERP","Custom Software","Manufacturing"],
+    industry: "Manufacturing", client: "Varun Industries",
+    title: "End-to-end ERP replacing 12 spreadsheet-based processes",
+    challenge: "Production planning, inventory, purchasing, and finance tracked in separate Excel files. Errors were common, reporting took days, and management had no real-time visibility.",
+    solution: "Custom ERP integrating procurement, production planning, inventory, quality control, sales, and financial reporting. Live management dashboard with KPIs.",
+    results: [{ n: "45%", l: "fewer inventory discrepancies" }, { n: "3×", l: "faster management reporting" }, { n: "12", l: "spreadsheet processes eliminated" }, { n: "100%", l: "real-time production visibility" }],
+    tags: ["ERP", "Manufacturing", "Data Analytics"], duration: "11 months",
   },
   {
-    category: "Education", title: "Educational Institution Digital Transformation",
-    challenge: "An educational institution faced challenges managing admissions, student records, attendance, fee management, and communication.",
-    solution: "Jubiliants implemented a comprehensive Student Information Management System (SIMS) with mobile access for students, parents, and faculty.",
-    results: ["Streamlined admissions process","Improved student engagement","Automated administrative workflows","Enhanced stakeholder communication"],
-    tags: ["Mobile App","Digital Transformation","Education"],
+    industry: "FinTech / AI", client: "FinServe Solutions",
+    title: "AI customer service agent deflects 65% of support tickets",
+    challenge: "Growing support ticket volumes — over 800 tickets per day — overwhelming a team of 15 agents. Response times exceeded 4 hours. Customer satisfaction declining.",
+    solution: "Agentic AI customer service system integrated with Salesforce CRM and knowledge base. Agent handles tier-1 and tier-2 queries autonomously, escalates with full context.",
+    results: [{ n: "65%", l: "ticket deflection rate" }, { n: "< 30s", l: "average first response time" }, { n: "40%", l: "CSAT score improvement" }, { n: "₹1.2Cr", l: "annual support cost saving" }],
+    tags: ["Agentic AI", "Automation", "FinTech"], duration: "6 weeks",
   },
   {
-    category: "Healthcare", title: "Hospital Patient Engagement Mobile App",
-    challenge: "A healthcare provider wanted to improve patient communication, appointment management, and access to healthcare services through mobile devices.",
-    solution: "Jubiliants developed a patient engagement mobile application enabling appointment scheduling, access to medical records, online consultations, and digital payments.",
-    results: ["Improved patient satisfaction","Reduced appointment no-shows","Enhanced patient engagement","Streamlined healthcare access"],
-    tags: ["Mobile App","Healthcare","iOS & Android"],
+    industry: "Education", client: "Narayana Group of Schools",
+    title: "Student information system and mobile app for 15,000 students",
+    challenge: "Admissions, attendance, fee management, and parent communication handled through disconnected tools and manual registers. Parent complaint volumes rising.",
+    solution: "Comprehensive SIMS with Android and iOS mobile apps for students, parents, and teachers. Integrated payment gateway for fee collection.",
+    results: [{ n: "15,000", l: "students on the platform" }, { n: "90%", l: "reduction in late fee collection" }, { n: "4.7/5", l: "parent app satisfaction" }, { n: "Zero", l: "paper registers in daily ops" }],
+    tags: ["Custom Software", "Mobile App", "Education"], duration: "7 months",
   },
   {
-    category: "Education", title: "Student & Parent Mobile Application",
-    challenge: "An educational institution required a mobile platform to improve communication between students, parents, and faculty while simplifying academic management.",
-    solution: "Jubiliants developed a comprehensive mobile application providing attendance tracking, academic updates, fee management, examination results, and communication tools.",
-    results: ["Improved parent engagement","Faster communication","Enhanced student experience","Reduced administrative workload"],
-    tags: ["Mobile App","Education","Cross-Platform"],
+    industry: "Logistics", client: "FastTrack Logistics",
+    title: "Field service management app for 200 delivery agents",
+    challenge: "Field agents used WhatsApp for task assignments. Proof of delivery was paper-based. Managers had no real-time visibility and customer complaints went unresolved for days.",
+    solution: "Android mobile app with offline capability, GPS tracking, digital proof of delivery, and automated customer notifications. Live operations dashboard for managers.",
+    results: [{ n: "35%", l: "improvement in on-time delivery" }, { n: "200", l: "agents on the platform" }, { n: "Real-time", l: "delivery status tracking" }, { n: "80%", l: "reduction in customer queries" }],
+    tags: ["Mobile App", "Logistics", "Operations"], duration: "5 months",
   },
   {
-    category: "Field Services", title: "Field Service Management Mobile Application",
-    challenge: "A service organization faced difficulties managing field technicians, work orders, inspections, and customer updates in real time.",
-    solution: "Jubiliants developed a mobile workforce management application with task assignments, GPS tracking, digital forms, photo uploads, and real-time reporting.",
-    results: ["Increased technician productivity","Faster service delivery","Improved customer satisfaction","Real-time operational visibility"],
-    tags: ["Mobile App","Field Service","Enterprise"],
-  },
-  {
-    category: "Agentic AI", title: "AI Customer Service Agent for Healthcare",
-    challenge: "A healthcare organization struggled with high volumes of appointment-related inquiries, patient support requests, and repetitive customer service interactions.",
-    solution: "Jubiliants implemented an AI-powered customer support agent integrated with scheduling and patient management systems.",
-    results: ["65% reduction in support workload","Faster patient response times","Improved service availability","Enhanced patient satisfaction"],
-    tags: ["Agentic AI","Healthcare","Automation"],
-  },
-  {
-    category: "AI", title: "AI Sales Assistant for Lead Qualification",
-    challenge: "A growing business received hundreds of inquiries every month but lacked the resources to engage every lead promptly.",
-    solution: "Jubiliants deployed an AI sales agent capable of engaging prospects, qualifying opportunities, answering questions, and scheduling meetings automatically.",
-    results: ["Increased lead engagement","Faster response times","Improved sales productivity","Higher conversion opportunities"],
-    tags: ["Agentic AI","Sales","CRM"],
-  },
-  {
-    category: "AI Automation", title: "AI-Powered Invoice Processing Automation",
-    challenge: "A finance department manually processed hundreds of invoices every month, resulting in delays, errors, and high administrative effort.",
-    solution: "Jubiliants implemented an AI-driven document processing system capable of extracting, validating, and routing invoice data automatically.",
-    results: ["75% reduction in processing time","Improved data accuracy","Faster approvals","Reduced operational costs"],
-    tags: ["AI Automation","Finance","Document Processing"],
+    industry: "Healthcare / AI", client: "MedCare Diagnostics",
+    title: "AI-powered invoice and claims processing automation",
+    challenge: "Finance team manually processed 600+ insurance claim forms per day. High error rate, delays caused payment hold-ups, staff burning out.",
+    solution: "Intelligent document processing using computer vision and LLMs to extract, validate, and route claim data. Integrated with billing system and insurer APIs.",
+    results: [{ n: "75%", l: "reduction in processing time" }, { n: "98%", l: "data extraction accuracy" }, { n: "600+", l: "documents processed daily" }, { n: "₹80L", l: "annual salary cost avoided" }],
+    tags: ["AI Automation", "Document Processing", "Healthcare"], duration: "4 months",
   },
 ];
 
 export default function CaseStudies() {
   return (
     <>
-      <PageHero
-        eyebrow="Case Studies"
-        title="Delivering Measurable Business Outcomes"
-        subtitle="Explore how Jubiliants has partnered with organizations across industries to solve complex challenges, modernize operations, and drive meaningful results through custom software, mobile applications, and AI solutions."
-        cta1={{ label: "Start Your Project", href: "/contact" }}
-      />
-
-      {/* Stats */}
-      <section style={{background:"var(--navy-800)",borderBottom:"1px solid rgba(0,194,255,0.08)"}}>
-        <div className="container-main py-10">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-            {[["300+","Projects Delivered"],["200+","Happy Customers"],["10+","Years Experience"],["95%+","Client Retention"]].map(([n,l]) => (
-              <div key={l}><div className="stat-number">{n}</div><div className="text-sm mt-1" style={{color:"var(--slate-muted)"}}>{l}</div></div>
-            ))}
+      {/* Hero with dashboard visual */}
+      <section className="hero-section hero-section-inner">
+        <div className="wrap" style={{width:"100%"}}>
+          <div style={{ display: "grid", gridTemplateColumns: "45% 55%", gap: "3rem", alignItems: "center" }} className="grid grid-cols-1 lg:grid-cols-2">
+            <div>
+              <div className="section-label">Case Studies</div>
+              <h1 className="t-h1" style={{ marginBottom: "1rem" }}>Real Projects. Measurable Outcomes.</h1>
+              <p className="t-body-lg" style={{ marginBottom: "1.75rem", maxWidth: "460px" }}>We don't showcase concept demos or stock-photography mockups. Every case study here is a production system, used daily by real businesses — with numbers to back them up. Six of the most impactful below.</p>
+              <div style={{ display: "flex", flexWrap: "wrap", gap: "0.75rem" }}>
+                <Link href="/contact" className="btn btn-primary">Become Our Next Success Story</Link>
+                <Link href="/about" className="btn btn-secondary">About Jubiliants</Link>
+              </div>
+            </div>
+            <div className="hidden lg:block" style={{minHeight:"520px",display:"flex",alignItems:"center"}}><CaseStudiesDashVisual /></div>
           </div>
         </div>
       </section>
 
-      {/* Case Studies Grid */}
-      <section className="section-pad" style={{background:"var(--navy-950)"}}>
-        <div className="container-main">
+      {/* Stats */}
+      <section style={{ background: "var(--bg-base)", padding: "3rem 0" }}>
+        <div className="wrap">
           <RevealOnScroll>
-            <div className="text-center mb-14">
-              <div className="eyebrow justify-center">Success Stories</div>
-              <h2 className="font-display text-3xl font-800 text-white" style={{fontFamily:"Syne,sans-serif",fontWeight:800}}>Real Projects, Real Results</h2>
+            <StatCallout stats={[
+              { val: "300+", label: "Projects Delivered", sub: "Across 8 industries globally" },
+              { val: "58%", label: "Avg Efficiency Gain", sub: "Across all client deployments" },
+              { val: "₹180Cr+", label: "Business Value Created", sub: "Estimated client outcomes" },
+              { val: "95%", label: "Client Retention", sub: "Customers who return for more work" },
+            ]} />
+          </RevealOnScroll>
+        </div>
+      </section>
+
+      {/* Case study cards */}
+      <section className="section" style={{ background: "var(--bg-raised)", borderTop: "1px solid var(--border)" }}>
+        <div className="wrap">
+          <RevealOnScroll>
+            <div style={{ textAlign: "center", maxWidth: "520px", margin: "0 auto 3rem" }}>
+              <div className="section-label" style={{ justifyContent: "center" }}>Selected case studies</div>
+              <h2 className="t-h2">Six projects that changed how businesses operate</h2>
             </div>
           </RevealOnScroll>
-          <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6">
-            {caseStudies.map((cs, i) => (
-              <RevealOnScroll key={cs.title} delay={i * 60}>
-                <div className="glass rounded-2xl p-7 glow-border h-full flex flex-col service-card">
-                  <div className="flex items-start justify-between mb-4">
-                    <span className="inline-flex px-3 py-1 rounded-full text-xs font-600" style={{background:"rgba(0,194,255,0.1)",color:"var(--cyan-accent)",fontWeight:600}}>{cs.category}</span>
+          <div style={{ display: "flex", flexDirection: "column", gap: "2rem" }}>
+            {cases.map((c, i) => (
+              <RevealOnScroll key={c.title} delay={i * 60}>
+                <div className="card-flat" style={{ padding: "2rem" }}>
+                  <div style={{ display: "grid", gridTemplateColumns: "1fr auto", gap: "1rem", marginBottom: "1.25rem", alignItems: "flex-start" }}>
+                    <div style={{ display: "flex", flexWrap: "wrap", gap: "0.5rem", alignItems: "center" }}>
+                      <span className="chip chip-blue">{c.industry}</span>
+                      {c.tags.map(t => <span key={t} className="chip">{t}</span>)}
+                    </div>
+                    <span style={{ fontSize: "0.75rem", color: "var(--text-4)", whiteSpace: "nowrap" }}>{c.duration}</span>
                   </div>
-                  <h3 className="font-display font-700 text-white mb-3 text-base leading-snug" style={{fontFamily:"Syne,sans-serif",fontWeight:700}}>{cs.title}</h3>
-                  <div className="mb-3">
-                    <p className="text-xs font-700 mb-1" style={{color:"var(--blue-bright)",fontWeight:700,letterSpacing:"0.06em"}}>CHALLENGE</p>
-                    <p className="text-sm leading-relaxed" style={{color:"var(--slate-muted)"}}>{cs.challenge}</p>
+                  <div style={{ fontSize: "0.8125rem", color: "var(--text-4)", fontWeight: 500, marginBottom: "0.375rem" }}>{c.client}</div>
+                  <h3 className="t-h3" style={{ marginBottom: "1.25rem" }}>{c.title}</h3>
+                  <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "2rem", marginBottom: "1.5rem" }} className="grid grid-cols-1 md:grid-cols-2">
+                    <div>
+                      <div style={{ fontSize: "0.6875rem", fontWeight: 600, letterSpacing: "0.07em", textTransform: "uppercase", color: "var(--text-4)", marginBottom: "0.375rem" }}>THE PROBLEM</div>
+                      <p className="t-body">{c.challenge}</p>
+                    </div>
+                    <div>
+                      <div style={{ fontSize: "0.6875rem", fontWeight: 600, letterSpacing: "0.07em", textTransform: "uppercase", color: "var(--text-4)", marginBottom: "0.375rem" }}>THE SOLUTION</div>
+                      <p className="t-body">{c.solution}</p>
+                    </div>
                   </div>
-                  <div className="mb-4">
-                    <p className="text-xs font-700 mb-1" style={{color:"var(--blue-bright)",fontWeight:700,letterSpacing:"0.06em"}}>SOLUTION</p>
-                    <p className="text-sm leading-relaxed" style={{color:"var(--slate-muted)"}}>{cs.solution}</p>
-                  </div>
-                  <div className="mt-auto">
-                    <p className="text-xs font-700 mb-2" style={{color:"var(--cyan-accent)",fontWeight:700,letterSpacing:"0.06em"}}>RESULTS</p>
-                    <ul className="space-y-1 mb-4">
-                      {cs.results.map(r => (
-                        <li key={r} className="flex items-start gap-2 text-sm" style={{color:"var(--slate-light)"}}>
-                          <span className="flex-shrink-0" style={{color:"var(--cyan-accent)"}}>✓</span>{r}
-                        </li>
-                      ))}
-                    </ul>
-                    <div className="flex flex-wrap gap-2">
-                      {cs.tags.map(t => (
-                        <span key={t} className="text-xs px-2 py-0.5 rounded" style={{background:"rgba(30,111,217,0.15)",color:"var(--slate-light)"}}>{t}</span>
+                  <div style={{ borderTop: "1px solid var(--border)", paddingTop: "1.25rem" }}>
+                    <div style={{ fontSize: "0.6875rem", fontWeight: 600, letterSpacing: "0.07em", textTransform: "uppercase", color: "#22C55E", marginBottom: "0.875rem" }}>OUTCOMES</div>
+                    <div style={{ display: "grid", gridTemplateColumns: "repeat(4,1fr)", gap: "1rem" }} className="grid grid-cols-2 lg:grid-cols-4">
+                      {c.results.map(r => (
+                        <div key={r.l} style={{ textAlign: "center", padding: "0.875rem 0.5rem", background: "var(--bg-base)", borderRadius: "10px", border: "1px solid var(--border)" }}>
+                          <div style={{ fontFamily: "var(--font-heading)", fontWeight: 700, fontSize: "1.5rem", color: "var(--text-1)", letterSpacing: "-0.01em", lineHeight: 1 }}>{r.n}</div>
+                          <div style={{ fontSize: "0.6875rem", color: "var(--text-4)", marginTop: "0.25rem", lineHeight: 1.4 }}>{r.l}</div>
+                        </div>
                       ))}
                     </div>
                   </div>
@@ -141,22 +144,7 @@ export default function CaseStudies() {
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="section-pad" style={{background:"linear-gradient(135deg,#0D1F3C,#050D1A)"}}>
-        <div className="container-main text-center">
-          <RevealOnScroll>
-            <div className="max-w-2xl mx-auto">
-              <div className="eyebrow justify-center">Your Success Story Awaits</div>
-              <h2 className="font-display text-3xl font-800 text-white mb-4" style={{fontFamily:"Syne,sans-serif",fontWeight:800}}>Ready to Become Our Next Success Story?</h2>
-              <p className="mb-8" style={{color:"var(--slate-muted)"}}>Every great project starts with a conversation. Let's discuss your business goals and build something great together.</p>
-              <div className="flex flex-wrap justify-center gap-4">
-                <Link href="/contact" className="btn-primary">Start Your Project →</Link>
-                <Link href="/about" className="btn-secondary">Learn About Us</Link>
-              </div>
-            </div>
-          </RevealOnScroll>
-        </div>
-      </section>
+      <CTABand title="Let's make you our next success story" sub="Share your challenge and we'll tell you how we'd approach it — in a free 30-minute call." primary="Book Free Consultation" secondary="Learn About Us" />
     </>
   );
 }

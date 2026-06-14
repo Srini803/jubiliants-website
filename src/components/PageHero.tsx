@@ -1,32 +1,29 @@
 interface PageHeroProps {
   eyebrow: string;
   title: string;
-  highlight?: string;
   subtitle: string;
   cta1?: { label: string; href: string };
   cta2?: { label: string; href: string };
+  badge?: string;
 }
-
-export default function PageHero({ eyebrow, title, highlight, subtitle, cta1, cta2 }: PageHeroProps) {
-  const fullTitle = highlight ? title.replace(highlight, `<span class="text-gradient">${highlight}</span>`) : title;
-
+export default function PageHero({ eyebrow, title, subtitle, cta1, cta2, badge }: PageHeroProps) {
   return (
-    <section className="relative min-h-[60vh] flex items-center overflow-hidden" style={{
-      paddingTop:"6rem",
-      background:"linear-gradient(135deg, #050D1A 0%, #0A1628 60%, #0D1F3C 100%)"
-    }}>
-      <div className="absolute top-1/3 left-1/4 w-96 h-96 rounded-full pointer-events-none" style={{background:"radial-gradient(circle, rgba(30,111,217,0.1) 0%, transparent 70%)", filter:"blur(60px)"}}></div>
-      <div className="absolute bottom-1/4 right-1/4 w-64 h-64 rounded-full pointer-events-none" style={{background:"radial-gradient(circle, rgba(0,194,255,0.07) 0%, transparent 70%)", filter:"blur(50px)"}}></div>
-
-      <div className="container-main w-full py-20">
-        <div className="max-w-3xl">
-          <div className="eyebrow">{eyebrow}</div>
-          <h1 className="font-display text-4xl lg:text-5xl font-800 leading-tight mb-6 text-white" style={{fontFamily:"Syne,sans-serif",fontWeight:800}} dangerouslySetInnerHTML={{__html: fullTitle}}></h1>
-          <p className="text-lg leading-relaxed mb-8" style={{color:"var(--slate-light)"}}>{subtitle}</p>
+    <section style={{background:"var(--bg-base)",borderBottom:"1px solid var(--border)",padding:"4.5rem 0 4rem"}}>
+      <div className="wrap">
+        <div style={{maxWidth:"720px"}}>
+          {badge && (
+            <div style={{display:"inline-flex",alignItems:"center",gap:"0.5rem",background:"var(--blue-dim)",border:"1px solid rgba(37,99,235,0.25)",borderRadius:"999px",padding:"0.3125rem 0.875rem",marginBottom:"1.25rem"}}>
+              <span style={{width:"6px",height:"6px",borderRadius:"50%",background:"var(--blue-light)",display:"block"}}></span>
+              <span style={{fontSize:"0.75rem",fontWeight:600,color:"#93C5FD"}}>{badge}</span>
+            </div>
+          )}
+          <div className="section-label">{eyebrow}</div>
+          <h1 className="t-h1" style={{marginBottom:"1rem"}}>{title}</h1>
+          <p className="t-body-lg" style={{marginBottom:"2rem",maxWidth:"600px"}}>{subtitle}</p>
           {(cta1 || cta2) && (
-            <div className="flex flex-wrap gap-4">
-              {cta1 && <a href={cta1.href} className="btn-primary">{cta1.label} →</a>}
-              {cta2 && <a href={cta2.href} className="btn-secondary">{cta2.label}</a>}
+            <div style={{display:"flex",flexWrap:"wrap",gap:"0.75rem"}}>
+              {cta1 && <a href={cta1.href} className="btn btn-primary">{cta1.label}</a>}
+              {cta2 && <a href={cta2.href} className="btn btn-secondary">{cta2.label}</a>}
             </div>
           )}
         </div>

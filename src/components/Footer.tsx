@@ -1,88 +1,63 @@
 import Link from "next/link";
 
+const cols = [
+  { heading: "Software Solutions", links: [
+    { label: "Custom Software Development", href: "/software-solutions/custom-software-development" },
+    { label: "Web Applications", href: "/software-solutions/web-applications" },
+    { label: "Mobile Applications", href: "/software-solutions/mobile-applications" },
+    { label: "ERP Solutions", href: "/software-solutions/erp-solutions" },
+    { label: "SaaS Development", href: "/software-solutions/saas-development" },
+    { label: "Cloud Solutions", href: "/software-solutions/cloud-solutions" },
+  ]},
+  { heading: "AI Solutions", links: [
+    { label: "Agentic AI", href: "/artificial-intelligence/agentic-ai" },
+    { label: "AI Automation", href: "/artificial-intelligence/ai-automation" },
+    { label: "Generative AI", href: "/artificial-intelligence/generative-ai" },
+    { label: "Computer Vision", href: "/artificial-intelligence/computer-vision" },
+    { label: "AI Chatbots", href: "/artificial-intelligence/ai-chatbots" },
+    { label: "Machine Learning", href: "/artificial-intelligence/machine-learning" },
+  ]},
+  { heading: "Company", links: [
+    { label: "About Us", href: "/about" },
+    { label: "Case Studies", href: "/case-studies" },
+    { label: "Industries We Serve", href: "/about#industries" },
+    { label: "Contact Us", href: "/contact" },
+    { label: "Privacy Policy", href: "/privacy" },
+  ]},
+];
+
 export default function Footer() {
   return (
-    <footer style={{background:"var(--navy-950)",borderTop:"1px solid rgba(0,194,255,0.08)"}}>
-      <div className="container-main py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
-          {/* Brand */}
-          <div className="lg:col-span-1">
-            <div className="flex items-center gap-3 mb-4">
-              <div className="w-9 h-9 rounded-lg flex items-center justify-center flex-shrink-0" style={{background:"linear-gradient(135deg,#1E6FD9,#00C2FF)"}}>
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                  <circle cx="10" cy="10" r="3" fill="white"/>
-                  <circle cx="4" cy="5" r="2" fill="white" opacity="0.7"/>
-                  <circle cx="16" cy="5" r="2" fill="white" opacity="0.7"/>
-                  <circle cx="4" cy="15" r="2" fill="white" opacity="0.7"/>
-                  <circle cx="16" cy="15" r="2" fill="white" opacity="0.7"/>
-                  <line x1="10" y1="10" x2="4" y2="5" stroke="white" strokeWidth="1" opacity="0.5"/>
-                  <line x1="10" y1="10" x2="16" y2="5" stroke="white" strokeWidth="1" opacity="0.5"/>
-                  <line x1="10" y1="10" x2="4" y2="15" stroke="white" strokeWidth="1" opacity="0.5"/>
-                  <line x1="10" y1="10" x2="16" y2="15" stroke="white" strokeWidth="1" opacity="0.5"/>
-                </svg>
-              </div>
-              <div>
-                <div className="font-display font-800 text-white" style={{fontFamily:"Syne,sans-serif",fontWeight:800}}>Jubiliants</div>
-                <div className="text-xs" style={{color:"var(--slate-muted)"}}>Software Solutions</div>
-              </div>
+    <footer style={{background:"#080F1C",borderTop:"1px solid var(--border)"}}>
+      <div className="wrap" style={{padding:"4rem 1.5rem 2rem"}}>
+        <div style={{display:"grid",gridTemplateColumns:"1.4fr repeat(3, 1fr)",gap:"3rem",marginBottom:"3rem"}} className="lg:grid-cols-4 grid grid-cols-1 md:grid-cols-2">
+          {/* Brand col */}
+          <div>
+            <div style={{display:"flex",alignItems:"center",gap:"0.5rem",marginBottom:"1rem"}}>
+              <svg width="28" height="28" viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="8" fill="#2563EB"/><path d="M8 16L14 10L20 16L26 10" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/><path d="M8 22L14 16L20 22L26 16" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" opacity="0.5"/></svg>
+              <span style={{fontWeight:700,color:"var(--text-1)"}}>Jubiliants</span>
             </div>
-            <p className="text-sm leading-relaxed mb-4" style={{color:"var(--slate-muted)"}}>Transforming businesses through custom software & AI innovation since 2015.</p>
-            <div className="text-sm" style={{color:"var(--slate-muted)"}}>
+            <p style={{fontSize:"0.875rem",color:"var(--text-3)",lineHeight:1.65,marginBottom:"1.25rem"}}>Custom software development and AI solutions company. Building intelligent software that drives business growth since 2015.</p>
+            <div style={{fontSize:"0.8125rem",color:"var(--text-4)",lineHeight:1.7}}>
               <div>B-8, Indian Airlines Colony</div>
-              <div>Prakash Nagar, Begumpet</div>
-              <div>Hyderabad, Telangana, India</div>
-              <a href="mailto:srini@jubiliants.com" className="mt-2 block" style={{color:"var(--cyan-accent)"}}>srini@jubiliants.com</a>
+              <div>Begumpet, Hyderabad 500016</div>
+              <div>Telangana, India</div>
+              <a href="mailto:srini@jubiliants.com" style={{color:"var(--blue-light)",marginTop:"0.5rem",display:"block"}}>srini@jubiliants.com</a>
             </div>
           </div>
-
-          {/* Software Solutions */}
-          <div>
-            <h4 className="font-display font-600 text-white mb-4 text-sm" style={{fontFamily:"Syne,sans-serif",fontWeight:700,letterSpacing:"0.05em"}}>Software Solutions</h4>
-            <ul className="space-y-2.5">
-              {[
-                ["Digital Transformation", "/software-solutions/digital-transformation"],
-                ["Custom Applications", "/software-solutions/custom-applications"],
-                ["Mobile Applications", "/software-solutions/mobile-applications"],
-              ].map(([label, href]) => (
-                <li key={href}><Link href={href} className="text-sm transition-colors hover:text-white" style={{color:"var(--slate-muted)"}}>{label}</Link></li>
-              ))}
-            </ul>
-          </div>
-
-          {/* AI */}
-          <div>
-            <h4 className="font-display font-600 text-white mb-4 text-sm" style={{fontFamily:"Syne,sans-serif",fontWeight:700,letterSpacing:"0.05em"}}>Artificial Intelligence</h4>
-            <ul className="space-y-2.5">
-              {[
-                ["Agentic AI", "/artificial-intelligence/agentic-ai"],
-                ["Automation with AI", "/artificial-intelligence/automation-with-ai"],
-                ["Digital Transformation with AI", "/artificial-intelligence/digital-transformation-with-ai"],
-              ].map(([label, href]) => (
-                <li key={href}><Link href={href} className="text-sm transition-colors hover:text-white" style={{color:"var(--slate-muted)"}}>{label}</Link></li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Company */}
-          <div>
-            <h4 className="font-display font-600 text-white mb-4 text-sm" style={{fontFamily:"Syne,sans-serif",fontWeight:700,letterSpacing:"0.05em"}}>Company</h4>
-            <ul className="space-y-2.5">
-              {[
-                ["Case Studies", "/case-studies"],
-                ["About Us", "/about"],
-                ["Contact Us", "/contact"],
-              ].map(([label, href]) => (
-                <li key={href}><Link href={href} className="text-sm transition-colors hover:text-white" style={{color:"var(--slate-muted)"}}>{label}</Link></li>
-              ))}
-            </ul>
-          </div>
+          {/* Nav cols */}
+          {cols.map(col => (
+            <div key={col.heading}>
+              <div style={{fontSize:"0.75rem",fontWeight:600,letterSpacing:"0.07em",textTransform:"uppercase",color:"var(--text-3)",marginBottom:"1rem"}}>{col.heading}</div>
+              <ul style={{listStyle:"none",display:"flex",flexDirection:"column",gap:"0.5rem"}}>
+                {col.links.map(l => <li key={l.href}><Link href={l.href} className="footer-link">{l.label}</Link></li>)}
+              </ul>
+            </div>
+          ))}
         </div>
-
-        <div className="divider-gradient"></div>
-
-        <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-sm" style={{color:"var(--slate-muted)"}}>© {new Date().getFullYear()} Jubiliants Software Solutions. All rights reserved.</p>
-          <p className="text-sm" style={{color:"var(--slate-muted)"}}>Founded 2015 · Hyderabad, India</p>
+        <div style={{borderTop:"1px solid var(--border)",paddingTop:"1.5rem",display:"flex",flexWrap:"wrap",justifyContent:"space-between",alignItems:"center",gap:"0.75rem"}}>
+          <p style={{fontSize:"0.8125rem",color:"var(--text-4)"}}>© {new Date().getFullYear()} Jubiliants Software Solutions Pvt. Ltd. All rights reserved.</p>
+          <p style={{fontSize:"0.8125rem",color:"var(--text-4)"}}>Founded 2015 · Hyderabad, India</p>
         </div>
       </div>
     </footer>

@@ -3,136 +3,140 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 
 const softwareSubs = [
-  { label: "Digital Transformation", href: "/software-solutions/digital-transformation", icon: "⚡" },
-  { label: "Custom Applications", href: "/software-solutions/custom-applications", icon: "🖥" },
-  { label: "Mobile Applications", href: "/software-solutions/mobile-applications", icon: "📱" },
+  { label: "Custom Software Development", href: "/software-solutions/custom-software-development", desc: "Tailored enterprise applications" },
+  { label: "Web Applications", href: "/software-solutions/web-applications", desc: "Scalable web platforms & portals" },
+  { label: "Mobile Applications", href: "/software-solutions/mobile-applications", desc: "iOS, Android & cross-platform" },
+  { label: "ERP Solutions", href: "/software-solutions/erp-solutions", desc: "Integrated enterprise resource planning" },
+  { label: "SaaS Development", href: "/software-solutions/saas-development", desc: "Cloud-native SaaS products" },
+  { label: "Cloud Solutions", href: "/software-solutions/cloud-solutions", desc: "Cloud migration & architecture" },
+];
+const aiSubs = [
+  { label: "Agentic AI", href: "/artificial-intelligence/agentic-ai", desc: "Autonomous AI agent systems" },
+  { label: "AI Automation", href: "/artificial-intelligence/ai-automation", desc: "Intelligent process automation" },
+  { label: "Generative AI", href: "/artificial-intelligence/generative-ai", desc: "LLM-powered applications" },
+  { label: "Computer Vision", href: "/artificial-intelligence/computer-vision", desc: "Visual AI & image analysis" },
+  { label: "AI Chatbots", href: "/artificial-intelligence/ai-chatbots", desc: "Conversational AI assistants" },
+  { label: "Machine Learning", href: "/artificial-intelligence/machine-learning", desc: "Predictive analytics & ML models" },
 ];
 
-const aiSubs = [
-  { label: "Agentic AI", href: "/artificial-intelligence/agentic-ai", icon: "🤖" },
-  { label: "Automation with AI", href: "/artificial-intelligence/automation-with-ai", icon: "⚙️" },
-  { label: "Digital Transformation with AI", href: "/artificial-intelligence/digital-transformation-with-ai", icon: "🚀" },
-];
+const LogoSVG = () => (
+  <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect width="32" height="32" rx="8" fill="#2563EB"/>
+    <path d="M8 16L14 10L20 16L26 10" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+    <path d="M8 22L14 16L20 22L26 16" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" opacity="0.5"/>
+  </svg>
+);
+
+const ChevronDown = () => (
+  <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+    <path d="M3 5l4 4 4-4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+  </svg>
+);
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
-  const [mobileExpanded, setMobileExpanded] = useState<string | null>(null);
+  const [mobileEx, setMobileEx] = useState<string|null>(null);
 
   useEffect(() => {
-    const handler = () => setScrolled(window.scrollY > 30);
-    window.addEventListener("scroll", handler);
-    return () => window.removeEventListener("scroll", handler);
+    const fn = () => setScrolled(window.scrollY > 10);
+    fn();
+    window.addEventListener("scroll", fn, { passive: true });
+    return () => window.removeEventListener("scroll", fn);
   }, []);
 
   return (
     <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
-      <div className="container-main">
-        <div className="flex items-center justify-between py-4">
-          {/* Logo */}
-          <Link href="/" className="flex items-center gap-3 group">
-            <div className="relative w-9 h-9 flex-shrink-0">
-              <div className="absolute inset-0 rounded-lg" style={{background:"linear-gradient(135deg,#1E6FD9,#00C2FF)"}}></div>
-              <div className="absolute inset-0 flex items-center justify-center">
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                  <circle cx="10" cy="10" r="3" fill="white"/>
-                  <circle cx="4" cy="5" r="2" fill="white" opacity="0.7"/>
-                  <circle cx="16" cy="5" r="2" fill="white" opacity="0.7"/>
-                  <circle cx="4" cy="15" r="2" fill="white" opacity="0.7"/>
-                  <circle cx="16" cy="15" r="2" fill="white" opacity="0.7"/>
-                  <line x1="10" y1="10" x2="4" y2="5" stroke="white" strokeWidth="1" opacity="0.5"/>
-                  <line x1="10" y1="10" x2="16" y2="5" stroke="white" strokeWidth="1" opacity="0.5"/>
-                  <line x1="10" y1="10" x2="4" y2="15" stroke="white" strokeWidth="1" opacity="0.5"/>
-                  <line x1="10" y1="10" x2="16" y2="15" stroke="white" strokeWidth="1" opacity="0.5"/>
-                </svg>
-              </div>
-            </div>
-            <div>
-              <div className="font-display font-800 text-white text-lg leading-tight" style={{fontFamily:"Syne,sans-serif",fontWeight:800}}>Jubiliants</div>
-              <div className="text-xs" style={{color:"var(--slate-muted)",fontFamily:"Inter,sans-serif",lineHeight:1}}>Software Solutions</div>
-            </div>
-          </Link>
+      <div className="wrap" style={{width:"100%",display:"flex",alignItems:"center",justifyContent:"space-between"}}>
+        {/* Logo */}
+        <Link href="/" style={{display:"flex",alignItems:"center",gap:"0.625rem",textDecoration:"none"}}>
+          <LogoSVG />
+          <span style={{fontWeight:600,fontSize:"1rem",color:"var(--text-1)",fontFamily:"var(--font-heading)"}}>Jubiliants</span>
+        </Link>
 
-          {/* Desktop Nav */}
-          <div className="hidden lg:flex items-center gap-1">
-            <Link href="/" className="px-4 py-2 text-sm font-medium rounded-lg transition-colors hover:text-white" style={{color:"var(--slate-light)",fontFamily:"Inter,sans-serif"}}>Home</Link>
+        {/* Desktop */}
+        <div className="hidden lg:flex" style={{alignItems:"center",gap:"0.25rem"}}>
+          <Link href="/" className="nav-link">Home</Link>
 
-            {/* Software Solutions Dropdown */}
-            <div className="nav-item relative px-4 py-2 cursor-pointer">
-              <span className="text-sm font-medium flex items-center gap-1 transition-colors hover:text-white" style={{color:"var(--slate-light)",fontFamily:"Inter,sans-serif"}}>
-                Software Solutions
-                <svg width="12" height="12" viewBox="0 0 12 12" fill="currentColor"><path d="M2 4l4 4 4-4"/></svg>
-              </span>
-              <div className="dropdown-menu">
-                {softwareSubs.map(s => (
-                  <Link key={s.href} href={s.href} className="dropdown-item">
-                    <span className="icon text-xs">{s.icon}</span>
-                    {s.label}
-                  </Link>
-                ))}
-              </div>
+          <div className="nav-item" style={{display:"flex",alignItems:"center"}}>
+            <span className="nav-link" style={{display:"flex",alignItems:"center",gap:"0.3rem",cursor:"default"}}>
+              Software Solutions <ChevronDown/>
+            </span>
+            <div className="nav-dropdown" style={{display:"grid",gridTemplateColumns:"1fr 1fr",minWidth:"440px"}}>
+              {softwareSubs.map(s => (
+                <Link key={s.href} href={s.href} className="nav-dd-item">
+                  <span className="nav-dd-icon">
+                    <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><rect x="2" y="2" width="5" height="5" rx="1" fill="#3B82F6"/><rect x="9" y="2" width="5" height="5" rx="1" fill="#3B82F6" opacity="0.5"/><rect x="2" y="9" width="5" height="5" rx="1" fill="#3B82F6" opacity="0.5"/><rect x="9" y="9" width="5" height="5" rx="1" fill="#3B82F6" opacity="0.3"/></svg>
+                  </span>
+                  <div><div style={{fontSize:"0.8125rem",fontWeight:600,color:"var(--text-1)"}}>{s.label}</div><div style={{fontSize:"0.7rem",color:"var(--text-4)"}}>{s.desc}</div></div>
+                </Link>
+              ))}
             </div>
-
-            {/* AI Dropdown */}
-            <div className="nav-item relative px-4 py-2 cursor-pointer">
-              <span className="text-sm font-medium flex items-center gap-1 transition-colors hover:text-white" style={{color:"var(--slate-light)",fontFamily:"Inter,sans-serif"}}>
-                Artificial Intelligence
-                <svg width="12" height="12" viewBox="0 0 12 12" fill="currentColor"><path d="M2 4l4 4 4-4"/></svg>
-              </span>
-              <div className="dropdown-menu">
-                {aiSubs.map(s => (
-                  <Link key={s.href} href={s.href} className="dropdown-item">
-                    <span className="icon text-xs">{s.icon}</span>
-                    {s.label}
-                  </Link>
-                ))}
-              </div>
-            </div>
-
-            <Link href="/case-studies" className="px-4 py-2 text-sm font-medium rounded-lg transition-colors hover:text-white" style={{color:"var(--slate-light)",fontFamily:"Inter,sans-serif"}}>Case Studies</Link>
-            <Link href="/about" className="px-4 py-2 text-sm font-medium rounded-lg transition-colors hover:text-white" style={{color:"var(--slate-light)",fontFamily:"Inter,sans-serif"}}>About Us</Link>
-            <Link href="/contact" className="btn-primary ml-3 text-sm py-2.5 px-5">Contact Us</Link>
           </div>
 
-          {/* Mobile hamburger */}
-          <button className="lg:hidden p-2 rounded-lg" style={{color:"var(--slate-light)"}} onClick={() => setMobileOpen(!mobileOpen)}>
-            <svg width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2">
-              {mobileOpen ? <path d="M6 18L18 6M6 6l12 12"/> : <path d="M4 6h16M4 12h16M4 18h16"/>}
-            </svg>
-          </button>
+          <div className="nav-item" style={{display:"flex",alignItems:"center"}}>
+            <span className="nav-link" style={{display:"flex",alignItems:"center",gap:"0.3rem",cursor:"default"}}>
+              AI Solutions <ChevronDown/>
+            </span>
+            <div className="nav-dropdown" style={{display:"grid",gridTemplateColumns:"1fr 1fr",minWidth:"440px"}}>
+              {aiSubs.map(s => (
+                <Link key={s.href} href={s.href} className="nav-dd-item">
+                  <span className="nav-dd-icon">
+                    <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="3" fill="#06B6D4"/><circle cx="3" cy="5" r="1.5" fill="#06B6D4" opacity="0.6"/><circle cx="13" cy="5" r="1.5" fill="#06B6D4" opacity="0.6"/><circle cx="3" cy="11" r="1.5" fill="#06B6D4" opacity="0.6"/><circle cx="13" cy="11" r="1.5" fill="#06B6D4" opacity="0.6"/><line x1="8" y1="8" x2="3" y2="5" stroke="#06B6D4" strokeWidth="0.8" opacity="0.5"/><line x1="8" y1="8" x2="13" y2="5" stroke="#06B6D4" strokeWidth="0.8" opacity="0.5"/><line x1="8" y1="8" x2="3" y2="11" stroke="#06B6D4" strokeWidth="0.8" opacity="0.5"/><line x1="8" y1="8" x2="13" y2="11" stroke="#06B6D4" strokeWidth="0.8" opacity="0.5"/></svg>
+                  </span>
+                  <div><div style={{fontSize:"0.8125rem",fontWeight:600,color:"var(--text-1)"}}>{s.label}</div><div style={{fontSize:"0.7rem",color:"var(--text-4)"}}>{s.desc}</div></div>
+                </Link>
+              ))}
+            </div>
+          </div>
+
+          <Link href="/case-studies" className="nav-link">Case Studies</Link>
+          <Link href="/about" className="nav-link">About</Link>
         </div>
 
-        {/* Mobile menu */}
-        {mobileOpen && (
-          <div className="lg:hidden pb-4 border-t" style={{borderColor:"rgba(0,194,255,0.1)"}}>
-            <div className="flex flex-col gap-1 pt-4">
-              <Link href="/" className="px-4 py-2.5 text-sm rounded-lg" style={{color:"var(--slate-light)"}} onClick={() => setMobileOpen(false)}>Home</Link>
-              
-              <button className="px-4 py-2.5 text-sm text-left flex justify-between items-center rounded-lg" style={{color:"var(--slate-light)"}} onClick={() => setMobileExpanded(mobileExpanded === 'sw' ? null : 'sw')}>
-                Software Solutions <span>{mobileExpanded === 'sw' ? '−' : '+'}</span>
-              </button>
-              {mobileExpanded === 'sw' && (
-                <div className="pl-4 flex flex-col gap-1">
-                  {softwareSubs.map(s => <Link key={s.href} href={s.href} className="px-4 py-2 text-sm rounded-lg" style={{color:"var(--cyan-accent)"}} onClick={() => setMobileOpen(false)}>{s.icon} {s.label}</Link>)}
-                </div>
-              )}
+        <div className="hidden lg:flex" style={{alignItems:"center",gap:"0.75rem"}}>
+          <a href="mailto:srini@jubiliants.com" className="nav-link">Contact</a>
+          <Link href="/contact" className="btn btn-primary btn-sm">Get a Free Consultation</Link>
+        </div>
 
-              <button className="px-4 py-2.5 text-sm text-left flex justify-between items-center rounded-lg" style={{color:"var(--slate-light)"}} onClick={() => setMobileExpanded(mobileExpanded === 'ai' ? null : 'ai')}>
-                Artificial Intelligence <span>{mobileExpanded === 'ai' ? '−' : '+'}</span>
-              </button>
-              {mobileExpanded === 'ai' && (
-                <div className="pl-4 flex flex-col gap-1">
-                  {aiSubs.map(s => <Link key={s.href} href={s.href} className="px-4 py-2 text-sm rounded-lg" style={{color:"var(--cyan-accent)"}} onClick={() => setMobileOpen(false)}>{s.icon} {s.label}</Link>)}
-                </div>
-              )}
-
-              <Link href="/case-studies" className="px-4 py-2.5 text-sm rounded-lg" style={{color:"var(--slate-light)"}} onClick={() => setMobileOpen(false)}>Case Studies</Link>
-              <Link href="/about" className="px-4 py-2.5 text-sm rounded-lg" style={{color:"var(--slate-light)"}} onClick={() => setMobileOpen(false)}>About Us</Link>
-              <Link href="/contact" className="btn-primary mt-2 text-center justify-center" onClick={() => setMobileOpen(false)}>Contact Us</Link>
-            </div>
-          </div>
-        )}
+        {/* Mobile hamburger */}
+        <button className="lg:hidden" style={{color:"var(--text-2)",padding:"0.5rem"}} onClick={() => setMobileOpen(!mobileOpen)} aria-label="Toggle menu">
+          <svg width="22" height="22" fill="none" stroke="currentColor" strokeWidth="2">
+            {mobileOpen ? <path d="M5 5l12 12M17 5l-12 12"/> : <path d="M3 7h18M3 12h18M3 17h18"/>}
+          </svg>
+        </button>
       </div>
+
+      {/* Mobile menu */}
+      {mobileOpen && (
+        <div style={{position:"absolute",top:"60px",left:0,right:0,background:"var(--bg-raised)",borderBottom:"1px solid var(--border)",padding:"1rem",maxHeight:"80vh",overflowY:"auto"}}>
+          <div style={{display:"flex",flexDirection:"column",gap:"0.25rem"}}>
+            <Link href="/" className="nav-link" onClick={() => setMobileOpen(false)}>Home</Link>
+            
+            <button className="nav-link" style={{textAlign:"left",display:"flex",justifyContent:"space-between"}} onClick={() => setMobileEx(mobileEx==="sw"?null:"sw")}>
+              Software Solutions <ChevronDown/>
+            </button>
+            {mobileEx === "sw" && (
+              <div style={{paddingLeft:"1rem",display:"flex",flexDirection:"column",gap:"0.25rem"}}>
+                {softwareSubs.map(s => <Link key={s.href} href={s.href} className="nav-link" style={{fontSize:"0.875rem",color:"var(--text-3)"}} onClick={() => setMobileOpen(false)}>{s.label}</Link>)}
+              </div>
+            )}
+
+            <button className="nav-link" style={{textAlign:"left",display:"flex",justifyContent:"space-between"}} onClick={() => setMobileEx(mobileEx==="ai"?null:"ai")}>
+              AI Solutions <ChevronDown/>
+            </button>
+            {mobileEx === "ai" && (
+              <div style={{paddingLeft:"1rem",display:"flex",flexDirection:"column",gap:"0.25rem"}}>
+                {aiSubs.map(s => <Link key={s.href} href={s.href} className="nav-link" style={{fontSize:"0.875rem",color:"var(--text-3)"}} onClick={() => setMobileOpen(false)}>{s.label}</Link>)}
+              </div>
+            )}
+
+            <Link href="/case-studies" className="nav-link" onClick={() => setMobileOpen(false)}>Case Studies</Link>
+            <Link href="/about" className="nav-link" onClick={() => setMobileOpen(false)}>About</Link>
+            <Link href="/contact" className="btn btn-primary" style={{marginTop:"0.5rem",justifyContent:"center"}} onClick={() => setMobileOpen(false)}>Get a Free Consultation</Link>
+          </div>
+        </div>
+      )}
     </nav>
   );
 }
