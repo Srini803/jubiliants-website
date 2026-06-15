@@ -30,7 +30,7 @@ export default function Footer() {
   return (
     <footer style={{background:"#080F1C",borderTop:"1px solid var(--border)"}}>
       <div className="wrap" style={{padding:"4rem 1.5rem 2rem"}}>
-        <div style={{display:"grid",gridTemplateColumns:"1.4fr repeat(3, 1fr)",gap:"3rem",marginBottom:"3rem"}} className="lg:grid-cols-4 grid grid-cols-1 md:grid-cols-2">
+        <div className="footer-grid">
           {/* Brand col */}
           <div>
             <div style={{display:"flex",alignItems:"center",gap:"0.5rem",marginBottom:"1rem"}}>

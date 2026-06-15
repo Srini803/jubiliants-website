@@ -31,7 +31,7 @@
 }
 
 /* ── Reset & Base ───────────────────────────────────── */
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; overflow-wrap: break-word; }
 html { scroll-behavior: smooth; font-size: 16px; }
 body {
   font-family: var(--font-body);
@@ -500,8 +500,25 @@ select.field-input option { background: var(--bg-raised); }
   }
 }
 
-/* Contact page form layout — stacked on mobile, 2:1 ratio on desktop */
-.contact-grid {
+/* Footer columns — stacked on mobile, 1.4fr+3x1fr from desktop */
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+  margin-bottom: 3rem;
+}
+@media (min-width: 768px) {
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+  }
+}
+@media (min-width: 1024px) {
+  .footer-grid {
+    grid-template-columns: 1.4fr repeat(3, 1fr);
+    gap: 3rem;
+  }
+}
   display: grid;
   grid-template-columns: 1fr;
   gap: 2.5rem;
