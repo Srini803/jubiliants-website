@@ -38,7 +38,7 @@ export default function Footer() {
               <Image src="/logo.jpg" alt="Jubiliants Consulting" width={180} height={60}
                 style={{height:"52px",width:"auto",objectFit:"contain",display:"block"}} />
             </div>
-            <p style={{fontSize:"0.875rem",color:"var(--text-3)",lineHeight:1.65,marginBottom:"1.25rem"}}>Custom software development and AI solutions company. Building intelligent software that drives business growth since 2014.</p>
+            <p style={{fontSize:"0.875rem",color:"var(--text-3)",lineHeight:1.65,marginBottom:"1.25rem"}}>Custom software development and AI solutions company. Building intelligent software that drives business growth since 2015.</p>
             <div style={{fontSize:"0.8125rem",color:"var(--text-4)",lineHeight:1.7}}>
               <div>B-8, Indian Airlines Colony</div>
               <div>Begumpet, Hyderabad 500016</div>
@@ -57,8 +57,8 @@ export default function Footer() {
           ))}
         </div>
         <div style={{borderTop:"1px solid var(--border)",paddingTop:"1.5rem",display:"flex",flexWrap:"wrap",justifyContent:"space-between",alignItems:"center",gap:"0.75rem"}}>
-          <p style={{fontSize:"0.8125rem",color:"var(--text-4)"}}>&copy; 2014 Jubiliants Consulting Pvt. Ltd. All rights reserved.</p>
-          <p style={{fontSize:"0.8125rem",color:"var(--text-4)"}}>Founded 2014 · Hyderabad, India</p>
+          <p style={{fontSize:"0.8125rem",color:"var(--text-4)"}}>&copy; 2015 Jubiliants Consulting Pvt. Ltd. All rights reserved.</p>
+          <p style={{fontSize:"0.8125rem",color:"var(--text-4)"}}>Founded 2015 · Hyderabad, India</p>
         </div>
       </div>
     </footer>
