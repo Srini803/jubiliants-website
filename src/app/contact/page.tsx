@@ -65,7 +65,7 @@ export default function Contact() {
                     </div>
                     <h3 className="t-h3" style={{marginBottom:"0.75rem"}}>Message sent — thank you!</h3>
                     <p className="t-body">We've received your enquiry and a consultant will be in touch within 4 business hours. You'll also receive a copy at <strong style={{color:"var(--text-1)"}}>{form.email}</strong>.</p>
-                    <p style={{marginTop:"1rem",fontSize:"0.875rem",color:"var(--text-3)"}}>Can't wait? Email us directly at <a href="mailto:srini@jubiliants.com" style={{color:"var(--blue-light)"}}>srini@jubiliants.com</a></p>
+                    <p style={{marginTop:"1rem",fontSize:"0.875rem",color:"var(--text-3)"}}>Can't wait? Email us directly at <a href="mailto:info@jubiliants.com" style={{color:"var(--blue-light)"}}>info@jubiliants.com</a></p>
                   </div>
                 ) : (
                   <div style={{background:"var(--bg-raised)",borderRadius:"var(--radius-xl)",border:"1px solid var(--border)",padding:"2.5rem"}}>
@@ -125,7 +125,7 @@ export default function Contact() {
                             </span>
                           ) : "Send Message →"}
                         </button>
-                        <p style={{fontSize:"0.75rem",color:"var(--text-4)"}}>Or email <a href="mailto:srini@jubiliants.com" style={{color:"var(--blue-light)"}}>srini@jubiliants.com</a></p>
+                        <p style={{fontSize:"0.75rem",color:"var(--text-4)"}}>Or email <a href="mailto:info@jubiliants.com" style={{color:"var(--blue-light)"}}>info@jubiliants.com</a></p>
                       </div>
                     </div>
                   </div>
@@ -145,7 +145,7 @@ export default function Contact() {
                       </div>
                       <div>
                         <div style={{fontSize:"0.75rem",fontWeight:600,color:"var(--text-1)",marginBottom:"0.25rem"}}>Office Address</div>
-                        <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.6}}>B-8, Indian Airlines Colony<br/>Begumpet, Hyderabad 500016<br/>Telangana, India</p>
+                        <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.6}}>08th Floor, SLN Terminus, Survey No. 133<br/>Beside Botanical Gardens, Gachibowli<br/>Hyderabad, Telangana 500032, India</p>
                       </div>
                     </div>
                     <div style={{display:"flex",gap:"0.75rem"}}>
@@ -154,7 +154,7 @@ export default function Contact() {
                       </div>
                       <div>
                         <div style={{fontSize:"0.75rem",fontWeight:600,color:"var(--text-1)",marginBottom:"0.25rem"}}>Email</div>
-                        <a href="mailto:srini@jubiliants.com" style={{fontSize:"0.875rem",color:"var(--blue-light)"}}>srini@jubiliants.com</a>
+                        <a href="mailto:info@jubiliants.com" style={{fontSize:"0.875rem",color:"var(--blue-light)"}}>info@jubiliants.com</a>
                       </div>
                     </div>
                     <div style={{display:"flex",gap:"0.75rem"}}>
@@ -215,10 +215,10 @@ export default function Contact() {
             <h3 className="t-h4" style={{marginBottom:"1rem"}}>Find us in Hyderabad</h3>
             <div style={{borderRadius:"var(--radius-xl)",overflow:"hidden",border:"1px solid var(--border)",height:"300px"}}>
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.4!2d78.465!3d17.443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9152e4c7b789%3A0x0!2sBegumpet%2C+Hyderabad%2C+Telangana!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.0!2d78.3613!3d17.4401!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb93ef3e2c6c71%3A0x8a9e7e4f5f2b1a2c!2sSLN+Terminus%2C+Gachibowli%2C+Hyderabad%2C+Telangana!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
                 width="100%" height="100%" style={{border:0,filter:"invert(92%) hue-rotate(180deg) saturate(0.9)"}}
                 allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"
-                title="Jubiliants Office — Begumpet, Hyderabad"
+                title="Jubiliants Office — Gachibowli, Hyderabad"
               ></iframe>
             </div>
           </RevealOnScroll>

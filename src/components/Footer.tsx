@@ -40,10 +40,11 @@ export default function Footer() {
             </div>
             <p style={{fontSize:"0.875rem",color:"var(--text-3)",lineHeight:1.65,marginBottom:"1.25rem"}}>Custom software development and AI solutions company. Building intelligent software that drives business growth since 2015.</p>
             <div style={{fontSize:"0.8125rem",color:"var(--text-4)",lineHeight:1.7}}>
-              <div>B-8, Indian Airlines Colony</div>
-              <div>Begumpet, Hyderabad 500016</div>
+              <div>08th Floor, SLN Terminus, Survey No. 133</div>
+              <div>Beside Botanical Gardens, Gachibowli</div>
+              <div>Hyderabad, Telangana 500032, India</div>
               <div>Telangana, India</div>
-              <a href="mailto:srini@jubiliants.com" style={{color:"var(--blue-light)",marginTop:"0.5rem",display:"block"}}>srini@jubiliants.com</a>
+              <a href="mailto:info@jubiliants.com" style={{color:"var(--blue-light)",marginTop:"0.5rem",display:"block"}}>info@jubiliants.com</a>
             </div>
           </div>
           {/* Nav cols */}
