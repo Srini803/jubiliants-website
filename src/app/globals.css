@@ -533,9 +533,10 @@ select.field-input option { background: var(--bg-raised); }
   }
 }
 
-/* Navbar logo — white background pill so logo reads cleanly on dark navbar */
+/* Navbar logo — white background so logo reads cleanly on dark navbar */
 .nav-logo {
-  background: white;
+  background: #ffffff;
   border-radius: 8px;
-  padding: 3px 8px;
+  padding: 4px 10px;
+  box-shadow: 0 0 0 1px rgba(255,255,255,0.15);
 }

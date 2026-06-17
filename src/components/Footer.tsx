@@ -35,8 +35,8 @@ export default function Footer() {
           {/* Brand col */}
           <div>
             <div style={{marginBottom:"1rem"}}>
-              <Image src="/logo.png" alt="Jubiliants Consulting" width={160} height={52}
-                style={{height:"44px",width:"auto",objectFit:"contain"}} />
+              <Image src="/logo.jpg" alt="Jubiliants Consulting" width={180} height={60}
+                style={{height:"52px",width:"auto",objectFit:"contain",display:"block"}} />
             </div>
             <p style={{fontSize:"0.875rem",color:"var(--text-3)",lineHeight:1.65,marginBottom:"1.25rem"}}>Custom software development and AI solutions company. Building intelligent software that drives business growth since 2015.</p>
             <div style={{fontSize:"0.8125rem",color:"var(--text-4)",lineHeight:1.7}}>

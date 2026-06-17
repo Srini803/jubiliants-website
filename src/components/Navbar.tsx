@@ -52,12 +52,12 @@ export default function Navbar() {
         {/* Logo */}
         <Link href="/" style={{display:"flex",alignItems:"center",textDecoration:"none"}}>
           <Image
-            src="/logo.png"
-            alt="Jubiliants Consulting"
-            width={160}
-            height={52}
+            src="/logo.jpg"
+            alt="Jubiliants Consulting — Delivering Success"
+            width={180}
+            height={60}
             className="nav-logo"
-            style={{height:"42px",width:"auto",objectFit:"contain"}}
+            style={{height:"48px",width:"auto",objectFit:"contain",display:"block"}}
             priority
           />
         </Link>
