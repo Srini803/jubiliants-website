@@ -217,10 +217,10 @@ const stats = [
 ];
 
 const testimonials = [
-  {quote:"Jubiliants delivered our hospital management system on time and within budget. The system handles 500+ patients daily and has reduced our admin workload by over 60%.",name:"Dr. Anil Reddy",title:"Director of Operations",company:"Apollo Health Group",initials:"AR",color:"#1D4ED8"},
-  {quote:"Their team built our ERP platform from scratch and integrated it with our existing supply chain tools. The visibility we now have into our operations is transformational.",name:"Priya Sharma",title:"VP Technology",company:"Varun Industries",initials:"PS",color:"#0E7490"},
-  {quote:"We deployed an AI customer service agent with Jubiliants and cut our support ticket volume by 65%. The quality of responses exceeded our expectations.",name:"Karthik Menon",title:"Head of Customer Experience",company:"FinServe Solutions",initials:"KM",color:"#6D28D9"},
-  {quote:"The student information system they built handles 15,000 students seamlessly. Parents, teachers, and admin staff all love the mobile app. Outstanding work.",name:"R. Venkatesh",title:"Principal",company:"Narayana Group of Schools",initials:"RV",color:"#065F46"},
+  {quote:"Jubiliants delivered our ERP platform on time and within budget. The system has transformed how we manage production planning, inventory, and reporting across all our facilities.",name:"James Hartley",title:"VP Operations",company:"Mayville Engineering",initials:"JH",color:"#1D4ED8"},
+  {quote:"Their team built our field service management system from scratch and integrated it with our existing supply chain tools. The visibility we now have into our operations is outstanding.",name:"Stefan Brandt",title:"Head of Digital Solutions",company:"Schmalz GmbH",initials:"SB",color:"#0E7490"},
+  {quote:"We deployed an AI-powered automation system with Jubiliants and reduced our manual processing time by over 70%. The quality and speed of delivery exceeded our expectations.",name:"Michael Rourke",title:"Chief Technology Officer",company:"Powell Industries",initials:"MR",color:"#6D28D9"},
+  {quote:"The custom platform they built for us handles thousands of transactions daily, seamlessly. Our operations team and clients all love how intuitive it is. Exceptional work.",name:"David Tennant",title:"Director of Technology",company:"Dutco Tennant LLC",initials:"DT",color:"#065F46"},
 ];
 
 const industries = [
