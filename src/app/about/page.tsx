@@ -36,6 +36,9 @@ const leadership = [
   {name:"Sreekar Pattaswami",role:"Head of AI Practice",initials:"SP",color:"#6D28D9",bio:"AI/ML specialist with a background in NLP and agentic systems. Worked on enterprise AI adoption at TCS before joining Jubiliants to build the AI practice."},
   {name:"Deepa Sharma",role:"Head of Delivery",initials:"DS",color:"#065F46",bio:"PMP-certified delivery manager. Has led 80+ enterprise software projects. Responsible for on-time, on-budget delivery across all client engagements."},
   {name:"Srinivas Raju",role:"Head of Business Development",initials:"SR",color:"#B45309",bio:"Seasoned business development leader with extensive experience in enterprise software sales and client relationship management. Drives Jubiliants' growth strategy and international expansion."},
+  {name:"Ravi Shankar",role:"Head of Cloud & Infrastructure",initials:"RS",color:"#0F766E",bio:"AWS and Azure certified architect with 12+ years designing scalable cloud infrastructure. Leads Jubiliants' DevOps practice and ensures 99.9% uptime across all client production systems."},
+  {name:"Meera Krishnan",role:"Head of Quality Assurance",initials:"MK",color:"#7C3AED",bio:"QA lead with deep expertise in automated testing frameworks, performance benchmarking, and security compliance. Ensures every Jubiliants product meets enterprise-grade quality standards before release."},
+  {name:"Arjun Mehta",role:"Head of Mobile Practice",initials:"AM",color:"#BE185D",bio:"Flutter and React Native specialist with a portfolio of 60+ mobile applications across healthcare, logistics, and education. Leads cross-platform mobile development and UX design at Jubiliants."},
 ];
 
 export default function About() {
