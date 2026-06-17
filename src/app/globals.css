@@ -533,8 +533,9 @@ select.field-input option { background: var(--bg-raised); }
   }
 }
 
-/* Navbar logo — white-bg logo on dark navbar: blend mode removes the white */
+/* Navbar logo — white background pill so logo reads cleanly on dark navbar */
 .nav-logo {
-  mix-blend-mode: lighten;
-  filter: brightness(1.05);
+  background: white;
+  border-radius: 8px;
+  padding: 3px 8px;
 }
