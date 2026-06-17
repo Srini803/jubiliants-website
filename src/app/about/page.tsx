@@ -220,7 +220,8 @@ export default function About() {
 
 
       {/* ── OFFICES ── */}
-      <section className="section" style={{background:"var(--bg-raised)",borderTop:"1px solid var(--border)"}}>        <div className="wrap">
+      <section className="section" style={{background:"var(--bg-raised)",borderTop:"1px solid var(--border)"}}>
+        <div className="wrap">
           <div style={{textAlign:"center",marginBottom:"2.5rem"}}>
             <div className="section-label" style={{justifyContent:"center"}}>Our offices</div>
             <h2 className="t-h2">Where to find us</h2>
