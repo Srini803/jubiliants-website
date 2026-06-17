@@ -31,10 +31,11 @@ const values = [
 ];
 
 const leadership = [
-  {name:"Srinivas Reddy",role:"Founder & CEO",initials:"SR",color:"#1D4ED8",bio:"20+ years in enterprise software. Led digital transformation programmes for manufacturing and healthcare organisations before founding Jubiliants in 2015."},
+  {name:"Praveen Dinavahi",role:"Founder & CEO",initials:"PD",color:"#1D4ED8",bio:"20+ years in enterprise software. Led digital transformation programmes for manufacturing and healthcare organisations before founding Jubiliants in 2015."},
   {name:"Priya Nair",role:"VP Engineering",initials:"PN",color:"#0E7490",bio:"Former Infosys architect with deep expertise in distributed systems and cloud infrastructure. Leads Jubiliants' engineering standards and delivery practices."},
-  {name:"Arjun Kumar",role:"Head of AI Practice",initials:"AK",color:"#6D28D9",bio:"AI/ML specialist with a background in NLP and agentic systems. Worked on enterprise AI adoption at TCS before joining Jubiliants to build the AI practice."},
+  {name:"Sreekar Pattaswami",role:"Head of AI Practice",initials:"SP",color:"#6D28D9",bio:"AI/ML specialist with a background in NLP and agentic systems. Worked on enterprise AI adoption at TCS before joining Jubiliants to build the AI practice."},
   {name:"Deepa Sharma",role:"Head of Delivery",initials:"DS",color:"#065F46",bio:"PMP-certified delivery manager. Has led 80+ enterprise software projects. Responsible for on-time, on-budget delivery across all client engagements."},
+  {name:"Srinivas Raju",role:"Head of Business Development",initials:"SR",color:"#B45309",bio:"Seasoned business development leader with extensive experience in enterprise software sales and client relationship management. Drives Jubiliants' growth strategy and international expansion."},
 ];
 
 export default function About() {
@@ -48,7 +49,7 @@ export default function About() {
             <div>
               <div className="section-label">About Jubiliants</div>
               <h1 className="t-h1" style={{marginBottom:"1rem"}}>Turning business problems into working software since 2015</h1>
-              <p className="t-body-lg" style={{marginBottom:"1.75rem",maxWidth:"440px"}}>We are a custom software and AI solutions company headquartered in Hyderabad, India. 80+ engineers. 10 years. 200+ customers. Our mission: build software that makes your business measurably better.</p>
+              <p className="t-body-lg" style={{marginBottom:"1.75rem",maxWidth:"440px"}}>We are a custom software and AI solutions company headquartered in Hyderabad, India — and a subsidiary of Telcomet Global Solutions. 80+ engineers. 10 years. 200+ customers. Our mission: build software that makes your business measurably better.</p>
               <div style={{display:"flex",flexWrap:"wrap",gap:"0.75rem",marginBottom:"2rem"}}>
                 <Link href="/contact" className="btn btn-primary">Work With Us</Link>
                 <Link href="/case-studies" className="btn btn-secondary">See Our Work</Link>
@@ -75,7 +76,7 @@ export default function About() {
                 <div className="section-label">Our story</div>
                 <h2 className="t-h2" style={{marginBottom:"1.25rem"}}>Built by engineers, run like a business</h2>
                 <div style={{display:"flex",flexDirection:"column",gap:"1rem"}}>
-                  <p className="t-body">Jubiliants was founded by Srinivas Reddy in 2015, after a decade leading technology programmes at large enterprises. He saw the same pattern repeatedly: businesses paying for expensive, inflexible software that didn't actually fit how their teams worked.</p>
+                  <p className="t-body">Jubiliants was founded by Praveen Dinavahi in 2015, after a decade leading technology programmes at large enterprises. He saw the same pattern repeatedly: businesses paying for expensive, inflexible software that didn't actually fit how their teams worked.</p>
                   <p className="t-body">The original idea was simple — build a firm that thinks about business outcomes first, and technology second. That principle has guided every hiring decision, every architecture choice, and every client conversation since.</p>
                   <p className="t-body">Today, we're a team of 80+ engineers, AI specialists, designers, and project managers. We've delivered 300+ projects across healthcare, manufacturing, education, logistics, and financial services — and 95% of our customers stay with us for additional work.</p>
                 </div>
@@ -214,6 +215,53 @@ export default function About() {
               </RevealOnScroll>
             ))}
           </div>
+        </div>
+      </section>
+
+
+      {/* ── OFFICES ── */}
+      <section className="section" style={{background:"var(--bg-raised)",borderTop:"1px solid var(--border))"}}>
+        <div className="wrap">
+          <div style={{textAlign:"center",marginBottom:"2.5rem"}}>
+            <div className="section-label" style={{justifyContent:"center"}}>Our offices</div>
+            <h2 className="t-h2">Where to find us</h2>
+          </div>
+          <div style={{display:"grid",gap:"1.5rem"}} className="grid grid-cols-1 md:grid-cols-2">
+            {/* HQ */}
+            <div className="card" style={{padding:"2rem"}}>
+              <div style={{display:"flex",alignItems:"center",gap:"0.75rem",marginBottom:"1rem"}}>
+                <span style={{fontSize:"1.5rem"}}>🏢</span>
+                <div>
+                  <div style={{fontFamily:"var(--font-heading)",fontWeight:700,fontSize:"1rem",color:"var(--text-1)"}}>Registered Office — Hyderabad</div>
+                  <span className="chip chip-blue" style={{fontSize:"0.6875rem",marginTop:"0.25rem"}}>Headquarters</span>
+                </div>
+              </div>
+              <p className="t-body" style={{lineHeight:1.8}}>
+                08th Floor, SLN Terminus, Survey No. 133<br/>
+                Beside Botanical Gardens, Gachibowli<br/>
+                Hyderabad, Telangana 500032, India
+              </p>
+              <a href="mailto:info@jubiliants.com" style={{color:"var(--blue-light)",fontSize:"0.875rem",marginTop:"0.75rem",display:"inline-block"}}>info@jubiliants.com</a>
+            </div>
+            {/* Branch */}
+            <div className="card" style={{padding:"2rem"}}>
+              <div style={{display:"flex",alignItems:"center",gap:"0.75rem",marginBottom:"1rem"}}>
+                <span style={{fontSize:"1.5rem"}}>🏬</span>
+                <div>
+                  <div style={{fontFamily:"var(--font-heading)",fontWeight:700,fontSize:"1rem",color:"var(--text-1)"}}>Branch Office — Hyderabad</div>
+                  <span className="chip" style={{fontSize:"0.6875rem",marginTop:"0.25rem"}}>Branch</span>
+                </div>
+              </div>
+              <p className="t-body" style={{lineHeight:1.8}}>
+                B-8, Indian Airlines Colony<br/>
+                Prakash Nagar, Begumpet<br/>
+                Hyderabad, Telangana 500016, India
+              </p>
+            </div>
+          </div>
+          <p className="t-body" style={{textAlign:"center",marginTop:"2rem",color:"var(--text-4)",fontSize:"0.875rem"}}>
+            Jubiliants Consulting is a subsidiary of <strong style={{color:"var(--text-2)"}}>Telcomet Global Solutions</strong>
+          </p>
         </div>
       </section>
 

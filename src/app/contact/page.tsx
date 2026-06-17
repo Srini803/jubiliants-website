@@ -145,7 +145,15 @@ export default function Contact() {
                       </div>
                       <div>
                         <div style={{fontSize:"0.75rem",fontWeight:600,color:"var(--text-1)",marginBottom:"0.25rem"}}>Office Address</div>
-                        <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.6}}>08th Floor, SLN Terminus, Survey No. 133<br/>Beside Botanical Gardens, Gachibowli<br/>Hyderabad, Telangana 500032, India</p>
+                        <div style={{marginBottom:"1rem"}}>
+                          <div style={{fontSize:"0.75rem",fontWeight:600,color:"var(--blue-light)",textTransform:"uppercase",letterSpacing:"0.06em",marginBottom:"0.375rem"}}>Registered Office</div>
+                          <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.6}}>08th Floor, SLN Terminus, Survey No. 133<br/>Beside Botanical Gardens, Gachibowli<br/>Hyderabad, Telangana 500032, India</p>
+                        </div>
+                        <div>
+                          <div style={{fontSize:"0.75rem",fontWeight:600,color:"var(--text-4)",textTransform:"uppercase",letterSpacing:"0.06em",marginBottom:"0.375rem"}}>Branch Office</div>
+                          <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.6}}>B-8, Indian Airlines Colony<br/>Prakash Nagar, Begumpet<br/>Hyderabad, Telangana 500016, India</p>
+                        </div>
+                        <p style={{fontSize:"0.75rem",color:"var(--text-4)",marginTop:"1rem",borderTop:"1px solid var(--border)",paddingTop:"0.75rem"}}>A subsidiary of <strong style={{color:"var(--text-3)"}}>Telcomet Global Solutions</strong>
                       </div>
                     </div>
                     <div style={{display:"flex",gap:"0.75rem"}}>
