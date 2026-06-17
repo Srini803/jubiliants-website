@@ -234,7 +234,7 @@ const industries = [
   {name:"Government",icon:"🏛️",desc:"Citizen portals, workflow automation, GIS systems"},
 ];
 
-const logos = ["Narayana Health","Apollo Hospitals","TechMahindra","Infosys BPM","Varun Industries","Hetero Pharma","NSE Foundation","FinServe Group","IIT Hyderabad","GHMC","Piramal Group","Ramaiah Institute"];
+const logos = ["Jyoti CNC","Elgi Equipments","ACE","Mayville Engineering","Proto Labs","Fathom Digital","Al Shirawi Equipment Co.","Saudi Mechanical","Dutco Tennant LLC","Schmalz GmbH","Nuziveedu Seeds","Advanta Seeds","Sahyadri Farms","Plenty Unlimited","Bowery Farming","Indigo Ag","Al Dahra Agriculture","NADEC","Barfoots","Agrifirm","Pennar Industries","MTAR Technologies","Walchandnagar Industries","Astec Industries","Powell Industries","NN Inc.","Alfanar Engineering","Emirates Electrical Engineering","Weidmüller GmbH","Spirax Group"];
 
 const whyUs = [
   {title:"Business-first thinking",desc:"We begin with your business problem, not a technology preference. Every decision is justified by measurable impact."},
