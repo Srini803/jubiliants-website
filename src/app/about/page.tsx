@@ -219,7 +219,6 @@ export default function About() {
       </section>
 
 
-      {/* ── OFFICES ── */}
       <section className="section" style={{background:"var(--bg-raised)",borderTop:"1px solid var(--border)"}}>
         <div className="wrap">
           <div style={{textAlign:"center",marginBottom:"2.5rem"}}>
@@ -227,41 +226,29 @@ export default function About() {
             <h2 className="t-h2">Where to find us</h2>
           </div>
           <div style={{display:"grid",gap:"1.5rem"}} className="grid grid-cols-1 md:grid-cols-2">
-            {/* HQ */}
             <div className="card" style={{padding:"2rem"}}>
               <div style={{display:"flex",alignItems:"center",gap:"0.75rem",marginBottom:"1rem"}}>
                 <span style={{fontSize:"1.5rem"}}>🏢</span>
                 <div>
-                  <div style={{fontFamily:"var(--font-heading)",fontWeight:700,fontSize:"1rem",color:"var(--text-1)"}}>Registered Office — Hyderabad</div>
+                  <div style={{fontWeight:700,fontSize:"1rem",color:"var(--text-1)"}}>Registered Office</div>
                   <span className="chip chip-blue" style={{fontSize:"0.6875rem",marginTop:"0.25rem"}}>Headquarters</span>
                 </div>
               </div>
-              <p className="t-body" style={{lineHeight:1.8}}>
-                08th Floor, SLN Terminus, Survey No. 133<br/>
-                Beside Botanical Gardens, Gachibowli<br/>
-                Hyderabad, Telangana 500032, India
-              </p>
+              <p className="t-body" style={{lineHeight:1.8}}>08th Floor, SLN Terminus, Survey No. 133, Beside Botanical Gardens, Gachibowli, Hyderabad, Telangana 500032, India</p>
               <a href="mailto:info@jubiliants.com" style={{color:"var(--blue-light)",fontSize:"0.875rem",marginTop:"0.75rem",display:"inline-block"}}>info@jubiliants.com</a>
             </div>
-            {/* Branch */}
             <div className="card" style={{padding:"2rem"}}>
               <div style={{display:"flex",alignItems:"center",gap:"0.75rem",marginBottom:"1rem"}}>
                 <span style={{fontSize:"1.5rem"}}>🏬</span>
                 <div>
-                  <div style={{fontFamily:"var(--font-heading)",fontWeight:700,fontSize:"1rem",color:"var(--text-1)"}}>Branch Office — Hyderabad</div>
+                  <div style={{fontWeight:700,fontSize:"1rem",color:"var(--text-1)"}}>Branch Office</div>
                   <span className="chip" style={{fontSize:"0.6875rem",marginTop:"0.25rem"}}>Branch</span>
                 </div>
               </div>
-              <p className="t-body" style={{lineHeight:1.8}}>
-                B-8, Indian Airlines Colony<br/>
-                Prakash Nagar, Begumpet<br/>
-                Hyderabad, Telangana 500016, India
-              </p>
+              <p className="t-body" style={{lineHeight:1.8}}>B-8, Indian Airlines Colony, Prakash Nagar, Begumpet, Hyderabad, Telangana 500016, India</p>
             </div>
           </div>
-          <p className="t-body" style={{textAlign:"center",marginTop:"2rem",color:"var(--text-4)",fontSize:"0.875rem"}}>
-            Jubiliants Consulting is a subsidiary of <strong style={{color:"var(--text-2)"}}>Telcomet Global Solutions</strong>
-          </p>
+          <p style={{textAlign:"center",marginTop:"2rem",color:"var(--text-4)",fontSize:"0.875rem"}}>Jubiliants Consulting is a subsidiary of <strong style={{color:"var(--text-2)"}}>Telcomet Global Solutions</strong></p>
         </div>
       </section>
 
