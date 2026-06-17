@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const cols = [
   { heading: "Software Solutions", links: [
@@ -33,9 +34,9 @@ export default function Footer() {
         <div className="footer-grid">
           {/* Brand col */}
           <div>
-            <div style={{display:"flex",alignItems:"center",gap:"0.5rem",marginBottom:"1rem"}}>
-              <svg width="28" height="28" viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="8" fill="#2563EB"/><path d="M8 16L14 10L20 16L26 10" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/><path d="M8 22L14 16L20 22L26 16" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" opacity="0.5"/></svg>
-              <span style={{fontWeight:700,color:"var(--text-1)"}}>Jubiliants</span>
+            <div style={{marginBottom:"1rem"}}>
+              <Image src="/logo.png" alt="Jubiliants Consulting" width={160} height={52}
+                style={{height:"44px",width:"auto",objectFit:"contain"}} />
             </div>
             <p style={{fontSize:"0.875rem",color:"var(--text-3)",lineHeight:1.65,marginBottom:"1.25rem"}}>Custom software development and AI solutions company. Building intelligent software that drives business growth since 2015.</p>
             <div style={{fontSize:"0.8125rem",color:"var(--text-4)",lineHeight:1.7}}>

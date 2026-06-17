@@ -519,6 +519,8 @@ select.field-input option { background: var(--bg-raised); }
     gap: 3rem;
   }
 }
+/* Contact page form layout — stacked on mobile, 2:1 ratio on desktop */
+.contact-grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: 2.5rem;
@@ -529,4 +531,10 @@ select.field-input option { background: var(--bg-raised); }
     grid-template-columns: 2fr 1fr;
     gap: 4rem;
   }
+}
+
+/* Navbar logo — white-bg logo on dark navbar: blend mode removes the white */
+.nav-logo {
+  mix-blend-mode: lighten;
+  filter: brightness(1.05);
 }

@@ -1,6 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const softwareSubs = [
   { label: "Custom Software Development", href: "/software-solutions/custom-software-development", desc: "Tailored enterprise applications" },
@@ -49,9 +50,16 @@ export default function Navbar() {
     <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
       <div className="wrap" style={{width:"100%",display:"flex",alignItems:"center",justifyContent:"space-between"}}>
         {/* Logo */}
-        <Link href="/" style={{display:"flex",alignItems:"center",gap:"0.625rem",textDecoration:"none"}}>
-          <LogoSVG />
-          <span style={{fontWeight:600,fontSize:"1rem",color:"var(--text-1)",fontFamily:"var(--font-heading)"}}>Jubiliants</span>
+        <Link href="/" style={{display:"flex",alignItems:"center",textDecoration:"none"}}>
+          <Image
+            src="/logo.png"
+            alt="Jubiliants Consulting"
+            width={160}
+            height={52}
+            className="nav-logo"
+            style={{height:"42px",width:"auto",objectFit:"contain"}}
+            priority
+          />
         </Link>
 
         {/* Desktop */}
