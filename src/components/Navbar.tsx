@@ -54,10 +54,10 @@ export default function Navbar() {
           <Image
             src="/logo.jpg"
             alt="Jubiliants Consulting — Delivering Success"
-            width={180}
-            height={60}
+            width={220}
+            height={72}
             className="nav-logo"
-            style={{height:"48px",width:"auto",objectFit:"contain",display:"block"}}
+            style={{height:"64px",width:"auto",objectFit:"contain",display:"block"}}
             priority
           />
         </Link>
@@ -117,7 +117,7 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       {mobileOpen && (
-        <div style={{position:"absolute",top:"60px",left:0,right:0,background:"var(--bg-raised)",borderBottom:"1px solid var(--border)",padding:"1rem",maxHeight:"80vh",overflowY:"auto"}}>
+        <div style={{position:"absolute",top:"76px",left:0,right:0,background:"var(--bg-raised)",borderBottom:"1px solid var(--border)",padding:"1rem",maxHeight:"80vh",overflowY:"auto"}}>
           <div style={{display:"flex",flexDirection:"column",gap:"0.25rem"}}>
             <Link href="/" className="nav-link" onClick={() => setMobileOpen(false)}>Home</Link>
             
