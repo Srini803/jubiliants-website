@@ -36,7 +36,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body>
         <Navbar />
-        <main style={{ paddingTop: "76px" }}>{children}</main>
+        <main style={{ paddingTop: "92px" }}>{children}</main>
         <Footer />
         <WhatsAppButton />
       </body>
