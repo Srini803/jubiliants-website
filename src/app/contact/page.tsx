@@ -29,8 +29,30 @@ export default function Contact() {
     e.preventDefault();
     if (!form.name || !form.email || !form.message) return;
     setLoading(true);
-    await new Promise(r => setTimeout(r, 1000));
-    setSent(true);
+    try {
+      const res = await fetch("https://formspree.io/f/xrbzgqkw", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", "Accept": "application/json" },
+        body: JSON.stringify({
+          name: form.name,
+          company: form.company,
+          email: form.email,
+          phone: form.phone,
+          service: form.service,
+          budget: form.budget,
+          message: form.message,
+          _replyto: form.email,
+          _subject: `New enquiry from ${form.name} — ${form.company || "jubiliants.com"}`,
+        }),
+      });
+      if (res.ok) {
+        setSent(true);
+      } else {
+        alert("Something went wrong. Please email us directly at info@jubiliants.com");
+      }
+    } catch {
+      alert("Network error. Please email us directly at info@jubiliants.com");
+    }
     setLoading(false);
   };
 
