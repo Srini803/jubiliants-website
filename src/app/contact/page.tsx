@@ -30,10 +30,13 @@ export default function Contact() {
     if (!form.name || !form.email || !form.message) return;
     setLoading(true);
     try {
-      const res = await fetch("https://formspree.io/f/mykaqkpq", {
+      const res = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
         headers: { "Content-Type": "application/json", "Accept": "application/json" },
         body: JSON.stringify({
+          access_key: "be400766-f0b4-4c42-86d8-a68287ed67d7",
+          subject: `New enquiry from ${form.name} — ${form.company || "jubiliants.com"}`,
+          from_name: form.name,
           name: form.name,
           company: form.company,
           email: form.email,
@@ -41,8 +44,7 @@ export default function Contact() {
           service: form.service,
           budget: form.budget,
           message: form.message,
-          _replyto: form.email,
-          _subject: `New enquiry from ${form.name} — ${form.company || "jubiliants.com"}`,
+          replyto: form.email,
         }),
       });
       if (res.ok) {
