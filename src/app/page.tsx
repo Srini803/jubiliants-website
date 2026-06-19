@@ -246,8 +246,8 @@ const whyUs = [
 ];
 
 const caseHighlights = [
-  {industry:"Healthcare",title:"Hospital group reduces admin time by 60%",metric:"60%",metricLabel:"admin reduction",desc:"Built an integrated HIMS for a 5-hospital group managing 500+ daily patients, replacing 7 disconnected systems.",href:"/case-studies"},
-  {industry:"Manufacturing",title:"ERP cuts inventory errors by 45%",metric:"45%",metricLabel:"fewer errors",desc:"End-to-end ERP across procurement, production, inventory, and finance for a mid-size manufacturer.",href:"/case-studies"},
+  {industry:"AI / Security",title:"AI-based CCTV intelligence platform for industrial monitoring",metric:"94%",metricLabel:"incident detection accuracy",desc:"Deployed real-time AI video analytics across 200+ cameras for Alfanar Engineering — detecting intrusions, safety violations, and equipment anomalies with automated alerts in under 5 seconds.",href:"/case-studies"},
+  {industry:"AI / Operations",title:"Virtual voice assistant automates 70% of service calls",metric:"70%",metricLabel:"calls handled autonomously",desc:"Built a multilingual AI voice assistant for Weidmüller GmbH handling inbound service requests, ticket creation, and field technician updates in English and German.",href:"/case-studies"},
   {industry:"AI / FinTech",title:"AI agent handles 65% of support tickets",metric:"65%",metricLabel:"ticket deflection",desc:"Deployed an agentic AI customer service system integrated with CRM, reducing response time from hours to seconds.",href:"/case-studies"},
 ];
 
