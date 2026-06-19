@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import Chatbot from "@/components/Chatbot";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://jubiliants.com"),
