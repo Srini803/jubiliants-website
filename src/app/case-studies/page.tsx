@@ -10,6 +10,22 @@ export const metadata = {
 
 const cases = [
   {
+    industry: "AI / Security", client: "Alfanar Engineering",
+    title: "AI-based CCTV intelligence platform for industrial facility monitoring",
+    challenge: "A large industrial facility with 200+ CCTV cameras relied on manual monitoring by security staff working in shifts. Incidents such as unauthorised access, safety violations, and equipment anomalies were often missed or reported with significant delays, creating safety and compliance risks.",
+    solution: "Deployed a real-time AI video analytics platform integrating with the existing CCTV infrastructure. The system uses computer vision models to detect intrusions, safety gear violations (helmets, vests), fire and smoke, crowd density anomalies, and equipment idle states. Automated alerts are sent to security and operations teams via SMS, email, and an operations dashboard. All incidents are logged with timestamped video clips for audit and compliance.",
+    results: [{ n: "94%", l: "incident detection accuracy" }, { n: "< 5s", l: "real-time alert response time" }, { n: "200+", l: "cameras monitored simultaneously" }, { n: "60%", l: "reduction in security staffing cost" }],
+    tags: ["Computer Vision", "AI", "Industrial Security"], duration: "6 months",
+  },
+  {
+    industry: "AI / Operations", client: "Weidmüller GmbH",
+    title: "Virtual voice assistant to automate customer service and field operations",
+    challenge: "A global industrial connectivity solutions company handling 1,000+ daily service requests struggled with high call centre volumes, slow ticket creation, and coordination delays between customer-facing staff and field technicians. Manual call handling was costly and response times were lagging SLA targets.",
+    solution: "Built a multilingual AI voice assistant integrated with the company's service management platform. The assistant handles inbound customer calls to log service requests, provides status updates on existing tickets, and routes urgent escalations to human agents. For field operations, a voice-enabled mobile interface allows technicians to update job status, request parts, and access work order details hands-free. Natural language understanding supports English and German.",
+    results: [{ n: "70%", l: "of service calls handled autonomously" }, { n: "3×", l: "faster ticket creation vs manual" }, { n: "English + German", l: "multilingual voice support" }, { n: "€1.4M", l: "annual call centre cost saving" }],
+    tags: ["Voice AI", "Agentic AI", "Operations Automation"], duration: "7 months",
+  },
+  {
     industry: "Healthcare", client: "Apollo Health Group",
     title: "Integrated hospital management system for a 5-hospital group",
     challenge: "Five hospitals on different disconnected systems — patient data fragmented, billing delayed by 3–5 days, management unable to see real-time operational metrics.",
@@ -56,22 +72,6 @@ const cases = [
     solution: "Intelligent document processing using computer vision and LLMs to extract, validate, and route claim data. Integrated with billing system and insurer APIs.",
     results: [{ n: "75%", l: "reduction in processing time" }, { n: "98%", l: "data extraction accuracy" }, { n: "600+", l: "documents processed daily" }, { n: "₹80L", l: "annual salary cost avoided" }],
     tags: ["AI Automation", "Document Processing", "Healthcare"], duration: "4 months",
-  },
-  {
-    industry: "AI / Security", client: "Alfanar Engineering",
-    title: "AI-based CCTV intelligence platform for industrial facility monitoring",
-    challenge: "A large industrial facility with 200+ CCTV cameras relied on manual monitoring by security staff working in shifts. Incidents such as unauthorised access, safety violations, and equipment anomalies were often missed or reported with significant delays, creating safety and compliance risks.",
-    solution: "Deployed a real-time AI video analytics platform integrating with the existing CCTV infrastructure. The system uses computer vision models to detect intrusions, safety gear violations (helmets, vests), fire and smoke, crowd density anomalies, and equipment idle states. Automated alerts are sent to security and operations teams via SMS, email, and an operations dashboard. All incidents are logged with timestamped video clips for audit and compliance.",
-    results: [{ n: "94%", l: "incident detection accuracy" }, { n: "< 5s", l: "real-time alert response time" }, { n: "200+", l: "cameras monitored simultaneously" }, { n: "60%", l: "reduction in security staffing cost" }],
-    tags: ["Computer Vision", "AI", "Industrial Security"], duration: "6 months",
-  },
-  {
-    industry: "AI / Operations", client: "Weidmüller GmbH",
-    title: "Virtual voice assistant to automate customer service and field operations",
-    challenge: "A global industrial connectivity solutions company handling 1,000+ daily service requests struggled with high call centre volumes, slow ticket creation, and coordination delays between customer-facing staff and field technicians. Manual call handling was costly and response times were lagging SLA targets.",
-    solution: "Built a multilingual AI voice assistant integrated with the company's service management platform. The assistant handles inbound customer calls to log service requests, provides status updates on existing tickets, and routes urgent escalations to human agents. For field operations, a voice-enabled mobile interface allows technicians to update job status, request parts, and access work order details hands-free. Natural language understanding supports English and German.",
-    results: [{ n: "70%", l: "of service calls handled autonomously" }, { n: "3×", l: "faster ticket creation vs manual" }, { n: "English + German", l: "multilingual voice support" }, { n: "€1.4M", l: "annual call centre cost saving" }],
-    tags: ["Voice AI", "Agentic AI", "Operations Automation"], duration: "7 months",
   },
 ];
 
