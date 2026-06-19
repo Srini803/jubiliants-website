@@ -100,10 +100,10 @@ export default function Navbar() {
 
           <Link href="/case-studies" className="nav-link">Case Studies</Link>
           <Link href="/about" className="nav-link">About</Link>
+          <Link href="/contact" className="nav-link">Contact</Link>
         </div>
 
         <div className="hidden lg:flex" style={{alignItems:"center",gap:"0.75rem"}}>
-          <a href="mailto:srini@jubiliants.com" className="nav-link">Contact</a>
           <Link href="/contact" className="btn btn-primary btn-sm">Get a Free Consultation</Link>
         </div>
 
@@ -141,6 +141,7 @@ export default function Navbar() {
 
             <Link href="/case-studies" className="nav-link" onClick={() => setMobileOpen(false)}>Case Studies</Link>
             <Link href="/about" className="nav-link" onClick={() => setMobileOpen(false)}>About</Link>
+            <Link href="/contact" className="nav-link" onClick={() => setMobileOpen(false)}>Contact</Link>
             <Link href="/contact" className="btn btn-primary" style={{marginTop:"0.5rem",justifyContent:"center"}} onClick={() => setMobileOpen(false)}>Get a Free Consultation</Link>
           </div>
         </div>
