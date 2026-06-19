@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import WhatsAppButton from "@/components/WhatsAppButton";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://jubiliants.com"),
@@ -38,7 +37,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Navbar />
         <main style={{ paddingTop: "92px" }}>{children}</main>
         <Footer />
-        <WhatsAppButton />
+        <Chatbot />
       </body>
     </html>
   );

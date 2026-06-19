@@ -358,7 +358,6 @@ select.field-input option { background: var(--bg-raised); }
   .t-hero     { font-size: 1.875rem; }
   .t-h1       { font-size: 1.625rem; }
   .stat-num   { font-size: 1.875rem; }
-  .wa-btn     { bottom: 1.25rem; right: 1.25rem; }
 }
 @media (max-width: 480px) {
   .wrap   { padding: 0 1rem; }
