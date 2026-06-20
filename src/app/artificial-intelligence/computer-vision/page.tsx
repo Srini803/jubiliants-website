@@ -40,7 +40,7 @@ export default function ComputerVision() {
                 ))}
               </div>
             </div>
-            <div className="flex hero-visual-col"><ComputerVisionVisual /></div>
+            <div className="hidden lg:flex hero-visual-col"><ComputerVisionVisual /></div>
           </div>
         </div>
       </section>

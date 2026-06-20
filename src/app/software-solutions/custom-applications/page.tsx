@@ -47,7 +47,7 @@ export default function CustomApplications() {
                 ✓ 300+ custom applications delivered across 8 industries since 2015
               </div>
             </div>
-            <div className="flex hero-visual-col"><CustomAppsVisual /></div>
+            <div className="hidden lg:flex hero-visual-col"><CustomAppsVisual /></div>
           </div>
         </div>
       </section>

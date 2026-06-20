@@ -55,7 +55,7 @@ export default function MobileApplications() {
                 ))}
               </div>
             </div>
-            <div className="flex hero-visual-col"><MobileScreensVisual /></div>
+            <div className="hidden lg:flex hero-visual-col"><MobileScreensVisual /></div>
           </div>
         </div>
       </section>

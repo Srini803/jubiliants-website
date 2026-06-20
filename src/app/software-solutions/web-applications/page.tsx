@@ -59,7 +59,7 @@ export default function WebApplications() {
                 ))}
               </div>
             </div>
-            <div className="flex hero-visual-col"><WebAppVisual /></div>
+            <div className="hidden lg:flex hero-visual-col"><WebAppVisual /></div>
           </div>
         </div>
       </section>

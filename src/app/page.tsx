@@ -292,7 +292,7 @@ export default function Home() {
               </div>
             </div>
             {/* Right — enterprise dashboard composition */}
-            <div className="flex hero-visual-col">
+            <div className="hidden lg:flex hero-visual-col">
               <HeroDashboard/>
             </div>
           </div>

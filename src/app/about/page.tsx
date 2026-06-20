@@ -65,7 +65,7 @@ export default function About() {
               </div>
             </div>
             {/* Right — global delivery visual */}
-            <div className="flex hero-visual-col"><GlobalDeliveryVisual/></div>
+            <div className="hidden lg:flex hero-visual-col"><GlobalDeliveryVisual/></div>
           </div>
         </div>
       </section>

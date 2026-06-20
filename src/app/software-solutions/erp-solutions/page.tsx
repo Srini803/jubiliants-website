@@ -49,7 +49,7 @@ export default function ERPSolutions() {
                 ))}
               </div>
             </div>
-            <div className="flex hero-visual-col"><ERPDashVisual /></div>
+            <div className="hidden lg:flex hero-visual-col"><ERPDashVisual /></div>
           </div>
         </div>
       </section>

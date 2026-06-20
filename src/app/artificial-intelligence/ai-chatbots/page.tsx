@@ -47,7 +47,7 @@ export default function AIChatbots() {
                 <Link href="/case-studies" className="btn btn-secondary">View Case Studies</Link>
               </div>
             </div>
-            <div className="flex hero-visual-col"><ChatbotVisual /></div>
+            <div className="hidden lg:flex hero-visual-col"><ChatbotVisual /></div>
           </div>
         </div>
       </section>

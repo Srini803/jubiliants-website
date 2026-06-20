@@ -147,7 +147,7 @@ export default function AgenticAI() {
               </div>
             </div>
             {/* Right — AI workflow diagram */}
-            <div className="flex hero-visual-col"><AIWorkflowDiagram/></div>
+            <div className="hidden lg:flex hero-visual-col"><AIWorkflowDiagram/></div>
           </div>
         </div>
       </section>
