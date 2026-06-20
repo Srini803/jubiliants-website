@@ -117,7 +117,7 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       {mobileOpen && (
-        <div style={{position:"absolute",top:"92px",left:0,right:0,background:"var(--bg-raised)",borderBottom:"1px solid var(--border)",padding:"1rem",maxHeight:"80vh",overflowY:"auto"}} className="lg:hidden">
+        <div className="mobile-menu-panel lg:hidden" style={{position:"absolute",left:0,right:0,background:"var(--bg-raised)",borderBottom:"1px solid var(--border)",padding:"1rem",maxHeight:"80vh",overflowY:"auto"}}>
           <div style={{display:"flex",flexDirection:"column",gap:"0.25rem"}}>
             <Link href="/" className="nav-link" onClick={() => setMobileOpen(false)}>Home</Link>
             
