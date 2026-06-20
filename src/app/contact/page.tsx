@@ -173,9 +173,13 @@ export default function Contact() {
                           <div style={{fontSize:"0.75rem",fontWeight:600,color:"var(--blue-light)",textTransform:"uppercase",letterSpacing:"0.06em",marginBottom:"0.375rem"}}>Registered Office</div>
                           <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.6}}>08th Floor, SLN Terminus, Survey No. 133<br/>Beside Botanical Gardens, Gachibowli<br/>Hyderabad, Telangana 500032, India</p>
                         </div>
-                        <div>
+                        <div style={{marginBottom:"1rem"}}>
                           <div style={{fontSize:"0.75rem",fontWeight:600,color:"var(--text-4)",textTransform:"uppercase",letterSpacing:"0.06em",marginBottom:"0.375rem"}}>Branch Office</div>
                           <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.6}}>B-8, Indian Airlines Colony<br/>Prakash Nagar, Begumpet<br/>Hyderabad, Telangana 500016, India</p>
+                        </div>
+                        <div>
+                          <div style={{fontSize:"0.75rem",fontWeight:600,color:"var(--text-4)",textTransform:"uppercase",letterSpacing:"0.06em",marginBottom:"0.375rem"}}>Dubai Office</div>
+                          <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.6}}>Dubai Silicon Oasis, DDP, Building A1<br/>Dubai, United Arab Emirates</p>
                         </div>
                         <p style={{fontSize:"0.75rem",color:"var(--text-4)",marginTop:"1rem",borderTop:"1px solid var(--border)",paddingTop:"0.75rem"}}>A subsidiary of <strong style={{color:"var(--text-3)"}}>Telcomet Global Solutions</strong></p>
                       </div>
@@ -189,15 +193,7 @@ export default function Contact() {
                         <a href="mailto:info@jubiliants.com" style={{fontSize:"0.875rem",color:"var(--blue-light)"}}>info@jubiliants.com</a>
                       </div>
                     </div>
-                    <div style={{display:"flex",gap:"0.75rem"}}>
-                      <div style={{width:"36px",height:"36px",borderRadius:"8px",background:"rgba(37,211,102,0.1)",display:"flex",alignItems:"center",justifyContent:"center",flexShrink:0}}>
-                        <svg width="16" height="16" viewBox="0 0 16 16" fill="#25D366"><path d="M8 1C4.14 1 1 4.14 1 8c0 1.23.34 2.39.92 3.38L1 15l3.71-.91A6.97 6.97 0 008 15c3.86 0 7-3.14 7-7S11.86 1 8 1zm3.6 9.8c-.15.42-.88.8-1.21.85-.31.05-.7.07-1.13-.07a10.3 10.3 0 01-1.02-.38c-1.8-.78-2.98-2.59-3.07-2.71-.09-.12-.74-.98-.74-1.87s.47-1.33.64-1.51c.17-.18.37-.22.5-.22.12 0 .24 0 .35.01.11 0 .27-.04.41.31.15.37.51 1.25.55 1.34.05.09.08.2.02.32-.06.12-.09.2-.18.31-.09.11-.18.24-.26.33-.09.09-.18.19-.08.37.1.18.45.74.97 1.2.66.59 1.22.77 1.4.86.18.09.28.07.39-.04.11-.12.45-.52.57-.71.12-.18.24-.15.4-.09.16.06 1.05.49 1.23.58.18.09.3.14.34.21.04.07.04.43-.11.85z"/></svg>
-                      </div>
-                      <div>
-                        <div style={{fontSize:"0.75rem",fontWeight:600,color:"var(--text-1)",marginBottom:"0.25rem"}}>WhatsApp</div>
-                        <a href="https://wa.me/919XXXXXXXXX" target="_blank" rel="noreferrer" style={{fontSize:"0.875rem",color:"#4ADE80"}}>Chat on WhatsApp</a>
-                      </div>
-                    </div>
+
                     <div style={{display:"flex",gap:"0.75rem"}}>
                       <div style={{width:"36px",height:"36px",borderRadius:"8px",background:"var(--blue-dim)",display:"flex",alignItems:"center",justifyContent:"center",flexShrink:0}}>
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="6.5" stroke="#3B82F6" strokeWidth="1.25"/><path d="M8 4v4l3 3" stroke="#3B82F6" strokeWidth="1.25" strokeLinecap="round"/></svg>

@@ -59,7 +59,6 @@ export default function Footer() {
         </div>
         <div style={{borderTop:"1px solid var(--border)",paddingTop:"1.5rem",display:"flex",flexWrap:"wrap",justifyContent:"space-between",alignItems:"center",gap:"0.75rem"}}>
           <p style={{fontSize:"0.8125rem",color:"var(--text-4)"}}>&copy; 2015 Jubiliants Consulting Pvt. Ltd. All rights reserved.</p>
-          <p style={{fontSize:"0.8125rem",color:"var(--text-4)"}}>Founded 2015 · Hyderabad, India</p>
         </div>
       </div>
     </footer>
