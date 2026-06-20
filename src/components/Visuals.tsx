@@ -409,81 +409,83 @@ export const GenAIVisual = () => (
 ═══════════════════════════════════════════════════ */
 export const ComputerVisionVisual = () => (
   <div style={{ position: "relative", width: "100%" }}>
-    <PanelChrome width={520} height={340} title="Computer Vision Platform" subtitle="Real-time · Edge · Cloud">
+    <PanelChrome width={520} height={340} title="CCTV Intelligence Platform" subtitle="Real-time · 200+ cameras">
       {/* Camera feed mockup */}
       <g className="hv-g1">
         <rect x={16} y={44} width={200} height={150} rx={7} fill="#141F35" stroke="#3D5068" strokeWidth={1} />
-        <text x={24} y={58} fontSize={6.5} fill="#7A8EA8" fontFamily="Inter,sans-serif">LIVE FEED — Manufacturing Line 3</text>
-        {/* Simulated factory scene */}
-        <rect x={20} y={62} width={192} height={128} rx={4} fill="#111827" />
-        {/* Conveyor belt */}
-        <rect x={20} y={148} width={192} height={12} rx={2} fill="#253347" />
-        {[0, 40, 80, 120, 160].map(x => (
-          <rect key={x} x={26 + x} y={150} width={28} height={8} rx={1} fill="#2D3D55" />
+        <text x={24} y={58} fontSize={8.5} fill="#7A8EA8" fontFamily="Inter,sans-serif">LIVE FEED — Camera 14, Perimeter Gate</text>
+        {/* Simulated night surveillance scene */}
+        <rect x={20} y={62} width={192} height={128} rx={4} fill="#0B1220" />
+        {/* Fence/perimeter line */}
+        <line x1={20} y1={170} x2={212} y2={170} stroke="#253347" strokeWidth={1.5} />
+        {[0,20,40,60,80,100,120,140,160,180].map(x => (
+          <line key={x} x1={22+x} y1={150} x2={22+x} y2={170} stroke="#253347" strokeWidth={1} />
         ))}
-        {/* Products on belt */}
-        <rect x={32} y={138} width={20} height={12} rx={2} fill="#374151" />
-        <rect x={92} y={138} width={20} height={12} rx={2} fill="#374151" />
-        {/* Detection boxes */}
-        <rect x={30} y={136} width={24} height={16} rx={1} fill="none" stroke="#22C55E" strokeWidth={1.5} />
-        <text x={30} y={134} fontSize={6} fill="#22C55E" fontFamily="Inter,sans-serif">OK 99.2%</text>
-        <rect x={90} y={136} width={24} height={16} rx={1} fill="none" stroke="#EF4444" strokeWidth={1.5} />
-        <text x={90} y={134} fontSize={6} fill="#EF4444" fontFamily="Inter,sans-serif">DEFECT 94.1%</text>
+        {/* Building silhouette */}
+        <rect x={140} y={90} width={60} height={60} rx={2} fill="#162033" />
+        <rect x={150} y={100} width={12} height={14} fill="#1E3A8A" opacity={.5} />
+        <rect x={170} y={100} width={12} height={14} fill="#1E3A8A" opacity={.5} />
+        {/* Person silhouette - intrusion detection target */}
+        <circle cx={70} cy={130} r={5} fill="#374151" />
+        <rect x={66} y={134} width={8} height={18} rx={2} fill="#374151" />
+        {/* Detection box around person */}
+        <rect x={58} y={122} width={26} height={36} rx={1} fill="none" stroke="#EF4444" strokeWidth={1.5} className="hv-pulse" />
+        <text x={58} y={120} fontSize={7.8} fill="#EF4444" fontFamily="Inter,sans-serif" fontWeight={600}>INTRUSION 96%</text>
         {/* Scanning overlay */}
         <line x1={20} y1={95} x2={212} y2={95} stroke="#3B82F6" strokeWidth={1} opacity={.5} className="hv-dash" />
-        <text x={116} y={76} fontSize={7} fill="#3B82F6" fontFamily="Inter,sans-serif" textAnchor="middle">Scanning…</text>
+        <text x={116} y={76} fontSize={9.1} fill="#3B82F6" fontFamily="Inter,sans-serif" textAnchor="middle">Monitoring…</text>
         {/* Stats overlay */}
-        <rect x={20} y={62} width={80} height={30} rx={0} fill="rgba(0,0,0,.7)" />
-        <text x={24} y={74} fontSize={6} fill="#94A3B8" fontFamily="Inter,sans-serif">FPS: 60</text>
-        <text x={24} y={85} fontSize={6} fill="#94A3B8" fontFamily="Inter,sans-serif">Processed: 14,820</text>
+        <rect x={20} y={62} width={88} height={30} rx={0} fill="rgba(0,0,0,.7)" />
+        <text x={24} y={74} fontSize={7.8} fill="#94A3B8" fontFamily="Inter,sans-serif">22:14 · Night vision</text>
+        <text x={24} y={85} fontSize={7.8} fill="#94A3B8" fontFamily="Inter,sans-serif">Cam 14 of 200+</text>
       </g>
       {/* Detection results panel */}
       <g className="hv-g2">
         <rect x={226} y={44} width={278} height={150} rx={7} fill="#141F35" stroke="#3D5068" strokeWidth={1} />
-        <text x={236} y={60} fontSize={7.5} fontWeight={600} fill="#CBD5E1" fontFamily="Inter,sans-serif">Detection Results — Live</text>
-        <MetricCard x={236} y={64} w={80} h={48} label="Items Inspected" value="14,820" sub="Today" subColor="#3B82F6" />
-        <MetricCard x={324} y={64} w={80} h={48} label="Defects Found" value="23" sub="0.15% rate" subColor="#EF4444" />
-        <MetricCard x={412} y={64} w={84} h={48} label="Accuracy" value="99.6%" sub="↑ vs 87% manual" subColor="#22C55E" />
+        <text x={236} y={60} fontSize={9.8} fontWeight={600} fill="#CBD5E1" fontFamily="Inter,sans-serif">Security Alerts — Live</text>
+        <MetricCard x={236} y={64} w={80} h={48} label="Cameras Active" value="204" sub="All online" subColor="#3B82F6" />
+        <MetricCard x={324} y={64} w={80} h={48} label="Alerts Today" value="7" sub="2 critical" subColor="#EF4444" />
+        <MetricCard x={412} y={64} w={84} h={48} label="Detection Acc." value="94.2%" sub="↑ vs manual watch" subColor="#22C55E" />
         {/* Detection categories */}
         {[
-          { label: "Surface scratches", count: 12, color: "#EF4444" },
-          { label: "Dimensional error", count: 6, color: "#F59E0B" },
-          { label: "Colour deviation", count: 3, color: "#F59E0B" },
-          { label: "Contamination", count: 2, color: "#EF4444" },
+          { label: "Perimeter intrusion", count: 3, color: "#EF4444" },
+          { label: "PPE non-compliance", count: 9, color: "#F59E0B" },
+          { label: "Fire / smoke risk", count: 1, color: "#EF4444" },
+          { label: "Loitering detected", count: 4, color: "#F59E0B" },
         ].map((cat, i) => (
           <g key={cat.label}>
-            <text x={236} y={126 + i * 14} fontSize={7} fill="#94A3B8" fontFamily="Inter,sans-serif">{cat.label}</text>
+            <text x={236} y={126 + i * 14} fontSize={9.1} fill="#94A3B8" fontFamily="Inter,sans-serif">{cat.label}</text>
             <rect x={340} y={118 + i * 14} width={100} height={6} rx={3} fill="#253347" />
-            <rect x={340} y={118 + i * 14} width={cat.count * 6} height={6} rx={3} fill={cat.color} opacity={.7} />
-            <text x={448} y={126 + i * 14} fontSize={6.5} fill={cat.color} fontFamily="Inter,sans-serif">{cat.count}</text>
+            <rect x={340} y={118 + i * 14} width={cat.count * 9} height={6} rx={3} fill={cat.color} opacity={.7} />
+            <text x={448} y={126 + i * 14} fontSize={8.5} fill={cat.color} fontFamily="Inter,sans-serif">{cat.count}</text>
           </g>
         ))}
-        <text x={236} y={186} fontSize={6.5} fill="#3B82F6" fontFamily="Inter,sans-serif">⚡ Auto-rejected: 23 items · Saved ₹4.6L in recall costs today</text>
+        <text x={236} y={186} fontSize={8.5} fill="#3B82F6" fontFamily="Inter,sans-serif">⚡ Avg alert response: 4.2s · Auto-routed to security team</text>
       </g>
       {/* Use cases grid */}
       <g className="hv-g3">
-        <text x={16} y={212} fontSize={7} fill="#7A8EA8" fontFamily="Inter,sans-serif" fontWeight={600} letterSpacing={.06}>INDUSTRY APPLICATIONS</text>
+        <text x={16} y={212} fontSize={9.1} fill="#7A8EA8" fontFamily="Inter,sans-serif" fontWeight={600} letterSpacing={.06}>MONITORING CATEGORIES</text>
         {[
-          { label: "Quality Control", sub: "Manufacturing defect detection", x: 16 },
-          { label: "Security & Access", sub: "Face recognition · ANPR", x: 144 },
-          { label: "Retail Analytics", sub: "Shopper behaviour · Heatmaps", x: 272 },
-          { label: "Medical Imaging", sub: "Diagnostic AI assistance", x: 400 },
+          { label: "Perimeter Security", sub: "Intrusion & breach detection", x: 16 },
+          { label: "Safety Compliance", sub: "PPE & helmet detection", x: 144 },
+          { label: "Fire & Smoke", sub: "Early visual detection", x: 272 },
+          { label: "Access Control", sub: "Face recognition · ANPR", x: 400 },
         ].map(uc => (
           <g key={uc.label}>
             <rect x={uc.x} y={216} width={120} height={44} rx={7} fill="#253347" stroke="#3D5068" strokeWidth={.75} />
-            <text x={uc.x + 10} y={232} fontSize={7} fontWeight={600} fill="#E2E8F0" fontFamily="Inter,sans-serif">{uc.label}</text>
-            <text x={uc.x + 10} y={246} fontSize={6} fill="#5A6E85" fontFamily="Inter,sans-serif">{uc.sub}</text>
+            <text x={uc.x + 10} y={232} fontSize={9.1} fontWeight={600} fill="#E2E8F0" fontFamily="Inter,sans-serif">{uc.label}</text>
+            <text x={uc.x + 10} y={246} fontSize={7.8} fill="#5A6E85" fontFamily="Inter,sans-serif">{uc.sub}</text>
           </g>
         ))}
       </g>
       {/* Pipeline */}
       <g className="hv-g4">
-        <text x={16} y={274} fontSize={7} fill="#7A8EA8" fontFamily="Inter,sans-serif" fontWeight={600} letterSpacing={.06}>PROCESSING PIPELINE</text>
-        {["Image Capture", "Pre-processing", "CNN Inference", "Post-processing", "Action / Alert"].map((step, i) => (
+        <text x={16} y={274} fontSize={9.1} fill="#7A8EA8" fontFamily="Inter,sans-serif" fontWeight={600} letterSpacing={.06}>DETECTION PIPELINE</text>
+        {["Camera Feed", "Frame Capture", "AI Inference", "Risk Scoring", "Alert / Action"].map((step, i) => (
           <g key={step}>
             <rect x={16 + i * 102} y={278} width={94} height={28} rx={6} fill="#142240" stroke="#2563EB" strokeWidth={.4} strokeOpacity={.5} />
-            <text x={63 + i * 102} y={292} fontSize={6.5} fill="#93C5FD" fontFamily="Inter,sans-serif" textAnchor="middle" fontWeight={500}>{step}</text>
-            <text x={63 + i * 102} y={301} fontSize={5.5} fill="#5A6E85" fontFamily="Inter,sans-serif" textAnchor="middle">{["Camera/RTSP", "Resize·Norm", "YOLO v8·EfficientNet", "NMS·Threshold", "API·Webhook"][i]}</text>
+            <text x={63 + i * 102} y={292} fontSize={8.5} fill="#93C5FD" fontFamily="Inter,sans-serif" textAnchor="middle" fontWeight={500}>{step}</text>
+            <text x={63 + i * 102} y={301} fontSize={7.2} fill="#5A6E85" fontFamily="Inter,sans-serif" textAnchor="middle">{["RTSP / ONVIF", "Resize·Norm", "YOLOv8 · Edge GPU", "Confidence·Rules", "SMS·Email·Webhook"][i]}</text>
             {i < 4 && <path d={`M${110 + i * 102} 292 L${118 + i * 102} 292`} stroke="#3D5068" strokeWidth={1} />}
           </g>
         ))}
@@ -962,13 +964,13 @@ export const AIAutomationVisual = () => (
     <circle cx="16" cy="18" r="4.5" fill="#EF4444" opacity=".7" />
     <circle cx="29" cy="18" r="4.5" fill="#F59E0B" opacity=".7" />
     <circle cx="42" cy="18" r="4.5" fill="#22C55E" opacity=".7" />
-    <text x="58" y="22" fontSize="8" fontWeight="600" fill="#93C5FD" fontFamily="Inter,sans-serif">Intelligent Process Automation — Live Monitor</text>
+    <text x="58" y="22" fontSize="10.4" fontWeight="600" fill="#93C5FD" fontFamily="Inter,sans-serif">Intelligent Process Automation — Live Monitor</text>
     <circle cx="490" cy="18" r="4" fill="#22C55E" className="hv-pulse" />
-    <text x="470" y="22" fontSize="6.5" fill="#86EFAC" fontFamily="Inter,sans-serif">Live</text>
+    <text x="470" y="22" fontSize="8.5" fill="#86EFAC" fontFamily="Inter,sans-serif">Live</text>
 
     {/* Before / After comparison */}
-    <text x="16" y="54" fontSize="7" fill="#EF4444" fontFamily="Inter,sans-serif" fontWeight="600" letterSpacing=".08em">BEFORE AUTOMATION</text>
-    <text x="280" y="54" fontSize="7" fill="#22C55E" fontFamily="Inter,sans-serif" fontWeight="600" letterSpacing=".08em">AFTER AUTOMATION</text>
+    <text x="16" y="54" fontSize="9.1" fill="#EF4444" fontFamily="Inter,sans-serif" fontWeight="600" letterSpacing=".08em">BEFORE AUTOMATION</text>
+    <text x="280" y="54" fontSize="9.1" fill="#22C55E" fontFamily="Inter,sans-serif" fontWeight="600" letterSpacing=".08em">AFTER AUTOMATION</text>
     <line x1="258" y1="44" x2="258" y2="320" stroke="#3D5068" strokeWidth="1" strokeDasharray="4 3" />
 
     {/* Before column — manual steps */}
@@ -982,13 +984,13 @@ export const AIAutomationVisual = () => (
     ].map((step, i) => (
       <g key={i}>
         <rect x="14" y={62 + i * 38} width="234" height="30" rx="5" fill="#2A1010" stroke="#4B1111" strokeWidth=".5" />
-        <text x="22" y={75 + i * 38} fontSize="7" fill="#FCA5A5" fontFamily="Inter,sans-serif">{step.label}</text>
-        <text x="22" y={86 + i * 38} fontSize="6" fill="#7F1D1D" fontFamily="Inter,sans-serif">{step.note}</text>
-        <text x="236" y={79 + i * 38} fontSize="6.5" fill="#EF4444" fontFamily="Inter,sans-serif" textAnchor="end" fontWeight="600">{step.time}</text>
+        <text x="22" y={75 + i * 38} fontSize="9.1" fill="#FCA5A5" fontFamily="Inter,sans-serif">{step.label}</text>
+        <text x="22" y={86 + i * 38} fontSize="7.8" fill="#7F1D1D" fontFamily="Inter,sans-serif">{step.note}</text>
+        <text x="236" y={79 + i * 38} fontSize="8.5" fill="#EF4444" fontFamily="Inter,sans-serif" textAnchor="end" fontWeight="600">{step.time}</text>
       </g>
     ))}
     <rect x="14" y="296" width="234" height="20" rx="5" fill="#2A1010" stroke="#4B1111" strokeWidth=".5" />
-    <text x="22" y="310" fontSize="7.5" fontWeight="700" fill="#EF4444" fontFamily="Inter,sans-serif">Total: 58 minutes per ticket</text>
+    <text x="22" y="310" fontSize="9.8" fontWeight="700" fill="#EF4444" fontFamily="Inter,sans-serif">Total: 58 minutes per ticket</text>
 
     {/* After column — automated */}
     {[
@@ -1001,13 +1003,13 @@ export const AIAutomationVisual = () => (
     ].map((step, i) => (
       <g key={i}>
         <rect x="266" y={62 + i * 38} width="240" height="30" rx="5" fill="#073D1C" stroke="#14532D" strokeWidth=".5" />
-        <text x="274" y={75 + i * 38} fontSize="7" fill="#6EE7B7" fontFamily="Inter,sans-serif">{step.label}</text>
-        <text x="274" y={86 + i * 38} fontSize="6" fill="#065F46" fontFamily="Inter,sans-serif">{step.note}</text>
-        <text x="498" y={79 + i * 38} fontSize="6.5" fill="#22C55E" fontFamily="Inter,sans-serif" textAnchor="end" fontWeight="600">{step.time}</text>
+        <text x="274" y={75 + i * 38} fontSize="9.1" fill="#6EE7B7" fontFamily="Inter,sans-serif">{step.label}</text>
+        <text x="274" y={86 + i * 38} fontSize="7.8" fill="#065F46" fontFamily="Inter,sans-serif">{step.note}</text>
+        <text x="498" y={79 + i * 38} fontSize="8.5" fill="#22C55E" fontFamily="Inter,sans-serif" textAnchor="end" fontWeight="600">{step.time}</text>
       </g>
     ))}
     <rect x="266" y="296" width="240" height="20" rx="5" fill="#073D1C" stroke="#14532D" strokeWidth=".5" />
-    <text x="274" y="310" fontSize="7.5" fontWeight="700" fill="#22C55E" fontFamily="Inter,sans-serif">Total: 2.9 seconds per ticket</text>
+    <text x="274" y="310" fontSize="9.8" fontWeight="700" fill="#22C55E" fontFamily="Inter,sans-serif">Total: 2.9 seconds per ticket</text>
   </svg>
 );
 
@@ -1020,8 +1022,8 @@ export const AITransformVisual = () => (
     <rect width="520" height="340" rx="12" fill="#141F35" stroke="#2D3D55" strokeWidth="1" />
     <rect width="520" height="36" rx="12" fill="#253347" />
     <rect y="24" width="520" height="12" fill="#253347" />
-    <text x="16" y="22" fontSize="8.5" fontWeight="600" fill="#93C5FD" fontFamily="Inter,sans-serif">AI-Powered Enterprise Platform</text>
-    <text x="16" y="54" fontSize="7" fill="#5A6E85" fontFamily="Inter,sans-serif" fontWeight="600" letterSpacing=".07em">BUSINESS INTELLIGENCE LAYER</text>
+    <text x="16" y="22" fontSize="11.1" fontWeight="600" fill="#93C5FD" fontFamily="Inter,sans-serif">AI-Powered Enterprise Platform</text>
+    <text x="16" y="54" fontSize="9.1" fill="#5A6E85" fontFamily="Inter,sans-serif" fontWeight="600" letterSpacing=".07em">BUSINESS INTELLIGENCE LAYER</text>
 
     {/* Top BI cards */}
     {[
@@ -1039,7 +1041,7 @@ export const AITransformVisual = () => (
     ))}
 
     {/* AI Processing Core */}
-    <text x="16" y="128" fontSize="7" fill="#5A6E85" fontFamily="Inter,sans-serif" fontWeight="600" letterSpacing=".07em">AI PROCESSING CORE</text>
+    <text x="16" y="128" fontSize="9.1" fill="#5A6E85" fontFamily="Inter,sans-serif" fontWeight="600" letterSpacing=".07em">AI PROCESSING CORE</text>
     <rect x="16" y="132" width="488" height="80" rx="9" fill="#142240" stroke="#2563EB" strokeWidth=".75" strokeOpacity=".5" />
     {[
       { label: "Natural Language Processing", sub: "Intent · Sentiment · Extraction", x: 24 },
@@ -1058,7 +1060,7 @@ export const AITransformVisual = () => (
     ))}
 
     {/* Data sources */}
-    <text x="16" y="230" fontSize="7" fill="#5A6E85" fontFamily="Inter,sans-serif" fontWeight="600" letterSpacing=".07em">CONNECTED DATA SOURCES</text>
+    <text x="16" y="230" fontSize="9.1" fill="#5A6E85" fontFamily="Inter,sans-serif" fontWeight="600" letterSpacing=".07em">CONNECTED DATA SOURCES</text>
     {[
       { label: "ERP System", records: "2.4M records", x: 16 },
       { label: "CRM Platform", records: "84K contacts", x: 120 },
@@ -1076,7 +1078,7 @@ export const AITransformVisual = () => (
 
     {/* Outcomes */}
     <rect x="16" y="280" width="488" height="48" rx="7" fill="#073D1C" stroke="#14532D" strokeWidth=".5" />
-    <text x="26" y="296" fontSize="7" fontWeight="600" fill="#86EFAC" fontFamily="Inter,sans-serif">AI-DRIVEN OUTCOMES</text>
+    <text x="26" y="296" fontSize="9.1" fontWeight="600" fill="#86EFAC" fontFamily="Inter,sans-serif">AI-DRIVEN OUTCOMES</text>
     {[
       { val: "40%", label: "Operational efficiency gain", x: 26 },
       { val: "60%", label: "Faster decision-making", x: 158 },
@@ -1100,8 +1102,8 @@ export const CaseStudiesDashVisual = () => (
     <rect width="520" height="320" rx="12" fill="#253347" stroke="#3D5068" strokeWidth="1" />
     <rect width="520" height="36" rx="12" fill="#2D3D55" />
     <rect y="24" width="520" height="12" fill="#2D3D55" />
-    <text x="16" y="22" fontSize="8.5" fontWeight="600" fill="#93C5FD" fontFamily="Inter,sans-serif">Project Outcomes — 300+ Delivered</text>
-    <text x="390" y="22" fontSize="7" fill="#7A8EA8" fontFamily="Inter,sans-serif">FY 2015–2025</text>
+    <text x="16" y="22" fontSize="11.1" fontWeight="600" fill="#93C5FD" fontFamily="Inter,sans-serif">Project Outcomes — 300+ Delivered</text>
+    <text x="390" y="22" fontSize="9.1" fill="#7A8EA8" fontFamily="Inter,sans-serif">FY 2015–2025</text>
 
     {/* Aggregate stats */}
     {[
@@ -1118,7 +1120,7 @@ export const CaseStudiesDashVisual = () => (
     ))}
 
     {/* Industry breakdown bar */}
-    <text x="16" y="86" fontSize="7" fill="#5A6E85" fontFamily="Inter,sans-serif" fontWeight="600" letterSpacing=".07em">PROJECTS BY INDUSTRY</text>
+    <text x="16" y="86" fontSize="9.1" fill="#5A6E85" fontFamily="Inter,sans-serif" fontWeight="600" letterSpacing=".07em">PROJECTS BY INDUSTRY</text>
     {[
       { label: "Healthcare", pct: 28, color: "#3B82F6" },
       { label: "Manufacturing", pct: 22, color: "#2563EB" },
@@ -1139,7 +1141,7 @@ export const CaseStudiesDashVisual = () => (
     })}
 
     {/* Impact metrics grid */}
-    <text x="16" y="210" fontSize="7" fill="#5A6E85" fontFamily="Inter,sans-serif" fontWeight="600" letterSpacing=".07em">AVERAGE CLIENT OUTCOMES</text>
+    <text x="16" y="210" fontSize="9.1" fill="#5A6E85" fontFamily="Inter,sans-serif" fontWeight="600" letterSpacing=".07em">AVERAGE CLIENT OUTCOMES</text>
     {[
       { icon: "⚡", label: "Efficiency Gain", val: "58%", sub: "avg across all projects", color: "#22C55E", x: 16, y: 214 },
       { icon: "💰", label: "Cost Reduction", val: "35%", sub: "operational savings", color: "#3B82F6", x: 148, y: 214 },
@@ -1156,7 +1158,7 @@ export const CaseStudiesDashVisual = () => (
     ))}
 
     {/* Technology mix */}
-    <text x="16" y="294" fontSize="7" fill="#5A6E85" fontFamily="Inter,sans-serif" fontWeight="600" letterSpacing=".07em">TECHNOLOGIES DELIVERED</text>
+    <text x="16" y="294" fontSize="9.1" fill="#5A6E85" fontFamily="Inter,sans-serif" fontWeight="600" letterSpacing=".07em">TECHNOLOGIES DELIVERED</text>
     {["Custom ERP", "Web Portals", "Mobile Apps", "AI Agents", "ML Models", "Cloud Migrations", "SaaS Products", "BI Dashboards"].map((t, i) => (
       <g key={t}>
         <rect x={16 + (i % 4) * 124} y={298 + Math.floor(i / 4) * 16} width={116} height={12} rx={3} fill="#253347" stroke="#3D5068" strokeWidth=".3" />
@@ -1369,7 +1371,7 @@ export const CustomAppsVisual = () => (
     <circle cx="16" cy="18" r="4.5" fill="#EF4444" opacity=".7" />
     <circle cx="29" cy="18" r="4.5" fill="#F59E0B" opacity=".7" />
     <circle cx="42" cy="18" r="4.5" fill="#22C55E" opacity=".7" />
-    <text x="58" y="22" fontSize="8.5" fontWeight="600" fill="#93C5FD" fontFamily="Inter,sans-serif">Application Portfolio Overview</text>
+    <text x="58" y="22" fontSize="11.1" fontWeight="600" fill="#93C5FD" fontFamily="Inter,sans-serif">Application Portfolio Overview</text>
 
     {/* App type cards in a 2x3 grid */}
     {[
@@ -1398,9 +1400,9 @@ export const CustomAppsVisual = () => (
 
     {/* Bottom summary */}
     <rect x="14" y="286" width="492" height="24" rx="6" fill="#141F35" stroke="#2D3D55" strokeWidth=".5" />
-    <text x="24" y="297" fontSize="7" fill="#7A8EA8" fontFamily="Inter,sans-serif">Total active applications: 6</text>
-    <text x="24" y="305" fontSize="6.5" fill="#7A8EA8" fontFamily="Inter,sans-serif">Combined user base: 26,370+ · Avg SLA: 99.7%</text>
-    <text x="390" y="301" fontSize="7" fill="#3B82F6" fontFamily="Inter,sans-serif">◉ All production systems healthy</text>
+    <text x="24" y="297" fontSize="9.1" fill="#7A8EA8" fontFamily="Inter,sans-serif">Total active applications: 6</text>
+    <text x="24" y="305" fontSize="8.5" fill="#7A8EA8" fontFamily="Inter,sans-serif">Combined user base: 26,370+ · Avg SLA: 99.7%</text>
+    <text x="390" y="301" fontSize="9.1" fill="#3B82F6" fontFamily="Inter,sans-serif">◉ All production systems healthy</text>
   </svg>
 );
 
@@ -1416,9 +1418,9 @@ export const TransformationJourneyV2 = () => (
     {/* Phase headers */}
     <rect width="640" height="40" rx="14" fill="#1D2D45"/>
     <rect y="26" width="640" height="14" fill="#1D2D45"/>
-    <text x="106" y="25" fontSize="9" fill="#F87171" fontFamily="Inter,sans-serif" fontWeight="700" letterSpacing=".1em" textAnchor="middle">LEGACY STATE</text>
-    <text x="320" y="25" fontSize="9" fill="#FCD34D" fontFamily="Inter,sans-serif" fontWeight="700" letterSpacing=".1em" textAnchor="middle">TRANSFORMATION</text>
-    <text x="534" y="25" fontSize="9" fill="#34D399" fontFamily="Inter,sans-serif" fontWeight="700" letterSpacing=".1em" textAnchor="middle">MODERN ENTERPRISE</text>
+    <text x="106" y="25" fontSize="11.7" fill="#F87171" fontFamily="Inter,sans-serif" fontWeight="700" letterSpacing=".1em" textAnchor="middle">LEGACY STATE</text>
+    <text x="320" y="25" fontSize="11.7" fill="#FCD34D" fontFamily="Inter,sans-serif" fontWeight="700" letterSpacing=".1em" textAnchor="middle">TRANSFORMATION</text>
+    <text x="534" y="25" fontSize="11.7" fill="#34D399" fontFamily="Inter,sans-serif" fontWeight="700" letterSpacing=".1em" textAnchor="middle">MODERN ENTERPRISE</text>
     <line x1="213" y1="0" x2="213" y2="480" stroke="#3D5068" strokeWidth="1" strokeDasharray="6 4" opacity=".6"/>
     <line x1="427" y1="0" x2="427" y2="480" stroke="#3D5068" strokeWidth="1" strokeDasharray="6 4" opacity=".6"/>
 
@@ -1431,11 +1433,11 @@ export const TransformationJourneyV2 = () => (
     ].map((item)=>(
       <g key={item.y}>
         <rect x="14" y={item.y} width="192" height="84" rx="9" fill="#1E0F0F" stroke="#6B2121" strokeWidth="1"/>
-        <text x="24" y={item.y+24} fontSize="11" fill="#FCA5A5" fontFamily="Inter,sans-serif" fontWeight="600">{item.label}</text>
-        <text x="24" y={item.y+42} fontSize="8.5" fill="#7F3131" fontFamily="Inter,sans-serif">{item.note}</text>
+        <text x="24" y={item.y+24} fontSize="14.3" fill="#FCA5A5" fontFamily="Inter,sans-serif" fontWeight="600">{item.label}</text>
+        <text x="24" y={item.y+42} fontSize="11.1" fill="#7F3131" fontFamily="Inter,sans-serif">{item.note}</text>
         {/* Error bars */}
         {[0,1,2,3].map(i=><rect key={i} x="24" y={item.y+54+i*7} width={[140,100,120,80][i]} height="5" rx="2.5" fill="#4B1C1C"/>)}
-        <text x="24" y={item.y+78} fontSize="7" fill="#EF4444" fontFamily="Inter,sans-serif" fontWeight="600">⚠ High Risk · Manual Process</text>
+        <text x="24" y={item.y+78} fontSize="9.1" fill="#EF4444" fontFamily="Inter,sans-serif" fontWeight="600">⚠ High Risk · Manual Process</text>
       </g>
     ))}
 
@@ -1444,7 +1446,7 @@ export const TransformationJourneyV2 = () => (
       <g key={y}>
         <line x1="207" y1={y} x2="423" y2={y} stroke="#1E3A8A" strokeWidth="10" strokeLinecap="round" opacity=".15"/>
         <line x1="207" y1={y} x2="423" y2={y} stroke="#3B82F6" strokeWidth="2" strokeDasharray="8 5" className="hv-dash" opacity=".7"/>
-        <text x="315" y={y+4} fontSize="8" fill="#60A5FA" fontFamily="Inter,sans-serif" textAnchor="middle" fontWeight="600">→ Migrating</text>
+        <text x="315" y={y+4} fontSize="10.4" fill="#60A5FA" fontFamily="Inter,sans-serif" textAnchor="middle" fontWeight="600">→ Migrating</text>
       </g>
     ))}
 
@@ -1458,12 +1460,12 @@ export const TransformationJourneyV2 = () => (
       <g key={p.y}>
         <rect x="220" y={p.y} width="200" height="84" rx="9" fill="#0F172A" stroke={p.color} strokeWidth="1.5" strokeOpacity=".6"/>
         <rect x="220" y={p.y} width="5" height="84" rx="2.5" fill={p.color} opacity=".8"/>
-        <text x="234" y={p.y+24} fontSize="11" fontWeight="700" fill="#E2E8F0" fontFamily="Inter,sans-serif">{p.label}</text>
-        <text x="234" y={p.y+42} fontSize="8.5" fill="#94A3B8" fontFamily="Inter,sans-serif">{p.sub}</text>
+        <text x="234" y={p.y+24} fontSize="14.3" fontWeight="700" fill="#E2E8F0" fontFamily="Inter,sans-serif">{p.label}</text>
+        <text x="234" y={p.y+42} fontSize="11.1" fill="#94A3B8" fontFamily="Inter,sans-serif">{p.sub}</text>
         {/* Progress bar */}
         <rect x="234" y={p.y+54} width="176" height="8" rx="4" fill="#1E293B"/>
         <rect x="234" y={p.y+54} width={[152,168,140,176][["☁","🔗","⚡","🔒"].indexOf(p.label[0])]} height="8" rx="4" fill={p.color} opacity=".7"/>
-        <text x="234" y={p.y+76} fontSize="7.5" fill="#64748B" fontFamily="Inter,sans-serif">Phase {["2/3","3/3","2/4","1/3"][["☁","🔗","⚡","🔒"].indexOf(p.label[0])]} complete</text>
+        <text x="234" y={p.y+76} fontSize="9.8" fill="#64748B" fontFamily="Inter,sans-serif">Phase {["2/3","3/3","2/4","1/3"][["☁","🔗","⚡","🔒"].indexOf(p.label[0])]} complete</text>
       </g>
     ))}
 
@@ -1477,11 +1479,11 @@ export const TransformationJourneyV2 = () => (
       <g key={item.y}>
         <rect x="434" y={item.y} width="192" height="84" rx="9" fill="#07200F" stroke="#14532D" strokeWidth="1"/>
         <rect x="434" y={item.y} width="5" height="84" rx="2.5" fill={item.color} opacity=".8"/>
-        <text x="448" y={item.y+24} fontSize="10.5" fill="#6EE7B7" fontFamily="Inter,sans-serif" fontWeight="600">{item.label}</text>
-        <text x="448" y={item.y+40} fontSize="8" fill="#065F46" fontFamily="Inter,sans-serif">{item.note}</text>
+        <text x="448" y={item.y+24} fontSize="13.7" fill="#6EE7B7" fontFamily="Inter,sans-serif" fontWeight="600">{item.label}</text>
+        <text x="448" y={item.y+40} fontSize="10.4" fill="#065F46" fontFamily="Inter,sans-serif">{item.note}</text>
         <rect x="448" y={item.y+50} width="168" height="16" rx="4" fill="#052E16"/>
-        <text x="532" y={item.y+62} fontSize="8" fill={item.color} fontFamily="Inter,sans-serif" textAnchor="middle" fontWeight="600">{item.outcome}</text>
-        <text x="448" y={item.y+78} fontSize="7" fill="#22C55E" fontFamily="Inter,sans-serif" fontWeight="600">● Live · Production</text>
+        <text x="532" y={item.y+62} fontSize="10.4" fill={item.color} fontFamily="Inter,sans-serif" textAnchor="middle" fontWeight="600">{item.outcome}</text>
+        <text x="448" y={item.y+78} fontSize="9.1" fill="#22C55E" fontFamily="Inter,sans-serif" fontWeight="600">● Live · Production</text>
       </g>
     ))}
 
@@ -1494,8 +1496,8 @@ export const TransformationJourneyV2 = () => (
       {label:"Annual ROI",val:"₹8.1Cr",x:498},
     ].map(s=>(
       <g key={s.x}>
-        <text x={s.x} y="450" fontSize="7" fill="#7A8EA8" fontFamily="Inter,sans-serif">{s.label}</text>
-        <text x={s.x} y="464" fontSize="10" fontWeight="700" fill="#E2E8F0" fontFamily="Inter,sans-serif">{s.val}</text>
+        <text x={s.x} y="450" fontSize="9.1" fill="#7A8EA8" fontFamily="Inter,sans-serif">{s.label}</text>
+        <text x={s.x} y="464" fontSize="13" fontWeight="700" fill="#E2E8F0" fontFamily="Inter,sans-serif">{s.val}</text>
       </g>
     ))}
   </svg>
@@ -1511,10 +1513,10 @@ export const GlobalDeliveryVisual = () => (
     <rect width="640" height="480" rx="14" fill="#141F35" stroke="#3D5068" strokeWidth="1.5"/>
     <rect width="640" height="40" rx="14" fill="#1D2D45"/>
     <rect y="26" width="640" height="14" fill="#1D2D45"/>
-    <text x="16" y="25" fontSize="10" fontWeight="600" fill="#93C5FD" fontFamily="Inter,sans-serif">Jubiliants Software Solutions · Global Delivery Network</text>
+    <text x="16" y="25" fontSize="13" fontWeight="600" fill="#93C5FD" fontFamily="Inter,sans-serif">Jubiliants Software Solutions · Global Delivery Network</text>
     <rect x="540" y="12" width="86" height="16" rx="8" fill="rgba(34,197,94,.12)" stroke="rgba(34,197,94,.4)" strokeWidth=".75"/>
     <circle cx="552" cy="20" r="4" fill="#22C55E" className="hv-pulse"/>
-    <text x="558" y="24" fontSize="7.5" fill="#86EFAC" fontFamily="Inter,sans-serif">Est. 2015</text>
+    <text x="558" y="24" fontSize="9.8" fill="#86EFAC" fontFamily="Inter,sans-serif">Est. 2015</text>
 
     {/* Simplified world map */}
     <g opacity=".18">
@@ -1538,7 +1540,7 @@ export const GlobalDeliveryVisual = () => (
     <circle cx="404" cy="160" r="20" fill="none" stroke="#3B82F6" strokeWidth="1.5" opacity=".4" className="hv-pulse"/>
     <circle cx="404" cy="160" r="28" fill="none" stroke="#3B82F6" strokeWidth="1" opacity=".2" className="hv-pulse" style={{animationDelay:".8s"}}/>
     <rect x="362" y="134" width="84" height="18" rx="5" fill="#1D2D45" stroke="#3D5068" strokeWidth=".5"/>
-    <text x="404" y="146" fontSize="8" fontWeight="700" fill="#93C5FD" fontFamily="Inter,sans-serif" textAnchor="middle">HQ · Hyderabad</text>
+    <text x="404" y="146" fontSize="10.4" fontWeight="700" fill="#93C5FD" fontFamily="Inter,sans-serif" textAnchor="middle">HQ · Hyderabad</text>
 
     {/* Client nodes */}
     {[
@@ -1553,13 +1555,13 @@ export const GlobalDeliveryVisual = () => (
         <circle cx={n.cx} cy={n.cy} r="7" fill="#1D2D45" stroke="#3B82F6" strokeWidth="1.5"/>
         <circle cx={n.cx} cy={n.cy} r="4" fill="#3B82F6" opacity=".8"/>
         <rect x={n.lx} y={n.ly-10} width={n.label.length*6.5+10} height="15" rx="4" fill="#1D2D45" stroke="#3D5068" strokeWidth=".5"/>
-        <text x={n.lx+5} y={n.ly} fontSize="7.5" fill="#7A8EA8" fontFamily="Inter,sans-serif">{n.label}</text>
+        <text x={n.lx+5} y={n.ly} fontSize="9.8" fill="#7A8EA8" fontFamily="Inter,sans-serif">{n.label}</text>
       </g>
     ))}
 
     {/* Team composition */}
     <rect x="14" y="300" width="286" height="164" rx="10" fill="#1D2D45" stroke="#3D5068" strokeWidth=".75"/>
-    <text x="24" y="322" fontSize="10" fontWeight="600" fill="#CBD5E1" fontFamily="Inter,sans-serif">Our Team · 80+ specialists</text>
+    <text x="24" y="322" fontSize="13" fontWeight="600" fill="#CBD5E1" fontFamily="Inter,sans-serif">Our Team · 80+ specialists</text>
     {[
       {label:"Software Engineers", pct:55, color:"#2563EB"},
       {label:"AI & ML Specialists", pct:20, color:"#8B5CF6"},
@@ -1567,17 +1569,17 @@ export const GlobalDeliveryVisual = () => (
       {label:"Project Managers",   pct:10, color:"#22C55E"},
     ].map((r,i)=>(
       <g key={r.label}>
-        <text x="24" y={340+i*28} fontSize="8.5" fill="#7A8EA8" fontFamily="Inter,sans-serif">{r.label}</text>
+        <text x="24" y={340+i*28} fontSize="11.1" fill="#7A8EA8" fontFamily="Inter,sans-serif">{r.label}</text>
         <rect x="24" y={344+i*28} width="256" height="10" rx="5" fill="#253347"/>
         <rect x="24" y={344+i*28} width={256*r.pct/100} height="10" rx="5" fill={r.color} opacity=".8"/>
-        <text x="286" y={353+i*28} fontSize="8" fill="#7A8EA8" fontFamily="Inter,sans-serif" textAnchor="end">{r.pct}%</text>
+        <text x="286" y={353+i*28} fontSize="10.4" fill="#7A8EA8" fontFamily="Inter,sans-serif" textAnchor="end">{r.pct}%</text>
       </g>
     ))}
-    <text x="24" y="450" fontSize="8" fill="#475569" fontFamily="Inter,sans-serif">Average experience: 7+ years per engineer</text>
+    <text x="24" y="450" fontSize="10.4" fill="#475569" fontFamily="Inter,sans-serif">Average experience: 7+ years per engineer</text>
 
     {/* Track record */}
     <rect x="314" y="300" width="312" height="164" rx="10" fill="#1D2D45" stroke="#3D5068" strokeWidth=".75"/>
-    <text x="324" y="322" fontSize="10" fontWeight="600" fill="#CBD5E1" fontFamily="Inter,sans-serif">Delivery Track Record</text>
+    <text x="324" y="322" fontSize="13" fontWeight="600" fill="#CBD5E1" fontFamily="Inter,sans-serif">Delivery Track Record</text>
     {[
       {icon:"🏆",label:"300+ Projects Delivered",  sub:"On time · On budget",         y:338},
       {icon:"🌍",label:"5 Countries Active",        sub:"India · UK · UAE · SG · US",  y:376},
@@ -1585,9 +1587,9 @@ export const GlobalDeliveryVisual = () => (
       {icon:"⭐",label:"95% Client Retention",      sub:"Repeat & referral business",   y:452},
     ].map(c=>(
       <g key={c.label}>
-        <text x="328" y={c.y} fontSize="16" fontFamily="Inter,sans-serif">{c.icon}</text>
-        <text x="350" y={c.y} fontSize="9" fontWeight="600" fill="#E2E8F0" fontFamily="Inter,sans-serif">{c.label}</text>
-        <text x="350" y={c.y+14} fontSize="7.5" fill="#5A6E85" fontFamily="Inter,sans-serif">{c.sub}</text>
+        <text x="328" y={c.y} fontSize="20.8" fontFamily="Inter,sans-serif">{c.icon}</text>
+        <text x="350" y={c.y} fontSize="11.7" fontWeight="600" fill="#E2E8F0" fontFamily="Inter,sans-serif">{c.label}</text>
+        <text x="350" y={c.y+14} fontSize="9.8" fill="#5A6E85" fontFamily="Inter,sans-serif">{c.sub}</text>
       </g>
     ))}
   </svg>

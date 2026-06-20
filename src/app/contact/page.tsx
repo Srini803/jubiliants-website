@@ -11,7 +11,7 @@ const services = [
   "Agentic AI Solutions",
   "AI Process Automation",
   "Generative AI Applications",
-  "Computer Vision",
+  "AI CCTV Intelligence",
   "AI Chatbots",
   "Machine Learning & Predictive Analytics",
   "Digital Transformation Consulting",
@@ -225,7 +225,7 @@ export default function Contact() {
                 <div style={{background:"var(--bg-raised)",border:"1px solid var(--border)",borderRadius:"var(--radius-lg)",padding:"1.5rem"}}>
                   <div style={{fontSize:"0.6875rem",fontWeight:600,letterSpacing:"0.07em",textTransform:"uppercase",color:"var(--text-3)",marginBottom:"1rem"}}>Services We Offer</div>
                   <div style={{display:"flex",flexWrap:"wrap",gap:"0.5rem"}}>
-                    {["Custom Software","Web Apps","Mobile Apps","ERP","SaaS","AI Agents","AI Automation","Gen AI","Computer Vision","ML","Chatbots"].map(s => (
+                    {["Custom Software","Web Apps","Mobile Apps","ERP","SaaS","AI Agents","AI Automation","Gen AI","AI CCTV Intelligence","ML","Chatbots"].map(s => (
                       <span key={s} className="chip" style={{fontSize:"0.6875rem"}}>{s}</span>
                     ))}
                   </div>

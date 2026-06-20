@@ -15,7 +15,7 @@ const aiSubs = [
   { label: "Agentic AI", href: "/artificial-intelligence/agentic-ai", desc: "Autonomous AI agent systems" },
   { label: "AI Automation", href: "/artificial-intelligence/ai-automation", desc: "Intelligent process automation" },
   { label: "Generative AI", href: "/artificial-intelligence/generative-ai", desc: "LLM-powered applications" },
-  { label: "Computer Vision", href: "/artificial-intelligence/computer-vision", desc: "Visual AI & image analysis" },
+  { label: "AI CCTV Intelligence", href: "/artificial-intelligence/computer-vision", desc: "Smart surveillance & monitoring" },
   { label: "AI Chatbots", href: "/artificial-intelligence/ai-chatbots", desc: "Conversational AI assistants" },
   { label: "Machine Learning", href: "/artificial-intelligence/machine-learning", desc: "Predictive analytics & ML models" },
 ];

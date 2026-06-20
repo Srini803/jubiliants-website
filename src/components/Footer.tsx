@@ -14,7 +14,7 @@ const cols = [
     { label: "Agentic AI", href: "/artificial-intelligence/agentic-ai" },
     { label: "AI Automation", href: "/artificial-intelligence/ai-automation" },
     { label: "Generative AI", href: "/artificial-intelligence/generative-ai" },
-    { label: "Computer Vision", href: "/artificial-intelligence/computer-vision" },
+    { label: "AI CCTV Intelligence", href: "/artificial-intelligence/computer-vision" },
     { label: "AI Chatbots", href: "/artificial-intelligence/ai-chatbots" },
     { label: "Machine Learning", href: "/artificial-intelligence/machine-learning" },
   ]},
