@@ -134,7 +134,7 @@ export default function WebApplications() {
               { n: "01", t: "Requirements", d: "Stakeholder interviews, UX discovery, data modelling, and technical specification." },
               { n: "02", t: "Architecture", d: "System design, API contracts, security model, infrastructure plan, and tech stack selection." },
               { n: "03", t: "Agile Build", d: "2-week sprints, weekly demos, live staging environment. You can test at every stage." },
-              { n: "04", t: "Go-Live & Support", d: "Load-tested deployment, user training, monitoring setup, and ongoing enhancement SLA." },
+              { n: "04", t: "Go-Live and Support", d: "Load-tested deployment, user training, monitoring setup, and ongoing enhancement SLA." },
             ].map((p, i) => (
               <RevealOnScroll key={p.n} delay={i * 80}>
                 <div className="card-flat" style={{ padding: "1.5rem" }}>

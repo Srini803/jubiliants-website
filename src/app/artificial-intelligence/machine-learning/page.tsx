@@ -81,7 +81,7 @@ export default function MachineLearning() {
               </div>
               <div style={{ display: "flex", flexDirection: "column", gap: "1rem" }}>
                 {[
-                  { cat: "Languages & Frameworks", items: ["Python, scikit-learn, XGBoost", "PyTorch, TensorFlow, Keras", "HuggingFace Transformers", "RAPIDS (GPU-accelerated)"] },
+                  { cat: "Languages and Frameworks", items: ["Python, scikit-learn, XGBoost", "PyTorch, TensorFlow, Keras", "HuggingFace Transformers", "RAPIDS (GPU-accelerated)"] },
                   { cat: "MLOps Platforms", items: ["MLflow (experiment tracking)", "Kubeflow Pipelines", "Azure Machine Learning", "AWS SageMaker"] },
                   { cat: "Data Engineering", items: ["Apache Spark, dbt", "Apache Kafka (streaming)", "Great Expectations (DQ)", "Feast (feature store)"] },
                 ].map((stack, i) => (

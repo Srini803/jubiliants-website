@@ -81,8 +81,8 @@ export default function ComputerVision() {
           <div style={{ display: "grid", gap: "1rem" }} className="grid grid-cols-2 lg:grid-cols-4">
             {[
               { cat: "Integration", items: ["Works with existing CCTV/IP cameras", "RTSP / ONVIF protocol support", "No camera hardware replacement", "Cloud or on-premise deployment"] },
-              { cat: "Detection Models", items: ["YOLOv8 / YOLOv9", "Custom fine-tuned models", "Pose & PPE detection", "Fire/smoke classifiers"] },
-              { cat: "Alerting", items: ["SMS, email & dashboard alerts", "Auto-routing to security teams", "Timestamped video clips", "Escalation workflows"] },
+              { cat: "Detection Models", items: ["YOLOv8 / YOLOv9", "Custom fine-tuned models", "Pose and PPE detection", "Fire/smoke classifiers"] },
+              { cat: "Alerting", items: ["SMS, email and dashboard alerts", "Auto-routing to security teams", "Timestamped video clips", "Escalation workflows"] },
               { cat: "Infrastructure", items: ["Edge inference — NVIDIA Jetson", "ONNX Runtime / TensorRT", "Multi-site central dashboard", "Audit-ready incident logs"] },
             ].map((t, i) => (
               <RevealOnScroll key={t.cat} delay={i * 80}>

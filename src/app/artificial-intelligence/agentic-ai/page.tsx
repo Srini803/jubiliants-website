@@ -80,7 +80,7 @@ const AIWorkflowDiagram = () => (
         {[
           {y:64,  label:"Customer Support Agent",  status:"142 resolved today", sc:"#22C55E",bg:"rgba(34,197,94,.08)"},
           {y:104, label:"Sales Development Agent", status:"38 leads qualified",  sc:"#3B82F6",bg:"rgba(59,130,246,.08)"},
-          {y:144, label:"HR & Recruitment Agent",  status:"12 CVs screened",    sc:"#8B5CF6",bg:"rgba(139,92,246,.08)"},
+          {y:144, label:"HR and Recruitment Agent",  status:"12 CVs screened",    sc:"#8B5CF6",bg:"rgba(139,92,246,.08)"},
           {y:184, label:"IT Helpdesk Agent",        status:"99% tickets auto",   sc:"#06B6D4",bg:"rgba(6,182,212,.08)"},
           {y:224, label:"Knowledge Assistant",     status:"500+ queries/hr",    sc:"#F59E0B",bg:"rgba(245,158,11,.08)"},
           {y:264, label:"Finance Automation Agent",status:"₹ 2.4Cr processed",  sc:"#22C55E",bg:"rgba(34,197,94,.08)"},
@@ -119,7 +119,7 @@ const AIWorkflowDiagram = () => (
 const agentTypes = [
   {t:"Customer Support Agents",d:"Handle tier-1 and tier-2 support queries, process refunds, check order status, and escalate complex cases — integrated with your CRM and ticketing system."},
   {t:"Sales Development Agents",d:"Qualify inbound leads, engage prospects via email and chat, answer product questions, and schedule demos for your sales team automatically."},
-  {t:"HR & Recruitment Agents",d:"Screen CVs, shortlist candidates, schedule interviews, answer policy questions, and guide new hires through onboarding."},
+  {t:"HR and Recruitment Agents",d:"Screen CVs, shortlist candidates, schedule interviews, answer policy questions, and guide new hires through onboarding."},
   {t:"IT Helpdesk Agents",d:"Reset passwords, diagnose common issues, create tickets, retrieve knowledge base answers, and escalate to human agents with full context."},
   {t:"Knowledge Assistants",d:"Let employees instantly retrieve information from your SOPs, policies, product documentation, and knowledge bases via natural language."},
   {t:"Operations Agents",d:"Monitor workflows, detect exceptions, route approvals, trigger actions in connected systems, and surface anomalies to managers proactively."},

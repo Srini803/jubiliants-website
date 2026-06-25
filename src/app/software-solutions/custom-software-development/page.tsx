@@ -84,10 +84,10 @@ export default function CustomSoftwareDevelopment() {
           </RevealOnScroll>
           <div style={{display:"grid",gap:"1.25rem",maxWidth:"800px",margin:"0 auto"}} className="grid grid-cols-1 md:grid-cols-2">
             {[
-              { n:"1", t:"Requirements & Discovery", d:"We interview stakeholders, map workflows, identify integration points, and document functional and non-functional requirements before scoping the project." },
-              { n:"2", t:"Architecture & Design", d:"System design, data modelling, API contracts, UI/UX wireframes, and security architecture are agreed before development begins." },
+              { n:"1", t:"Requirements and Discovery", d:"We interview stakeholders, map workflows, identify integration points, and document functional and non-functional requirements before scoping the project." },
+              { n:"2", t:"Architecture and Design", d:"System design, data modelling, API contracts, UI/UX wireframes, and security architecture are agreed before development begins." },
               { n:"3", t:"Agile Development", d:"Two-week sprints with working software at every milestone. Regular demos ensure alignment and give you control over priorities." },
-              { n:"4", t:"Testing & Delivery", d:"Functional, performance, and security testing before every release. We handle cloud deployment, user training, and go-live support." },
+              { n:"4", t:"Testing and Delivery", d:"Functional, performance, and security testing before every release. We handle cloud deployment, user training, and go-live support." },
             ].map((p, i) => (
               <RevealOnScroll key={p.n} delay={i * 80}>
                 <div className="card-flat" style={{padding:"1.5rem",display:"flex",gap:"1rem"}}>

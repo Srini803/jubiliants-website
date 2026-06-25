@@ -148,7 +148,7 @@ export default function MobileApplications() {
               <RevealOnScroll delay={70}>
                 <div className="card" style={{padding:"1.5rem",height:"100%"}}>
                   <div style={{display:"flex",alignItems:"center",gap:"0.5rem",marginBottom:"0.875rem"}}>
-                    <span className="chip chip-blue" style={{fontSize:"0.6875rem"}}>iOS & Android</span>
+                    <span className="chip chip-blue" style={{fontSize:"0.6875rem"}}>iOS and Android</span>
                     <span className="chip" style={{fontSize:"0.6875rem"}}>Education</span>
                   </div>
                   <div style={{fontFamily:"var(--font-heading)",fontWeight:700,fontSize:"0.9375rem",color:"var(--text-1)",marginBottom:"0.375rem"}}>Narayana Group of Schools</div>
