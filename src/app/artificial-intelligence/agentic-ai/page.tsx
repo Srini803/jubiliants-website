@@ -213,8 +213,7 @@ export default function AgenticAI() {
                 <div className="card" style={{padding:"1.5rem",height:"100%"}}>
                   <h3 className="t-h4" style={{marginBottom:"0.5rem"}}>{a.t}</h3>
                   <p className="t-small">{a.d}</p>
-                </div>
-              </RevealOnScroll>
+              </div>
             ))}
           </div>
         </div>
@@ -242,8 +241,7 @@ export default function AgenticAI() {
                   <ul style={{listStyle:"none",display:"flex",flexDirection:"column",gap:"0.4rem"}}>
                     {t.items.map(it=><li key={it} style={{fontSize:"0.8125rem",color:"var(--text-2)"}}>{it}</li>)}
                   </ul>
-                </div>
-              </RevealOnScroll>
+              </div>
             ))}
           </div>
         </div>
@@ -260,8 +258,7 @@ export default function AgenticAI() {
             </div>
           </RevealOnScroll>
           <div style={{display:"grid",gap:"1.25rem"}} className="grid grid-cols-1 md:grid-cols-3">
-              <RevealOnScroll delay={70}>
-                <div className="card" style={{padding:"1.5rem",height:"100%"}}>
+              <div className="card" style={{padding:"1.5rem",height:"100%"}}>
                   <div style={{display:"flex",alignItems:"center",gap:"0.5rem",marginBottom:"0.875rem"}}>
                     <span className="chip chip-blue" style={{fontSize:"0.6875rem"}}>AI Support Agent</span>
                     <span className="chip" style={{fontSize:"0.6875rem"}}>FinTech</span>
@@ -269,10 +266,8 @@ export default function AgenticAI() {
                   <div style={{fontFamily:"var(--font-heading)",fontWeight:700,fontSize:"0.9375rem",color:"var(--text-1)",marginBottom:"0.375rem"}}>FinServe Solutions</div>
                   <div style={{fontSize:"0.8125rem",fontWeight:600,color:"var(--blue-light)",marginBottom:"0.625rem"}}>65% of support tickets resolved autonomously</div>
                   <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.65}}>Deployed an agentic AI system integrated with Salesforce CRM that handles tier-1 and tier-2 queries, escalates with full context, and learns from feedback.</p>
-                </div>
-              </RevealOnScroll>
-              <RevealOnScroll delay={70}>
-                <div className="card" style={{padding:"1.5rem",height:"100%"}}>
+              </div>
+              <div className="card" style={{padding:"1.5rem",height:"100%"}}>
                   <div style={{display:"flex",alignItems:"center",gap:"0.5rem",marginBottom:"0.875rem"}}>
                     <span className="chip chip-blue" style={{fontSize:"0.6875rem"}}>Field Operations Agent</span>
                     <span className="chip" style={{fontSize:"0.6875rem"}}>Facilities</span>
@@ -280,10 +275,8 @@ export default function AgenticAI() {
                   <div style={{fontFamily:"var(--font-heading)",fontWeight:700,fontSize:"0.9375rem",color:"var(--text-1)",marginBottom:"0.375rem"}}>Dutco Tennant LLC</div>
                   <div style={{fontSize:"0.8125rem",fontWeight:600,color:"var(--blue-light)",marginBottom:"0.625rem"}}>70% of service calls automated</div>
                   <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.65}}>Built an agentic voice and workflow system that logs service requests, assigns field technicians, updates job status, and notifies customers — without human intervention.</p>
-                </div>
-              </RevealOnScroll>
-              <RevealOnScroll delay={70}>
-                <div className="card" style={{padding:"1.5rem",height:"100%"}}>
+              </div>
+              <div className="card" style={{padding:"1.5rem",height:"100%"}}>
                   <div style={{display:"flex",alignItems:"center",gap:"0.5rem",marginBottom:"0.875rem"}}>
                     <span className="chip chip-blue" style={{fontSize:"0.6875rem"}}>Claims Processing Agent</span>
                     <span className="chip" style={{fontSize:"0.6875rem"}}>Healthcare</span>
@@ -291,8 +284,7 @@ export default function AgenticAI() {
                   <div style={{fontFamily:"var(--font-heading)",fontWeight:700,fontSize:"0.9375rem",color:"var(--text-1)",marginBottom:"0.375rem"}}>MedCare Diagnostics</div>
                   <div style={{fontSize:"0.8125rem",fontWeight:600,color:"var(--blue-light)",marginBottom:"0.625rem"}}>600+ claims processed daily</div>
                   <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.65}}>An AI agent reads incoming claim documents, extracts data, validates against policy rules, routes for approval, and files with insurers — handling 600+ claims daily.</p>
-                </div>
-              </RevealOnScroll>
+              </div>
           </div>
         </div>
       </section>

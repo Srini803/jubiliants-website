@@ -63,8 +63,7 @@ export default function ComputerVision() {
                   </div>
                   <h3 className="t-h4" style={{ marginBottom: "0.5rem" }}>{app.title}</h3>
                   <p className="t-small">{app.desc}</p>
-                </div>
-              </RevealOnScroll>
+              </div>
             ))}
           </div>
         </div>
@@ -91,8 +90,7 @@ export default function ComputerVision() {
                   <ul style={{ listStyle: "none", display: "flex", flexDirection: "column", gap: "0.4rem" }}>
                     {t.items.map(it => <li key={it} style={{ fontSize: "0.8125rem", color: "var(--text-2)" }}>{it}</li>)}
                   </ul>
-                </div>
-              </RevealOnScroll>
+              </div>
             ))}
           </div>
         </div>
@@ -109,8 +107,7 @@ export default function ComputerVision() {
             </div>
           </RevealOnScroll>
           <div style={{display:"grid",gap:"1.25rem"}} className="grid grid-cols-1 md:grid-cols-3">
-              <RevealOnScroll delay={70}>
-                <div className="card" style={{padding:"1.5rem",height:"100%"}}>
+              <div className="card" style={{padding:"1.5rem",height:"100%"}}>
                   <div style={{display:"flex",alignItems:"center",gap:"0.5rem",marginBottom:"0.875rem"}}>
                     <span className="chip chip-blue" style={{fontSize:"0.6875rem"}}>Perimeter Security</span>
                     <span className="chip" style={{fontSize:"0.6875rem"}}>Industrial</span>
@@ -118,10 +115,8 @@ export default function ComputerVision() {
                   <div style={{fontFamily:"var(--font-heading)",fontWeight:700,fontSize:"0.9375rem",color:"var(--text-1)",marginBottom:"0.375rem"}}>Alfanar Engineering</div>
                   <div style={{fontSize:"0.8125rem",fontWeight:600,color:"var(--blue-light)",marginBottom:"0.625rem"}}>94% incident detection accuracy</div>
                   <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.65}}>Deployed AI-based CCTV analytics across 200+ cameras at an industrial facility — detecting intrusions, safety gear violations, and anomalies with automated alerts in under 5 seconds.</p>
-                </div>
-              </RevealOnScroll>
-              <RevealOnScroll delay={70}>
-                <div className="card" style={{padding:"1.5rem",height:"100%"}}>
+              </div>
+              <div className="card" style={{padding:"1.5rem",height:"100%"}}>
                   <div style={{display:"flex",alignItems:"center",gap:"0.5rem",marginBottom:"0.875rem"}}>
                     <span className="chip chip-blue" style={{fontSize:"0.6875rem"}}>Safety Compliance</span>
                     <span className="chip" style={{fontSize:"0.6875rem"}}>Manufacturing</span>
@@ -129,10 +124,8 @@ export default function ComputerVision() {
                   <div style={{fontFamily:"var(--font-heading)",fontWeight:700,fontSize:"0.9375rem",color:"var(--text-1)",marginBottom:"0.375rem"}}>Schmalz GmbH</div>
                   <div style={{fontSize:"0.8125rem",fontWeight:600,color:"var(--blue-light)",marginBottom:"0.625rem"}}>60% reduction in PPE violations</div>
                   <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.65}}>Implemented a computer vision system monitoring factory floors for helmet and vest compliance in real time — with instant alerts to supervisors and a compliance audit log.</p>
-                </div>
-              </RevealOnScroll>
-              <RevealOnScroll delay={70}>
-                <div className="card" style={{padding:"1.5rem",height:"100%"}}>
+              </div>
+              <div className="card" style={{padding:"1.5rem",height:"100%"}}>
                   <div style={{display:"flex",alignItems:"center",gap:"0.5rem",marginBottom:"0.875rem"}}>
                     <span className="chip chip-blue" style={{fontSize:"0.6875rem"}}>Equipment Monitoring</span>
                     <span className="chip" style={{fontSize:"0.6875rem"}}>Industrial</span>
@@ -140,8 +133,7 @@ export default function ComputerVision() {
                   <div style={{fontFamily:"var(--font-heading)",fontWeight:700,fontSize:"0.9375rem",color:"var(--text-1)",marginBottom:"0.375rem"}}>Powell Industries</div>
                   <div style={{fontSize:"0.8125rem",fontWeight:600,color:"var(--blue-light)",marginBottom:"0.625rem"}}>Zero undetected equipment idle incidents</div>
                   <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.65}}>Built a visual monitoring system that detects idle machinery, blocked walkways, and abnormal equipment states across a large production facility — reducing downtime significantly.</p>
-                </div>
-              </RevealOnScroll>
+              </div>
           </div>
         </div>
       </section>

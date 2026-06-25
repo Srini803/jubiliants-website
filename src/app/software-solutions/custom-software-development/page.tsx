@@ -66,8 +66,7 @@ export default function CustomSoftwareDevelopment() {
                   </div>
                   <h3 className="t-h4" style={{marginBottom:"0.5rem"}}>{s.title}</h3>
                   <p className="t-small">{s.desc}</p>
-                </div>
-              </RevealOnScroll>
+              </div>
             ))}
           </div>
         </div>
@@ -96,8 +95,7 @@ export default function CustomSoftwareDevelopment() {
                     <div style={{fontWeight:600,fontSize:"0.9375rem",color:"var(--text-1)",marginBottom:"0.375rem"}}>{p.t}</div>
                     <p className="t-small">{p.d}</p>
                   </div>
-                </div>
-              </RevealOnScroll>
+              </div>
             ))}
           </div>
         </div>
@@ -121,8 +119,7 @@ export default function CustomSoftwareDevelopment() {
                   <ul style={{listStyle:"none",display:"flex",flexDirection:"column",gap:"0.5rem"}}>
                     {t.items.map(item => <li key={item} style={{fontSize:"0.875rem",color:"var(--text-2)"}}>{item}</li>)}
                   </ul>
-                </div>
-              </RevealOnScroll>
+              </div>
             ))}
           </div>
         </div>
@@ -172,8 +169,7 @@ export default function CustomSoftwareDevelopment() {
             </div>
           </RevealOnScroll>
           <div style={{display:"grid",gap:"1.25rem"}} className="grid grid-cols-1 md:grid-cols-3">
-              <RevealOnScroll delay={70}>
-                <div className="card" style={{padding:"1.5rem",height:"100%"}}>
+              <div className="card" style={{padding:"1.5rem",height:"100%"}}>
                   <div style={{display:"flex",alignItems:"center",gap:"0.5rem",marginBottom:"0.875rem"}}>
                     <span className="chip chip-blue" style={{fontSize:"0.6875rem"}}>Hospital Management</span>
                     <span className="chip" style={{fontSize:"0.6875rem"}}>Healthcare</span>
@@ -181,10 +177,8 @@ export default function CustomSoftwareDevelopment() {
                   <div style={{fontFamily:"var(--font-heading)",fontWeight:700,fontSize:"0.9375rem",color:"var(--text-1)",marginBottom:"0.375rem"}}>Apollo Health Group</div>
                   <div style={{fontSize:"0.8125rem",fontWeight:600,color:"var(--blue-light)",marginBottom:"0.625rem"}}>60% reduction in admin workload</div>
                   <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.65}}>Built an integrated HIMS covering patient registration, OPD/IPD, billing, pharmacy, and inventory across 5 hospitals — replacing 7 disconnected systems.</p>
-                </div>
-              </RevealOnScroll>
-              <RevealOnScroll delay={70}>
-                <div className="card" style={{padding:"1.5rem",height:"100%"}}>
+              </div>
+              <div className="card" style={{padding:"1.5rem",height:"100%"}}>
                   <div style={{display:"flex",alignItems:"center",gap:"0.5rem",marginBottom:"0.875rem"}}>
                     <span className="chip chip-blue" style={{fontSize:"0.6875rem"}}>Custom ERP</span>
                     <span className="chip" style={{fontSize:"0.6875rem"}}>Manufacturing</span>
@@ -192,10 +186,8 @@ export default function CustomSoftwareDevelopment() {
                   <div style={{fontFamily:"var(--font-heading)",fontWeight:700,fontSize:"0.9375rem",color:"var(--text-1)",marginBottom:"0.375rem"}}>Varun Industries</div>
                   <div style={{fontSize:"0.8125rem",fontWeight:600,color:"var(--blue-light)",marginBottom:"0.625rem"}}>12 spreadsheet processes eliminated</div>
                   <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.65}}>Designed a bespoke production and finance platform that replaced manual spreadsheet-based reporting, giving management real-time operational visibility.</p>
-                </div>
-              </RevealOnScroll>
-              <RevealOnScroll delay={70}>
-                <div className="card" style={{padding:"1.5rem",height:"100%"}}>
+              </div>
+              <div className="card" style={{padding:"1.5rem",height:"100%"}}>
                   <div style={{display:"flex",alignItems:"center",gap:"0.5rem",marginBottom:"0.875rem"}}>
                     <span className="chip chip-blue" style={{fontSize:"0.6875rem"}}>Field Operations</span>
                     <span className="chip" style={{fontSize:"0.6875rem"}}>Logistics</span>
@@ -203,8 +195,7 @@ export default function CustomSoftwareDevelopment() {
                   <div style={{fontFamily:"var(--font-heading)",fontWeight:700,fontSize:"0.9375rem",color:"var(--text-1)",marginBottom:"0.375rem"}}>FastTrack Logistics</div>
                   <div style={{fontSize:"0.8125rem",fontWeight:600,color:"var(--blue-light)",marginBottom:"0.625rem"}}>35% improvement in on-time delivery</div>
                   <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.65}}>Developed a custom field service app for 200 delivery agents with GPS tracking, digital proof of delivery, and a live operations dashboard for managers.</p>
-                </div>
-              </RevealOnScroll>
+              </div>
           </div>
         </div>
       </section>

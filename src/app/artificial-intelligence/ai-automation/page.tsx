@@ -74,8 +74,7 @@ export default function AIAutomation() {
                     <span className="chip chip-green" style={{ flexShrink: 0, marginLeft: "0.5rem", fontSize: "0.6875rem" }}>{a.stat}</span>
                   </div>
                   <p className="t-small">{a.desc}</p>
-                </div>
-              </RevealOnScroll>
+              </div>
             ))}
           </div>
         </div>
@@ -140,8 +139,7 @@ export default function AIAutomation() {
             </div>
           </RevealOnScroll>
           <div style={{display:"grid",gap:"1.25rem"}} className="grid grid-cols-1 md:grid-cols-3">
-              <RevealOnScroll delay={70}>
-                <div className="card" style={{padding:"1.5rem",height:"100%"}}>
+              <div className="card" style={{padding:"1.5rem",height:"100%"}}>
                   <div style={{display:"flex",alignItems:"center",gap:"0.5rem",marginBottom:"0.875rem"}}>
                     <span className="chip chip-blue" style={{fontSize:"0.6875rem"}}>Document Automation</span>
                     <span className="chip" style={{fontSize:"0.6875rem"}}>Healthcare</span>
@@ -149,10 +147,8 @@ export default function AIAutomation() {
                   <div style={{fontFamily:"var(--font-heading)",fontWeight:700,fontSize:"0.9375rem",color:"var(--text-1)",marginBottom:"0.375rem"}}>MedCare Diagnostics</div>
                   <div style={{fontSize:"0.8125rem",fontWeight:600,color:"var(--blue-light)",marginBottom:"0.625rem"}}>75% reduction in processing time</div>
                   <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.65}}>Automated insurance claim intake using intelligent document processing — extracting, validating, and routing 600+ claim forms daily with 98% accuracy.</p>
-                </div>
-              </RevealOnScroll>
-              <RevealOnScroll delay={70}>
-                <div className="card" style={{padding:"1.5rem",height:"100%"}}>
+              </div>
+              <div className="card" style={{padding:"1.5rem",height:"100%"}}>
                   <div style={{display:"flex",alignItems:"center",gap:"0.5rem",marginBottom:"0.875rem"}}>
                     <span className="chip chip-blue" style={{fontSize:"0.6875rem"}}>Production Automation</span>
                     <span className="chip" style={{fontSize:"0.6875rem"}}>Manufacturing</span>
@@ -160,10 +156,8 @@ export default function AIAutomation() {
                   <div style={{fontFamily:"var(--font-heading)",fontWeight:700,fontSize:"0.9375rem",color:"var(--text-1)",marginBottom:"0.375rem"}}>Varun Industries</div>
                   <div style={{fontSize:"0.8125rem",fontWeight:600,color:"var(--blue-light)",marginBottom:"0.625rem"}}>Real-time production visibility</div>
                   <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.65}}>Automated daily production reporting, purchase order generation, and stock replenishment alerts — eliminating 3 hours of manual data entry per shift.</p>
-                </div>
-              </RevealOnScroll>
-              <RevealOnScroll delay={70}>
-                <div className="card" style={{padding:"1.5rem",height:"100%"}}>
+              </div>
+              <div className="card" style={{padding:"1.5rem",height:"100%"}}>
                   <div style={{display:"flex",alignItems:"center",gap:"0.5rem",marginBottom:"0.875rem"}}>
                     <span className="chip chip-blue" style={{fontSize:"0.6875rem"}}>Customer Service Automation</span>
                     <span className="chip" style={{fontSize:"0.6875rem"}}>FinTech</span>
@@ -171,8 +165,7 @@ export default function AIAutomation() {
                   <div style={{fontFamily:"var(--font-heading)",fontWeight:700,fontSize:"0.9375rem",color:"var(--text-1)",marginBottom:"0.375rem"}}>FinServe Solutions</div>
                   <div style={{fontSize:"0.8125rem",fontWeight:600,color:"var(--blue-light)",marginBottom:"0.625rem"}}>< 30 seconds average response time</div>
                   <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.65}}>Automated tier-1 and tier-2 support ticket resolution using AI — deflecting 65% of daily tickets and reducing average first response time from 4 hours to 30 seconds.</p>
-                </div>
-              </RevealOnScroll>
+              </div>
           </div>
         </div>
       </section>

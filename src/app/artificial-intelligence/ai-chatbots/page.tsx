@@ -78,8 +78,7 @@ export default function AIChatbots() {
                 <div className="card" style={{ padding: "1.5rem", height: "100%" }}>
                   <h3 className="t-h4" style={{ marginBottom: "0.5rem" }}>{ct.title}</h3>
                   <p className="t-small">{ct.desc}</p>
-                </div>
-              </RevealOnScroll>
+              </div>
             ))}
           </div>
         </div>
@@ -125,8 +124,7 @@ export default function AIChatbots() {
             </div>
           </RevealOnScroll>
           <div style={{display:"grid",gap:"1.25rem"}} className="grid grid-cols-1 md:grid-cols-3">
-              <RevealOnScroll delay={70}>
-                <div className="card" style={{padding:"1.5rem",height:"100%"}}>
+              <div className="card" style={{padding:"1.5rem",height:"100%"}}>
                   <div style={{display:"flex",alignItems:"center",gap:"0.5rem",marginBottom:"0.875rem"}}>
                     <span className="chip chip-blue" style={{fontSize:"0.6875rem"}}>Support Chatbot</span>
                     <span className="chip" style={{fontSize:"0.6875rem"}}>FinTech</span>
@@ -134,10 +132,8 @@ export default function AIChatbots() {
                   <div style={{fontFamily:"var(--font-heading)",fontWeight:700,fontSize:"0.9375rem",color:"var(--text-1)",marginBottom:"0.375rem"}}>FinServe Solutions</div>
                   <div style={{fontSize:"0.8125rem",fontWeight:600,color:"var(--blue-light)",marginBottom:"0.625rem"}}>65% ticket deflection rate</div>
                   <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.65}}>Built an AI chatbot integrated with the company's CRM and knowledge base — resolving account queries, transaction disputes, and product questions without agent involvement.</p>
-                </div>
-              </RevealOnScroll>
-              <RevealOnScroll delay={70}>
-                <div className="card" style={{padding:"1.5rem",height:"100%"}}>
+              </div>
+              <div className="card" style={{padding:"1.5rem",height:"100%"}}>
                   <div style={{display:"flex",alignItems:"center",gap:"0.5rem",marginBottom:"0.875rem"}}>
                     <span className="chip chip-blue" style={{fontSize:"0.6875rem"}}>Parent Helpdesk Bot</span>
                     <span className="chip" style={{fontSize:"0.6875rem"}}>Education</span>
@@ -145,10 +141,8 @@ export default function AIChatbots() {
                   <div style={{fontFamily:"var(--font-heading)",fontWeight:700,fontSize:"0.9375rem",color:"var(--text-1)",marginBottom:"0.375rem"}}>Narayana Group of Schools</div>
                   <div style={{fontSize:"0.8125rem",fontWeight:600,color:"var(--blue-light)",marginBottom:"0.625rem"}}>80% reduction in front-desk calls</div>
                   <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.65}}>Deployed a school assistant chatbot on WhatsApp and the web — handling admission enquiries, fee queries, exam schedules, and attendance reports for 15,000 student families.</p>
-                </div>
-              </RevealOnScroll>
-              <RevealOnScroll delay={70}>
-                <div className="card" style={{padding:"1.5rem",height:"100%"}}>
+              </div>
+              <div className="card" style={{padding:"1.5rem",height:"100%"}}>
                   <div style={{display:"flex",alignItems:"center",gap:"0.5rem",marginBottom:"0.875rem"}}>
                     <span className="chip chip-blue" style={{fontSize:"0.6875rem"}}>Patient Chatbot</span>
                     <span className="chip" style={{fontSize:"0.6875rem"}}>Healthcare</span>
@@ -156,8 +150,7 @@ export default function AIChatbots() {
                   <div style={{fontFamily:"var(--font-heading)",fontWeight:700,fontSize:"0.9375rem",color:"var(--text-1)",marginBottom:"0.375rem"}}>Apollo Health Group</div>
                   <div style={{fontSize:"0.8125rem",fontWeight:600,color:"var(--blue-light)",marginBottom:"0.625rem"}}>500+ patient interactions handled daily</div>
                   <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.65}}>Launched an AI chatbot for appointment booking, discharge query handling, and medication reminders — available 24/7 across the hospital group's web and mobile channels.</p>
-                </div>
-              </RevealOnScroll>
+              </div>
           </div>
         </div>
       </section>

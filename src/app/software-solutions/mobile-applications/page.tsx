@@ -75,8 +75,7 @@ export default function MobileApplications() {
                 <div className="card" style={{ padding: "1.5rem", height: "100%" }}>
                   <h3 className="t-h4" style={{ marginBottom: "0.5rem" }}>{a.title}</h3>
                   <p className="t-small">{a.desc}</p>
-                </div>
-              </RevealOnScroll>
+              </div>
             ))}
           </div>
         </div>
@@ -134,8 +133,7 @@ export default function MobileApplications() {
             </div>
           </RevealOnScroll>
           <div style={{display:"grid",gap:"1.25rem"}} className="grid grid-cols-1 md:grid-cols-3">
-              <RevealOnScroll delay={70}>
-                <div className="card" style={{padding:"1.5rem",height:"100%"}}>
+              <div className="card" style={{padding:"1.5rem",height:"100%"}}>
                   <div style={{display:"flex",alignItems:"center",gap:"0.5rem",marginBottom:"0.875rem"}}>
                     <span className="chip chip-blue" style={{fontSize:"0.6875rem"}}>Android App</span>
                     <span className="chip" style={{fontSize:"0.6875rem"}}>Logistics</span>
@@ -143,10 +141,8 @@ export default function MobileApplications() {
                   <div style={{fontFamily:"var(--font-heading)",fontWeight:700,fontSize:"0.9375rem",color:"var(--text-1)",marginBottom:"0.375rem"}}>FastTrack Logistics</div>
                   <div style={{fontSize:"0.8125rem",fontWeight:600,color:"var(--blue-light)",marginBottom:"0.625rem"}}>80% reduction in customer queries</div>
                   <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.65}}>Built an offline-capable Android app for 200 field agents with GPS tracking, digital POD, and automated customer notifications — replacing WhatsApp coordination.</p>
-                </div>
-              </RevealOnScroll>
-              <RevealOnScroll delay={70}>
-                <div className="card" style={{padding:"1.5rem",height:"100%"}}>
+              </div>
+              <div className="card" style={{padding:"1.5rem",height:"100%"}}>
                   <div style={{display:"flex",alignItems:"center",gap:"0.5rem",marginBottom:"0.875rem"}}>
                     <span className="chip chip-blue" style={{fontSize:"0.6875rem"}}>iOS and Android</span>
                     <span className="chip" style={{fontSize:"0.6875rem"}}>Education</span>
@@ -154,10 +150,8 @@ export default function MobileApplications() {
                   <div style={{fontFamily:"var(--font-heading)",fontWeight:700,fontSize:"0.9375rem",color:"var(--text-1)",marginBottom:"0.375rem"}}>Narayana Group of Schools</div>
                   <div style={{fontSize:"0.8125rem",fontWeight:600,color:"var(--blue-light)",marginBottom:"0.625rem"}}>4.7/5 parent satisfaction rating</div>
                   <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.65}}>Delivered cross-platform mobile apps for students, parents, and teachers with live attendance, fee payment gateway, and push notification alerts.</p>
-                </div>
-              </RevealOnScroll>
-              <RevealOnScroll delay={70}>
-                <div className="card" style={{padding:"1.5rem",height:"100%"}}>
+              </div>
+              <div className="card" style={{padding:"1.5rem",height:"100%"}}>
                   <div style={{display:"flex",alignItems:"center",gap:"0.5rem",marginBottom:"0.875rem"}}>
                     <span className="chip chip-blue" style={{fontSize:"0.6875rem"}}>Patient App</span>
                     <span className="chip" style={{fontSize:"0.6875rem"}}>Healthcare</span>
@@ -165,8 +159,7 @@ export default function MobileApplications() {
                   <div style={{fontFamily:"var(--font-heading)",fontWeight:700,fontSize:"0.9375rem",color:"var(--text-1)",marginBottom:"0.375rem"}}>Apollo Health Group</div>
                   <div style={{fontSize:"0.8125rem",fontWeight:600,color:"var(--blue-light)",marginBottom:"0.625rem"}}>500+ patients served daily</div>
                   <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.65}}>Built a patient-facing mobile app covering appointment booking, OPD check-in, digital prescriptions, and discharge summaries across 5 hospital sites.</p>
-                </div>
-              </RevealOnScroll>
+              </div>
           </div>
         </div>
       </section>

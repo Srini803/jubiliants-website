@@ -65,8 +65,7 @@ export default function CloudSolutions() {
                 <div className="card" style={{ padding: "1.5rem", height: "100%" }}>
                   <h3 className="t-h4" style={{ marginBottom: "0.5rem" }}>{s.title}</h3>
                   <p className="t-small">{s.desc}</p>
-                </div>
-              </RevealOnScroll>
+              </div>
             ))}
           </div>
         </div>
@@ -93,8 +92,7 @@ export default function CloudSolutions() {
                       </li>
                     ))}
                   </ul>
-                </div>
-              </RevealOnScroll>
+              </div>
             ))}
           </div>
         </div>
@@ -111,8 +109,7 @@ export default function CloudSolutions() {
             </div>
           </RevealOnScroll>
           <div style={{display:"grid",gap:"1.25rem"}} className="grid grid-cols-1 md:grid-cols-3">
-              <RevealOnScroll delay={70}>
-                <div className="card" style={{padding:"1.5rem",height:"100%"}}>
+              <div className="card" style={{padding:"1.5rem",height:"100%"}}>
                   <div style={{display:"flex",alignItems:"center",gap:"0.5rem",marginBottom:"0.875rem"}}>
                     <span className="chip chip-blue" style={{fontSize:"0.6875rem"}}>Azure Migration</span>
                     <span className="chip" style={{fontSize:"0.6875rem"}}>Manufacturing</span>
@@ -120,10 +117,8 @@ export default function CloudSolutions() {
                   <div style={{fontFamily:"var(--font-heading)",fontWeight:700,fontSize:"0.9375rem",color:"var(--text-1)",marginBottom:"0.375rem"}}>Schmalz GmbH</div>
                   <div style={{fontSize:"0.8125rem",fontWeight:600,color:"var(--blue-light)",marginBottom:"0.625rem"}}>40% infrastructure cost reduction</div>
                   <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.65}}>Migrated 14 on-premise servers to Azure — including legacy SQL Server databases — with zero downtime, cutting monthly infrastructure spend by 40%.</p>
-                </div>
-              </RevealOnScroll>
-              <RevealOnScroll delay={70}>
-                <div className="card" style={{padding:"1.5rem",height:"100%"}}>
+              </div>
+              <div className="card" style={{padding:"1.5rem",height:"100%"}}>
                   <div style={{display:"flex",alignItems:"center",gap:"0.5rem",marginBottom:"0.875rem"}}>
                     <span className="chip chip-blue" style={{fontSize:"0.6875rem"}}>AWS Architecture</span>
                     <span className="chip" style={{fontSize:"0.6875rem"}}>Industrial</span>
@@ -131,10 +126,8 @@ export default function CloudSolutions() {
                   <div style={{fontFamily:"var(--font-heading)",fontWeight:700,fontSize:"0.9375rem",color:"var(--text-1)",marginBottom:"0.375rem"}}>Powell Industries</div>
                   <div style={{fontSize:"0.8125rem",fontWeight:600,color:"var(--blue-light)",marginBottom:"0.625rem"}}>99.99% uptime achieved</div>
                   <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.65}}>Designed and deployed a highly available AWS architecture with multi-AZ failover, auto-scaling, and disaster recovery — replacing a single-server setup prone to outages.</p>
-                </div>
-              </RevealOnScroll>
-              <RevealOnScroll delay={70}>
-                <div className="card" style={{padding:"1.5rem",height:"100%"}}>
+              </div>
+              <div className="card" style={{padding:"1.5rem",height:"100%"}}>
                   <div style={{display:"flex",alignItems:"center",gap:"0.5rem",marginBottom:"0.875rem"}}>
                     <span className="chip chip-blue" style={{fontSize:"0.6875rem"}}>Cloud Security</span>
                     <span className="chip" style={{fontSize:"0.6875rem"}}>FinTech</span>
@@ -142,8 +135,7 @@ export default function CloudSolutions() {
                   <div style={{fontFamily:"var(--font-heading)",fontWeight:700,fontSize:"0.9375rem",color:"var(--text-1)",marginBottom:"0.375rem"}}>FinServe Solutions</div>
                   <div style={{fontSize:"0.8125rem",fontWeight:600,color:"var(--blue-light)",marginBottom:"0.625rem"}}>ISO 27001-ready in 3 months</div>
                   <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.65}}>Re-architected cloud infrastructure with zero-trust network policies, encrypted data lakes, and automated compliance checks for a regulated financial services platform.</p>
-                </div>
-              </RevealOnScroll>
+              </div>
           </div>
         </div>
       </section>

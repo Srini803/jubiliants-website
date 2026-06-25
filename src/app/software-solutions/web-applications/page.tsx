@@ -79,8 +79,7 @@ export default function WebApplications() {
                 <div className="card" style={{ padding: "1.5rem", height: "100%" }}>
                   <h3 className="t-h4" style={{ marginBottom: "0.5rem" }}>{c.title}</h3>
                   <p className="t-small">{c.desc}</p>
-                </div>
-              </RevealOnScroll>
+              </div>
             ))}
           </div>
         </div>
@@ -141,8 +140,7 @@ export default function WebApplications() {
                   <div style={{ fontFamily: "var(--font-heading)", fontWeight: 600, fontSize: "1.5rem", color: "var(--blue-light)", marginBottom: "0.5rem" }}>{p.n}</div>
                   <h4 className="t-h4" style={{ marginBottom: "0.5rem" }}>{p.t}</h4>
                   <p className="t-small">{p.d}</p>
-                </div>
-              </RevealOnScroll>
+              </div>
             ))}
           </div>
         </div>
@@ -159,8 +157,7 @@ export default function WebApplications() {
             </div>
           </RevealOnScroll>
           <div style={{display:"grid",gap:"1.25rem"}} className="grid grid-cols-1 md:grid-cols-3">
-              <RevealOnScroll delay={70}>
-                <div className="card" style={{padding:"1.5rem",height:"100%"}}>
+              <div className="card" style={{padding:"1.5rem",height:"100%"}}>
                   <div style={{display:"flex",alignItems:"center",gap:"0.5rem",marginBottom:"0.875rem"}}>
                     <span className="chip chip-blue" style={{fontSize:"0.6875rem"}}>Web Platform</span>
                     <span className="chip" style={{fontSize:"0.6875rem"}}>FinTech</span>
@@ -168,10 +165,8 @@ export default function WebApplications() {
                   <div style={{fontFamily:"var(--font-heading)",fontWeight:700,fontSize:"0.9375rem",color:"var(--text-1)",marginBottom:"0.375rem"}}>FinServe Solutions</div>
                   <div style={{fontSize:"0.8125rem",fontWeight:600,color:"var(--blue-light)",marginBottom:"0.625rem"}}>3× faster transaction processing</div>
                   <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.65}}>Built a multi-tenant web platform handling 800+ daily transactions with role-based access, audit trails, and real-time compliance dashboards.</p>
-                </div>
-              </RevealOnScroll>
-              <RevealOnScroll delay={70}>
-                <div className="card" style={{padding:"1.5rem",height:"100%"}}>
+              </div>
+              <div className="card" style={{padding:"1.5rem",height:"100%"}}>
                   <div style={{display:"flex",alignItems:"center",gap:"0.5rem",marginBottom:"0.875rem"}}>
                     <span className="chip chip-blue" style={{fontSize:"0.6875rem"}}>Student Portal</span>
                     <span className="chip" style={{fontSize:"0.6875rem"}}>Education</span>
@@ -179,10 +174,8 @@ export default function WebApplications() {
                   <div style={{fontFamily:"var(--font-heading)",fontWeight:700,fontSize:"0.9375rem",color:"var(--text-1)",marginBottom:"0.375rem"}}>Narayana Group of Schools</div>
                   <div style={{fontSize:"0.8125rem",fontWeight:600,color:"var(--blue-light)",marginBottom:"0.625rem"}}>15,000 students on one platform</div>
                   <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.65}}>Developed a comprehensive student information web portal integrating admissions, attendance, fee collection, and parent communication into a single interface.</p>
-                </div>
-              </RevealOnScroll>
-              <RevealOnScroll delay={70}>
-                <div className="card" style={{padding:"1.5rem",height:"100%"}}>
+              </div>
+              <div className="card" style={{padding:"1.5rem",height:"100%"}}>
                   <div style={{display:"flex",alignItems:"center",gap:"0.5rem",marginBottom:"0.875rem"}}>
                     <span className="chip chip-blue" style={{fontSize:"0.6875rem"}}>Operations Dashboard</span>
                     <span className="chip" style={{fontSize:"0.6875rem"}}>Manufacturing</span>
@@ -190,8 +183,7 @@ export default function WebApplications() {
                   <div style={{fontFamily:"var(--font-heading)",fontWeight:700,fontSize:"0.9375rem",color:"var(--text-1)",marginBottom:"0.375rem"}}>Mayville Engineering</div>
                   <div style={{fontSize:"0.8125rem",fontWeight:600,color:"var(--blue-light)",marginBottom:"0.625rem"}}>100% real-time production visibility</div>
                   <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.65}}>Created a web-based operations dashboard connecting shop-floor data to management reporting — eliminating daily manual status calls and Excel-based tracking.</p>
-                </div>
-              </RevealOnScroll>
+              </div>
           </div>
         </div>
       </section>
