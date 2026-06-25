@@ -52,7 +52,7 @@ export default function About() {
             <div>
               <div className="section-label">About Jubiliants</div>
               <h1 className="t-h1" style={{marginBottom:"1rem"}}>Turning business problems into working software since 2015</h1>
-              <p className="t-body-lg" style={{marginBottom:"1.75rem",maxWidth:"440px"}}>We are a custom software and AI solutions company headquartered in Hyderabad, India — and a subsidiary of Telcomet Global Solutions. 80+ engineers. 10 years. 200+ customers. Our mission: build software that makes your business measurably better.</p>
+              <p className="t-body-lg" style={{marginBottom:"1.75rem",maxWidth:"440px"}}>We are a custom software and AI solutions company headquartered in Hyderabad, India. 80+ engineers. 10 years. 200+ customers. Our mission: build software that makes your business measurably better.</p>
               <div style={{display:"flex",flexWrap:"wrap",gap:"0.75rem",marginBottom:"2rem"}}>
                 <Link href="/contact" className="btn btn-primary">Work With Us</Link>
                 <Link href="/case-studies" className="btn btn-secondary">See Our Work</Link>
@@ -261,7 +261,6 @@ export default function About() {
               <p className="t-body" style={{lineHeight:1.8}}>Dubai Silicon Oasis, DDP, Building A1, Dubai, United Arab Emirates</p>
             </div>
           </div>
-          <p style={{textAlign:"center",marginTop:"2rem",color:"var(--text-4)",fontSize:"0.875rem"}}>Jubiliants Consulting is a subsidiary of <strong style={{color:"var(--text-2)"}}>Telcomet Global Solutions</strong></p>
         </div>
       </section>
 

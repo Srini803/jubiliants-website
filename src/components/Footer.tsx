@@ -43,7 +43,6 @@ export default function Footer() {
               <div>08th Floor, SLN Terminus, Survey No. 133</div>
               <div>Beside Botanical Gardens, Gachibowli</div>
               <div>Hyderabad, Telangana 500032, India</div>
-              <div>Telangana, India</div>
               <a href="mailto:info@jubiliants.com" style={{color:"var(--blue-light)",marginTop:"0.5rem",display:"block"}}>info@jubiliants.com</a>
             </div>
           </div>
@@ -58,7 +57,7 @@ export default function Footer() {
           ))}
         </div>
         <div style={{borderTop:"1px solid var(--border)",paddingTop:"1.5rem",display:"flex",flexWrap:"wrap",justifyContent:"space-between",alignItems:"center",gap:"0.75rem"}}>
-          <p style={{fontSize:"0.8125rem",color:"var(--text-4)"}}>&copy; 2015 Jubiliants Consulting Pvt. Ltd. All rights reserved.</p>
+          <p style={{fontSize:"0.8125rem",color:"var(--text-4)"}}>&copy; 2015 Jubiliants Software Solutions All rights reserved.</p>
         </div>
       </div>
     </footer>
