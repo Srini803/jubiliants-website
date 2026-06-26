@@ -123,7 +123,6 @@ export default function MobileApplications() {
         </div>
       </section>
 
-      
       {/* Client Case Studies */}
       <section className="section" style={{background:"var(--bg-raised)",borderTop:"1px solid var(--border)"}}>
         <div className="wrap">
@@ -137,34 +136,34 @@ export default function MobileApplications() {
               <RevealOnScroll delay={70}>
                 <div className="card" style={{padding:"1.5rem",height:"100%"}}>
                   <div style={{display:"flex",alignItems:"center",gap:"0.5rem",marginBottom:"0.875rem"}}>
-                    <span className="chip chip-blue" style={{fontSize:"0.6875rem"}}>Android App</span>
-                    <span className="chip" style={{fontSize:"0.6875rem"}}>Logistics</span>
+                    <span className="chip chip-blue" style={{fontSize:"0.6875rem"}}>Harvest Management App</span>
+                    <span className="chip" style={{fontSize:"0.6875rem"}}>Agriculture</span>
                   </div>
-                  <div style={{fontFamily:"var(--font-heading)",fontWeight:700,fontSize:"0.9375rem",color:"var(--text-1)",marginBottom:"0.375rem"}}>FastTrack Logistics</div>
-                  <div style={{fontSize:"0.8125rem",fontWeight:600,color:"var(--blue-light)",marginBottom:"0.625rem"}}>80% reduction in customer queries</div>
-                  <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.65}}>Built an offline-capable Android app for 200 field agents with GPS tracking, digital POD, and automated customer notifications — replacing WhatsApp coordination.</p>
+                  <div style={{fontFamily:"var(--font-heading)",fontWeight:700,fontSize:"0.9375rem",color:"var(--text-1)",marginBottom:"0.375rem"}}>Barfoots</div>
+                  <div style={{fontSize:"0.8125rem",fontWeight:600,color:"var(--blue-light)",marginBottom:"0.625rem"}}>Real-time tracking across 20+ farm sites</div>
+                  <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.65}}>Developed a mobile app for harvest supervisors to log crop volumes, assign pickers, track daily targets, and generate packing reports — reducing end-of-day admin by 3 hours.</p>
                 </div>
               </RevealOnScroll>
               <RevealOnScroll delay={70}>
                 <div className="card" style={{padding:"1.5rem",height:"100%"}}>
                   <div style={{display:"flex",alignItems:"center",gap:"0.5rem",marginBottom:"0.875rem"}}>
-                    <span className="chip chip-blue" style={{fontSize:"0.6875rem"}}>iOS & Android</span>
-                    <span className="chip" style={{fontSize:"0.6875rem"}}>Education</span>
+                    <span className="chip chip-blue" style={{fontSize:"0.6875rem"}}>Field Inspector App</span>
+                    <span className="chip" style={{fontSize:"0.6875rem"}}>Infrastructure</span>
                   </div>
-                  <div style={{fontFamily:"var(--font-heading)",fontWeight:700,fontSize:"0.9375rem",color:"var(--text-1)",marginBottom:"0.375rem"}}>Narayana Group of Schools</div>
-                  <div style={{fontSize:"0.8125rem",fontWeight:600,color:"var(--blue-light)",marginBottom:"0.625rem"}}>4.7/5 parent satisfaction rating</div>
-                  <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.65}}>Delivered cross-platform mobile apps for students, parents, and teachers with live attendance, fee payment gateway, and push notification alerts.</p>
+                  <div style={{fontFamily:"var(--font-heading)",fontWeight:700,fontSize:"0.9375rem",color:"var(--text-1)",marginBottom:"0.375rem"}}>Stantec</div>
+                  <div style={{fontSize:"0.8125rem",fontWeight:600,color:"var(--blue-light)",marginBottom:"0.625rem"}}>70% faster site inspection reporting</div>
+                  <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.65}}>Built an iOS and Android app for field inspectors to capture site data, photos, measurements, and compliance checklists offline — auto-generating structured reports on sync.</p>
                 </div>
               </RevealOnScroll>
               <RevealOnScroll delay={70}>
                 <div className="card" style={{padding:"1.5rem",height:"100%"}}>
                   <div style={{display:"flex",alignItems:"center",gap:"0.5rem",marginBottom:"0.875rem"}}>
-                    <span className="chip chip-blue" style={{fontSize:"0.6875rem"}}>Patient App</span>
-                    <span className="chip" style={{fontSize:"0.6875rem"}}>Healthcare</span>
+                    <span className="chip chip-blue" style={{fontSize:"0.6875rem"}}>Precision Farming App</span>
+                    <span className="chip" style={{fontSize:"0.6875rem"}}>Agri-Tech</span>
                   </div>
-                  <div style={{fontFamily:"var(--font-heading)",fontWeight:700,fontSize:"0.9375rem",color:"var(--text-1)",marginBottom:"0.375rem"}}>Apollo Health Group</div>
-                  <div style={{fontSize:"0.8125rem",fontWeight:600,color:"var(--blue-light)",marginBottom:"0.625rem"}}>500+ patients served daily</div>
-                  <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.65}}>Built a patient-facing mobile app covering appointment booking, OPD check-in, digital prescriptions, and discharge summaries across 5 hospital sites.</p>
+                  <div style={{fontFamily:"var(--font-heading)",fontWeight:700,fontSize:"0.9375rem",color:"var(--text-1)",marginBottom:"0.375rem"}}>Trimble Inc.</div>
+                  <div style={{fontSize:"0.8125rem",fontWeight:600,color:"var(--blue-light)",marginBottom:"0.625rem"}}>3x increase in farmer data capture rate</div>
+                  <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.65}}>Developed a mobile companion app for precision agriculture hardware — letting farmers view field maps, log observations, review sensor data, and receive AI-driven planting recommendations.</p>
                 </div>
               </RevealOnScroll>
           </div>

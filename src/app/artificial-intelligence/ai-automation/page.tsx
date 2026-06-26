@@ -129,7 +129,6 @@ export default function AIAutomation() {
         </div>
       </section>
 
-      
       {/* Client Case Studies */}
       <section className="section" style={{background:"var(--bg-raised)",borderTop:"1px solid var(--border)"}}>
         <div className="wrap">
@@ -143,34 +142,34 @@ export default function AIAutomation() {
               <RevealOnScroll delay={70}>
                 <div className="card" style={{padding:"1.5rem",height:"100%"}}>
                   <div style={{display:"flex",alignItems:"center",gap:"0.5rem",marginBottom:"0.875rem"}}>
-                    <span className="chip chip-blue" style={{fontSize:"0.6875rem"}}>Document Automation</span>
-                    <span className="chip" style={{fontSize:"0.6875rem"}}>Healthcare</span>
-                  </div>
-                  <div style={{fontFamily:"var(--font-heading)",fontWeight:700,fontSize:"0.9375rem",color:"var(--text-1)",marginBottom:"0.375rem"}}>MedCare Diagnostics</div>
-                  <div style={{fontSize:"0.8125rem",fontWeight:600,color:"var(--blue-light)",marginBottom:"0.625rem"}}>75% reduction in processing time</div>
-                  <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.65}}>Automated insurance claim intake using intelligent document processing — extracting, validating, and routing 600+ claim forms daily with 98% accuracy.</p>
-                </div>
-              </RevealOnScroll>
-              <RevealOnScroll delay={70}>
-                <div className="card" style={{padding:"1.5rem",height:"100%"}}>
-                  <div style={{display:"flex",alignItems:"center",gap:"0.5rem",marginBottom:"0.875rem"}}>
-                    <span className="chip chip-blue" style={{fontSize:"0.6875rem"}}>Production Automation</span>
+                    <span className="chip chip-blue" style={{fontSize:"0.6875rem"}}>Invoice Automation</span>
                     <span className="chip" style={{fontSize:"0.6875rem"}}>Manufacturing</span>
                   </div>
-                  <div style={{fontFamily:"var(--font-heading)",fontWeight:700,fontSize:"0.9375rem",color:"var(--text-1)",marginBottom:"0.375rem"}}>Varun Industries</div>
-                  <div style={{fontSize:"0.8125rem",fontWeight:600,color:"var(--blue-light)",marginBottom:"0.625rem"}}>Real-time production visibility</div>
-                  <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.65}}>Automated daily production reporting, purchase order generation, and stock replenishment alerts — eliminating 3 hours of manual data entry per shift.</p>
+                  <div style={{fontFamily:"var(--font-heading)",fontWeight:700,fontSize:"0.9375rem",color:"var(--text-1)",marginBottom:"0.375rem"}}>Schmalz GmbH</div>
+                  <div style={{fontSize:"0.8125rem",fontWeight:600,color:"var(--blue-light)",marginBottom:"0.625rem"}}>75% reduction in invoice processing time</div>
+                  <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.65}}>Automated end-to-end invoice ingestion, PO matching, approval routing, and ERP posting — replacing a 12-person manual process with an AI pipeline handling 500+ invoices daily.</p>
                 </div>
               </RevealOnScroll>
               <RevealOnScroll delay={70}>
                 <div className="card" style={{padding:"1.5rem",height:"100%"}}>
                   <div style={{display:"flex",alignItems:"center",gap:"0.5rem",marginBottom:"0.875rem"}}>
-                    <span className="chip chip-blue" style={{fontSize:"0.6875rem"}}>Customer Service Automation</span>
-                    <span className="chip" style={{fontSize:"0.6875rem"}}>FinTech</span>
+                    <span className="chip chip-blue" style={{fontSize:"0.6875rem"}}>Production Scheduling</span>
+                    <span className="chip" style={{fontSize:"0.6875rem"}}>Food Processing</span>
                   </div>
-                  <div style={{fontFamily:"var(--font-heading)",fontWeight:700,fontSize:"0.9375rem",color:"var(--text-1)",marginBottom:"0.375rem"}}>FinServe Solutions</div>
-                  <div style={{fontSize:"0.8125rem",fontWeight:600,color:"var(--blue-light)",marginBottom:"0.625rem"}}>{"<"} 30 seconds average response time</div>
-                  <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.65}}>Automated tier-1 and tier-2 support ticket resolution using AI — deflecting 65% of daily tickets and reducing average first response time from 4 hours to 30 seconds.</p>
+                  <div style={{fontFamily:"var(--font-heading)",fontWeight:700,fontSize:"0.9375rem",color:"var(--text-1)",marginBottom:"0.375rem"}}>Marel</div>
+                  <div style={{fontSize:"0.8125rem",fontWeight:600,color:"var(--blue-light)",marginBottom:"0.625rem"}}>40% reduction in production planning time</div>
+                  <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.65}}>Built an AI automation layer that reads incoming orders, checks raw material availability, optimises line assignments, and auto-publishes daily production schedules — eliminating manual planning.</p>
+                </div>
+              </RevealOnScroll>
+              <RevealOnScroll delay={70}>
+                <div className="card" style={{padding:"1.5rem",height:"100%"}}>
+                  <div style={{display:"flex",alignItems:"center",gap:"0.5rem",marginBottom:"0.875rem"}}>
+                    <span className="chip chip-blue" style={{fontSize:"0.6875rem"}}>HR Process Automation</span>
+                    <span className="chip" style={{fontSize:"0.6875rem"}}>Industrial</span>
+                  </div>
+                  <div style={{fontFamily:"var(--font-heading)",fontWeight:700,fontSize:"0.9375rem",color:"var(--text-1)",marginBottom:"0.375rem"}}>GEA Group</div>
+                  <div style={{fontSize:"0.8125rem",fontWeight:600,color:"var(--blue-light)",marginBottom:"0.625rem"}}>80% of onboarding steps automated</div>
+                  <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.65}}>Designed an end-to-end workflow for employee onboarding across 5 countries: document collection, IT provisioning, access management, and compliance checks — reducing HR workload by 80%.</p>
                 </div>
               </RevealOnScroll>
           </div>

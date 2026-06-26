@@ -98,7 +98,6 @@ export default function MachineLearning() {
         </div>
       </section>
 
-      
       {/* Client Case Studies */}
       <section className="section" style={{background:"var(--bg-raised)",borderTop:"1px solid var(--border)"}}>
         <div className="wrap">
@@ -112,34 +111,34 @@ export default function MachineLearning() {
               <RevealOnScroll delay={70}>
                 <div className="card" style={{padding:"1.5rem",height:"100%"}}>
                   <div style={{display:"flex",alignItems:"center",gap:"0.5rem",marginBottom:"0.875rem"}}>
-                    <span className="chip chip-blue" style={{fontSize:"0.6875rem"}}>Fraud Detection ML</span>
-                    <span className="chip" style={{fontSize:"0.6875rem"}}>FinTech</span>
+                    <span className="chip chip-blue" style={{fontSize:"0.6875rem"}}>Predictive Maintenance ML</span>
+                    <span className="chip" style={{fontSize:"0.6875rem"}}>Industrial</span>
                   </div>
-                  <div style={{fontFamily:"var(--font-heading)",fontWeight:700,fontSize:"0.9375rem",color:"var(--text-1)",marginBottom:"0.375rem"}}>FinServe Solutions</div>
-                  <div style={{fontSize:"0.8125rem",fontWeight:600,color:"var(--blue-light)",marginBottom:"0.625rem"}}>99.1% fraud detection accuracy</div>
-                  <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.65}}>Deployed an anomaly detection ML model on transaction data — identifying fraudulent patterns in real time and reducing false positives by 60% versus the previous rule-based system.</p>
-                </div>
-              </RevealOnScroll>
-              <RevealOnScroll delay={70}>
-                <div className="card" style={{padding:"1.5rem",height:"100%"}}>
-                  <div style={{display:"flex",alignItems:"center",gap:"0.5rem",marginBottom:"0.875rem"}}>
-                    <span className="chip chip-blue" style={{fontSize:"0.6875rem"}}>Crop Yield Prediction</span>
-                    <span className="chip" style={{fontSize:"0.6875rem"}}>Agriculture</span>
-                  </div>
-                  <div style={{fontFamily:"var(--font-heading)",fontWeight:700,fontSize:"0.9375rem",color:"var(--text-1)",marginBottom:"0.375rem"}}>Indigo Ag</div>
-                  <div style={{fontSize:"0.8125rem",fontWeight:600,color:"var(--blue-light)",marginBottom:"0.625rem"}}>23% improvement in yield forecasting accuracy</div>
-                  <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.65}}>Built a machine learning pipeline ingesting satellite imagery, soil, and weather data to predict crop yields per field — enabling precision input planning for large-scale farms.</p>
+                  <div style={{fontFamily:"var(--font-heading)",fontWeight:700,fontSize:"0.9375rem",color:"var(--text-1)",marginBottom:"0.375rem"}}>Saudi Mechanical</div>
+                  <div style={{fontSize:"0.8125rem",fontWeight:600,color:"var(--blue-light)",marginBottom:"0.625rem"}}>45% reduction in unplanned downtime</div>
+                  <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.65}}>Built ML models on historical sensor and maintenance data to predict equipment failures 72 hours in advance — enabling proactive servicing and eliminating costly emergency repairs.</p>
                 </div>
               </RevealOnScroll>
               <RevealOnScroll delay={70}>
                 <div className="card" style={{padding:"1.5rem",height:"100%"}}>
                   <div style={{display:"flex",alignItems:"center",gap:"0.5rem",marginBottom:"0.875rem"}}>
                     <span className="chip chip-blue" style={{fontSize:"0.6875rem"}}>Demand Forecasting</span>
-                    <span className="chip" style={{fontSize:"0.6875rem"}}>Manufacturing</span>
+                    <span className="chip" style={{fontSize:"0.6875rem"}}>Agriculture</span>
                   </div>
-                  <div style={{fontFamily:"var(--font-heading)",fontWeight:700,fontSize:"0.9375rem",color:"var(--text-1)",marginBottom:"0.375rem"}}>Mayville Engineering</div>
-                  <div style={{fontSize:"0.8125rem",fontWeight:600,color:"var(--blue-light)",marginBottom:"0.625rem"}}>18% reduction in inventory holding costs</div>
-                  <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.65}}>Developed a time-series ML model for demand forecasting across 500+ SKUs — reducing overstock, improving procurement planning, and cutting inventory holding costs significantly.</p>
+                  <div style={{fontFamily:"var(--font-heading)",fontWeight:700,fontSize:"0.9375rem",color:"var(--text-1)",marginBottom:"0.375rem"}}>Al Dahra Agriculture</div>
+                  <div style={{fontSize:"0.8125rem",fontWeight:600,color:"var(--blue-light)",marginBottom:"0.625rem"}}>30% reduction in inventory waste</div>
+                  <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.65}}>Developed ML-driven demand forecasting models across 12 product categories and 6 regional markets — enabling procurement teams to reduce overstock and avoid stockouts simultaneously.</p>
+                </div>
+              </RevealOnScroll>
+              <RevealOnScroll delay={70}>
+                <div className="card" style={{padding:"1.5rem",height:"100%"}}>
+                  <div style={{display:"flex",alignItems:"center",gap:"0.5rem",marginBottom:"0.875rem"}}>
+                    <span className="chip chip-blue" style={{fontSize:"0.6875rem"}}>Yield Optimisation ML</span>
+                    <span className="chip" style={{fontSize:"0.6875rem"}}>Agri-Tech</span>
+                  </div>
+                  <div style={{fontFamily:"var(--font-heading)",fontWeight:700,fontSize:"0.9375rem",color:"var(--text-1)",marginBottom:"0.375rem"}}>Indigo Ag</div>
+                  <div style={{fontSize:"0.8125rem",fontWeight:600,color:"var(--blue-light)",marginBottom:"0.625rem"}}>18% improvement in crop yield predictions</div>
+                  <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.65}}>Trained gradient-boosted models on soil, weather, and satellite imagery data to predict crop yields at field level — giving agronomists actionable recommendations 6 weeks before harvest.</p>
                 </div>
               </RevealOnScroll>
           </div>

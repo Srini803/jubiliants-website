@@ -115,7 +115,6 @@ export default function SaaSDevelopment() {
         </div>
       </section>
 
-      
       {/* Client Case Studies */}
       <section className="section" style={{background:"var(--bg-raised)",borderTop:"1px solid var(--border)"}}>
         <div className="wrap">
@@ -129,34 +128,34 @@ export default function SaaSDevelopment() {
               <RevealOnScroll delay={70}>
                 <div className="card" style={{padding:"1.5rem",height:"100%"}}>
                   <div style={{display:"flex",alignItems:"center",gap:"0.5rem",marginBottom:"0.875rem"}}>
-                    <span className="chip chip-blue" style={{fontSize:"0.6875rem"}}>SaaS Platform</span>
-                    <span className="chip" style={{fontSize:"0.6875rem"}}>FinTech</span>
+                    <span className="chip chip-blue" style={{fontSize:"0.6875rem"}}>Vertical Farming SaaS</span>
+                    <span className="chip" style={{fontSize:"0.6875rem"}}>Agri-Tech</span>
                   </div>
-                  <div style={{fontFamily:"var(--font-heading)",fontWeight:700,fontSize:"0.9375rem",color:"var(--text-1)",marginBottom:"0.375rem"}}>FinServe Solutions</div>
-                  <div style={{fontSize:"0.8125rem",fontWeight:600,color:"var(--blue-light)",marginBottom:"0.625rem"}}>65% ticket deflection via AI</div>
-                  <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.65}}>Built a multi-tenant SaaS platform with a built-in AI support agent, Salesforce integration, and tiered billing — deployed and onboarding clients in 6 weeks.</p>
+                  <div style={{fontFamily:"var(--font-heading)",fontWeight:700,fontSize:"0.9375rem",color:"var(--text-1)",marginBottom:"0.375rem"}}>Plenty Unlimited</div>
+                  <div style={{fontSize:"0.8125rem",fontWeight:600,color:"var(--blue-light)",marginBottom:"0.625rem"}}>Used by 500+ farm operators</div>
+                  <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.65}}>Built a multi-tenant SaaS platform for vertical farming — covering environment control, crop scheduling, yield tracking, and compliance reporting with role-based access for multiple sites.</p>
                 </div>
               </RevealOnScroll>
               <RevealOnScroll delay={70}>
                 <div className="card" style={{padding:"1.5rem",height:"100%"}}>
                   <div style={{display:"flex",alignItems:"center",gap:"0.5rem",marginBottom:"0.875rem"}}>
-                    <span className="chip chip-blue" style={{fontSize:"0.6875rem"}}>Diagnostic SaaS</span>
-                    <span className="chip" style={{fontSize:"0.6875rem"}}>Healthcare</span>
+                    <span className="chip chip-blue" style={{fontSize:"0.6875rem"}}>B2B Configure-Price-Quote SaaS</span>
+                    <span className="chip" style={{fontSize:"0.6875rem"}}>Industrial Equipment</span>
                   </div>
-                  <div style={{fontFamily:"var(--font-heading)",fontWeight:700,fontSize:"0.9375rem",color:"var(--text-1)",marginBottom:"0.375rem"}}>MedCare Diagnostics</div>
-                  <div style={{fontSize:"0.8125rem",fontWeight:600,color:"var(--blue-light)",marginBottom:"0.625rem"}}>600+ claims processed daily</div>
-                  <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.65}}>Developed a cloud-native SaaS for insurance claim processing with AI document extraction, insurer API integrations, and a white-label portal for partner clinics.</p>
+                  <div style={{fontFamily:"var(--font-heading)",fontWeight:700,fontSize:"0.9375rem",color:"var(--text-1)",marginBottom:"0.375rem"}}>Roper Technologies</div>
+                  <div style={{fontSize:"0.8125rem",fontWeight:600,color:"var(--blue-light)",marginBottom:"0.625rem"}}>3x faster quote-to-order conversion</div>
+                  <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.65}}>Developed a SaaS CPQ platform that lets industrial customers configure products, get instant pricing, and place orders — fully integrated with the ERP and reducing sales cycle time significantly.</p>
                 </div>
               </RevealOnScroll>
               <RevealOnScroll delay={70}>
                 <div className="card" style={{padding:"1.5rem",height:"100%"}}>
                   <div style={{display:"flex",alignItems:"center",gap:"0.5rem",marginBottom:"0.875rem"}}>
-                    <span className="chip chip-blue" style={{fontSize:"0.6875rem"}}>Fleet SaaS</span>
-                    <span className="chip" style={{fontSize:"0.6875rem"}}>Logistics</span>
+                    <span className="chip chip-blue" style={{fontSize:"0.6875rem"}}>Inspection Management SaaS</span>
+                    <span className="chip" style={{fontSize:"0.6875rem"}}>Energy</span>
                   </div>
-                  <div style={{fontFamily:"var(--font-heading)",fontWeight:700,fontSize:"0.9375rem",color:"var(--text-1)",marginBottom:"0.375rem"}}>FastTrack Logistics</div>
-                  <div style={{fontSize:"0.8125rem",fontWeight:600,color:"var(--blue-light)",marginBottom:"0.625rem"}}>35% on-time delivery improvement</div>
-                  <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.65}}>Built a multi-tenant logistics SaaS offering GPS tracking, route optimisation, and digital POD for 3PL companies — with a white-label mobile app per client.</p>
+                  <div style={{fontFamily:"var(--font-heading)",fontWeight:700,fontSize:"0.9375rem",color:"var(--text-1)",marginBottom:"0.375rem"}}>Jacobs Engineering</div>
+                  <div style={{fontSize:"0.8125rem",fontWeight:600,color:"var(--blue-light)",marginBottom:"0.625rem"}}>90% reduction in audit preparation effort</div>
+                  <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.65}}>Built a multi-tenant SaaS tool to manage compliance schedules, track certification status, and auto-generate audit-ready documentation for 8 industry standards across multiple client sites.</p>
                 </div>
               </RevealOnScroll>
           </div>

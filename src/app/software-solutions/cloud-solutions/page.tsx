@@ -100,7 +100,6 @@ export default function CloudSolutions() {
         </div>
       </section>
 
-      
       {/* Client Case Studies */}
       <section className="section" style={{background:"var(--bg-raised)",borderTop:"1px solid var(--border)"}}>
         <div className="wrap">
@@ -115,33 +114,33 @@ export default function CloudSolutions() {
                 <div className="card" style={{padding:"1.5rem",height:"100%"}}>
                   <div style={{display:"flex",alignItems:"center",gap:"0.5rem",marginBottom:"0.875rem"}}>
                     <span className="chip chip-blue" style={{fontSize:"0.6875rem"}}>Azure Migration</span>
-                    <span className="chip" style={{fontSize:"0.6875rem"}}>Manufacturing</span>
+                    <span className="chip" style={{fontSize:"0.6875rem"}}>Industrial Automation</span>
                   </div>
-                  <div style={{fontFamily:"var(--font-heading)",fontWeight:700,fontSize:"0.9375rem",color:"var(--text-1)",marginBottom:"0.375rem"}}>Schmalz GmbH</div>
+                  <div style={{fontFamily:"var(--font-heading)",fontWeight:700,fontSize:"0.9375rem",color:"var(--text-1)",marginBottom:"0.375rem"}}>Emerson Electric</div>
                   <div style={{fontSize:"0.8125rem",fontWeight:600,color:"var(--blue-light)",marginBottom:"0.625rem"}}>40% infrastructure cost reduction</div>
-                  <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.65}}>Migrated 14 on-premise servers to Azure — including legacy SQL Server databases — with zero downtime, cutting monthly infrastructure spend by 40%.</p>
+                  <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.65}}>Migrated 14 on-premise workloads to Azure, re-architected the integration layer, and implemented auto-scaling — cutting annual infrastructure spend while improving system availability to 99.95%.</p>
                 </div>
               </RevealOnScroll>
               <RevealOnScroll delay={70}>
                 <div className="card" style={{padding:"1.5rem",height:"100%"}}>
                   <div style={{display:"flex",alignItems:"center",gap:"0.5rem",marginBottom:"0.875rem"}}>
-                    <span className="chip chip-blue" style={{fontSize:"0.6875rem"}}>AWS Architecture</span>
-                    <span className="chip" style={{fontSize:"0.6875rem"}}>Industrial</span>
+                    <span className="chip chip-blue" style={{fontSize:"0.6875rem"}}>AWS Multi-Region</span>
+                    <span className="chip" style={{fontSize:"0.6875rem"}}>Agri-Tech</span>
                   </div>
-                  <div style={{fontFamily:"var(--font-heading)",fontWeight:700,fontSize:"0.9375rem",color:"var(--text-1)",marginBottom:"0.375rem"}}>Powell Industries</div>
-                  <div style={{fontSize:"0.8125rem",fontWeight:600,color:"var(--blue-light)",marginBottom:"0.625rem"}}>99.99% uptime achieved</div>
-                  <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.65}}>Designed and deployed a highly available AWS architecture with multi-AZ failover, auto-scaling, and disaster recovery — replacing a single-server setup prone to outages.</p>
+                  <div style={{fontFamily:"var(--font-heading)",fontWeight:700,fontSize:"0.9375rem",color:"var(--text-1)",marginBottom:"0.375rem"}}>Bowery Farming</div>
+                  <div style={{fontSize:"0.8125rem",fontWeight:600,color:"var(--blue-light)",marginBottom:"0.625rem"}}>99.98% uptime across 5 regions</div>
+                  <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.65}}>Designed and deployed a multi-region AWS architecture for real-time farm environment monitoring — ensuring zero data loss and sub-second failover across US and EU growing facilities.</p>
                 </div>
               </RevealOnScroll>
               <RevealOnScroll delay={70}>
                 <div className="card" style={{padding:"1.5rem",height:"100%"}}>
                   <div style={{display:"flex",alignItems:"center",gap:"0.5rem",marginBottom:"0.875rem"}}>
-                    <span className="chip chip-blue" style={{fontSize:"0.6875rem"}}>Cloud Security</span>
-                    <span className="chip" style={{fontSize:"0.6875rem"}}>FinTech</span>
+                    <span className="chip chip-blue" style={{fontSize:"0.6875rem"}}>Cloud-Native Platform</span>
+                    <span className="chip" style={{fontSize:"0.6875rem"}}>Energy</span>
                   </div>
-                  <div style={{fontFamily:"var(--font-heading)",fontWeight:700,fontSize:"0.9375rem",color:"var(--text-1)",marginBottom:"0.375rem"}}>FinServe Solutions</div>
-                  <div style={{fontSize:"0.8125rem",fontWeight:600,color:"var(--blue-light)",marginBottom:"0.625rem"}}>ISO 27001-ready in 3 months</div>
-                  <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.65}}>Re-architected cloud infrastructure with zero-trust network policies, encrypted data lakes, and automated compliance checks for a regulated financial services platform.</p>
+                  <div style={{fontFamily:"var(--font-heading)",fontWeight:700,fontSize:"0.9375rem",color:"var(--text-1)",marginBottom:"0.375rem"}}>Spirax Group</div>
+                  <div style={{fontSize:"0.8125rem",fontWeight:600,color:"var(--blue-light)",marginBottom:"0.625rem"}}>60% faster release cycle</div>
+                  <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.65}}>Re-platformed a legacy industrial monitoring system to a cloud-native GCP architecture — containerising 40+ microservices, implementing CI/CD, and enabling weekly deployments.</p>
                 </div>
               </RevealOnScroll>
           </div>

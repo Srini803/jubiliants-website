@@ -135,7 +135,6 @@ export default function ERPSolutions() {
         </div>
       </section>
 
-      
       {/* Client Case Studies */}
       <section className="section" style={{background:"var(--bg-raised)",borderTop:"1px solid var(--border)"}}>
         <div className="wrap">
@@ -149,34 +148,34 @@ export default function ERPSolutions() {
               <RevealOnScroll delay={70}>
                 <div className="card" style={{padding:"1.5rem",height:"100%"}}>
                   <div style={{display:"flex",alignItems:"center",gap:"0.5rem",marginBottom:"0.875rem"}}>
-                    <span className="chip chip-blue" style={{fontSize:"0.6875rem"}}>Custom ERP</span>
-                    <span className="chip" style={{fontSize:"0.6875rem"}}>Manufacturing</span>
-                  </div>
-                  <div style={{fontFamily:"var(--font-heading)",fontWeight:700,fontSize:"0.9375rem",color:"var(--text-1)",marginBottom:"0.375rem"}}>Varun Industries</div>
-                  <div style={{fontSize:"0.8125rem",fontWeight:600,color:"var(--blue-light)",marginBottom:"0.625rem"}}>45% fewer inventory discrepancies</div>
-                  <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.65}}>Replaced 12 Excel-based processes with an integrated ERP covering procurement, production planning, inventory, quality control, and financial reporting.</p>
-                </div>
-              </RevealOnScroll>
-              <RevealOnScroll delay={70}>
-                <div className="card" style={{padding:"1.5rem",height:"100%"}}>
-                  <div style={{display:"flex",alignItems:"center",gap:"0.5rem",marginBottom:"0.875rem"}}>
-                    <span className="chip chip-blue" style={{fontSize:"0.6875rem"}}>Hospital ERP</span>
-                    <span className="chip" style={{fontSize:"0.6875rem"}}>Healthcare</span>
-                  </div>
-                  <div style={{fontFamily:"var(--font-heading)",fontWeight:700,fontSize:"0.9375rem",color:"var(--text-1)",marginBottom:"0.375rem"}}>Apollo Health Group</div>
-                  <div style={{fontSize:"0.8125rem",fontWeight:600,color:"var(--blue-light)",marginBottom:"0.625rem"}}>2 weeks faster monthly close</div>
-                  <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.65}}>Deployed a hospital resource management system unifying pharmacy inventory, asset tracking, vendor payments, and management reporting across 5 sites.</p>
-                </div>
-              </RevealOnScroll>
-              <RevealOnScroll delay={70}>
-                <div className="card" style={{padding:"1.5rem",height:"100%"}}>
-                  <div style={{display:"flex",alignItems:"center",gap:"0.5rem",marginBottom:"0.875rem"}}>
                     <span className="chip chip-blue" style={{fontSize:"0.6875rem"}}>Manufacturing ERP</span>
-                    <span className="chip" style={{fontSize:"0.6875rem"}}>Industrial</span>
+                    <span className="chip" style={{fontSize:"0.6875rem"}}>Precision Engineering</span>
                   </div>
-                  <div style={{fontFamily:"var(--font-heading)",fontWeight:700,fontSize:"0.9375rem",color:"var(--text-1)",marginBottom:"0.375rem"}}>Pennar Industries</div>
-                  <div style={{fontSize:"0.8125rem",fontWeight:600,color:"var(--blue-light)",marginBottom:"0.625rem"}}>3× faster management reporting</div>
-                  <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.65}}>Built a custom ERP integrating order management, production scheduling, material planning, and dispatch tracking for a large steel fabrication operation.</p>
+                  <div style={{fontFamily:"var(--font-heading)",fontWeight:700,fontSize:"0.9375rem",color:"var(--text-1)",marginBottom:"0.375rem"}}>Mayville Engineering</div>
+                  <div style={{fontSize:"0.8125rem",fontWeight:600,color:"var(--blue-light)",marginBottom:"0.625rem"}}>45% fewer inventory discrepancies</div>
+                  <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.65}}>Implemented a full manufacturing ERP covering production planning, shop floor control, quality management, and supply chain — replacing 6 disconnected systems with a single integrated platform.</p>
+                </div>
+              </RevealOnScroll>
+              <RevealOnScroll delay={70}>
+                <div className="card" style={{padding:"1.5rem",height:"100%"}}>
+                  <div style={{display:"flex",alignItems:"center",gap:"0.5rem",marginBottom:"0.875rem"}}>
+                    <span className="chip chip-blue" style={{fontSize:"0.6875rem"}}>Multi-Site ERP</span>
+                    <span className="chip" style={{fontSize:"0.6875rem"}}>Food Production</span>
+                  </div>
+                  <div style={{fontFamily:"var(--font-heading)",fontWeight:700,fontSize:"0.9375rem",color:"var(--text-1)",marginBottom:"0.375rem"}}>dsm-firmenich</div>
+                  <div style={{fontSize:"0.8125rem",fontWeight:600,color:"var(--blue-light)",marginBottom:"0.625rem"}}>55% reduction in month-end close time</div>
+                  <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.65}}>Deployed a multi-entity ERP across 5 manufacturing and distribution facilities — unifying financials, procurement, production, and compliance into one system with consolidated group reporting.</p>
+                </div>
+              </RevealOnScroll>
+              <RevealOnScroll delay={70}>
+                <div className="card" style={{padding:"1.5rem",height:"100%"}}>
+                  <div style={{display:"flex",alignItems:"center",gap:"0.5rem",marginBottom:"0.875rem"}}>
+                    <span className="chip chip-blue" style={{fontSize:"0.6875rem"}}>Distribution ERP</span>
+                    <span className="chip" style={{fontSize:"0.6875rem"}}>Food and Dairy</span>
+                  </div>
+                  <div style={{fontFamily:"var(--font-heading)",fontWeight:700,fontSize:"0.9375rem",color:"var(--text-1)",marginBottom:"0.375rem"}}>NADEC</div>
+                  <div style={{fontSize:"0.8125rem",fontWeight:600,color:"var(--blue-light)",marginBottom:"0.625rem"}}>30% improvement in order fulfilment speed</div>
+                  <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.65}}>Built a custom ERP for dairy and food distribution covering production scheduling, cold chain inventory, route planning, and retailer invoicing — handling 10,000+ SKUs across 3 distribution centres.</p>
                 </div>
               </RevealOnScroll>
           </div>

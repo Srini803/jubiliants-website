@@ -161,7 +161,6 @@ export default function CustomSoftwareDevelopment() {
         </div>
       </section>
 
-      
       {/* Client Case Studies */}
       <section className="section" style={{background:"var(--bg-raised)",borderTop:"1px solid var(--border)"}}>
         <div className="wrap">
@@ -175,34 +174,34 @@ export default function CustomSoftwareDevelopment() {
               <RevealOnScroll delay={70}>
                 <div className="card" style={{padding:"1.5rem",height:"100%"}}>
                   <div style={{display:"flex",alignItems:"center",gap:"0.5rem",marginBottom:"0.875rem"}}>
-                    <span className="chip chip-blue" style={{fontSize:"0.6875rem"}}>Hospital Management</span>
-                    <span className="chip" style={{fontSize:"0.6875rem"}}>Healthcare</span>
+                    <span className="chip chip-blue" style={{fontSize:"0.6875rem"}}>Field Service Platform</span>
+                    <span className="chip" style={{fontSize:"0.6875rem"}}>Equipment</span>
                   </div>
-                  <div style={{fontFamily:"var(--font-heading)",fontWeight:700,fontSize:"0.9375rem",color:"var(--text-1)",marginBottom:"0.375rem"}}>Apollo Health Group</div>
-                  <div style={{fontSize:"0.8125rem",fontWeight:600,color:"var(--blue-light)",marginBottom:"0.625rem"}}>60% reduction in admin workload</div>
-                  <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.65}}>Built an integrated HIMS covering patient registration, OPD/IPD, billing, pharmacy, and inventory across 5 hospitals — replacing 7 disconnected systems.</p>
+                  <div style={{fontFamily:"var(--font-heading)",fontWeight:700,fontSize:"0.9375rem",color:"var(--text-1)",marginBottom:"0.375rem"}}>Al Shirawi Equipment Co.</div>
+                  <div style={{fontSize:"0.8125rem",fontWeight:600,color:"var(--blue-light)",marginBottom:"0.625rem"}}>35% improvement in engineer utilisation</div>
+                  <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.65}}>Built a custom field service management platform covering job scheduling, engineer dispatch, parts ordering, and digital job cards — replacing spreadsheets across 300+ field engineers.</p>
                 </div>
               </RevealOnScroll>
               <RevealOnScroll delay={70}>
                 <div className="card" style={{padding:"1.5rem",height:"100%"}}>
                   <div style={{display:"flex",alignItems:"center",gap:"0.5rem",marginBottom:"0.875rem"}}>
-                    <span className="chip chip-blue" style={{fontSize:"0.6875rem"}}>Custom ERP</span>
-                    <span className="chip" style={{fontSize:"0.6875rem"}}>Manufacturing</span>
+                    <span className="chip chip-blue" style={{fontSize:"0.6875rem"}}>Logistics Platform</span>
+                    <span className="chip" style={{fontSize:"0.6875rem"}}>Industrial</span>
                   </div>
-                  <div style={{fontFamily:"var(--font-heading)",fontWeight:700,fontSize:"0.9375rem",color:"var(--text-1)",marginBottom:"0.375rem"}}>Varun Industries</div>
-                  <div style={{fontSize:"0.8125rem",fontWeight:600,color:"var(--blue-light)",marginBottom:"0.625rem"}}>12 spreadsheet processes eliminated</div>
-                  <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.65}}>Designed a bespoke production and finance platform that replaced manual spreadsheet-based reporting, giving management real-time operational visibility.</p>
+                  <div style={{fontFamily:"var(--font-heading)",fontWeight:700,fontSize:"0.9375rem",color:"var(--text-1)",marginBottom:"0.375rem"}}>Parker Hannifin</div>
+                  <div style={{fontSize:"0.8125rem",fontWeight:600,color:"var(--blue-light)",marginBottom:"0.625rem"}}>28% reduction in delivery lead times</div>
+                  <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.65}}>Custom-built a parts logistics and inventory management system connecting 8 warehouses, 3 manufacturing plants, and 200+ dealer locations — with automated reorder and shipment tracking.</p>
                 </div>
               </RevealOnScroll>
               <RevealOnScroll delay={70}>
                 <div className="card" style={{padding:"1.5rem",height:"100%"}}>
                   <div style={{display:"flex",alignItems:"center",gap:"0.5rem",marginBottom:"0.875rem"}}>
-                    <span className="chip chip-blue" style={{fontSize:"0.6875rem"}}>Field Operations</span>
-                    <span className="chip" style={{fontSize:"0.6875rem"}}>Logistics</span>
+                    <span className="chip chip-blue" style={{fontSize:"0.6875rem"}}>Infrastructure Management</span>
+                    <span className="chip" style={{fontSize:"0.6875rem"}}>Engineering</span>
                   </div>
-                  <div style={{fontFamily:"var(--font-heading)",fontWeight:700,fontSize:"0.9375rem",color:"var(--text-1)",marginBottom:"0.375rem"}}>FastTrack Logistics</div>
-                  <div style={{fontSize:"0.8125rem",fontWeight:600,color:"var(--blue-light)",marginBottom:"0.625rem"}}>35% improvement in on-time delivery</div>
-                  <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.65}}>Developed a custom field service app for 200 delivery agents with GPS tracking, digital proof of delivery, and a live operations dashboard for managers.</p>
+                  <div style={{fontFamily:"var(--font-heading)",fontWeight:700,fontSize:"0.9375rem",color:"var(--text-1)",marginBottom:"0.375rem"}}>AECOM</div>
+                  <div style={{fontSize:"0.8125rem",fontWeight:600,color:"var(--blue-light)",marginBottom:"0.625rem"}}>Real-time visibility across 60+ project sites</div>
+                  <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.65}}>Developed a bespoke project operations platform integrating site progress, resource allocation, procurement status, and compliance tracking — giving management a single live view across all projects.</p>
                 </div>
               </RevealOnScroll>
           </div>

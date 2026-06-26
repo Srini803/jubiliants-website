@@ -94,7 +94,6 @@ export default function GenerativeAI() {
         </div>
       </section>
 
-      
       {/* Client Case Studies */}
       <section className="section" style={{background:"var(--bg-raised)",borderTop:"1px solid var(--border)"}}>
         <div className="wrap">
@@ -109,33 +108,33 @@ export default function GenerativeAI() {
                 <div className="card" style={{padding:"1.5rem",height:"100%"}}>
                   <div style={{display:"flex",alignItems:"center",gap:"0.5rem",marginBottom:"0.875rem"}}>
                     <span className="chip chip-blue" style={{fontSize:"0.6875rem"}}>AI Content Generation</span>
-                    <span className="chip" style={{fontSize:"0.6875rem"}}>FinTech</span>
+                    <span className="chip" style={{fontSize:"0.6875rem"}}>Digital</span>
                   </div>
-                  <div style={{fontFamily:"var(--font-heading)",fontWeight:700,fontSize:"0.9375rem",color:"var(--text-1)",marginBottom:"0.375rem"}}>FinServe Solutions</div>
-                  <div style={{fontSize:"0.8125rem",fontWeight:600,color:"var(--blue-light)",marginBottom:"0.625rem"}}>90% reduction in response drafting time</div>
-                  <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.65}}>Built a GenAI-powered customer communication system that drafts personalised email responses, compliance disclosures, and account summaries from structured data.</p>
+                  <div style={{fontFamily:"var(--font-heading)",fontWeight:700,fontSize:"0.9375rem",color:"var(--text-1)",marginBottom:"0.375rem"}}>Fathom Digital</div>
+                  <div style={{fontSize:"0.8125rem",fontWeight:600,color:"var(--blue-light)",marginBottom:"0.625rem"}}>90% reduction in content drafting time</div>
+                  <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.65}}>Built a generative AI platform that produces campaign briefs, ad copy, and social content at scale — trained on brand guidelines and integrated with the content management workflow.</p>
                 </div>
               </RevealOnScroll>
               <RevealOnScroll delay={70}>
                 <div className="card" style={{padding:"1.5rem",height:"100%"}}>
                   <div style={{display:"flex",alignItems:"center",gap:"0.5rem",marginBottom:"0.875rem"}}>
-                    <span className="chip chip-blue" style={{fontSize:"0.6875rem"}}>AI Content Platform</span>
-                    <span className="chip" style={{fontSize:"0.6875rem"}}>Education</span>
+                    <span className="chip chip-blue" style={{fontSize:"0.6875rem"}}>Technical Documentation AI</span>
+                    <span className="chip" style={{fontSize:"0.6875rem"}}>Manufacturing</span>
                   </div>
-                  <div style={{fontFamily:"var(--font-heading)",fontWeight:700,fontSize:"0.9375rem",color:"var(--text-1)",marginBottom:"0.375rem"}}>Narayana Group of Schools</div>
-                  <div style={{fontSize:"0.8125rem",fontWeight:600,color:"var(--blue-light)",marginBottom:"0.625rem"}}>10x faster curriculum content creation</div>
-                  <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.65}}>Developed a Generative AI platform that creates lesson plans, assessment questions, and student progress reports — cutting teacher content preparation time dramatically.</p>
+                  <div style={{fontFamily:"var(--font-heading)",fontWeight:700,fontSize:"0.9375rem",color:"var(--text-1)",marginBottom:"0.375rem"}}>Proto Labs</div>
+                  <div style={{fontSize:"0.8125rem",fontWeight:600,color:"var(--blue-light)",marginBottom:"0.625rem"}}>4x faster technical specification generation</div>
+                  <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.65}}>Deployed a GenAI system that reads CAD metadata and customer inputs to auto-generate manufacturing specs, quality checklists, and shipping documents — cutting documentation time from hours to minutes.</p>
                 </div>
               </RevealOnScroll>
               <RevealOnScroll delay={70}>
                 <div className="card" style={{padding:"1.5rem",height:"100%"}}>
                   <div style={{display:"flex",alignItems:"center",gap:"0.5rem",marginBottom:"0.875rem"}}>
                     <span className="chip chip-blue" style={{fontSize:"0.6875rem"}}>AI Report Generation</span>
-                    <span className="chip" style={{fontSize:"0.6875rem"}}>Healthcare</span>
+                    <span className="chip" style={{fontSize:"0.6875rem"}}>Agri-Science</span>
                   </div>
-                  <div style={{fontFamily:"var(--font-heading)",fontWeight:700,fontSize:"0.9375rem",color:"var(--text-1)",marginBottom:"0.375rem"}}>MedCare Diagnostics</div>
-                  <div style={{fontSize:"0.8125rem",fontWeight:600,color:"var(--blue-light)",marginBottom:"0.625rem"}}>600+ reports generated daily</div>
-                  <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.65}}>Implemented a GenAI layer that converts structured diagnostic data into readable patient-friendly reports and clinical summaries, with doctor review and one-click approval.</p>
+                  <div style={{fontFamily:"var(--font-heading)",fontWeight:700,fontSize:"0.9375rem",color:"var(--text-1)",marginBottom:"0.375rem"}}>Bayer Crop Science</div>
+                  <div style={{fontSize:"0.8125rem",fontWeight:600,color:"var(--blue-light)",marginBottom:"0.625rem"}}>75% faster regulatory reporting</div>
+                  <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.65}}>Created a generative AI pipeline that ingests field trial data, applies regulatory reporting templates, and produces compliance-ready crop science reports for multiple European authorities.</p>
                 </div>
               </RevealOnScroll>
           </div>

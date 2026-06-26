@@ -98,7 +98,6 @@ export default function ComputerVision() {
         </div>
       </section>
 
-      
       {/* Client Case Studies */}
       <section className="section" style={{background:"var(--bg-raised)",borderTop:"1px solid var(--border)"}}>
         <div className="wrap">
@@ -117,29 +116,29 @@ export default function ComputerVision() {
                   </div>
                   <div style={{fontFamily:"var(--font-heading)",fontWeight:700,fontSize:"0.9375rem",color:"var(--text-1)",marginBottom:"0.375rem"}}>Alfanar Engineering</div>
                   <div style={{fontSize:"0.8125rem",fontWeight:600,color:"var(--blue-light)",marginBottom:"0.625rem"}}>94% incident detection accuracy</div>
-                  <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.65}}>Deployed AI-based CCTV analytics across 200+ cameras at an industrial facility — detecting intrusions, safety gear violations, and anomalies with automated alerts in under 5 seconds.</p>
+                  <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.65}}>Deployed AI video analytics across 200+ cameras for real-time intrusion detection, safety violations, and equipment anomaly alerts — with automated notifications in under 5 seconds.</p>
                 </div>
               </RevealOnScroll>
               <RevealOnScroll delay={70}>
                 <div className="card" style={{padding:"1.5rem",height:"100%"}}>
                   <div style={{display:"flex",alignItems:"center",gap:"0.5rem",marginBottom:"0.875rem"}}>
-                    <span className="chip chip-blue" style={{fontSize:"0.6875rem"}}>Safety Compliance</span>
-                    <span className="chip" style={{fontSize:"0.6875rem"}}>Manufacturing</span>
+                    <span className="chip chip-blue" style={{fontSize:"0.6875rem"}}>Quality Inspection</span>
+                    <span className="chip" style={{fontSize:"0.6875rem"}}>Precision Manufacturing</span>
                   </div>
-                  <div style={{fontFamily:"var(--font-heading)",fontWeight:700,fontSize:"0.9375rem",color:"var(--text-1)",marginBottom:"0.375rem"}}>Schmalz GmbH</div>
-                  <div style={{fontSize:"0.8125rem",fontWeight:600,color:"var(--blue-light)",marginBottom:"0.625rem"}}>60% reduction in PPE violations</div>
-                  <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.65}}>Implemented a computer vision system monitoring factory floors for helmet and vest compliance in real time — with instant alerts to supervisors and a compliance audit log.</p>
+                  <div style={{fontFamily:"var(--font-heading)",fontWeight:700,fontSize:"0.9375rem",color:"var(--text-1)",marginBottom:"0.375rem"}}>NN Inc.</div>
+                  <div style={{fontSize:"0.8125rem",fontWeight:600,color:"var(--blue-light)",marginBottom:"0.625rem"}}>99.2% defect detection rate</div>
+                  <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.65}}>Built a computer vision inspection system that identifies dimensional defects, surface flaws, and assembly errors at 120 parts per minute on the production line — replacing manual QC.</p>
                 </div>
               </RevealOnScroll>
               <RevealOnScroll delay={70}>
                 <div className="card" style={{padding:"1.5rem",height:"100%"}}>
                   <div style={{display:"flex",alignItems:"center",gap:"0.5rem",marginBottom:"0.875rem"}}>
-                    <span className="chip chip-blue" style={{fontSize:"0.6875rem"}}>Equipment Monitoring</span>
-                    <span className="chip" style={{fontSize:"0.6875rem"}}>Industrial</span>
+                    <span className="chip chip-blue" style={{fontSize:"0.6875rem"}}>Site Safety Monitoring</span>
+                    <span className="chip" style={{fontSize:"0.6875rem"}}>Construction</span>
                   </div>
-                  <div style={{fontFamily:"var(--font-heading)",fontWeight:700,fontSize:"0.9375rem",color:"var(--text-1)",marginBottom:"0.375rem"}}>Powell Industries</div>
-                  <div style={{fontSize:"0.8125rem",fontWeight:600,color:"var(--blue-light)",marginBottom:"0.625rem"}}>Zero undetected equipment idle incidents</div>
-                  <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.65}}>Built a visual monitoring system that detects idle machinery, blocked walkways, and abnormal equipment states across a large production facility — reducing downtime significantly.</p>
+                  <div style={{fontFamily:"var(--font-heading)",fontWeight:700,fontSize:"0.9375rem",color:"var(--text-1)",marginBottom:"0.375rem"}}>Fluor Corporation</div>
+                  <div style={{fontSize:"0.8125rem",fontWeight:600,color:"var(--blue-light)",marginBottom:"0.625rem"}}>62% reduction in safety incidents</div>
+                  <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.65}}>Implemented AI-powered CCTV monitoring across large construction sites to detect PPE non-compliance, restricted zone breaches, and near-miss events — triggering real-time supervisor alerts.</p>
                 </div>
               </RevealOnScroll>
           </div>

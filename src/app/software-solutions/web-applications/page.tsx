@@ -148,7 +148,6 @@ export default function WebApplications() {
         </div>
       </section>
 
-      
       {/* Client Case Studies */}
       <section className="section" style={{background:"var(--bg-raised)",borderTop:"1px solid var(--border)"}}>
         <div className="wrap">
@@ -162,34 +161,34 @@ export default function WebApplications() {
               <RevealOnScroll delay={70}>
                 <div className="card" style={{padding:"1.5rem",height:"100%"}}>
                   <div style={{display:"flex",alignItems:"center",gap:"0.5rem",marginBottom:"0.875rem"}}>
-                    <span className="chip chip-blue" style={{fontSize:"0.6875rem"}}>Web Platform</span>
-                    <span className="chip" style={{fontSize:"0.6875rem"}}>FinTech</span>
+                    <span className="chip chip-blue" style={{fontSize:"0.6875rem"}}>Dealer Portal</span>
+                    <span className="chip" style={{fontSize:"0.6875rem"}}>Construction Equipment</span>
                   </div>
-                  <div style={{fontFamily:"var(--font-heading)",fontWeight:700,fontSize:"0.9375rem",color:"var(--text-1)",marginBottom:"0.375rem"}}>FinServe Solutions</div>
-                  <div style={{fontSize:"0.8125rem",fontWeight:600,color:"var(--blue-light)",marginBottom:"0.625rem"}}>3× faster transaction processing</div>
-                  <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.65}}>Built a multi-tenant web platform handling 800+ daily transactions with role-based access, audit trails, and real-time compliance dashboards.</p>
+                  <div style={{fontFamily:"var(--font-heading)",fontWeight:700,fontSize:"0.9375rem",color:"var(--text-1)",marginBottom:"0.375rem"}}>Astec Industries</div>
+                  <div style={{fontSize:"0.8125rem",fontWeight:600,color:"var(--blue-light)",marginBottom:"0.625rem"}}>40% reduction in dealer support calls</div>
+                  <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.65}}>Built a web portal for 200+ equipment dealers to place orders, track shipments, access technical documentation, submit warranty claims, and manage parts inventory — replacing email workflows.</p>
                 </div>
               </RevealOnScroll>
               <RevealOnScroll delay={70}>
                 <div className="card" style={{padding:"1.5rem",height:"100%"}}>
                   <div style={{display:"flex",alignItems:"center",gap:"0.5rem",marginBottom:"0.875rem"}}>
-                    <span className="chip chip-blue" style={{fontSize:"0.6875rem"}}>Student Portal</span>
-                    <span className="chip" style={{fontSize:"0.6875rem"}}>Education</span>
+                    <span className="chip chip-blue" style={{fontSize:"0.6875rem"}}>Supplier Collaboration Portal</span>
+                    <span className="chip" style={{fontSize:"0.6875rem"}}>Agriculture</span>
                   </div>
-                  <div style={{fontFamily:"var(--font-heading)",fontWeight:700,fontSize:"0.9375rem",color:"var(--text-1)",marginBottom:"0.375rem"}}>Narayana Group of Schools</div>
-                  <div style={{fontSize:"0.8125rem",fontWeight:600,color:"var(--blue-light)",marginBottom:"0.625rem"}}>15,000 students on one platform</div>
-                  <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.65}}>Developed a comprehensive student information web portal integrating admissions, attendance, fee collection, and parent communication into a single interface.</p>
+                  <div style={{fontFamily:"var(--font-heading)",fontWeight:700,fontSize:"0.9375rem",color:"var(--text-1)",marginBottom:"0.375rem"}}>John Deere Financial</div>
+                  <div style={{fontSize:"0.8125rem",fontWeight:600,color:"var(--blue-light)",marginBottom:"0.625rem"}}>60% faster procurement cycle</div>
+                  <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.65}}>Developed a supplier web platform covering RFQs, contract management, order tracking, quality submissions, and payment status — connecting 150+ agricultural suppliers in a single portal.</p>
                 </div>
               </RevealOnScroll>
               <RevealOnScroll delay={70}>
                 <div className="card" style={{padding:"1.5rem",height:"100%"}}>
                   <div style={{display:"flex",alignItems:"center",gap:"0.5rem",marginBottom:"0.875rem"}}>
-                    <span className="chip chip-blue" style={{fontSize:"0.6875rem"}}>Operations Dashboard</span>
-                    <span className="chip" style={{fontSize:"0.6875rem"}}>Manufacturing</span>
+                    <span className="chip chip-blue" style={{fontSize:"0.6875rem"}}>Engineering Project Portal</span>
+                    <span className="chip" style={{fontSize:"0.6875rem"}}>Infrastructure</span>
                   </div>
-                  <div style={{fontFamily:"var(--font-heading)",fontWeight:700,fontSize:"0.9375rem",color:"var(--text-1)",marginBottom:"0.375rem"}}>Mayville Engineering</div>
-                  <div style={{fontSize:"0.8125rem",fontWeight:600,color:"var(--blue-light)",marginBottom:"0.625rem"}}>100% real-time production visibility</div>
-                  <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.65}}>Created a web-based operations dashboard connecting shop-floor data to management reporting — eliminating daily manual status calls and Excel-based tracking.</p>
+                  <div style={{fontFamily:"var(--font-heading)",fontWeight:700,fontSize:"0.9375rem",color:"var(--text-1)",marginBottom:"0.375rem"}}>Emirates Electrical Engineering</div>
+                  <div style={{fontSize:"0.8125rem",fontWeight:600,color:"var(--blue-light)",marginBottom:"0.625rem"}}>Real-time visibility across 50+ project sites</div>
+                  <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.65}}>Built a web application for project teams to manage drawings, RFIs, site diaries, and milestone tracking — giving management and clients a live view of progress across all active contracts.</p>
                 </div>
               </RevealOnScroll>
           </div>

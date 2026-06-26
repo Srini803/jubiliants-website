@@ -114,7 +114,6 @@ export default function AIChatbots() {
         </div>
       </section>
 
-      
       {/* Client Case Studies */}
       <section className="section" style={{background:"var(--bg-raised)",borderTop:"1px solid var(--border)"}}>
         <div className="wrap">
@@ -128,34 +127,34 @@ export default function AIChatbots() {
               <RevealOnScroll delay={70}>
                 <div className="card" style={{padding:"1.5rem",height:"100%"}}>
                   <div style={{display:"flex",alignItems:"center",gap:"0.5rem",marginBottom:"0.875rem"}}>
-                    <span className="chip chip-blue" style={{fontSize:"0.6875rem"}}>Support Chatbot</span>
-                    <span className="chip" style={{fontSize:"0.6875rem"}}>FinTech</span>
+                    <span className="chip chip-blue" style={{fontSize:"0.6875rem"}}>Customer Service Bot</span>
+                    <span className="chip" style={{fontSize:"0.6875rem"}}>Industrial Electronics</span>
                   </div>
-                  <div style={{fontFamily:"var(--font-heading)",fontWeight:700,fontSize:"0.9375rem",color:"var(--text-1)",marginBottom:"0.375rem"}}>FinServe Solutions</div>
-                  <div style={{fontSize:"0.8125rem",fontWeight:600,color:"var(--blue-light)",marginBottom:"0.625rem"}}>65% ticket deflection rate</div>
-                  <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.65}}>Built an AI chatbot integrated with the company's CRM and knowledge base — resolving account queries, transaction disputes, and product questions without agent involvement.</p>
+                  <div style={{fontFamily:"var(--font-heading)",fontWeight:700,fontSize:"0.9375rem",color:"var(--text-1)",marginBottom:"0.375rem"}}>Weidmüller GmbH</div>
+                  <div style={{fontSize:"0.8125rem",fontWeight:600,color:"var(--blue-light)",marginBottom:"0.625rem"}}>68% reduction in support ticket volume</div>
+                  <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.65}}>Deployed a multilingual AI chatbot handling product queries, order status, and technical support in English and German — integrated with SAP and the company knowledge base.</p>
                 </div>
               </RevealOnScroll>
               <RevealOnScroll delay={70}>
                 <div className="card" style={{padding:"1.5rem",height:"100%"}}>
                   <div style={{display:"flex",alignItems:"center",gap:"0.5rem",marginBottom:"0.875rem"}}>
-                    <span className="chip chip-blue" style={{fontSize:"0.6875rem"}}>Parent Helpdesk Bot</span>
-                    <span className="chip" style={{fontSize:"0.6875rem"}}>Education</span>
+                    <span className="chip chip-blue" style={{fontSize:"0.6875rem"}}>Supplier Chatbot</span>
+                    <span className="chip" style={{fontSize:"0.6875rem"}}>Agriculture</span>
                   </div>
-                  <div style={{fontFamily:"var(--font-heading)",fontWeight:700,fontSize:"0.9375rem",color:"var(--text-1)",marginBottom:"0.375rem"}}>Narayana Group of Schools</div>
-                  <div style={{fontSize:"0.8125rem",fontWeight:600,color:"var(--blue-light)",marginBottom:"0.625rem"}}>80% reduction in front-desk calls</div>
-                  <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.65}}>Deployed a school assistant chatbot on WhatsApp and the web — handling admission enquiries, fee queries, exam schedules, and attendance reports for 15,000 student families.</p>
+                  <div style={{fontFamily:"var(--font-heading)",fontWeight:700,fontSize:"0.9375rem",color:"var(--text-1)",marginBottom:"0.375rem"}}>Agrifirm</div>
+                  <div style={{fontSize:"0.8125rem",fontWeight:600,color:"var(--blue-light)",marginBottom:"0.625rem"}}>50% faster supplier query resolution</div>
+                  <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.65}}>Created a supplier-facing chatbot integrated with the procurement portal to answer order status, payment schedule, and specification queries — handling 400+ interactions weekly.</p>
                 </div>
               </RevealOnScroll>
               <RevealOnScroll delay={70}>
                 <div className="card" style={{padding:"1.5rem",height:"100%"}}>
                   <div style={{display:"flex",alignItems:"center",gap:"0.5rem",marginBottom:"0.875rem"}}>
-                    <span className="chip chip-blue" style={{fontSize:"0.6875rem"}}>Patient Chatbot</span>
-                    <span className="chip" style={{fontSize:"0.6875rem"}}>Healthcare</span>
+                    <span className="chip chip-blue" style={{fontSize:"0.6875rem"}}>Internal Operations Bot</span>
+                    <span className="chip" style={{fontSize:"0.6875rem"}}>Engineering</span>
                   </div>
-                  <div style={{fontFamily:"var(--font-heading)",fontWeight:700,fontSize:"0.9375rem",color:"var(--text-1)",marginBottom:"0.375rem"}}>Apollo Health Group</div>
-                  <div style={{fontSize:"0.8125rem",fontWeight:600,color:"var(--blue-light)",marginBottom:"0.625rem"}}>500+ patient interactions handled daily</div>
-                  <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.65}}>Launched an AI chatbot for appointment booking, discharge query handling, and medication reminders — available 24/7 across the hospital group's web and mobile channels.</p>
+                  <div style={{fontFamily:"var(--font-heading)",fontWeight:700,fontSize:"0.9375rem",color:"var(--text-1)",marginBottom:"0.375rem"}}>Wood Group</div>
+                  <div style={{fontSize:"0.8125rem",fontWeight:600,color:"var(--blue-light)",marginBottom:"0.625rem"}}>55% reduction in internal coordination emails</div>
+                  <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.65}}>Built an internal AI assistant for project engineers to query job schedules, document repositories, material status, and HSE requirements — accessed via Microsoft Teams.</p>
                 </div>
               </RevealOnScroll>
           </div>

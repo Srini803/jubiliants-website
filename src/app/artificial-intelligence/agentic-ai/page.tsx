@@ -249,7 +249,6 @@ export default function AgenticAI() {
         </div>
       </section>
 
-      
       {/* Client Case Studies */}
       <section className="section" style={{background:"var(--bg-raised)",borderTop:"1px solid var(--border)"}}>
         <div className="wrap">
@@ -263,18 +262,7 @@ export default function AgenticAI() {
               <RevealOnScroll delay={70}>
                 <div className="card" style={{padding:"1.5rem",height:"100%"}}>
                   <div style={{display:"flex",alignItems:"center",gap:"0.5rem",marginBottom:"0.875rem"}}>
-                    <span className="chip chip-blue" style={{fontSize:"0.6875rem"}}>AI Support Agent</span>
-                    <span className="chip" style={{fontSize:"0.6875rem"}}>FinTech</span>
-                  </div>
-                  <div style={{fontFamily:"var(--font-heading)",fontWeight:700,fontSize:"0.9375rem",color:"var(--text-1)",marginBottom:"0.375rem"}}>FinServe Solutions</div>
-                  <div style={{fontSize:"0.8125rem",fontWeight:600,color:"var(--blue-light)",marginBottom:"0.625rem"}}>65% of support tickets resolved autonomously</div>
-                  <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.65}}>Deployed an agentic AI system integrated with Salesforce CRM that handles tier-1 and tier-2 queries, escalates with full context, and learns from feedback.</p>
-                </div>
-              </RevealOnScroll>
-              <RevealOnScroll delay={70}>
-                <div className="card" style={{padding:"1.5rem",height:"100%"}}>
-                  <div style={{display:"flex",alignItems:"center",gap:"0.5rem",marginBottom:"0.875rem"}}>
-                    <span className="chip chip-blue" style={{fontSize:"0.6875rem"}}>Field Operations Agent</span>
+                    <span className="chip chip-blue" style={{fontSize:"0.6875rem"}}>AI Operations Agent</span>
                     <span className="chip" style={{fontSize:"0.6875rem"}}>Facilities</span>
                   </div>
                   <div style={{fontFamily:"var(--font-heading)",fontWeight:700,fontSize:"0.9375rem",color:"var(--text-1)",marginBottom:"0.375rem"}}>Dutco Tennant LLC</div>
@@ -285,12 +273,23 @@ export default function AgenticAI() {
               <RevealOnScroll delay={70}>
                 <div className="card" style={{padding:"1.5rem",height:"100%"}}>
                   <div style={{display:"flex",alignItems:"center",gap:"0.5rem",marginBottom:"0.875rem"}}>
-                    <span className="chip chip-blue" style={{fontSize:"0.6875rem"}}>Claims Processing Agent</span>
-                    <span className="chip" style={{fontSize:"0.6875rem"}}>Healthcare</span>
+                    <span className="chip chip-blue" style={{fontSize:"0.6875rem"}}>Procurement Agent</span>
+                    <span className="chip" style={{fontSize:"0.6875rem"}}>Energy</span>
                   </div>
-                  <div style={{fontFamily:"var(--font-heading)",fontWeight:700,fontSize:"0.9375rem",color:"var(--text-1)",marginBottom:"0.375rem"}}>MedCare Diagnostics</div>
-                  <div style={{fontSize:"0.8125rem",fontWeight:600,color:"var(--blue-light)",marginBottom:"0.625rem"}}>600+ claims processed daily</div>
-                  <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.65}}>An AI agent reads incoming claim documents, extracts data, validates against policy rules, routes for approval, and files with insurers — handling 600+ claims daily.</p>
+                  <div style={{fontFamily:"var(--font-heading)",fontWeight:700,fontSize:"0.9375rem",color:"var(--text-1)",marginBottom:"0.375rem"}}>Powell Industries</div>
+                  <div style={{fontSize:"0.8125rem",fontWeight:600,color:"var(--blue-light)",marginBottom:"0.625rem"}}>3x faster purchase order processing</div>
+                  <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.65}}>An agentic AI system monitors stock levels, raises purchase requisitions, gets multi-tier approvals, and sends orders to suppliers — reducing procurement cycle time from days to hours.</p>
+                </div>
+              </RevealOnScroll>
+              <RevealOnScroll delay={70}>
+                <div className="card" style={{padding:"1.5rem",height:"100%"}}>
+                  <div style={{display:"flex",alignItems:"center",gap:"0.5rem",marginBottom:"0.875rem"}}>
+                    <span className="chip chip-blue" style={{fontSize:"0.6875rem"}}>Compliance Agent</span>
+                    <span className="chip" style={{fontSize:"0.6875rem"}}>Engineering</span>
+                  </div>
+                  <div style={{fontFamily:"var(--font-heading)",fontWeight:700,fontSize:"0.9375rem",color:"var(--text-1)",marginBottom:"0.375rem"}}>Bureau Veritas</div>
+                  <div style={{fontSize:"0.8125rem",fontWeight:600,color:"var(--blue-light)",marginBottom:"0.625rem"}}>85% of audit prep steps automated</div>
+                  <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.65}}>Deployed an AI agent that collects inspection data from field teams, validates against regulatory checklists, flags non-conformances, and generates draft audit reports ready for sign-off.</p>
                 </div>
               </RevealOnScroll>
           </div>
