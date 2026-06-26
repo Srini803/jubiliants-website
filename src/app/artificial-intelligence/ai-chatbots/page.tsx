@@ -162,48 +162,6 @@ export default function AIChatbots() {
         </div>
       </section>
 
-
-      {/* Client Case Studies */}
-      <section className="section" style={{background:"var(--bg-raised)",borderTop:"1px solid var(--border)"}}>
-        <div className="wrap">
-          <RevealOnScroll>
-            <div style={{maxWidth:"520px",marginBottom:"2.5rem"}}>
-              <div className="section-label">Client results</div>
-              <h2 className="t-h2">What we have delivered</h2>
-            </div>
-          </RevealOnScroll>
-          <div style={{display:"grid",gap:"1.25rem"}} className="grid grid-cols-1 md:grid-cols-3">
-              <div className="card" style={{padding:"1.5rem",height:"100%"}}>
-                  <div style={{display:"flex",alignItems:"center",gap:"0.5rem",marginBottom:"0.875rem"}}>
-                    <span className="chip chip-blue" style={{fontSize:"0.6875rem"}}>Support Chatbot</span>
-                    <span className="chip" style={{fontSize:"0.6875rem"}}>FinTech</span>
-                  </div>
-                  <div style={{fontFamily:"var(--font-heading)",fontWeight:700,fontSize:"0.9375rem",color:"var(--text-1)",marginBottom:"0.375rem"}}>FinServe Solutions</div>
-                  <div style={{fontSize:"0.8125rem",fontWeight:600,color:"var(--blue-light)",marginBottom:"0.625rem"}}>65% ticket deflection rate</div>
-                  <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.65}}>Built an AI chatbot integrated with the company's CRM and knowledge base — resolving account queries, transaction disputes, and product questions without agent involvement.</p>
-              </div>
-              <div className="card" style={{padding:"1.5rem",height:"100%"}}>
-                  <div style={{display:"flex",alignItems:"center",gap:"0.5rem",marginBottom:"0.875rem"}}>
-                    <span className="chip chip-blue" style={{fontSize:"0.6875rem"}}>Parent Helpdesk Bot</span>
-                    <span className="chip" style={{fontSize:"0.6875rem"}}>Education</span>
-                  </div>
-                  <div style={{fontFamily:"var(--font-heading)",fontWeight:700,fontSize:"0.9375rem",color:"var(--text-1)",marginBottom:"0.375rem"}}>Narayana Group of Schools</div>
-                  <div style={{fontSize:"0.8125rem",fontWeight:600,color:"var(--blue-light)",marginBottom:"0.625rem"}}>80% reduction in front-desk calls</div>
-                  <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.65}}>Deployed a school assistant chatbot on WhatsApp and the web — handling admission enquiries, fee queries, exam schedules, and attendance reports for 15,000 student families.</p>
-              </div>
-              <div className="card" style={{padding:"1.5rem",height:"100%"}}>
-                  <div style={{display:"flex",alignItems:"center",gap:"0.5rem",marginBottom:"0.875rem"}}>
-                    <span className="chip chip-blue" style={{fontSize:"0.6875rem"}}>Patient Chatbot</span>
-                    <span className="chip" style={{fontSize:"0.6875rem"}}>Healthcare</span>
-                  </div>
-                  <div style={{fontFamily:"var(--font-heading)",fontWeight:700,fontSize:"0.9375rem",color:"var(--text-1)",marginBottom:"0.375rem"}}>Apollo Health Group</div>
-                  <div style={{fontSize:"0.8125rem",fontWeight:600,color:"var(--blue-light)",marginBottom:"0.625rem"}}>500+ patient interactions handled daily</div>
-                  <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.65}}>Launched an AI chatbot for appointment booking, discharge query handling, and medication reminders — available 24/7 across the hospital group's web and mobile channels.</p>
-              </div>
-          </div>
-        </div>
-      </section>
-
 <CTABand title="Ready to build your AI chatbot?" sub="We'll design a chatbot that fits your workflows, tone, and systems — and have a working prototype ready in 2 weeks." primary="Build Your Chatbot" secondary="View Case Studies" />
     </>
   );

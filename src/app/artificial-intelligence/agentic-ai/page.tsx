@@ -297,48 +297,6 @@ export default function AgenticAI() {
         </div>
       </section>
 
-
-      {/* Client Case Studies */}
-      <section className="section" style={{background:"var(--bg-raised)",borderTop:"1px solid var(--border)"}}>
-        <div className="wrap">
-          <RevealOnScroll>
-            <div style={{maxWidth:"520px",marginBottom:"2.5rem"}}>
-              <div className="section-label">Client results</div>
-              <h2 className="t-h2">What we have delivered</h2>
-            </div>
-          </RevealOnScroll>
-          <div style={{display:"grid",gap:"1.25rem"}} className="grid grid-cols-1 md:grid-cols-3">
-              <div className="card" style={{padding:"1.5rem",height:"100%"}}>
-                  <div style={{display:"flex",alignItems:"center",gap:"0.5rem",marginBottom:"0.875rem"}}>
-                    <span className="chip chip-blue" style={{fontSize:"0.6875rem"}}>AI Support Agent</span>
-                    <span className="chip" style={{fontSize:"0.6875rem"}}>FinTech</span>
-                  </div>
-                  <div style={{fontFamily:"var(--font-heading)",fontWeight:700,fontSize:"0.9375rem",color:"var(--text-1)",marginBottom:"0.375rem"}}>FinServe Solutions</div>
-                  <div style={{fontSize:"0.8125rem",fontWeight:600,color:"var(--blue-light)",marginBottom:"0.625rem"}}>65% of support tickets resolved autonomously</div>
-                  <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.65}}>Deployed an agentic AI system integrated with Salesforce CRM that handles tier-1 and tier-2 queries, escalates with full context, and learns from feedback.</p>
-              </div>
-              <div className="card" style={{padding:"1.5rem",height:"100%"}}>
-                  <div style={{display:"flex",alignItems:"center",gap:"0.5rem",marginBottom:"0.875rem"}}>
-                    <span className="chip chip-blue" style={{fontSize:"0.6875rem"}}>Field Operations Agent</span>
-                    <span className="chip" style={{fontSize:"0.6875rem"}}>Facilities</span>
-                  </div>
-                  <div style={{fontFamily:"var(--font-heading)",fontWeight:700,fontSize:"0.9375rem",color:"var(--text-1)",marginBottom:"0.375rem"}}>Dutco Tennant LLC</div>
-                  <div style={{fontSize:"0.8125rem",fontWeight:600,color:"var(--blue-light)",marginBottom:"0.625rem"}}>70% of service calls automated</div>
-                  <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.65}}>Built an agentic voice and workflow system that logs service requests, assigns field technicians, updates job status, and notifies customers — without human intervention.</p>
-              </div>
-              <div className="card" style={{padding:"1.5rem",height:"100%"}}>
-                  <div style={{display:"flex",alignItems:"center",gap:"0.5rem",marginBottom:"0.875rem"}}>
-                    <span className="chip chip-blue" style={{fontSize:"0.6875rem"}}>Claims Processing Agent</span>
-                    <span className="chip" style={{fontSize:"0.6875rem"}}>Healthcare</span>
-                  </div>
-                  <div style={{fontFamily:"var(--font-heading)",fontWeight:700,fontSize:"0.9375rem",color:"var(--text-1)",marginBottom:"0.375rem"}}>MedCare Diagnostics</div>
-                  <div style={{fontSize:"0.8125rem",fontWeight:600,color:"var(--blue-light)",marginBottom:"0.625rem"}}>600+ claims processed daily</div>
-                  <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.65}}>An AI agent reads incoming claim documents, extracts data, validates against policy rules, routes for approval, and files with insurers — handling 600+ claims daily.</p>
-              </div>
-          </div>
-        </div>
-      </section>
-
 <CTABand title="Ready to deploy your first AI agent?" sub="We'll identify the highest-impact automation in your business and build a working prototype in 4 weeks." primary="Start with a Free AI Audit" secondary="View AI Case Studies"/>
     </>
   );

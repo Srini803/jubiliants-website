@@ -196,48 +196,6 @@ export default function WebApplications() {
         </div>
       </section>
 
-
-      {/* Client Case Studies */}
-      <section className="section" style={{background:"var(--bg-raised)",borderTop:"1px solid var(--border)"}}>
-        <div className="wrap">
-          <RevealOnScroll>
-            <div style={{maxWidth:"520px",marginBottom:"2.5rem"}}>
-              <div className="section-label">Client results</div>
-              <h2 className="t-h2">What we have delivered</h2>
-            </div>
-          </RevealOnScroll>
-          <div style={{display:"grid",gap:"1.25rem"}} className="grid grid-cols-1 md:grid-cols-3">
-              <div className="card" style={{padding:"1.5rem",height:"100%"}}>
-                  <div style={{display:"flex",alignItems:"center",gap:"0.5rem",marginBottom:"0.875rem"}}>
-                    <span className="chip chip-blue" style={{fontSize:"0.6875rem"}}>Web Platform</span>
-                    <span className="chip" style={{fontSize:"0.6875rem"}}>FinTech</span>
-                  </div>
-                  <div style={{fontFamily:"var(--font-heading)",fontWeight:700,fontSize:"0.9375rem",color:"var(--text-1)",marginBottom:"0.375rem"}}>FinServe Solutions</div>
-                  <div style={{fontSize:"0.8125rem",fontWeight:600,color:"var(--blue-light)",marginBottom:"0.625rem"}}>3× faster transaction processing</div>
-                  <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.65}}>Built a multi-tenant web platform handling 800+ daily transactions with role-based access, audit trails, and real-time compliance dashboards.</p>
-              </div>
-              <div className="card" style={{padding:"1.5rem",height:"100%"}}>
-                  <div style={{display:"flex",alignItems:"center",gap:"0.5rem",marginBottom:"0.875rem"}}>
-                    <span className="chip chip-blue" style={{fontSize:"0.6875rem"}}>Student Portal</span>
-                    <span className="chip" style={{fontSize:"0.6875rem"}}>Education</span>
-                  </div>
-                  <div style={{fontFamily:"var(--font-heading)",fontWeight:700,fontSize:"0.9375rem",color:"var(--text-1)",marginBottom:"0.375rem"}}>Narayana Group of Schools</div>
-                  <div style={{fontSize:"0.8125rem",fontWeight:600,color:"var(--blue-light)",marginBottom:"0.625rem"}}>15,000 students on one platform</div>
-                  <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.65}}>Developed a comprehensive student information web portal integrating admissions, attendance, fee collection, and parent communication into a single interface.</p>
-              </div>
-              <div className="card" style={{padding:"1.5rem",height:"100%"}}>
-                  <div style={{display:"flex",alignItems:"center",gap:"0.5rem",marginBottom:"0.875rem"}}>
-                    <span className="chip chip-blue" style={{fontSize:"0.6875rem"}}>Operations Dashboard</span>
-                    <span className="chip" style={{fontSize:"0.6875rem"}}>Manufacturing</span>
-                  </div>
-                  <div style={{fontFamily:"var(--font-heading)",fontWeight:700,fontSize:"0.9375rem",color:"var(--text-1)",marginBottom:"0.375rem"}}>Mayville Engineering</div>
-                  <div style={{fontSize:"0.8125rem",fontWeight:600,color:"var(--blue-light)",marginBottom:"0.625rem"}}>100% real-time production visibility</div>
-                  <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.65}}>Created a web-based operations dashboard connecting shop-floor data to management reporting — eliminating daily manual status calls and Excel-based tracking.</p>
-              </div>
-          </div>
-        </div>
-      </section>
-
 <CTABand title="Ready to build your web application?" sub="Share your requirements and we'll scope it, price it, and build it — on time and on budget." primary="Start the Conversation" secondary="View Case Studies" />
     </>
   );

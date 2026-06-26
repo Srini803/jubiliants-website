@@ -171,48 +171,6 @@ export default function MobileApplications() {
         </div>
       </section>
 
-
-      {/* Client Case Studies */}
-      <section className="section" style={{background:"var(--bg-raised)",borderTop:"1px solid var(--border)"}}>
-        <div className="wrap">
-          <RevealOnScroll>
-            <div style={{maxWidth:"520px",marginBottom:"2.5rem"}}>
-              <div className="section-label">Client results</div>
-              <h2 className="t-h2">What we have delivered</h2>
-            </div>
-          </RevealOnScroll>
-          <div style={{display:"grid",gap:"1.25rem"}} className="grid grid-cols-1 md:grid-cols-3">
-              <div className="card" style={{padding:"1.5rem",height:"100%"}}>
-                  <div style={{display:"flex",alignItems:"center",gap:"0.5rem",marginBottom:"0.875rem"}}>
-                    <span className="chip chip-blue" style={{fontSize:"0.6875rem"}}>Android App</span>
-                    <span className="chip" style={{fontSize:"0.6875rem"}}>Logistics</span>
-                  </div>
-                  <div style={{fontFamily:"var(--font-heading)",fontWeight:700,fontSize:"0.9375rem",color:"var(--text-1)",marginBottom:"0.375rem"}}>FastTrack Logistics</div>
-                  <div style={{fontSize:"0.8125rem",fontWeight:600,color:"var(--blue-light)",marginBottom:"0.625rem"}}>80% reduction in customer queries</div>
-                  <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.65}}>Built an offline-capable Android app for 200 field agents with GPS tracking, digital POD, and automated customer notifications — replacing WhatsApp coordination.</p>
-              </div>
-              <div className="card" style={{padding:"1.5rem",height:"100%"}}>
-                  <div style={{display:"flex",alignItems:"center",gap:"0.5rem",marginBottom:"0.875rem"}}>
-                    <span className="chip chip-blue" style={{fontSize:"0.6875rem"}}>iOS and Android</span>
-                    <span className="chip" style={{fontSize:"0.6875rem"}}>Education</span>
-                  </div>
-                  <div style={{fontFamily:"var(--font-heading)",fontWeight:700,fontSize:"0.9375rem",color:"var(--text-1)",marginBottom:"0.375rem"}}>Narayana Group of Schools</div>
-                  <div style={{fontSize:"0.8125rem",fontWeight:600,color:"var(--blue-light)",marginBottom:"0.625rem"}}>4.7/5 parent satisfaction rating</div>
-                  <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.65}}>Delivered cross-platform mobile apps for students, parents, and teachers with live attendance, fee payment gateway, and push notification alerts.</p>
-              </div>
-              <div className="card" style={{padding:"1.5rem",height:"100%"}}>
-                  <div style={{display:"flex",alignItems:"center",gap:"0.5rem",marginBottom:"0.875rem"}}>
-                    <span className="chip chip-blue" style={{fontSize:"0.6875rem"}}>Patient App</span>
-                    <span className="chip" style={{fontSize:"0.6875rem"}}>Healthcare</span>
-                  </div>
-                  <div style={{fontFamily:"var(--font-heading)",fontWeight:700,fontSize:"0.9375rem",color:"var(--text-1)",marginBottom:"0.375rem"}}>Apollo Health Group</div>
-                  <div style={{fontSize:"0.8125rem",fontWeight:600,color:"var(--blue-light)",marginBottom:"0.625rem"}}>500+ patients served daily</div>
-                  <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.65}}>Built a patient-facing mobile app covering appointment booking, OPD check-in, digital prescriptions, and discharge summaries across 5 hospital sites.</p>
-              </div>
-          </div>
-        </div>
-      </section>
-
 <CTABand title="Ready to build your mobile app?" sub="Share your idea. We'll scope it and give you a realistic timeline and cost within 48 hours." primary="Get App Estimate" secondary="View Case Studies" />
     </>
   );

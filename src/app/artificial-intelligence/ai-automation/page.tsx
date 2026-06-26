@@ -177,48 +177,6 @@ export default function AIAutomation() {
         </div>
       </section>
 
-
-      {/* Client Case Studies */}
-      <section className="section" style={{background:"var(--bg-raised)",borderTop:"1px solid var(--border)"}}>
-        <div className="wrap">
-          <RevealOnScroll>
-            <div style={{maxWidth:"520px",marginBottom:"2.5rem"}}>
-              <div className="section-label">Client results</div>
-              <h2 className="t-h2">What we have delivered</h2>
-            </div>
-          </RevealOnScroll>
-          <div style={{display:"grid",gap:"1.25rem"}} className="grid grid-cols-1 md:grid-cols-3">
-              <div className="card" style={{padding:"1.5rem",height:"100%"}}>
-                  <div style={{display:"flex",alignItems:"center",gap:"0.5rem",marginBottom:"0.875rem"}}>
-                    <span className="chip chip-blue" style={{fontSize:"0.6875rem"}}>Document Automation</span>
-                    <span className="chip" style={{fontSize:"0.6875rem"}}>Healthcare</span>
-                  </div>
-                  <div style={{fontFamily:"var(--font-heading)",fontWeight:700,fontSize:"0.9375rem",color:"var(--text-1)",marginBottom:"0.375rem"}}>MedCare Diagnostics</div>
-                  <div style={{fontSize:"0.8125rem",fontWeight:600,color:"var(--blue-light)",marginBottom:"0.625rem"}}>75% reduction in processing time</div>
-                  <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.65}}>Automated insurance claim intake using intelligent document processing — extracting, validating, and routing 600+ claim forms daily with 98% accuracy.</p>
-              </div>
-              <div className="card" style={{padding:"1.5rem",height:"100%"}}>
-                  <div style={{display:"flex",alignItems:"center",gap:"0.5rem",marginBottom:"0.875rem"}}>
-                    <span className="chip chip-blue" style={{fontSize:"0.6875rem"}}>Production Automation</span>
-                    <span className="chip" style={{fontSize:"0.6875rem"}}>Manufacturing</span>
-                  </div>
-                  <div style={{fontFamily:"var(--font-heading)",fontWeight:700,fontSize:"0.9375rem",color:"var(--text-1)",marginBottom:"0.375rem"}}>Varun Industries</div>
-                  <div style={{fontSize:"0.8125rem",fontWeight:600,color:"var(--blue-light)",marginBottom:"0.625rem"}}>Real-time production visibility</div>
-                  <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.65}}>Automated daily production reporting, purchase order generation, and stock replenishment alerts — eliminating 3 hours of manual data entry per shift.</p>
-              </div>
-              <div className="card" style={{padding:"1.5rem",height:"100%"}}>
-                  <div style={{display:"flex",alignItems:"center",gap:"0.5rem",marginBottom:"0.875rem"}}>
-                    <span className="chip chip-blue" style={{fontSize:"0.6875rem"}}>Customer Service Automation</span>
-                    <span className="chip" style={{fontSize:"0.6875rem"}}>FinTech</span>
-                  </div>
-                  <div style={{fontFamily:"var(--font-heading)",fontWeight:700,fontSize:"0.9375rem",color:"var(--text-1)",marginBottom:"0.375rem"}}>FinServe Solutions</div>
-                  <div style={{fontSize:"0.8125rem",fontWeight:600,color:"var(--blue-light)",marginBottom:"0.625rem"}}>{"<"} 30 seconds average response time</div>
-                  <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.65}}>Automated tier-1 and tier-2 support ticket resolution using AI — deflecting 65% of daily tickets and reducing average first response time from 4 hours to 30 seconds.</p>
-              </div>
-          </div>
-        </div>
-      </section>
-
 <CTABand title="Let's find your biggest automation win" sub="A 30-minute call to identify which processes in your business are ripe for AI automation — and the ROI you can expect." primary="Book Free Automation Audit" secondary="View Case Studies" />
     </>
   );
