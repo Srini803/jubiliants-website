@@ -59,7 +59,8 @@ export default function MachineLearning() {
                 <div className="card" style={{ padding: "1.5rem", height: "100%" }}>
                   <h3 className="t-h4" style={{ marginBottom: "0.5rem" }}>{uc.title}</h3>
                   <p className="t-small">{uc.desc}</p>
-              </div>
+                </div>
+              </RevealOnScroll>
             ))}
           </div>
         </div>
@@ -80,7 +81,7 @@ export default function MachineLearning() {
               </div>
               <div style={{ display: "flex", flexDirection: "column", gap: "1rem" }}>
                 {[
-                  { cat: "Languages and Frameworks", items: ["Python, scikit-learn, XGBoost", "PyTorch, TensorFlow, Keras", "HuggingFace Transformers", "RAPIDS (GPU-accelerated)"] },
+                  { cat: "Languages & Frameworks", items: ["Python, scikit-learn, XGBoost", "PyTorch, TensorFlow, Keras", "HuggingFace Transformers", "RAPIDS (GPU-accelerated)"] },
                   { cat: "MLOps Platforms", items: ["MLflow (experiment tracking)", "Kubeflow Pipelines", "Azure Machine Learning", "AWS SageMaker"] },
                   { cat: "Data Engineering", items: ["Apache Spark, dbt", "Apache Kafka (streaming)", "Great Expectations (DQ)", "Feast (feature store)"] },
                 ].map((stack, i) => (
@@ -98,6 +99,54 @@ export default function MachineLearning() {
       </section>
 
       
+      {/* Client Case Studies */}
+      <section className="section" style={{background:"var(--bg-raised)",borderTop:"1px solid var(--border)"}}>
+        <div className="wrap">
+          <RevealOnScroll>
+            <div style={{maxWidth:"520px",marginBottom:"2.5rem"}}>
+              <div className="section-label">Client results</div>
+              <h2 className="t-h2">What we have delivered</h2>
+            </div>
+          </RevealOnScroll>
+          <div style={{display:"grid",gap:"1.25rem"}} className="grid grid-cols-1 md:grid-cols-3">
+              <RevealOnScroll delay={70}>
+                <div className="card" style={{padding:"1.5rem",height:"100%"}}>
+                  <div style={{display:"flex",alignItems:"center",gap:"0.5rem",marginBottom:"0.875rem"}}>
+                    <span className="chip chip-blue" style={{fontSize:"0.6875rem"}}>Fraud Detection ML</span>
+                    <span className="chip" style={{fontSize:"0.6875rem"}}>FinTech</span>
+                  </div>
+                  <div style={{fontFamily:"var(--font-heading)",fontWeight:700,fontSize:"0.9375rem",color:"var(--text-1)",marginBottom:"0.375rem"}}>FinServe Solutions</div>
+                  <div style={{fontSize:"0.8125rem",fontWeight:600,color:"var(--blue-light)",marginBottom:"0.625rem"}}>99.1% fraud detection accuracy</div>
+                  <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.65}}>Deployed an anomaly detection ML model on transaction data — identifying fraudulent patterns in real time and reducing false positives by 60% versus the previous rule-based system.</p>
+                </div>
+              </RevealOnScroll>
+              <RevealOnScroll delay={70}>
+                <div className="card" style={{padding:"1.5rem",height:"100%"}}>
+                  <div style={{display:"flex",alignItems:"center",gap:"0.5rem",marginBottom:"0.875rem"}}>
+                    <span className="chip chip-blue" style={{fontSize:"0.6875rem"}}>Crop Yield Prediction</span>
+                    <span className="chip" style={{fontSize:"0.6875rem"}}>Agriculture</span>
+                  </div>
+                  <div style={{fontFamily:"var(--font-heading)",fontWeight:700,fontSize:"0.9375rem",color:"var(--text-1)",marginBottom:"0.375rem"}}>Indigo Ag</div>
+                  <div style={{fontSize:"0.8125rem",fontWeight:600,color:"var(--blue-light)",marginBottom:"0.625rem"}}>23% improvement in yield forecasting accuracy</div>
+                  <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.65}}>Built a machine learning pipeline ingesting satellite imagery, soil, and weather data to predict crop yields per field — enabling precision input planning for large-scale farms.</p>
+                </div>
+              </RevealOnScroll>
+              <RevealOnScroll delay={70}>
+                <div className="card" style={{padding:"1.5rem",height:"100%"}}>
+                  <div style={{display:"flex",alignItems:"center",gap:"0.5rem",marginBottom:"0.875rem"}}>
+                    <span className="chip chip-blue" style={{fontSize:"0.6875rem"}}>Demand Forecasting</span>
+                    <span className="chip" style={{fontSize:"0.6875rem"}}>Manufacturing</span>
+                  </div>
+                  <div style={{fontFamily:"var(--font-heading)",fontWeight:700,fontSize:"0.9375rem",color:"var(--text-1)",marginBottom:"0.375rem"}}>Mayville Engineering</div>
+                  <div style={{fontSize:"0.8125rem",fontWeight:600,color:"var(--blue-light)",marginBottom:"0.625rem"}}>18% reduction in inventory holding costs</div>
+                  <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.65}}>Developed a time-series ML model for demand forecasting across 500+ SKUs — reducing overstock, improving procurement planning, and cutting inventory holding costs significantly.</p>
+                </div>
+              </RevealOnScroll>
+          </div>
+        </div>
+      </section>
+
+
       {/* Client Case Studies */}
       <section className="section" style={{background:"var(--bg-raised)",borderTop:"1px solid var(--border)"}}>
         <div className="wrap">

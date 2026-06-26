@@ -80,7 +80,7 @@ const AIWorkflowDiagram = () => (
         {[
           {y:64,  label:"Customer Support Agent",  status:"142 resolved today", sc:"#22C55E",bg:"rgba(34,197,94,.08)"},
           {y:104, label:"Sales Development Agent", status:"38 leads qualified",  sc:"#3B82F6",bg:"rgba(59,130,246,.08)"},
-          {y:144, label:"HR and Recruitment Agent",  status:"12 CVs screened",    sc:"#8B5CF6",bg:"rgba(139,92,246,.08)"},
+          {y:144, label:"HR & Recruitment Agent",  status:"12 CVs screened",    sc:"#8B5CF6",bg:"rgba(139,92,246,.08)"},
           {y:184, label:"IT Helpdesk Agent",        status:"99% tickets auto",   sc:"#06B6D4",bg:"rgba(6,182,212,.08)"},
           {y:224, label:"Knowledge Assistant",     status:"500+ queries/hr",    sc:"#F59E0B",bg:"rgba(245,158,11,.08)"},
           {y:264, label:"Finance Automation Agent",status:"₹ 2.4Cr processed",  sc:"#22C55E",bg:"rgba(34,197,94,.08)"},
@@ -119,7 +119,7 @@ const AIWorkflowDiagram = () => (
 const agentTypes = [
   {t:"Customer Support Agents",d:"Handle tier-1 and tier-2 support queries, process refunds, check order status, and escalate complex cases — integrated with your CRM and ticketing system."},
   {t:"Sales Development Agents",d:"Qualify inbound leads, engage prospects via email and chat, answer product questions, and schedule demos for your sales team automatically."},
-  {t:"HR and Recruitment Agents",d:"Screen CVs, shortlist candidates, schedule interviews, answer policy questions, and guide new hires through onboarding."},
+  {t:"HR & Recruitment Agents",d:"Screen CVs, shortlist candidates, schedule interviews, answer policy questions, and guide new hires through onboarding."},
   {t:"IT Helpdesk Agents",d:"Reset passwords, diagnose common issues, create tickets, retrieve knowledge base answers, and escalate to human agents with full context."},
   {t:"Knowledge Assistants",d:"Let employees instantly retrieve information from your SOPs, policies, product documentation, and knowledge bases via natural language."},
   {t:"Operations Agents",d:"Monitor workflows, detect exceptions, route approvals, trigger actions in connected systems, and surface anomalies to managers proactively."},
@@ -213,7 +213,8 @@ export default function AgenticAI() {
                 <div className="card" style={{padding:"1.5rem",height:"100%"}}>
                   <h3 className="t-h4" style={{marginBottom:"0.5rem"}}>{a.t}</h3>
                   <p className="t-small">{a.d}</p>
-              </div>
+                </div>
+              </RevealOnScroll>
             ))}
           </div>
         </div>
@@ -241,13 +242,62 @@ export default function AgenticAI() {
                   <ul style={{listStyle:"none",display:"flex",flexDirection:"column",gap:"0.4rem"}}>
                     {t.items.map(it=><li key={it} style={{fontSize:"0.8125rem",color:"var(--text-2)"}}>{it}</li>)}
                   </ul>
-              </div>
+                </div>
+              </RevealOnScroll>
             ))}
           </div>
         </div>
       </section>
 
       
+      {/* Client Case Studies */}
+      <section className="section" style={{background:"var(--bg-raised)",borderTop:"1px solid var(--border)"}}>
+        <div className="wrap">
+          <RevealOnScroll>
+            <div style={{maxWidth:"520px",marginBottom:"2.5rem"}}>
+              <div className="section-label">Client results</div>
+              <h2 className="t-h2">What we have delivered</h2>
+            </div>
+          </RevealOnScroll>
+          <div style={{display:"grid",gap:"1.25rem"}} className="grid grid-cols-1 md:grid-cols-3">
+              <RevealOnScroll delay={70}>
+                <div className="card" style={{padding:"1.5rem",height:"100%"}}>
+                  <div style={{display:"flex",alignItems:"center",gap:"0.5rem",marginBottom:"0.875rem"}}>
+                    <span className="chip chip-blue" style={{fontSize:"0.6875rem"}}>AI Support Agent</span>
+                    <span className="chip" style={{fontSize:"0.6875rem"}}>FinTech</span>
+                  </div>
+                  <div style={{fontFamily:"var(--font-heading)",fontWeight:700,fontSize:"0.9375rem",color:"var(--text-1)",marginBottom:"0.375rem"}}>FinServe Solutions</div>
+                  <div style={{fontSize:"0.8125rem",fontWeight:600,color:"var(--blue-light)",marginBottom:"0.625rem"}}>65% of support tickets resolved autonomously</div>
+                  <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.65}}>Deployed an agentic AI system integrated with Salesforce CRM that handles tier-1 and tier-2 queries, escalates with full context, and learns from feedback.</p>
+                </div>
+              </RevealOnScroll>
+              <RevealOnScroll delay={70}>
+                <div className="card" style={{padding:"1.5rem",height:"100%"}}>
+                  <div style={{display:"flex",alignItems:"center",gap:"0.5rem",marginBottom:"0.875rem"}}>
+                    <span className="chip chip-blue" style={{fontSize:"0.6875rem"}}>Field Operations Agent</span>
+                    <span className="chip" style={{fontSize:"0.6875rem"}}>Facilities</span>
+                  </div>
+                  <div style={{fontFamily:"var(--font-heading)",fontWeight:700,fontSize:"0.9375rem",color:"var(--text-1)",marginBottom:"0.375rem"}}>Dutco Tennant LLC</div>
+                  <div style={{fontSize:"0.8125rem",fontWeight:600,color:"var(--blue-light)",marginBottom:"0.625rem"}}>70% of service calls automated</div>
+                  <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.65}}>Built an agentic voice and workflow system that logs service requests, assigns field technicians, updates job status, and notifies customers — without human intervention.</p>
+                </div>
+              </RevealOnScroll>
+              <RevealOnScroll delay={70}>
+                <div className="card" style={{padding:"1.5rem",height:"100%"}}>
+                  <div style={{display:"flex",alignItems:"center",gap:"0.5rem",marginBottom:"0.875rem"}}>
+                    <span className="chip chip-blue" style={{fontSize:"0.6875rem"}}>Claims Processing Agent</span>
+                    <span className="chip" style={{fontSize:"0.6875rem"}}>Healthcare</span>
+                  </div>
+                  <div style={{fontFamily:"var(--font-heading)",fontWeight:700,fontSize:"0.9375rem",color:"var(--text-1)",marginBottom:"0.375rem"}}>MedCare Diagnostics</div>
+                  <div style={{fontSize:"0.8125rem",fontWeight:600,color:"var(--blue-light)",marginBottom:"0.625rem"}}>600+ claims processed daily</div>
+                  <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.65}}>An AI agent reads incoming claim documents, extracts data, validates against policy rules, routes for approval, and files with insurers — handling 600+ claims daily.</p>
+                </div>
+              </RevealOnScroll>
+          </div>
+        </div>
+      </section>
+
+
       {/* Client Case Studies */}
       <section className="section" style={{background:"var(--bg-raised)",borderTop:"1px solid var(--border)"}}>
         <div className="wrap">

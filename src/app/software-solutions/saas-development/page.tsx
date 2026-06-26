@@ -53,7 +53,8 @@ export default function SaaSDevelopment() {
                   <div className="stat-num">{m.val}</div>
                   <div style={{ fontFamily: "var(--font-heading)", fontWeight: 600, fontSize: "0.9375rem", color: "var(--text-1)", marginTop: "0.375rem" }}>{m.label}</div>
                   <div className="stat-label">{m.sub}</div>
-              </div>
+                </div>
+              </RevealOnScroll>
             ))}
           </div>
         </div>
@@ -73,7 +74,8 @@ export default function SaaSDevelopment() {
                 <div className="card" style={{ padding: "1.5rem", height: "100%" }}>
                   <h3 className="t-h4" style={{ marginBottom: "0.5rem" }}>{c.title}</h3>
                   <p className="t-small">{c.desc}</p>
-              </div>
+                </div>
+              </RevealOnScroll>
             ))}
           </div>
         </div>
@@ -114,6 +116,54 @@ export default function SaaSDevelopment() {
       </section>
 
       
+      {/* Client Case Studies */}
+      <section className="section" style={{background:"var(--bg-raised)",borderTop:"1px solid var(--border)"}}>
+        <div className="wrap">
+          <RevealOnScroll>
+            <div style={{maxWidth:"520px",marginBottom:"2.5rem"}}>
+              <div className="section-label">Client results</div>
+              <h2 className="t-h2">What we have delivered</h2>
+            </div>
+          </RevealOnScroll>
+          <div style={{display:"grid",gap:"1.25rem"}} className="grid grid-cols-1 md:grid-cols-3">
+              <RevealOnScroll delay={70}>
+                <div className="card" style={{padding:"1.5rem",height:"100%"}}>
+                  <div style={{display:"flex",alignItems:"center",gap:"0.5rem",marginBottom:"0.875rem"}}>
+                    <span className="chip chip-blue" style={{fontSize:"0.6875rem"}}>SaaS Platform</span>
+                    <span className="chip" style={{fontSize:"0.6875rem"}}>FinTech</span>
+                  </div>
+                  <div style={{fontFamily:"var(--font-heading)",fontWeight:700,fontSize:"0.9375rem",color:"var(--text-1)",marginBottom:"0.375rem"}}>FinServe Solutions</div>
+                  <div style={{fontSize:"0.8125rem",fontWeight:600,color:"var(--blue-light)",marginBottom:"0.625rem"}}>65% ticket deflection via AI</div>
+                  <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.65}}>Built a multi-tenant SaaS platform with a built-in AI support agent, Salesforce integration, and tiered billing — deployed and onboarding clients in 6 weeks.</p>
+                </div>
+              </RevealOnScroll>
+              <RevealOnScroll delay={70}>
+                <div className="card" style={{padding:"1.5rem",height:"100%"}}>
+                  <div style={{display:"flex",alignItems:"center",gap:"0.5rem",marginBottom:"0.875rem"}}>
+                    <span className="chip chip-blue" style={{fontSize:"0.6875rem"}}>Diagnostic SaaS</span>
+                    <span className="chip" style={{fontSize:"0.6875rem"}}>Healthcare</span>
+                  </div>
+                  <div style={{fontFamily:"var(--font-heading)",fontWeight:700,fontSize:"0.9375rem",color:"var(--text-1)",marginBottom:"0.375rem"}}>MedCare Diagnostics</div>
+                  <div style={{fontSize:"0.8125rem",fontWeight:600,color:"var(--blue-light)",marginBottom:"0.625rem"}}>600+ claims processed daily</div>
+                  <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.65}}>Developed a cloud-native SaaS for insurance claim processing with AI document extraction, insurer API integrations, and a white-label portal for partner clinics.</p>
+                </div>
+              </RevealOnScroll>
+              <RevealOnScroll delay={70}>
+                <div className="card" style={{padding:"1.5rem",height:"100%"}}>
+                  <div style={{display:"flex",alignItems:"center",gap:"0.5rem",marginBottom:"0.875rem"}}>
+                    <span className="chip chip-blue" style={{fontSize:"0.6875rem"}}>Fleet SaaS</span>
+                    <span className="chip" style={{fontSize:"0.6875rem"}}>Logistics</span>
+                  </div>
+                  <div style={{fontFamily:"var(--font-heading)",fontWeight:700,fontSize:"0.9375rem",color:"var(--text-1)",marginBottom:"0.375rem"}}>FastTrack Logistics</div>
+                  <div style={{fontSize:"0.8125rem",fontWeight:600,color:"var(--blue-light)",marginBottom:"0.625rem"}}>35% on-time delivery improvement</div>
+                  <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.65}}>Built a multi-tenant logistics SaaS offering GPS tracking, route optimisation, and digital POD for 3PL companies — with a white-label mobile app per client.</p>
+                </div>
+              </RevealOnScroll>
+          </div>
+        </div>
+      </section>
+
+
       {/* Client Case Studies */}
       <section className="section" style={{background:"var(--bg-raised)",borderTop:"1px solid var(--border)"}}>
         <div className="wrap">
