@@ -35,7 +35,7 @@ export default function AIChatbots() {
         <div className="wrap" style={{width:"100%"}}>
           <div className="hero-grid">
             <div>
-              <div style={{ display: "inline-flex", alignItems: "center", gap: "0.5rem", background: "var(--blue-dim)", border: "1px solid rgba(37,99,235,0.25)", borderRadius: "999px", padding: "0.3125rem 0.875rem", marginBottom: "1.25rem" }}>
+              <div style={{ display: "inline-flex", alignItems: "center", gap: "0.5rem", background: "var(--blue-dim)", border: "1px solid rgba(27,117,187,0.25)", borderRadius: "999px", padding: "0.3125rem 0.875rem", marginBottom: "1.25rem" }}>
                 <span style={{ width: "6px", height: "6px", borderRadius: "50%", background: "#22C55E", display: "block" }}></span>
                 <span style={{ fontSize: "0.75rem", fontWeight: 600, color: "#86EFAC" }}>73% avg containment rate</span>
               </div>

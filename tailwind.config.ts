@@ -4,14 +4,15 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        heading: ["Poppins", "'Segoe UI'", "system-ui", "sans-serif"],
-        body:    ["Inter",   "'Segoe UI'", "system-ui", "sans-serif"],
-        sans:    ["Inter",   "'Segoe UI'", "system-ui", "sans-serif"],
+        heading: ["Fraunces", "Georgia", "serif"],
+        body:    ["'Instrument Sans'", "'Segoe UI'", "system-ui", "sans-serif"],
+        sans:    ["'Instrument Sans'", "'Segoe UI'", "system-ui", "sans-serif"],
       },
       colors: {
-        navy: { 950: "#080F1C", 900: "#0F172A", 800: "#1E293B", 700: "#263349" },
-        blue: { accent: "#2563EB", light: "#3B82F6" },
-        slate: { muted: "#94A3B8", light: "#CBD5E1" },
+        indigo: { brand: "#2E3192", deep: "#23276F", ink: "#191C52" },
+        azure:  { DEFAULT: "#1B75BB", sky: "#29ABE2" },
+        flame:  { orange: "#F7941D", red: "#D8232A", gold: "#FBB040" },
+        paper:  { DEFAULT: "#FAF7F0", raised: "#FFFFFF", surface: "#F2EDE1" },
       },
     },
   },

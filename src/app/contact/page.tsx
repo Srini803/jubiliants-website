@@ -64,9 +64,9 @@ export default function Contact() {
       <section className="hero-section hero-section-inner" style={{background:"var(--bg-base)"}}>
         <div className="wrap">
           <div style={{maxWidth:"620px"}}>
-            <div className="hero-badge" style={{display:"inline-flex",alignItems:"center",gap:"0.5rem",background:"var(--blue-dim)",border:"1px solid rgba(37,99,235,0.25)",borderRadius:"999px",padding:"0.3125rem 0.875rem",marginBottom:"1.25rem"}}>
+            <div className="hero-badge" style={{display:"inline-flex",alignItems:"center",gap:"0.5rem",background:"rgba(21,128,61,0.08)",border:"1px solid rgba(21,128,61,0.28)",borderRadius:"999px",padding:"0.3125rem 0.875rem",marginBottom:"1.25rem"}}>
               <span style={{width:"6px",height:"6px",borderRadius:"50%",background:"var(--green)",display:"block"}}></span>
-              <span style={{fontSize:"0.75rem",fontWeight:600,color:"#86EFAC"}}>Response within 4 business hours</span>
+              <span style={{fontSize:"0.75rem",fontWeight:600,color:"var(--green)"}}>Response within 4 business hours</span>
             </div>
             <div className="section-label">Contact Us</div>
             <h1 className="t-h1" style={{marginBottom:"1rem"}}>Let's talk about your project</h1>
@@ -165,7 +165,7 @@ export default function Contact() {
                   <div style={{display:"flex",flexDirection:"column",gap:"1rem"}}>
                     <div style={{display:"flex",gap:"0.75rem"}}>
                       <div style={{width:"36px",height:"36px",borderRadius:"8px",background:"var(--blue-dim)",display:"flex",alignItems:"center",justifyContent:"center",flexShrink:0}}>
-                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 1.5A4.5 4.5 0 0113.5 6c0 3-4.5 8.5-5.5 8.5S2.5 9 2.5 6A4.5 4.5 0 018 1.5z" stroke="#3B82F6" strokeWidth="1.25"/><circle cx="8" cy="6" r="1.5" stroke="#3B82F6" strokeWidth="1.25"/></svg>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 1.5A4.5 4.5 0 0113.5 6c0 3-4.5 8.5-5.5 8.5S2.5 9 2.5 6A4.5 4.5 0 018 1.5z" stroke="#1B75BB" strokeWidth="1.25"/><circle cx="8" cy="6" r="1.5" stroke="#1B75BB" strokeWidth="1.25"/></svg>
                       </div>
                       <div>
                         <div style={{fontSize:"0.75rem",fontWeight:600,color:"var(--text-1)",marginBottom:"0.25rem"}}>Office Address</div>
@@ -186,7 +186,7 @@ export default function Contact() {
                     </div>
                     <div style={{display:"flex",gap:"0.75rem"}}>
                       <div style={{width:"36px",height:"36px",borderRadius:"8px",background:"var(--blue-dim)",display:"flex",alignItems:"center",justifyContent:"center",flexShrink:0}}>
-                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2 3h12v10H2z" rx="1" stroke="#3B82F6" strokeWidth="1.25"/><path d="M2 4l6 5 6-5" stroke="#3B82F6" strokeWidth="1.25"/></svg>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2 3h12v10H2z" rx="1" stroke="#1B75BB" strokeWidth="1.25"/><path d="M2 4l6 5 6-5" stroke="#1B75BB" strokeWidth="1.25"/></svg>
                       </div>
                       <div>
                         <div style={{fontSize:"0.75rem",fontWeight:600,color:"var(--text-1)",marginBottom:"0.25rem"}}>Email</div>
@@ -196,7 +196,7 @@ export default function Contact() {
 
                     <div style={{display:"flex",gap:"0.75rem"}}>
                       <div style={{width:"36px",height:"36px",borderRadius:"8px",background:"var(--blue-dim)",display:"flex",alignItems:"center",justifyContent:"center",flexShrink:0}}>
-                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="6.5" stroke="#3B82F6" strokeWidth="1.25"/><path d="M8 4v4l3 3" stroke="#3B82F6" strokeWidth="1.25" strokeLinecap="round"/></svg>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="6.5" stroke="#1B75BB" strokeWidth="1.25"/><path d="M8 4v4l3 3" stroke="#1B75BB" strokeWidth="1.25" strokeLinecap="round"/></svg>
                       </div>
                       <div>
                         <div style={{fontSize:"0.75rem",fontWeight:600,color:"var(--text-1)",marginBottom:"0.125rem"}}>Response Time</div>

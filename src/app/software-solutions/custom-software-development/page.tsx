@@ -39,7 +39,7 @@ export default function CustomSoftwareDevelopment() {
                 <Link href="/contact" className="btn btn-primary">Get a Free Consultation</Link>
                 <Link href="/case-studies" className="btn btn-secondary">View Case Studies</Link>
               </div>
-              <div style={{ padding: "0.875rem", background: "var(--blue-dim)", border: "1px solid rgba(37,99,235,.25)", borderRadius: "8px", fontSize: "0.8125rem", color: "#93C5FD" }}>
+              <div style={{ padding: "0.875rem", background: "rgba(41,171,226,0.08)", border: "1px solid rgba(27,117,187,.3)", borderRadius: "8px", fontSize: "0.8125rem", color: "#1B75BB" }}>
                 ✓ 300+ enterprise applications delivered since 2015
               </div>
             </div>
@@ -61,8 +61,8 @@ export default function CustomSoftwareDevelopment() {
             {solutions.map((s, i) => (
               <RevealOnScroll key={s.title} delay={i * 70}>
                 <div className="card" style={{padding:"1.5rem",height:"100%"}}>
-                  <div style={{width:"32px",height:"32px",borderRadius:"8px",background:"var(--blue-dim)",border:"1px solid rgba(37,99,235,0.2)",display:"flex",alignItems:"center",justifyContent:"center",marginBottom:"0.875rem"}}>
-                    <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><rect x="2" y="2" width="5" height="5" rx="1" fill="#3B82F6"/><rect x="9" y="2" width="5" height="5" rx="1" fill="#3B82F6" opacity="0.6"/><rect x="2" y="9" width="5" height="5" rx="1" fill="#3B82F6" opacity="0.6"/><rect x="9" y="9" width="5" height="5" rx="1" fill="#3B82F6" opacity="0.3"/></svg>
+                  <div style={{width:"32px",height:"32px",borderRadius:"8px",background:"var(--blue-dim)",border:"1px solid rgba(27,117,187,0.2)",display:"flex",alignItems:"center",justifyContent:"center",marginBottom:"0.875rem"}}>
+                    <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><rect x="2" y="2" width="5" height="5" rx="1" fill="#1B75BB"/><rect x="9" y="2" width="5" height="5" rx="1" fill="#1B75BB" opacity="0.6"/><rect x="2" y="9" width="5" height="5" rx="1" fill="#1B75BB" opacity="0.6"/><rect x="9" y="9" width="5" height="5" rx="1" fill="#1B75BB" opacity="0.3"/></svg>
                   </div>
                   <h3 className="t-h4" style={{marginBottom:"0.5rem"}}>{s.title}</h3>
                   <p className="t-small">{s.desc}</p>
@@ -91,7 +91,7 @@ export default function CustomSoftwareDevelopment() {
             ].map((p, i) => (
               <RevealOnScroll key={p.n} delay={i * 80}>
                 <div className="card-flat" style={{padding:"1.5rem",display:"flex",gap:"1rem"}}>
-                  <div style={{width:"36px",height:"36px",borderRadius:"8px",background:"var(--blue-dim)",border:"1px solid rgba(37,99,235,0.2)",display:"flex",alignItems:"center",justifyContent:"center",fontSize:"0.875rem",fontWeight:700,color:"var(--blue-light)",flexShrink:0}}>{p.n}</div>
+                  <div style={{width:"36px",height:"36px",borderRadius:"8px",background:"var(--blue-dim)",border:"1px solid rgba(27,117,187,0.2)",display:"flex",alignItems:"center",justifyContent:"center",fontSize:"0.875rem",fontWeight:700,color:"var(--blue-light)",flexShrink:0}}>{p.n}</div>
                   <div>
                     <div style={{fontWeight:600,fontSize:"0.9375rem",color:"var(--text-1)",marginBottom:"0.375rem"}}>{p.t}</div>
                     <p className="t-small">{p.d}</p>

@@ -3,7 +3,7 @@ interface CTABandProps { title: string; sub?: string; primary?: string; secondar
 export default function CTABand({ title, sub, primary="Book Free Consultation", secondary="View Case Studies" }: CTABandProps) {
   return (
     <section className="cta-band">
-      <div className="wrap" style={{padding:"4.5rem 1.5rem",textAlign:"center"}}>
+      <div className="wrap" style={{padding:"4.5rem 1.5rem",textAlign:"center",position:"relative"}}>
         <div style={{maxWidth:"600px",margin:"0 auto"}}>
           <h2 className="t-h2" style={{marginBottom:"0.875rem"}}>{title}</h2>
           {sub && <p className="t-body" style={{marginBottom:"2rem"}}>{sub}</p>}

@@ -1,7 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import Image from "next/image";
+import Logo from "@/components/Logo";
 
 const softwareSubs = [
   { label: "Custom Software Development", href: "/software-solutions/custom-software-development", desc: "Tailored enterprise applications" },
@@ -19,14 +19,6 @@ const aiSubs = [
   { label: "AI Chatbots", href: "/artificial-intelligence/ai-chatbots", desc: "Conversational AI assistants" },
   { label: "Machine Learning", href: "/artificial-intelligence/machine-learning", desc: "Predictive analytics & ML models" },
 ];
-
-const LogoSVG = () => (
-  <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <rect width="32" height="32" rx="8" fill="#2563EB"/>
-    <path d="M8 16L14 10L20 16L26 10" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
-    <path d="M8 22L14 16L20 22L26 16" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" opacity="0.5"/>
-  </svg>
-);
 
 const ChevronDown = () => (
   <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
@@ -50,16 +42,8 @@ export default function Navbar() {
     <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
       <div className="wrap" style={{width:"100%",display:"flex",alignItems:"center",justifyContent:"space-between"}}>
         {/* Logo */}
-        <Link href="/" style={{display:"flex",alignItems:"center",textDecoration:"none"}}>
-          <Image
-            src="/logo.jpg"
-            alt="Jubiliants Consulting — Delivering Success"
-            width={280}
-            height={92}
-            className="nav-logo"
-            style={{height:"80px",width:"auto",objectFit:"contain",display:"block"}}
-            priority
-          />
+        <Link href="/" aria-label="Jubiliants — home" style={{display:"flex",alignItems:"center",textDecoration:"none"}}>
+          <Logo size={46} />
         </Link>
 
         {/* Desktop */}
@@ -74,7 +58,7 @@ export default function Navbar() {
               {softwareSubs.map(s => (
                 <Link key={s.href} href={s.href} className="nav-dd-item">
                   <span className="nav-dd-icon">
-                    <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><rect x="2" y="2" width="5" height="5" rx="1" fill="#3B82F6"/><rect x="9" y="2" width="5" height="5" rx="1" fill="#3B82F6" opacity="0.5"/><rect x="2" y="9" width="5" height="5" rx="1" fill="#3B82F6" opacity="0.5"/><rect x="9" y="9" width="5" height="5" rx="1" fill="#3B82F6" opacity="0.3"/></svg>
+                    <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><rect x="2" y="2" width="5" height="5" rx="1" fill="#1B75BB"/><rect x="9" y="2" width="5" height="5" rx="1" fill="#1B75BB" opacity="0.55"/><rect x="2" y="9" width="5" height="5" rx="1" fill="#1B75BB" opacity="0.55"/><rect x="9" y="9" width="5" height="5" rx="1" fill="#F7941D" opacity="0.8"/></svg>
                   </span>
                   <div><div style={{fontSize:"0.8125rem",fontWeight:600,color:"var(--text-1)"}}>{s.label}</div><div style={{fontSize:"0.7rem",color:"var(--text-4)"}}>{s.desc}</div></div>
                 </Link>
@@ -90,7 +74,7 @@ export default function Navbar() {
               {aiSubs.map(s => (
                 <Link key={s.href} href={s.href} className="nav-dd-item">
                   <span className="nav-dd-icon">
-                    <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="3" fill="#06B6D4"/><circle cx="3" cy="5" r="1.5" fill="#06B6D4" opacity="0.6"/><circle cx="13" cy="5" r="1.5" fill="#06B6D4" opacity="0.6"/><circle cx="3" cy="11" r="1.5" fill="#06B6D4" opacity="0.6"/><circle cx="13" cy="11" r="1.5" fill="#06B6D4" opacity="0.6"/><line x1="8" y1="8" x2="3" y2="5" stroke="#06B6D4" strokeWidth="0.8" opacity="0.5"/><line x1="8" y1="8" x2="13" y2="5" stroke="#06B6D4" strokeWidth="0.8" opacity="0.5"/><line x1="8" y1="8" x2="3" y2="11" stroke="#06B6D4" strokeWidth="0.8" opacity="0.5"/><line x1="8" y1="8" x2="13" y2="11" stroke="#06B6D4" strokeWidth="0.8" opacity="0.5"/></svg>
+                    <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="3" fill="#29ABE2"/><circle cx="3" cy="5" r="1.5" fill="#29ABE2" opacity="0.6"/><circle cx="13" cy="5" r="1.5" fill="#29ABE2" opacity="0.6"/><circle cx="3" cy="11" r="1.5" fill="#29ABE2" opacity="0.6"/><circle cx="13" cy="11" r="1.5" fill="#29ABE2" opacity="0.6"/><line x1="8" y1="8" x2="3" y2="5" stroke="#29ABE2" strokeWidth="0.8" opacity="0.5"/><line x1="8" y1="8" x2="13" y2="5" stroke="#29ABE2" strokeWidth="0.8" opacity="0.5"/><line x1="8" y1="8" x2="3" y2="11" stroke="#29ABE2" strokeWidth="0.8" opacity="0.5"/><line x1="8" y1="8" x2="13" y2="11" stroke="#29ABE2" strokeWidth="0.8" opacity="0.5"/></svg>
                   </span>
                   <div><div style={{fontSize:"0.8125rem",fontWeight:600,color:"var(--text-1)"}}>{s.label}</div><div style={{fontSize:"0.7rem",color:"var(--text-4)"}}>{s.desc}</div></div>
                 </Link>
@@ -117,10 +101,10 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       {mobileOpen && (
-        <div className="mobile-menu-panel lg:hidden" style={{position:"absolute",left:0,right:0,background:"var(--bg-raised)",borderBottom:"1px solid var(--border)",padding:"1rem",maxHeight:"80vh",overflowY:"auto"}}>
+        <div className="mobile-menu-panel lg:hidden" style={{position:"absolute",left:0,right:0,background:"var(--bg-raised)",borderBottom:"1px solid var(--border)",boxShadow:"0 24px 48px -16px rgba(25,28,82,0.2)",padding:"1rem",maxHeight:"80vh",overflowY:"auto"}}>
           <div style={{display:"flex",flexDirection:"column",gap:"0.25rem"}}>
             <Link href="/" className="nav-link" onClick={() => setMobileOpen(false)}>Home</Link>
-            
+
             <button className="nav-link" style={{textAlign:"left",display:"flex",justifyContent:"space-between"}} onClick={() => setMobileEx(mobileEx==="sw"?null:"sw")}>
               Software Solutions <ChevronDown/>
             </button>

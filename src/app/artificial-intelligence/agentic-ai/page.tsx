@@ -23,9 +23,9 @@ const AIWorkflowDiagram = () => (
         <rect x="0" y="0" width="520" height="36" rx="14" fill="#1E293B"/>
         <rect x="0" y="24" width="520" height="12" fill="#1E293B"/>
         <circle cx="18" cy="18" r="5" fill="#EF4444" opacity=".7"/>
-        <circle cx="32" cy="18" r="5" fill="#F59E0B" opacity=".7"/>
+        <circle cx="32" cy="18" r="5" fill="#F7941D" opacity=".7"/>
         <circle cx="46" cy="18" r="5" fill="#22C55E" opacity=".7"/>
-        <text x="64" y="22" fontSize="8.5" fontWeight="600" fill="#93C5FD" fontFamily="Inter,sans-serif">Jubiliants Agentic AI Platform</text>
+        <text x="64" y="22" fontSize="8.5" fontWeight="600" fill="#8FD4F2" fontFamily="Inter,sans-serif">Jubiliants Agentic AI Platform</text>
         <rect x="400" y="10" width="108" height="16" rx="8" fill="rgba(34,197,94,.1)" stroke="rgba(34,197,94,.3)" strokeWidth=".5"/>
         <circle cx="410" cy="18" r="3" fill="#22C55E" className="hv-pulse"/>
         <text x="416" y="22" fontSize="7" fill="#86EFAC" fontFamily="Inter,sans-serif" fontWeight="500">All agents running</text>
@@ -57,13 +57,13 @@ const AIWorkflowDiagram = () => (
 
       {/* ── ORCHESTRATOR (centre) ── */}
       <g className="hv-g3">
-        <rect x="178" y="152" width="116" height="76" rx="10" fill="#1E3A8A" stroke="#2563EB" strokeWidth="1"/>
+        <rect x="178" y="152" width="116" height="76" rx="10" fill="#14548C" stroke="#1B75BB" strokeWidth="1"/>
         {/* Animated ring */}
-        <circle cx="236" cy="176" r="24" fill="none" stroke="#2563EB" strokeWidth="1" opacity=".3" className="hv-spin"/>
-        <circle cx="236" cy="176" r="18" fill="none" stroke="#3B82F6" strokeWidth="1" opacity=".4"/>
-        <circle cx="236" cy="176" r="10" fill="#2563EB" opacity=".8"/>
-        <circle cx="236" cy="176" r="5"  fill="#93C5FD"/>
-        <text x="200" y="216" fontSize="7.5" fontWeight="700" fill="#93C5FD" fontFamily="Inter,sans-serif">AI Orchestrator</text>
+        <circle cx="236" cy="176" r="24" fill="none" stroke="#1B75BB" strokeWidth="1" opacity=".3" className="hv-spin"/>
+        <circle cx="236" cy="176" r="18" fill="none" stroke="#2E9BD6" strokeWidth="1" opacity=".4"/>
+        <circle cx="236" cy="176" r="10" fill="#1B75BB" opacity=".8"/>
+        <circle cx="236" cy="176" r="5"  fill="#8FD4F2"/>
+        <text x="200" y="216" fontSize="7.5" fontWeight="700" fill="#8FD4F2" fontFamily="Inter,sans-serif">AI Orchestrator</text>
         <text x="202" y="227" fontSize="6"   fill="#475569" fontFamily="Inter,sans-serif">GPT-4o · Claude · Gemini</text>
       </g>
 
@@ -79,10 +79,10 @@ const AIWorkflowDiagram = () => (
         <text x="340" y="58" fontSize="7" fill="#64748B" fontFamily="Inter,sans-serif" fontWeight="600" letterSpacing=".08em">AI AGENTS</text>
         {[
           {y:64,  label:"Customer Support Agent",  status:"142 resolved today", sc:"#22C55E",bg:"rgba(34,197,94,.08)"},
-          {y:104, label:"Sales Development Agent", status:"38 leads qualified",  sc:"#3B82F6",bg:"rgba(59,130,246,.08)"},
+          {y:104, label:"Sales Development Agent", status:"38 leads qualified",  sc:"#2E9BD6",bg:"rgba(46,155,214,.08)"},
           {y:144, label:"HR & Recruitment Agent",  status:"12 CVs screened",    sc:"#8B5CF6",bg:"rgba(139,92,246,.08)"},
-          {y:184, label:"IT Helpdesk Agent",        status:"99% tickets auto",   sc:"#06B6D4",bg:"rgba(6,182,212,.08)"},
-          {y:224, label:"Knowledge Assistant",     status:"500+ queries/hr",    sc:"#F59E0B",bg:"rgba(245,158,11,.08)"},
+          {y:184, label:"IT Helpdesk Agent",        status:"99% tickets auto",   sc:"#29ABE2",bg:"rgba(6,182,212,.08)"},
+          {y:224, label:"Knowledge Assistant",     status:"500+ queries/hr",    sc:"#F7941D",bg:"rgba(245,158,11,.08)"},
           {y:264, label:"Finance Automation Agent",status:"₹ 2.4Cr processed",  sc:"#22C55E",bg:"rgba(34,197,94,.08)"},
         ].map(a=>(
           <g key={a.y}>
@@ -134,9 +134,9 @@ export default function AgenticAI() {
           <div className="hero-grid">
             {/* Left copy */}
             <div>
-              <div className="hero-badge" style={{display:"inline-flex",alignItems:"center",gap:"0.5rem",background:"var(--blue-dim)",border:"1px solid rgba(37,99,235,0.25)",borderRadius:"999px",padding:"0.3125rem 0.875rem",marginBottom:"1.25rem"}}>
-                <span style={{width:"6px",height:"6px",borderRadius:"50%",background:"#22C55E",display:"block"}} className="hv-pulse"></span>
-                <span style={{fontSize:"0.75rem",fontWeight:600,color:"#86EFAC"}}>Up to 70% reduction in manual task volume</span>
+              <div className="hero-badge" style={{display:"inline-flex",alignItems:"center",gap:"0.5rem",background:"rgba(251,176,64,0.14)",border:"1px solid rgba(247,148,29,0.35)",borderRadius:"999px",padding:"0.3125rem 0.875rem",marginBottom:"1.25rem"}}>
+                <span style={{width:"6px",height:"6px",borderRadius:"50%",background:"var(--orange)",display:"block"}} className="hv-pulse"></span>
+                <span style={{fontSize:"0.75rem",fontWeight:600,color:"var(--orange-deep)"}}>Up to 70% reduction in manual task volume</span>
               </div>
               <div className="section-label">AI Solutions</div>
               <h1 className="t-h1" style={{marginBottom:"1rem"}}>AI Agents That Work Autonomously Across Your Business</h1>

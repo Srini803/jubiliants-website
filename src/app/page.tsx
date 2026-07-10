@@ -24,10 +24,10 @@ const HeroDashboard = () => (
         <rect x="0" y="30" width="430" height="14" fill="#263349"/>
         {/* Traffic lights */}
         <circle cx="20" cy="22" r="6" fill="#EF4444" opacity=".85"/>
-        <circle cx="38" cy="22" r="6" fill="#F59E0B" opacity=".85"/>
+        <circle cx="38" cy="22" r="6" fill="#F7941D" opacity=".85"/>
         <circle cx="56" cy="22" r="6" fill="#22C55E" opacity=".85"/>
         {/* App title */}
-        <text x="74" y="26" fontSize="10" fontWeight="600" fill="#93C5FD" fontFamily="Inter,sans-serif">Jubiliants Enterprise Platform</text>
+        <text x="74" y="26" fontSize="10" fontWeight="600" fill="#8FD4F2" fontFamily="Inter,sans-serif">Jubiliants Enterprise Platform</text>
         {/* Live indicator */}
         <circle cx="408" cy="22" r="5" fill="#22C55E" className="hv-pulse"/>
         <text x="390" y="26" fontSize="7" fill="#86EFAC" fontFamily="Inter,sans-serif" textAnchor="end">Live</text>
@@ -42,8 +42,8 @@ const HeroDashboard = () => (
           {icon:"⚙", y:206, active:false},
         ].map((item,i)=>(
           <g key={i}>
-            {item.active && <rect x="2" y={item.y-14} width="68" height="28" rx="6" fill="#1E3A8A" opacity=".5"/>}
-            <text x="36" y={item.y+1} fontSize="14" fill={item.active?"#3B82F6":"#475569"} textAnchor="middle" fontFamily="Inter,sans-serif">{item.icon}</text>
+            {item.active && <rect x="2" y={item.y-14} width="68" height="28" rx="6" fill="#14548C" opacity=".5"/>}
+            <text x="36" y={item.y+1} fontSize="14" fill={item.active?"#2E9BD6":"#475569"} textAnchor="middle" fontFamily="Inter,sans-serif">{item.icon}</text>
           </g>
         ))}
 
@@ -75,15 +75,15 @@ const HeroDashboard = () => (
         ].map((b,i)=>(
           <g key={i} className={`bar-anim b${(i%6)+1}`}>
             <rect x={b.x} y={280-b.h} width="22" height={b.h} rx="3.5"
-              fill={i>5?"#60A5FA":i>3?"#3B82F6":"#2563EB"}
+              fill={i>5?"#29ABE2":i>3?"#2E9BD6":"#1B75BB"}
               opacity={0.55+(i/8)*0.45}/>
           </g>
         ))}
         {/* Trend line */}
         <polyline
           points="101,224 129,210 157,218 185,192 213,206 241,180 269,194 297,168"
-          stroke="#93C5FD" strokeWidth="2" fill="none" strokeLinecap="round" opacity=".85"/>
-        <circle cx="297" cy="168" r="4" fill="#3B82F6"/>
+          stroke="#8FD4F2" strokeWidth="2" fill="none" strokeLinecap="round" opacity=".85"/>
+        <circle cx="297" cy="168" r="4" fill="#2E9BD6"/>
         {/* X labels */}
         {["Q1","Q2","Q3","Q4","Q1","Q2","Q3","Q4"].map((q,i)=>(
           <text key={i} x={97+i*28} y="294" fontSize="7" fill="#475569" fontFamily="Inter,sans-serif" textAnchor="middle">{q}</text>
@@ -91,18 +91,18 @@ const HeroDashboard = () => (
 
         {/* Donut chart */}
         <circle cx="385" cy="208" r="44" fill="none" stroke="#263349" strokeWidth="14"/>
-        <circle cx="385" cy="208" r="44" fill="none" stroke="#2563EB" strokeWidth="14"
+        <circle cx="385" cy="208" r="44" fill="none" stroke="#1B75BB" strokeWidth="14"
           strokeDasharray="110 167" strokeLinecap="round"/>
-        <circle cx="385" cy="208" r="44" fill="none" stroke="#3B82F6" strokeWidth="14"
+        <circle cx="385" cy="208" r="44" fill="none" stroke="#2E9BD6" strokeWidth="14"
           strokeDasharray="55 222" strokeDashoffset="-110" strokeLinecap="round" opacity=".7"/>
-        <circle cx="385" cy="208" r="44" fill="none" stroke="#60A5FA" strokeWidth="14"
+        <circle cx="385" cy="208" r="44" fill="none" stroke="#29ABE2" strokeWidth="14"
           strokeDasharray="32 245" strokeDashoffset="-165" strokeLinecap="round" opacity=".45"/>
         <text x="385" y="203" fontSize="14" fontWeight="700" fill="#F8FAFC" fontFamily="Inter,sans-serif" textAnchor="middle">63%</text>
         <text x="385" y="218" fontSize="7" fill="#94A3B8" fontFamily="Inter,sans-serif" textAnchor="middle">Software</text>
         {[
-          {c:"#2563EB",l:"Software Dev",y:262},
-          {c:"#3B82F6",l:"AI & Automation",y:274},
-          {c:"#60A5FA",l:"Mobile & Cloud",y:286},
+          {c:"#1B75BB",l:"Software Dev",y:262},
+          {c:"#2E9BD6",l:"AI & Automation",y:274},
+          {c:"#29ABE2",l:"Mobile & Cloud",y:286},
         ].map(lg=>(
           <g key={lg.l}>
             <rect x="348" y={lg.y-7} width="8" height="8" rx="2" fill={lg.c}/>
@@ -115,7 +115,7 @@ const HeroDashboard = () => (
         <text x="80" y="318" fontSize="8.5" fontWeight="600" fill="#CBD5E1" fontFamily="Inter,sans-serif">Active Engagements</text>
         {[
           {n:"ERP Platform — Varun Industries",s:"Live",sc:"#22C55E",bg:"rgba(34,197,94,.1)",y:330},
-          {n:"AI Agent — FinServe Solutions",s:"Testing",sc:"#F59E0B",bg:"rgba(245,158,11,.1)",y:348},
+          {n:"AI Agent — FinServe Solutions",s:"Testing",sc:"#F7941D",bg:"rgba(245,158,11,.1)",y:348},
           {n:"HIMS — Apollo Health Group",s:"Live",sc:"#22C55E",bg:"rgba(34,197,94,.1)",y:366},
         ].map(r=>(
           <g key={r.y}>
@@ -128,13 +128,13 @@ const HeroDashboard = () => (
 
       {/* ── AI INSIGHTS CARD (floats top-right, larger) ── */}
       <g className="hv-g3 hv-float" style={{transformOrigin:"540px 60px"}}>
-        <rect x="446" y="10" width="186" height="158" rx="14" fill="#1E293B" stroke="#2563EB" strokeWidth="1.5" strokeOpacity=".6"/>
+        <rect x="446" y="10" width="186" height="158" rx="14" fill="#1E293B" stroke="#1B75BB" strokeWidth="1.5" strokeOpacity=".6"/>
         <rect x="446" y="10" width="186" height="42" rx="14" fill="#0D1F3C"/>
         <rect x="446" y="38" width="186" height="14" fill="#0D1F3C"/>
         {/* Icon */}
-        <rect x="458" y="20" width="18" height="18" rx="5" fill="#2563EB" opacity=".7"/>
+        <rect x="458" y="20" width="18" height="18" rx="5" fill="#1B75BB" opacity=".7"/>
         <text x="467" y="33" fontSize="10" textAnchor="middle" fill="white" fontFamily="Inter,sans-serif">✦</text>
-        <text x="482" y="34" fontSize="9" fontWeight="600" fill="#93C5FD" fontFamily="Inter,sans-serif">AI Insights Engine</text>
+        <text x="482" y="34" fontSize="9" fontWeight="600" fill="#8FD4F2" fontFamily="Inter,sans-serif">AI Insights Engine</text>
         <circle cx="620" cy="29" r="5.5" fill="#22C55E" className="hv-pulse"/>
         {/* Content */}
         <text x="458" y="64" fontSize="7" fill="#475569" fontFamily="Inter,sans-serif" fontWeight="600" letterSpacing=".08em">ANOMALY DETECTED</text>
@@ -144,8 +144,8 @@ const HeroDashboard = () => (
         <rect x="458" y="102" width="164" height="44" rx="6" fill="#0F172A"/>
         <polyline
           points="466,138 480,130 494,134 510,120 526,124 542,110 558,114 574,104 588,108 606,96"
-          stroke="#3B82F6" strokeWidth="2" fill="none" strokeLinecap="round"/>
-        <circle cx="606" cy="96" r="3.5" fill="#60A5FA"/>
+          stroke="#2E9BD6" strokeWidth="2" fill="none" strokeLinecap="round"/>
+        <circle cx="606" cy="96" r="3.5" fill="#29ABE2"/>
         <text x="458" y="156" fontSize="7" fill="#475569" fontFamily="Inter,sans-serif">847 events/min · Real-time</text>
       </g>
 
@@ -155,7 +155,7 @@ const HeroDashboard = () => (
         <rect x="470" y="204" width="72" height="8" rx="4" fill="#334155"/>
         <rect x="452" y="220" width="108" height="184" rx="10" fill="#0F172A"/>
         {/* App header */}
-        <rect x="452" y="220" width="108" height="32" rx="10" fill="#1E3A8A"/>
+        <rect x="452" y="220" width="108" height="32" rx="10" fill="#14548C"/>
         <text x="506" y="240" fontSize="9.5" fontWeight="600" fill="white" textAnchor="middle" fontFamily="Inter,sans-serif">Portal</text>
         <circle cx="550" cy="236" r="8" fill="#EF4444"/>
         <text x="550" y="239.5" fontSize="7.5" fontWeight="700" fill="white" textAnchor="middle" fontFamily="Inter,sans-serif">3</text>
@@ -171,10 +171,10 @@ const HeroDashboard = () => (
         <text x="462" y="318" fontSize="6.5" fill="#94A3B8" fontFamily="Inter,sans-serif">Weekly Activity</text>
         {[{x:462,h:20},{x:477,h:26},{x:492,h:22},{x:507,h:30},{x:522,h:25},{x:537,h:28}].map((b,i)=>(
           <rect key={i} x={b.x} y={350-b.h} width="11" height={b.h} rx="2.5"
-            fill={i>3?"#3B82F6":"#2563EB"} opacity={.55+i*.07}/>
+            fill={i>3?"#2E9BD6":"#1B75BB"} opacity={.55+i*.07}/>
         ))}
         {/* CTA button */}
-        <rect x="456" y="364" width="98" height="26" rx="7" fill="#2563EB"/>
+        <rect x="456" y="364" width="98" height="26" rx="7" fill="#1B75BB"/>
         <text x="505" y="381" fontSize="8.5" fontWeight="600" fill="white" textAnchor="middle" fontFamily="Inter,sans-serif">View Report</text>
         {/* Home bar */}
         <rect x="484" y="400" width="44" height="5" rx="2.5" fill="#334155"/>
@@ -217,10 +217,10 @@ const stats = [
 ];
 
 const testimonials = [
-  {quote:"Jubiliants delivered our ERP platform on time and within budget. The system has transformed how we manage production planning, inventory, and reporting across all our facilities.",name:"James Hartley",title:"VP Operations",company:"Mayville Engineering",initials:"JH",color:"#1D4ED8"},
-  {quote:"Their team built our field service management system from scratch and integrated it with our existing supply chain tools. The visibility we now have into our operations is outstanding.",name:"Stefan Brandt",title:"Head of Digital Solutions",company:"Schmalz GmbH",initials:"SB",color:"#0E7490"},
-  {quote:"We deployed an AI-powered automation system with Jubiliants and reduced our manual processing time by over 70%. The quality and speed of delivery exceeded our expectations.",name:"Michael Rourke",title:"Chief Technology Officer",company:"Powell Industries",initials:"MR",color:"#6D28D9"},
-  {quote:"The custom platform they built for us handles thousands of transactions daily, seamlessly. Our operations team and clients all love how intuitive it is. Exceptional work.",name:"David Tennant",title:"Director of Technology",company:"Dutco Tennant LLC",initials:"DT",color:"#065F46"},
+  {quote:"Jubiliants delivered our ERP platform on time and within budget. The system has transformed how we manage production planning, inventory, and reporting across all our facilities.",name:"James Hartley",title:"VP Operations",company:"Mayville Engineering",initials:"JH",color:"#2E3192"},
+  {quote:"Their team built our field service management system from scratch and integrated it with our existing supply chain tools. The visibility we now have into our operations is outstanding.",name:"Stefan Brandt",title:"Head of Digital Solutions",company:"Schmalz GmbH",initials:"SB",color:"#1B75BB"},
+  {quote:"We deployed an AI-powered automation system with Jubiliants and reduced our manual processing time by over 70%. The quality and speed of delivery exceeded our expectations.",name:"Michael Rourke",title:"Chief Technology Officer",company:"Powell Industries",initials:"MR",color:"#D97706"},
+  {quote:"The custom platform they built for us handles thousands of transactions daily, seamlessly. Our operations team and clients all love how intuitive it is. Exceptional work.",name:"David Tennant",title:"Director of Technology",company:"Dutco Tennant LLC",initials:"DT",color:"#14548C"},
 ];
 
 const industries = [
@@ -267,9 +267,9 @@ export default function Home() {
           <div className="hero-grid">
             {/* Left copy */}
             <div>
-              <div className="hero-badge" style={{display:"inline-flex",alignItems:"center",gap:"0.5rem",background:"var(--blue-dim)",border:"1px solid rgba(37,99,235,0.25)",borderRadius:"999px",padding:"0.3125rem 0.875rem",marginBottom:"1.5rem"}}>
-                <span style={{width:"6px",height:"6px",borderRadius:"50%",background:"var(--blue-light)",display:"block"}}></span>
-                <span style={{fontSize:"0.75rem",fontWeight:600,color:"#93C5FD"}}>Trusted by 200+ businesses since 2015</span>
+              <div className="hero-badge" style={{display:"inline-flex",alignItems:"center",gap:"0.5rem",background:"rgba(251,176,64,0.14)",border:"1px solid rgba(247,148,29,0.35)",borderRadius:"999px",padding:"0.3125rem 0.875rem",marginBottom:"1.5rem"}}>
+                <span style={{width:"6px",height:"6px",borderRadius:"50%",background:"var(--orange)",display:"block"}}></span>
+                <span style={{fontSize:"0.75rem",fontWeight:600,color:"var(--orange-deep)"}}>Trusted by 200+ businesses since 2015</span>
               </div>
               <h1 className="t-hero" style={{marginBottom:"1.25rem"}}>
                 Building Intelligent Software Solutions That{" "}
@@ -300,7 +300,7 @@ export default function Home() {
       </section>
 
       {/* ── LOGO TICKER ── */}
-      <section style={{background:"#080F1C",borderBottom:"1px solid var(--border)",padding:"1.125rem 0",overflow:"hidden"}}>
+      <section style={{background:"var(--bg-surface)",borderBottom:"1px solid var(--border)",padding:"1.125rem 0",overflow:"hidden"}}>
         <div style={{marginBottom:"0.5rem",textAlign:"center"}}>
           <span className="t-label">Trusted by leading organisations across India</span>
         </div>
@@ -332,7 +332,7 @@ export default function Home() {
                   <div className="card" style={{padding:"1.75rem",height:"100%"}}>
                     <div style={{display:"flex",alignItems:"center",justifyContent:"space-between",marginBottom:"1rem"}}>
                       <span className="chip chip-blue">{s.label}</span>
-                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="#3B82F6" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="#1B75BB" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
                     </div>
                     <h3 className="t-h3" style={{marginBottom:"0.625rem"}}>{s.title}</h3>
                     <p className="t-body" style={{marginBottom:"1.25rem"}}>{s.desc}</p>
@@ -416,7 +416,7 @@ export default function Home() {
               <RevealOnScroll key={p.step} delay={i*80}>
                 <div>
                   <div style={{display:"flex",alignItems:"center",gap:"0.75rem",marginBottom:"1rem"}}>
-                    <div style={{width:"36px",height:"36px",borderRadius:"8px",background:"var(--blue-dim)",border:"1px solid rgba(37,99,235,0.2)",display:"flex",alignItems:"center",justifyContent:"center",fontSize:"0.8125rem",fontFamily:"var(--font-heading)",fontWeight:600,color:"var(--blue-light)",flexShrink:0}}>{p.step}</div>
+                    <div style={{width:"36px",height:"36px",borderRadius:"8px",background:"var(--blue-dim)",border:"1px solid rgba(27,117,187,0.2)",display:"flex",alignItems:"center",justifyContent:"center",fontSize:"0.8125rem",fontFamily:"var(--font-heading)",fontWeight:600,color:"var(--blue-light)",flexShrink:0}}>{p.step}</div>
                     {i<3&&<div style={{flex:1,height:"1px",background:"var(--border)"}}></div>}
                   </div>
                   <h4 className="t-h4" style={{marginBottom:"0.5rem"}}>{p.title}</h4>
@@ -449,8 +449,8 @@ export default function Home() {
               <div style={{display:"grid",gap:"1rem"}}>
                 {whyUs.map(w=>(
                   <div key={w.title} className="card-flat" style={{padding:"1.25rem"}}>
-                    <div style={{width:"28px",height:"28px",borderRadius:"6px",background:"var(--blue-dim)",border:"1px solid rgba(37,99,235,0.2)",display:"flex",alignItems:"center",justifyContent:"center",marginBottom:"0.75rem"}}>
-                      <svg width="13" height="13" viewBox="0 0 16 16" fill="none"><path d="M3 8l3 3 7-7" stroke="#3B82F6" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
+                    <div style={{width:"28px",height:"28px",borderRadius:"6px",background:"var(--blue-dim)",border:"1px solid rgba(27,117,187,0.2)",display:"flex",alignItems:"center",justifyContent:"center",marginBottom:"0.75rem"}}>
+                      <svg width="13" height="13" viewBox="0 0 16 16" fill="none"><path d="M3 8l3 3 7-7" stroke="#1B75BB" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
                     </div>
                     <div style={{fontFamily:"var(--font-heading)",fontSize:"0.875rem",fontWeight:600,color:"var(--text-1)",marginBottom:"0.25rem"}}>{w.title}</div>
                     <p className="t-small">{w.desc}</p>
@@ -476,7 +476,7 @@ export default function Home() {
               <RevealOnScroll key={t.name} delay={i*80}>
                 <div className="testimonial-card">
                   <div style={{display:"flex",marginBottom:"1rem",gap:"2px"}}>
-                    {[1,2,3,4,5].map(s=><svg key={s} width="14" height="14" viewBox="0 0 16 16" fill="#F59E0B"><path d="M8 1l2.2 4.5L15 6.3l-3.5 3.4.8 4.8L8 12.1l-4.3 2.4.8-4.8L1 6.3l4.8-.8z"/></svg>)}
+                    {[1,2,3,4,5].map(s=><svg key={s} width="14" height="14" viewBox="0 0 16 16" fill="#F7941D"><path d="M8 1l2.2 4.5L15 6.3l-3.5 3.4.8 4.8L8 12.1l-4.3 2.4.8-4.8L1 6.3l4.8-.8z"/></svg>)}
                   </div>
                   <p style={{fontSize:"0.9375rem",lineHeight:1.7,color:"var(--text-2)",marginBottom:"1.25rem"}}>"{t.quote}"</p>
                   <div style={{display:"flex",alignItems:"center",gap:"0.75rem"}}>

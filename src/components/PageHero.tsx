@@ -8,13 +8,17 @@ interface PageHeroProps {
 }
 export default function PageHero({ eyebrow, title, subtitle, cta1, cta2, badge }: PageHeroProps) {
   return (
-    <section style={{background:"var(--bg-base)",borderBottom:"1px solid var(--border)",padding:"4.5rem 0 4rem"}}>
-      <div className="wrap">
+    <section style={{position:"relative",borderBottom:"1px solid var(--border)",padding:"4.5rem 0 4rem",overflow:"hidden"}}>
+      {/* oversized star watermark */}
+      <svg aria-hidden="true" viewBox="0 0 24 24" style={{position:"absolute",right:"-70px",top:"-90px",width:"380px",height:"380px",opacity:0.06,transform:"rotate(12deg)"}}>
+        <path fill="#F7941D" d="M12 0c1.2 6.4 4.4 9.6 12 12-7.6 2.4-10.8 5.6-12 12-1.2-6.4-4.4-9.6-12-12C7.6 9.6 10.8 6.4 12 0z"/>
+      </svg>
+      <div className="wrap" style={{position:"relative"}}>
         <div style={{maxWidth:"720px"}}>
           {badge && (
-            <div style={{display:"inline-flex",alignItems:"center",gap:"0.5rem",background:"var(--blue-dim)",border:"1px solid rgba(37,99,235,0.25)",borderRadius:"999px",padding:"0.3125rem 0.875rem",marginBottom:"1.25rem"}}>
-              <span style={{width:"6px",height:"6px",borderRadius:"50%",background:"var(--blue-light)",display:"block"}}></span>
-              <span style={{fontSize:"0.75rem",fontWeight:600,color:"#93C5FD"}}>{badge}</span>
+            <div style={{display:"inline-flex",alignItems:"center",gap:"0.5rem",background:"rgba(251,176,64,0.14)",border:"1px solid rgba(247,148,29,0.35)",borderRadius:"999px",padding:"0.3125rem 0.875rem",marginBottom:"1.25rem"}}>
+              <span style={{width:"6px",height:"6px",borderRadius:"50%",background:"var(--orange)",display:"block"}}></span>
+              <span style={{fontSize:"0.75rem",fontWeight:600,color:"var(--orange-deep)"}}>{badge}</span>
             </div>
           )}
           <div className="section-label">{eyebrow}</div>

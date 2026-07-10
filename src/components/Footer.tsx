@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Image from "next/image";
+import Logo from "@/components/Logo";
 
 const cols = [
   { heading: "Software Solutions", links: [
@@ -29,35 +29,35 @@ const cols = [
 
 export default function Footer() {
   return (
-    <footer style={{background:"#080F1C",borderTop:"1px solid var(--border)"}}>
+    <footer style={{background:"var(--ink)",borderTop:"3px solid var(--gold)"}}>
       <div className="wrap" style={{padding:"4rem 1.5rem 2rem"}}>
         <div className="footer-grid">
           {/* Brand col */}
           <div>
-            <div style={{marginBottom:"1rem"}}>
-              <Image src="/logo.jpg" alt="Jubiliants Consulting" width={180} height={60}
-                style={{height:"52px",width:"auto",objectFit:"contain",display:"block"}} />
+            <div style={{marginBottom:"1.25rem"}}>
+              <Logo size={46} light />
             </div>
-            <p style={{fontSize:"0.875rem",color:"var(--text-3)",lineHeight:1.65,marginBottom:"1.25rem"}}>Custom software development and AI solutions company. Building intelligent software that drives business growth since 2015.</p>
-            <div style={{fontSize:"0.8125rem",color:"var(--text-4)",lineHeight:1.7}}>
+            <p style={{fontSize:"0.875rem",color:"rgba(245,242,234,0.62)",lineHeight:1.65,marginBottom:"1.25rem"}}>Custom software development and AI solutions company. Building intelligent software that drives business growth since 2015.</p>
+            <div style={{fontSize:"0.8125rem",color:"rgba(245,242,234,0.45)",lineHeight:1.7}}>
               <div>08th Floor, SLN Terminus, Survey No. 133</div>
               <div>Beside Botanical Gardens, Gachibowli</div>
               <div>Hyderabad, Telangana 500032, India</div>
-              <a href="mailto:info@jubiliants.com" style={{color:"var(--blue-light)",marginTop:"0.5rem",display:"block"}}>info@jubiliants.com</a>
+              <a href="mailto:info@jubiliants.com" style={{color:"var(--sky)",marginTop:"0.5rem",display:"block"}}>info@jubiliants.com</a>
             </div>
           </div>
           {/* Nav cols */}
           {cols.map(col => (
             <div key={col.heading}>
-              <div style={{fontSize:"0.75rem",fontWeight:600,letterSpacing:"0.07em",textTransform:"uppercase",color:"var(--text-3)",marginBottom:"1rem"}}>{col.heading}</div>
+              <div style={{fontSize:"0.75rem",fontWeight:600,letterSpacing:"0.14em",textTransform:"uppercase",color:"var(--gold)",marginBottom:"1rem"}}>{col.heading}</div>
               <ul style={{listStyle:"none",display:"flex",flexDirection:"column",gap:"0.5rem"}}>
                 {col.links.map(l => <li key={l.href}><Link href={l.href} className="footer-link">{l.label}</Link></li>)}
               </ul>
             </div>
           ))}
         </div>
-        <div style={{borderTop:"1px solid var(--border)",paddingTop:"1.5rem",display:"flex",flexWrap:"wrap",justifyContent:"space-between",alignItems:"center",gap:"0.75rem"}}>
-          <p style={{fontSize:"0.8125rem",color:"var(--text-4)"}}>&copy; 2015 Jubiliants Software Solutions All rights reserved.</p>
+        <div style={{borderTop:"1px solid rgba(245,242,234,0.12)",paddingTop:"1.5rem",display:"flex",flexWrap:"wrap",justifyContent:"space-between",alignItems:"center",gap:"0.75rem"}}>
+          <p style={{fontSize:"0.8125rem",color:"rgba(245,242,234,0.45)"}}>&copy; 2015 Jubiliants Software Solutions. All rights reserved.</p>
+          <p style={{fontFamily:"var(--font-heading)",fontStyle:"italic",fontSize:"0.875rem",color:"rgba(245,242,234,0.55)"}}>Delivering Success<span style={{color:"var(--gold)"}}> ✦</span></p>
         </div>
       </div>
     </footer>

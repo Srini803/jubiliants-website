@@ -88,7 +88,7 @@ export default function CloudSolutions() {
                   <ul style={{ listStyle: "none", display: "flex", flexDirection: "column", gap: "0.5rem" }}>
                     {p.services.map(s => (
                       <li key={s} style={{ display: "flex", alignItems: "center", gap: "0.5rem", fontSize: "0.875rem", color: "var(--text-2)" }}>
-                        <svg width="12" height="12" viewBox="0 0 16 16" fill="none" style={{ flexShrink: 0 }}><path d="M3 8l3 3 7-7" stroke="#3B82F6" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" /></svg>
+                        <svg width="12" height="12" viewBox="0 0 16 16" fill="none" style={{ flexShrink: 0 }}><path d="M3 8l3 3 7-7" stroke="#1B75BB" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" /></svg>
                         {s}
                       </li>
                     ))}

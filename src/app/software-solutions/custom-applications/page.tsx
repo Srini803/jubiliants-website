@@ -43,7 +43,7 @@ export default function CustomApplications() {
                 <Link href="/contact" className="btn btn-primary">Discuss Your Project</Link>
                 <Link href="/case-studies" className="btn btn-secondary">View Case Studies</Link>
               </div>
-              <div style={{ padding: "0.875rem", background: "var(--blue-dim)", border: "1px solid rgba(37,99,235,.25)", borderRadius: "8px", fontSize: "0.8125rem", color: "#93C5FD" }}>
+              <div style={{ padding: "0.875rem", background: "rgba(41,171,226,0.08)", border: "1px solid rgba(27,117,187,.3)", borderRadius: "8px", fontSize: "0.8125rem", color: "#1B75BB" }}>
                 ✓ 300+ custom applications delivered across 8 industries since 2015
               </div>
             </div>
