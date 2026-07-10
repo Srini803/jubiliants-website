@@ -184,16 +184,16 @@ const HeroDashboard = () => (
       <g className="hv-g5">
         {[
           {label:"React / Next.js",x:0},
-          {label:"Azure AI",x:110},
-          {label:".NET / Node.js",x:210},
-          {label:"Flutter",x:316},
-          {label:"PostgreSQL",x:400},
-          {label:"Docker / K8s",x:494},
+          {label:"Azure AI",x:133},
+          {label:".NET / Node.js",x:217},
+          {label:"Flutter",x:343},
+          {label:"PostgreSQL",x:420},
+          {label:"Docker / K8s",x:518},
         ].map(b=>(
           <g key={b.label}>
             <rect x={b.x} y="492" width={b.label.length*7+16} height="20" rx="10"
-              fill="#1E293B" stroke="#334155" strokeWidth=".75"/>
-            <text x={b.x+(b.label.length*7+16)/2} y="505.5" fontSize="7" fill="#64748B"
+              fill="#FFFFFF" stroke="rgba(35,39,111,0.22)" strokeWidth=".75"/>
+            <text x={b.x+(b.label.length*7+16)/2} y="505.5" fontSize="7" fill="#6A6D8E"
               fontFamily="Inter,sans-serif" textAnchor="middle">{b.label}</text>
           </g>
         ))}
