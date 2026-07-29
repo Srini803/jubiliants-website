@@ -75,15 +75,15 @@ export default function ComputerVision() {
           <RevealOnScroll>
             <div style={{ textAlign: "center", maxWidth: "560px", margin: "0 auto 2.5rem" }}>
               <div className="section-label" style={{ justifyContent: "center" }}>How it works</div>
-              <h2 className="t-h2">Built on your existing cameras — no hardware replacement</h2>
+              <h2 className="t-h2">Transform Your Existing CCTV into an AI-Powered Intelligence Platform</h2>
             </div>
           </RevealOnScroll>
           <div style={{ display: "grid", gap: "1rem" }} className="grid grid-cols-2 lg:grid-cols-4">
             {[
-              { cat: "Integration", items: ["Works with existing CCTV/IP cameras", "RTSP / ONVIF protocol support", "No camera hardware replacement", "Cloud or on-premise deployment"] },
-              { cat: "Detection Models", items: ["YOLOv8 / YOLOv9", "Custom fine-tuned models", "Pose & PPE detection", "Fire/smoke classifiers"] },
-              { cat: "Alerting", items: ["SMS, email & dashboard alerts", "Auto-routing to security teams", "Timestamped video clips", "Escalation workflows"] },
-              { cat: "Infrastructure", items: ["Edge inference — NVIDIA Jetson", "ONNX Runtime / TensorRT", "Multi-site central dashboard", "Audit-ready incident logs"] },
+              { cat: "Connect Cameras", items: ["Existing CCTV Compatible", "RTSP & ONVIF Support", "Cloud or On-Premise", "No Hardware Replacement"] },
+              { cat: "AI Detection", items: ["Detect Risks in Real Time", "PPE & Safety Compliance", "Fire, Smoke & Intrusion Detection", "Custom AI Models"] },
+              { cat: "Smart Alerts", items: ["Instant Notifications", "Email, SMS & Mobile Alerts", "Timestamped Video Evidence", "Escalation Workflows"] },
+              { cat: "Actionable Insights", items: ["Centralized Dashboard", "Incident Analytics", "Compliance Reports", "Audit-Ready Logs"] },
             ].map((t, i) => (
               <RevealOnScroll key={t.cat} delay={i * 80}>
                 <div className="card-flat" style={{ padding: "1.25rem" }}>
