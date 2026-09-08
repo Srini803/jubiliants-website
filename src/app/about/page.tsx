@@ -227,6 +227,7 @@ export default function About() {
           <div style={{textAlign:"center",marginBottom:"2.5rem"}}>
             <div className="section-label" style={{justifyContent:"center"}}>Our offices</div>
             <h2 className="t-h2">Where to find us</h2>
+            <p className="t-body" style={{marginTop:"0.75rem"}}>For all enquiries: <a href="mailto:info@jubiliants.com" style={{color:"var(--blue-light)"}}>info@jubiliants.com</a></p>
           </div>
           <div style={{display:"grid",gap:"1.5rem"}} className="grid grid-cols-1 md:grid-cols-3">
             <div className="card" style={{padding:"2rem"}}>
@@ -238,7 +239,6 @@ export default function About() {
                 </div>
               </div>
               <p className="t-body" style={{lineHeight:1.8}}>08th Floor, SLN Terminus, Survey No. 133, Beside Botanical Gardens, Gachibowli, Hyderabad, Telangana 500032, India</p>
-              <a href="mailto:info@jubiliants.com" style={{color:"var(--blue-light)",fontSize:"0.875rem",marginTop:"0.75rem",display:"inline-block"}}>info@jubiliants.com</a>
             </div>
             <div className="card" style={{padding:"2rem"}}>
               <div style={{display:"flex",alignItems:"center",gap:"0.75rem",marginBottom:"1rem"}}>
