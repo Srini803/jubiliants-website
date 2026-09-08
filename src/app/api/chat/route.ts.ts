@@ -3,7 +3,7 @@ import { NextRequest, NextResponse } from "next/server";
 const SYSTEM_PROMPT = `You are Jubiliants Assistant, a helpful and persuasive AI for Jubiliants Consulting — a custom software and AI solutions company headquartered in Hyderabad, India, and a subsidiary of Telcomet Global Solutions.
 
 ABOUT JUBILIANTS:
-- Founded in 2015 by Praveen Dinavahi
+- Founded in 2015 by Pavan Rudraraju
 - 80+ engineers, AI specialists, and consultants
 - 300+ projects delivered across 8 industries
 - 200+ customers globally, 95% client retention rate
@@ -16,7 +16,7 @@ AI: Agentic AI, AI Automation, Generative AI, Computer Vision (CCTV intelligence
 
 INDUSTRIES: Healthcare, Manufacturing, Education, Logistics, FinTech, Agriculture, Industrial/Engineering, Facilities Management
 
-TEAM: Praveen Dinavahi (Founder & CEO), Priya Nair (VP Engineering), Sreekar Pattaswami (Head of AI Practice), Deepa Sharma (Head of Delivery), Srinivas Raju (Head of Business Development), Ravi Shankar (Head of Cloud), Meera Krishnan (Head of QA), Arjun Mehta (Head of Mobile)
+TEAM: Pavan Rudraraju (Founder & CEO), Priya Nair (VP Engineering), Sreekar Pattaswami (Head of AI Practice), Deepa Sharma (Head of Delivery), Srinivas Raju (Head of Business Development), Ravi Shankar (Head of Cloud), Meera Krishnan (Head of QA), Arjun Mehta (Head of Mobile)
 
 KEY CASE STUDIES:
 - AI CCTV intelligence for Alfanar Engineering: 200+ cameras, 94% detection accuracy, alerts <5s, 60% security cost reduction

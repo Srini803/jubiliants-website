@@ -31,7 +31,7 @@ const values = [
 ];
 
 const leadership = [
-  {name:"Praveen Dinavahi",role:"Founder & CEO",initials:"PD",color:"#2E3192",bio:"20+ years in enterprise software. Led digital transformation programmes for manufacturing and healthcare organisations before founding Jubiliants in 2015."},
+  {name:"Pavan Rudraraju",role:"Founder & CEO",initials:"PR",color:"#2E3192",bio:"20+ years in enterprise software. Led digital transformation programmes for manufacturing and healthcare organisations before founding Jubiliants in 2015."},
   {name:"Priya Nair",role:"VP Engineering",initials:"PN",color:"#1B75BB",bio:"Former Infosys architect with deep expertise in distributed systems and cloud infrastructure. Leads Jubiliants' engineering standards and delivery practices."},
   {name:"Sreekar Pattaswami",role:"Head of AI Practice",initials:"SP",color:"#D97706",bio:"AI/ML specialist with a background in NLP and agentic systems. Worked on enterprise AI adoption at TCS before joining Jubiliants to build the AI practice."},
   {name:"Deepa Sharma",role:"Head of Delivery",initials:"DS",color:"#14548C",bio:"PMP-certified delivery manager. Has led 80+ enterprise software projects. Responsible for on-time, on-budget delivery across all client engagements."},
@@ -79,7 +79,7 @@ export default function About() {
                 <div className="section-label">Our story</div>
                 <h2 className="t-h2" style={{marginBottom:"1.25rem"}}>Built by engineers, run like a business</h2>
                 <div style={{display:"flex",flexDirection:"column",gap:"1rem"}}>
-                  <p className="t-body">Jubiliants was founded by Praveen Dinavahi in 2015, after a decade leading technology programmes at large enterprises. He saw the same pattern repeatedly: businesses paying for expensive, inflexible software that didn't actually fit how their teams worked.</p>
+                  <p className="t-body">Jubiliants was founded by Pavan Rudraraju in 2015, after a decade leading technology programmes at large enterprises. He saw the same pattern repeatedly: businesses paying for expensive, inflexible software that didn't actually fit how their teams worked.</p>
                   <p className="t-body">The original idea was simple — build a firm that thinks about business outcomes first, and technology second. That principle has guided every hiring decision, every architecture choice, and every client conversation since.</p>
                   <p className="t-body">Today, we're a team of 80+ engineers, AI specialists, designers, and project managers. We've delivered 300+ projects across healthcare, manufacturing, education, logistics, and financial services — and 95% of our customers stay with us for additional work.</p>
                 </div>
