@@ -228,7 +228,7 @@ export default function About() {
             <div className="section-label" style={{justifyContent:"center"}}>Our offices</div>
             <h2 className="t-h2">Where to find us</h2>
           </div>
-          <div style={{display:"grid",gap:"1.5rem"}} className="grid grid-cols-1 md:grid-cols-3">
+          <div style={{display:"grid",gap:"1.5rem"}} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
             <div className="card" style={{padding:"2rem"}}>
               <div style={{display:"flex",alignItems:"center",gap:"0.75rem",marginBottom:"1rem"}}>
                 <span style={{fontSize:"1.5rem"}}>🏢</span>
@@ -259,6 +259,18 @@ export default function About() {
                 </div>
               </div>
               <p className="t-body" style={{lineHeight:1.8}}>Dubai Silicon Oasis, DDP, Building A1, Dubai, United Arab Emirates</p>
+            </div>
+            <div className="card" style={{padding:"2rem"}}>
+              <div style={{display:"flex",alignItems:"center",gap:"0.75rem",marginBottom:"1rem"}}>
+                <span style={{fontSize:"1.5rem"}}>🇬🇧</span>
+                <div>
+                  <div style={{fontWeight:700,fontSize:"1rem",color:"var(--text-1)"}}>Scotland Office</div>
+                  <span className="chip" style={{fontSize:"0.6875rem",marginTop:"0.25rem"}}>International</span>
+                </div>
+              </div>
+              <p className="t-body" style={{lineHeight:1.8}}>49 Orchard Street, Aberdeen AB24 3DB, Scotland, United Kingdom</p>
+              <p className="t-body" style={{lineHeight:1.8,marginTop:"0.5rem"}}>Contact: Noorul Shaik</p>
+              <a href="tel:+447827774376" style={{color:"var(--blue-light)",fontSize:"0.875rem",marginTop:"0.75rem",display:"inline-block"}}>+44 78277 74376</a>
             </div>
           </div>
         </div>
