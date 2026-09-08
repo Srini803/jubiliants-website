@@ -259,8 +259,7 @@ export default function About() {
                 </div>
               </div>
               <p className="t-body" style={{lineHeight:1.8}}>49 Orchard Street, Aberdeen AB24 3DB, Scotland, United Kingdom</p>
-              <p className="t-body" style={{lineHeight:1.8,marginTop:"0.5rem"}}>Contact: Noorul Shaik</p>
-              <a href="tel:+447827774376" style={{color:"var(--blue-light)",fontSize:"0.875rem",marginTop:"0.75rem",display:"inline-block"}}>+44 78277 74376</a>
+
             </div>
           </div>
         </div>
