@@ -252,7 +252,7 @@ export default function About() {
             </div>
             <div className="card" style={{padding:"2rem"}}>
               <div style={{display:"flex",alignItems:"center",gap:"0.75rem",marginBottom:"1rem"}}>
-                <span style={{fontSize:"1.5rem"}}>🌍</span>
+                <img src="/images/flags/uae.svg" alt="UAE flag" style={{width:"1.75rem",height:"1.3125rem",borderRadius:"2px",border:"1px solid var(--border)",objectFit:"cover"}} />
                 <div>
                   <div style={{fontWeight:700,fontSize:"1rem",color:"var(--text-1)"}}>Dubai Office</div>
                   <span className="chip" style={{fontSize:"0.6875rem",marginTop:"0.25rem"}}>International</span>
@@ -262,7 +262,7 @@ export default function About() {
             </div>
             <div className="card" style={{padding:"2rem"}}>
               <div style={{display:"flex",alignItems:"center",gap:"0.75rem",marginBottom:"1rem"}}>
-                <span style={{fontSize:"1.5rem"}}>🇬🇧</span>
+                <img src="/images/flags/scotland.svg" alt="Scotland flag" style={{width:"1.75rem",height:"1.3125rem",borderRadius:"2px",border:"1px solid var(--border)",objectFit:"cover"}} />
                 <div>
                   <div style={{fontWeight:700,fontSize:"1rem",color:"var(--text-1)"}}>Scotland Office</div>
                   <span className="chip" style={{fontSize:"0.6875rem",marginTop:"0.25rem"}}>International</span>
