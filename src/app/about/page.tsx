@@ -268,7 +268,7 @@ export default function About() {
                   <span className="chip" style={{fontSize:"0.6875rem",marginTop:"0.25rem"}}>International</span>
                 </div>
               </div>
-              <p className="t-body" style={{lineHeight:1.8}}>30700 Telegraph Road, Suite 2615, Bingham Farms, MI 48025, United States</p>
+              <p className="t-body" style={{lineHeight:1.8}}>2112 Empire Blvd. Suite 1C, Webster, New York 14580, United States</p>
             </div>
           </div>
         </div>
