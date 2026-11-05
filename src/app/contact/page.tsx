@@ -174,12 +174,16 @@ export default function Contact() {
                           <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.6}}>08th Floor, SLN Terminus, Survey No. 133<br/>Beside Botanical Gardens, Gachibowli<br/>Hyderabad, Telangana 500032, India</p>
                         </div>
                         <div style={{marginBottom:"1rem"}}>
-                          <div style={{fontSize:"0.75rem",fontWeight:600,color:"var(--text-4)",textTransform:"uppercase",letterSpacing:"0.06em",marginBottom:"0.375rem"}}>Branch Office</div>
-                          <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.6}}>B-8, Indian Airlines Colony<br/>Prakash Nagar, Begumpet<br/>Hyderabad, Telangana 500016, India</p>
-                        </div>
-                        <div>
                           <div style={{fontSize:"0.75rem",fontWeight:600,color:"var(--text-4)",textTransform:"uppercase",letterSpacing:"0.06em",marginBottom:"0.375rem"}}>Dubai Office</div>
                           <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.6}}>Dubai Silicon Oasis, DDP, Building A1<br/>Dubai, United Arab Emirates</p>
+                        </div>
+                        <div style={{marginBottom:"1rem"}}>
+                          <div style={{fontSize:"0.75rem",fontWeight:600,color:"var(--text-4)",textTransform:"uppercase",letterSpacing:"0.06em",marginBottom:"0.375rem"}}>Scotland Office</div>
+                          <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.6}}>49 Orchard Street<br/>Aberdeen AB24 3DB, Scotland, United Kingdom</p>
+                        </div>
+                        <div>
+                          <div style={{fontSize:"0.75rem",fontWeight:600,color:"var(--text-4)",textTransform:"uppercase",letterSpacing:"0.06em",marginBottom:"0.375rem"}}>US Office</div>
+                          <p style={{fontSize:"0.8125rem",color:"var(--text-3)",lineHeight:1.6}}>30700 Telegraph Road, Suite 2615<br/>Bingham Farms, MI 48025, United States</p>
                         </div>
                         <p style={{fontSize:"0.75rem",color:"var(--text-4)",marginTop:"1rem",borderTop:"1px solid var(--border)",paddingTop:"0.75rem"}}>A subsidiary of <strong style={{color:"var(--text-3)"}}>Telcomet Global Solutions</strong></p>
                       </div>
