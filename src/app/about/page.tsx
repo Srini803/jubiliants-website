@@ -234,8 +234,8 @@ export default function About() {
               <div style={{display:"flex",alignItems:"center",gap:"0.75rem",marginBottom:"1rem"}}>
                 <span style={{fontSize:"1.5rem"}}>🏢</span>
                 <div>
-                  <div style={{fontWeight:700,fontSize:"1rem",color:"var(--text-1)"}}>Registered Office</div>
-                  <span className="chip chip-blue" style={{fontSize:"0.6875rem",marginTop:"0.25rem"}}>Headquarters</span>
+                  <div style={{fontWeight:700,fontSize:"1rem",color:"var(--text-1)"}}>Headquarters</div>
+                  <span className="chip chip-blue" style={{fontSize:"0.6875rem",marginTop:"0.25rem"}}>Registered Office</span>
                 </div>
               </div>
               <p className="t-body" style={{lineHeight:1.8}}>08th Floor, SLN Terminus, Survey No. 133, Beside Botanical Gardens, Gachibowli, Hyderabad, Telangana 500032, India</p>
