@@ -181,8 +181,8 @@ export default function About() {
           </RevealOnScroll>
           <div style={{display:"grid",gap:"1.25rem"}} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
             {leadership.map((l,i)=>(
-              <RevealOnScroll key={l.name} delay={i*80}>
-                <div className="card-flat" style={{padding:"1.5rem",textAlign:"center"}}>
+              <RevealOnScroll key={l.name} delay={i*80} className="h-full">
+                <div className="card-flat" style={{padding:"1.5rem",textAlign:"center",height:"100%"}}>
                   <div style={{width:"56px",height:"56px",borderRadius:"50%",background:l.color,display:"flex",alignItems:"center",justifyContent:"center",fontSize:"1.125rem",fontFamily:"var(--font-heading)",fontWeight:600,color:"white",margin:"0 auto 1rem"}}>{l.initials}</div>
                   <div style={{fontFamily:"var(--font-heading)",fontWeight:600,fontSize:"0.9375rem",color:"var(--text-1)",marginBottom:"0.25rem"}}>{l.name}</div>
                   <div style={{fontSize:"0.8125rem",color:"var(--blue-light)",marginBottom:"0.875rem"}}>{l.role}</div>
