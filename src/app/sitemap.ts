@@ -17,6 +17,7 @@ const routes = [
   '/artificial-intelligence/machine-learning',
   '/case-studies',
   '/about',
+  '/about/certifications-and-alliances',
   '/contact',
 ]
 export default function sitemap(): MetadataRoute.Sitemap {

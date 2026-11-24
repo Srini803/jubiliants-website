@@ -20,6 +20,11 @@ const aiSubs = [
   { label: "Machine Learning", href: "/artificial-intelligence/machine-learning", desc: "Predictive analytics & ML models" },
 ];
 
+const aboutSubs = [
+  { label: "About Us", href: "/about", desc: "Our story, team and offices" },
+  { label: "Certifications & Alliances", href: "/about/certifications-and-alliances", desc: "Standards and technology partners" },
+];
+
 const ChevronDown = () => (
   <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
     <path d="M3 5l4 4 4-4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
@@ -83,7 +88,21 @@ export default function Navbar() {
           </div>
 
           <Link href="/case-studies" className="nav-link">Case Studies</Link>
-          <Link href="/about" className="nav-link">About</Link>
+          <div className="nav-item" style={{display:"flex",alignItems:"center"}}>
+            <Link href="/about" className="nav-link" style={{display:"flex",alignItems:"center",gap:"0.3rem"}}>
+              About <ChevronDown/>
+            </Link>
+            <div className="nav-dropdown" style={{minWidth:"290px"}}>
+              {aboutSubs.map(s => (
+                <Link key={s.href} href={s.href} className="nav-dd-item">
+                  <span className="nav-dd-icon">
+                    <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M8 1.5l1.9 4 4.4.5-3.3 3 .9 4.4L8 11.2 4.1 13.4 5 9 1.7 6l4.4-.5L8 1.5z" fill="#F7941D" opacity="0.85"/></svg>
+                  </span>
+                  <div><div style={{fontSize:"0.8125rem",fontWeight:600,color:"var(--text-1)"}}>{s.label}</div><div style={{fontSize:"0.7rem",color:"var(--text-4)"}}>{s.desc}</div></div>
+                </Link>
+              ))}
+            </div>
+          </div>
           <Link href="/contact" className="nav-link">Contact</Link>
         </div>
 
@@ -124,7 +143,14 @@ export default function Navbar() {
             )}
 
             <Link href="/case-studies" className="nav-link" onClick={() => setMobileOpen(false)}>Case Studies</Link>
-            <Link href="/about" className="nav-link" onClick={() => setMobileOpen(false)}>About</Link>
+            <button className="nav-link" style={{textAlign:"left",display:"flex",justifyContent:"space-between"}} onClick={() => setMobileEx(mobileEx==="about"?null:"about")}>
+              About <ChevronDown/>
+            </button>
+            {mobileEx === "about" && (
+              <div style={{paddingLeft:"1rem",display:"flex",flexDirection:"column",gap:"0.25rem"}}>
+                {aboutSubs.map(s => <Link key={s.href} href={s.href} className="nav-link" style={{fontSize:"0.875rem",color:"var(--text-3)"}} onClick={() => setMobileOpen(false)}>{s.label}</Link>)}
+              </div>
+            )}
             <Link href="/contact" className="nav-link" onClick={() => setMobileOpen(false)}>Contact</Link>
             <Link href="/contact" className="btn btn-primary" style={{marginTop:"0.5rem",justifyContent:"center"}} onClick={() => setMobileOpen(false)}>Get a Free Consultation</Link>
           </div>
