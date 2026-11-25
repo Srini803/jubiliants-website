@@ -1,5 +1,5 @@
 import type { ReactNode } from "react";
-import PageHero from "@/components/PageHero";
+import Link from "next/link";
 import CTABand from "@/components/CTABand";
 import RevealOnScroll from "@/components/RevealOnScroll";
 
@@ -64,6 +64,70 @@ const MicrosoftMark = (
   </svg>
 );
 
+/* ── Hero visual (matches the dark illustration cards on other pages) ── */
+const chipFont = { fontFamily: "Inter,sans-serif" } as const;
+const VisualChip = ({ x, y, accent, title, sub }: { x: number; y: number; accent: string; title: string; sub: string }) => (
+  <g>
+    <rect x={x} y={y} width="160" height="52" rx="10" fill="#1D2D45" stroke="#3D5068" strokeWidth="1" />
+    <rect x={x} y={y + 10} width="3" height="32" rx="1.5" fill={accent} />
+    <text x={x + 16} y={y + 23} fontSize="13" fontWeight="600" fill="#E8EEF7" style={chipFont}>{title}</text>
+    <text x={x + 16} y={y + 39} fontSize="10.5" fill="#8A9BB5" style={chipFont}>{sub}</text>
+  </g>
+);
+
+const CertificationsVisual = () => {
+  const left = [
+    { y: 64, title: "ISO/IEC 27001:2022", sub: "Information security" },
+    { y: 134, title: "ISO 9001:2015", sub: "Quality management" },
+    { y: 204, title: "ISO/IEC 42001:2023", sub: "AI management" },
+    { y: 274, title: "GDPR · UK GDPR", sub: "Data protection" },
+  ];
+  const right = [
+    { y: 64, title: "AWS", sub: "Cloud" },
+    { y: 134, title: "Microsoft", sub: "Azure and AI" },
+    { y: 204, title: "Anthropic Claude", sub: "AI models" },
+    { y: 274, title: "Databricks", sub: "Data and AI" },
+  ];
+  return (
+    <svg viewBox="0 0 640 480" fill="none" xmlns="http://www.w3.org/2000/svg" className="hero-svg" role="img" aria-label="Illustration of certifications and technology alliances around a central shield">
+      <defs>
+        <linearGradient id="certShield" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stopColor="#29ABE2" />
+          <stop offset="1" stopColor="#2E3192" />
+        </linearGradient>
+      </defs>
+      <rect width="640" height="480" rx="14" fill="#141F35" stroke="#3D5068" strokeWidth="1.5" />
+      <rect width="640" height="40" rx="14" fill="#1D2D45" />
+      <rect y="26" width="640" height="14" fill="#1D2D45" />
+      <text x="16" y="25" fontSize="13" fontWeight="600" fill="#8FD4F2" style={chipFont}>Jubiliants · Trust and Compliance</text>
+
+      {/* connectors */}
+      {left.map(c => <path key={"l" + c.y} d={`M188 ${c.y + 26} C 235 ${c.y + 26}, 245 191, 280 191`} stroke="#29ABE2" strokeWidth="1.25" strokeDasharray="4 5" opacity=".55" />)}
+      {right.map(c => <path key={"r" + c.y} d={`M452 ${c.y + 26} C 405 ${c.y + 26}, 395 191, 360 191`} stroke="#F7941D" strokeWidth="1.25" strokeDasharray="4 5" opacity=".55" />)}
+
+      {/* central shield */}
+      <circle cx="320" cy="191" r="98" stroke="#29ABE2" strokeWidth="1" opacity=".12" />
+      <circle cx="320" cy="191" r="78" stroke="#29ABE2" strokeWidth="1" strokeDasharray="4 6" opacity=".3" />
+      <g transform="translate(320 191)">
+        <path d="M0 -52 L40 -38 V6 C40 34 18 50 0 60 C-18 50 -40 34 -40 6 V-38 Z" fill="url(#certShield)" stroke="#8FD4F2" strokeWidth="1.5" />
+        <path d="M-17 4 L-5 16 L18 -12" stroke="#fff" strokeWidth="6" strokeLinecap="round" strokeLinejoin="round" />
+      </g>
+
+      {left.map(c => <VisualChip key={c.title} x={28} y={c.y} accent="#29ABE2" title={c.title} sub={c.sub} />)}
+      {right.map(c => <VisualChip key={c.title} x={452} y={c.y} accent="#F7941D" title={c.title} sub={c.sub} />)}
+
+      <text x="108" y="52" textAnchor="middle" fontSize="9.5" fontWeight="600" letterSpacing="1.2" fill="#29ABE2" style={chipFont}>STANDARDS</text>
+      <text x="532" y="52" textAnchor="middle" fontSize="9.5" fontWeight="600" letterSpacing="1.2" fill="#F7941D" style={chipFont}>ALLIANCES</text>
+
+      {/* bottom band */}
+      <rect x="28" y="356" width="584" height="96" rx="10" fill="#1D2D45" stroke="#3D5068" strokeWidth="1" />
+      <circle cx="320" cy="384" r="4" fill="#22C55E" className="hv-pulse" />
+      <text x="320" y="412" textAnchor="middle" fontSize="13" fontWeight="600" fill="#E8EEF7" style={chipFont}>Security · Quality · AI governance · Data protection</text>
+      <text x="320" y="434" textAnchor="middle" fontSize="11" fill="#8A9BB5" style={chipFont}>Cloud and AI alliances behind our delivery</text>
+    </svg>
+  );
+};
+
 type Item = { chip: string; chipClass: string; title: string; desc: string; logo: ReactNode };
 
 const standards: Item[] = [
@@ -102,12 +166,22 @@ const Grid = ({ items }: { items: Item[] }) => (
 export default function CertificationsAndAlliances() {
   return (
     <>
-      <PageHero
-        eyebrow="Certifications and alliances"
-        title="Standards we build to. Partners we build with."
-        subtitle="Information security, quality, AI governance and data-protection standards, plus the cloud and AI alliances behind our delivery."
-        cta1={{ label: "Talk to Our Team", href: "/contact" }}
-      />
+      <section className="hero-section hero-section-inner">
+        <div className="wrap" style={{ width: "100%" }}>
+          <div className="hero-grid">
+            <div>
+              <div className="section-label">Certifications and alliances</div>
+              <h1 className="t-h1" style={{ marginBottom: "1rem" }}>Standards we build to. Partners we build with.</h1>
+              <p className="t-body-lg" style={{ marginBottom: "1.75rem", maxWidth: "440px" }}>Information security, quality, AI governance and data-protection standards, plus the cloud and AI alliances behind our delivery.</p>
+              <div style={{ display: "flex", flexWrap: "wrap", gap: "0.75rem" }}>
+                <Link href="/contact" className="btn btn-primary">Talk to Our Team</Link>
+                <Link href="/case-studies" className="btn btn-secondary">See Our Work</Link>
+              </div>
+            </div>
+            <div className="flex hero-visual-col"><CertificationsVisual /></div>
+          </div>
+        </div>
+      </section>
 
       <section className="section">
         <div className="wrap">
